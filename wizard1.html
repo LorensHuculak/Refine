@@ -1,0 +1,813 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Title -->
+    <title>Refine - Decentralized Block Lists</title>
+
+    <!-- Required Meta Tags Always Come First -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="favicon.png">
+
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600&display=swap" rel="stylesheet">
+
+    <!-- CSS Implementing Plugins -->
+    <link rel="stylesheet" href="assets/vendor/font-awesome/css/all.min.css">
+    <link rel="stylesheet" href="assets/vendor/hs-mega-menu/dist/hs-mega-menu.min.css">
+    <link rel="stylesheet" href="assets/vendor/select2/dist/css/select2.min.css">
+    <link rel="stylesheet" href="assets/vendor/quill/dist/quill.snow.css">
+    <!-- CSS Front Template -->
+    <link rel="stylesheet" href="assets/css/theme.css">
+</head>
+
+<body>
+    <!-- ========== HEADER ========== -->
+    <header id="header" class="header">
+        <div class="js-mega-menu header-section">
+            <!-- Topbar -->
+            <div class="container">
+                <nav class="js-mega-menu navbar navbar-expand-lg z-index-999">
+                    <!-- Responsive Toggle Button -->
+                    <button type="button" class="navbar-toggler btn btn-xs btn-outline-secondary ml-auto" aria-label="Toggle navigation" aria-expanded="false" aria-controls="topBar" data-toggle="collapse" data-target="#topBar">
+                        Topbar
+                        <i class="fa fa-angle-down ml-2"></i>
+                    </button>
+                    <!-- End Responsive Toggle Button -->
+
+                    <div id="topBar" class="collapse navbar-collapse">
+                        <ul class="navbar-nav w-100">
+                            <li class="navbar-nav-item mr-auto">
+                                <a class="nav-link font-size-1 py-2 pl-0" href="../landings/index.html">
+
+
+                                </a>
+                            </li>
+
+
+                            <!-- Docs -->
+                            <li class="hs-has-mega-menu navbar-nav-item" data-hs-mega-menu-item-options='{
+                    "desktop": {
+                      "position": "right",
+                      "maxWidth": "260px"
+                    }
+                  }'>
+                                <a id="docsMegaMenu" class="hs-mega-menu-invoker nav-link nav-link-toggle font-size-1 py-2 pr-0" href="javascript:;" aria-haspopup="true" aria-expanded="false">Resources</a>
+
+                                <!-- Docs - Submenu -->
+                                <div class="hs-mega-menu dropdown-menu" aria-labelledby="docsMegaMenu" style="min-width: 330px;">
+                                    <!-- Promo Item -->
+                                    <div class="navbar-promo-item">
+                                        <a class="navbar-promo-link" href="documentation/index.html">
+                                            <div class="media align-items-center">
+                                                <img class="navbar-promo-icon" src="assets/svg/icons/icon-1.svg" alt="SVG">
+
+                                                <div class="media-body">
+                                                    <span class="navbar-promo-title">
+                            FAQ
+                          <!--  <span class="badge badge-primary badge-pill ml-1">v3.2</span> -->
+                                                    </span>
+                                                    <small class="navbar-promo-text">Help Center</small>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <!-- End Promo Item -->
+
+                                    <!-- Promo Item -->
+                                    <div class="navbar-promo-item">
+                                        <a class="navbar-promo-link" href="snippets/index.html">
+                                            <div class="media align-items-center">
+                                                <img class="navbar-promo-icon" src="assets/svg/icons/icon-2.svg" alt="SVG">
+                                                <div class="media-body">
+                                                    <span class="navbar-promo-title">Blog</span>
+                                                    <small class="navbar-promo-text">Read about Refine</small>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <!-- End Promo Item -->
+
+                                    <!-- Promo Item -->
+                                    <div class="navbar-promo-item">
+                                        <a class="navbar-promo-link" href="snippets/index.html">
+                                            <div class="media align-items-center">
+
+                                                <img class="navbar-promo-icon" src="../assets/svg/icons/icon-29.svg" alt="SVG">
+
+                                                <div class="media-body">
+                                                    <span class="navbar-promo-title">Integrations</span>
+                                                    <small class="navbar-promo-text">Our Partners</small>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <!-- End Promo Item -->
+
+                                    <div class="navbar-promo-footer">
+                                        <!-- List -->
+                                        <div class="row no-gutters">
+                                            <div class="col-6">
+                                                <div class="navbar-promo-footer-item">
+                                                    <span class="navbar-promo-footer-text">Check what's new</span>
+                                                    <a class="navbar-promo-footer-text" href="documentation/changelog.html">
+                            Changelog
+                          </a>
+                                                </div>
+                                            </div>
+                                            <div class="col-6 navbar-promo-footer-ver-divider">
+                                                <div class="navbar-promo-footer-item">
+                                                    <span class="navbar-promo-footer-text">Have a question?</span>
+                                                    <a class="navbar-promo-footer-text" href="http://htmlstream.com/contact-us">
+                            Join our Discord
+                          </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- End List -->
+                                    </div>
+                                </div>
+                                <!-- End Docs - Submenu -->
+                            </li>
+                            <!-- End Docs -->
+
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+            <!-- End Topbar -->
+
+
+            <div id="logoAndNav" class="container mt-lg-n2">
+                <!-- Nav -->
+                <nav class="js-mega-menu navbar navbar-expand-lg">
+                    <div class="navbar-nav-wrap">
+                        <!-- Logo -->
+                        <a class="navbar-brand navbar-nav-wrap-brand" href="index.html" aria-label="Front">
+                            <img src="assets/svg/logos/logo.svg" alt="Logo">
+                        </a>
+                        <!-- End Logo -->
+
+                        <!-- Secondary Content -->
+                        <div class="navbar-nav-wrap-content">
+                            <!-- Search Classic 
+                            <div class="hs-unfold d-lg-none d-inline-block position-static">
+                                <a class="js-hs-unfold-invoker btn btn-xs btn-icon rounded-circle" href="javascript:;" data-hs-unfold-options='{
+                    "target": "#searchClassic",
+                    "type": "css-animation",
+                    "animationIn": "slideInUp"
+                   }'>
+                                    <i class="fas fa-search"></i>
+                                </a>
+
+                                <div id="searchClassic" class="hs-unfold-content dropdown-menu w-100 border-0 rounded-0 px-3 mt-0">
+                                    <form class="input-group input-group-sm input-group-merge">
+                                        <input type="text" class="form-control" placeholder="What do you want to learn?" aria-label="What do you want to learn?">
+                                        <div class="input-group-append">
+                                            <div class="input-group-text">
+                                                <i class="fas fa-search"></i>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                            <!-- End Search Classic -->
+
+                            <!-- Account -->
+                            <div class="ml-3 hs-unfold">
+                                <a class="js-hs-unfold-invoker rounded-circle" href="javascript:;" data-hs-unfold-options='{
+                    "target": "#accountDropdown",
+                    "type": "css-animation",
+                    "event": "hover",
+                    "duration": 50,
+                    "delay": 0,
+                    "hideOnScroll": "true"
+                   }'>
+                                    <span class="avatar avatar-xs avatar-circle">
+                    <img class="avatar-img" src="assets/img/icons/account.png" alt="Image Description">
+                  </span>
+                                </a>
+
+                                <div id="accountDropdown" class="hs-unfold-content dropdown-menu dropdown-menu-sm-right dropdown-menu-no-border-on-mobile p-0" style="min-width: 245px;">
+                                    <div class="card">
+                                        <!-- Header -->
+                                        <div class="card-header p-4">
+                                            <a class="media align-items-center" href="#">
+                                                <div class="avatar mr-3">
+                                                    <img class="avatar-img" src="assets/img/icons/account.png" alt="Image Description">
+                                                </div>
+                                                <div class="media-body">
+                                                    <span class="d-block font-weight-bold">0x9456...49E1 <!--<span class="badge badge-success ml-1">Pro</span> --></span>
+                                                    <span class="d-block small text-muted"><i class="mr-1 far fa-clone"></i>Copy Address</span>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <!-- End Header -->
+
+                                        <!-- Body -->
+                                        <div class="card-body py-3">
+
+
+
+                                            <a class="dropdown-item px-0" href="#">
+                                                <span class="dropdown-item-icon">
+                          <i class="fas fa-user"></i>
+                        </span> Account
+                                            </a>
+                                            <a class="dropdown-item px-0" href="#">
+                                                <span class="dropdown-item-icon">
+                          <i class="fas fa-bars"></i>
+                        </span> My Lists
+                                            </a>
+                                            <a class="dropdown-item px-0" href="#">
+                                                <span class="dropdown-item-icon">
+                          <i class="fas fa-shield-alt"></i>
+                        </span> Subscriptions
+                                            </a>
+                                            <a class="dropdown-item px-0" href="#">
+                                                <span class="dropdown-item-icon">
+                          <i class="fas fa-bell"></i>
+                        </span> Notifications
+                                            </a>
+
+                                            <div class="dropdown-divider"></div>
+
+                                            <a class="dropdown-item px-0" href="#">
+                                                <span class="dropdown-item-icon">
+                          <i class="fas fa-question-circle"></i>
+                        </span> Help
+                                            </a>
+                                            <a class="dropdown-item px-0" href="#">
+                                                <span class="dropdown-item-icon">
+                          <i class="fas fa-power-off"></i>
+                        </span> Sign out
+                                            </a>
+                                        </div>
+                                        <!-- End Body -->
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End Account -->
+                            <!-- Shopping Cart -->
+                            <li class="list-inline-item">
+                                <div class="hs-unfold">
+                                    <a class="js-hs-unfold-invoker btn btn-xs btn-icon btn-ghost-secondary" href="javascript:;" data-hs-unfold-options='{
+                    "target": "#shoppingCartDropdown",
+                    "type": "css-animation",
+                    "event": "hover",
+                    "hideOnScroll": "true"
+                   }'>
+                                        <i class="fas fa-bell"></i>
+                                    </a>
+
+                                    <div id="shoppingCartDropdown" class="hs-unfold-content dropdown-menu dropdown-menu-right text-center p-7" style="min-width: 250px;">
+                                        <figure class="max-w-9rem mx-auto mb-3">
+                                            <img class="img-fluid" src="assets/svg/illustrations/empty-cart.svg" alt="SVG">
+                                        </figure>
+                                        <span class="d-block">No Notifications</span>
+                                    </div>
+                                </div>
+                            </li>
+                            <!-- End Shopping Cart -->
+                        </div>
+                        <!-- End Secondary Content -->
+
+                        <!-- Responsive Toggle Button -->
+                        <button type="button" class="navbar-toggler navbar-nav-wrap-navbar-toggler btn btn-icon btn-sm rounded-circle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="navBar" data-toggle="collapse" data-target="#navBar">
+                            <span class="navbar-toggler-default">
+                <svg width="14" height="14" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg">
+                  <path fill="currentColor" d="M17.4,6.2H0.6C0.3,6.2,0,5.9,0,5.5V4.1c0-0.4,0.3-0.7,0.6-0.7h16.9c0.3,0,0.6,0.3,0.6,0.7v1.4C18,5.9,17.7,6.2,17.4,6.2z M17.4,14.1H0.6c-0.3,0-0.6-0.3-0.6-0.7V12c0-0.4,0.3-0.7,0.6-0.7h16.9c0.3,0,0.6,0.3,0.6,0.7v1.4C18,13.7,17.7,14.1,17.4,14.1z"/>
+                </svg>
+              </span>
+                            <span class="navbar-toggler-toggled">
+                <svg width="14" height="14" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg">
+                  <path fill="currentColor" d="M11.5,9.5l5-5c0.2-0.2,0.2-0.6-0.1-0.9l-1-1c-0.3-0.3-0.7-0.3-0.9-0.1l-5,5l-5-5C4.3,2.3,3.9,2.4,3.6,2.6l-1,1 C2.4,3.9,2.3,4.3,2.5,4.5l5,5l-5,5c-0.2,0.2-0.2,0.6,0.1,0.9l1,1c0.3,0.3,0.7,0.3,0.9,0.1l5-5l5,5c0.2,0.2,0.6,0.2,0.9-0.1l1-1 c0.3-0.3,0.3-0.7,0.1-0.9L11.5,9.5z"/>
+                </svg>
+              </span>
+                        </button>
+                        <!-- End Responsive Toggle Button -->
+
+                        <!-- Navigation -->
+                        <div id="navBar" class="navbar-nav-wrap-navbar collapse navbar-collapse">
+                            <ul class="navbar-nav">
+                                <!-- Pages -->
+
+                                <li class="navbar-nav-item">
+                                    <div class="hs-unfold">
+                                        <a class="nav-link js-hs-unfold-invoker " href="javascript:;" data-hs-unfold-options='{
+                    "target": "#footerLanguageExample2",
+                    "type": "css-animation",
+                    "animationIn": "slideInDown"
+                   }'> <i class="fas fa-atlas mr-1"></i> English</a>
+                                        <!-- Language Modal -->
+                                        <div id="footerLanguageExample2" class="hs-unfold-content dropdown-menu mb-2">
+                                            <a class="dropdown-item active" href="#">English</a>
+                                            <a class="dropdown-item" href="#">Deutsch</a>
+                                            <a class="dropdown-item" href="#">Español</a>
+                                            <a class="dropdown-item" href="#">Français</a>
+                                            <a class="dropdown-item" href="#">Italiano</a>
+                                            <a class="dropdown-item" href="#">日本語</a>
+                                            <a class="dropdown-item" href="#">한국어</a>
+                                            <a class="dropdown-item" href="#">Nederlands</a>
+                                            <a class="dropdown-item" href="#">Português</a>
+                                            <a class="dropdown-item" href="#">Русский</a>
+                                        </div>
+
+                                        <!-- End Language Modal -->
+                                    </div>
+
+                                </li>
+
+                                <li class="navbar-nav-item">
+                                    <a class="nav-link" href="index.html">Explore Lists</a>
+                                </li>
+
+                                <!-- My Courses -->
+                                <li class="hs-has-mega-menu navbar-nav-item d-none d-lg-inline-block" data-hs-mega-menu-item-options='{
+                      "desktop": {
+                        "position": "right",
+                        "maxWidth": "350px"
+                      }
+                    }'>
+                                    <a id="myCoursesMegaMenu" class="hs-mega-menu-invoker nav-link nav-link-toggle" href="javascript:;" aria-haspopup="true" aria-expanded="false">My Drafts</a>
+
+                                    <!-- My Courses - Submenu -->
+                                    <div class="hs-mega-menu dropdown-menu" aria-labelledby="myCoursesMegaMenu">
+                                        <div class="card">
+                                            <div class="card-header py-3">
+                                                <span class="text-dark font-weight-bold">My Drafts</span>
+                                            </div>
+
+                                            <div class="card-body">
+                                                <!-- Course -->
+                                                <a class="media" href="#">
+                                                    <div class="mt-1 mr-3">
+                                                        <div class="avatar">
+                                                            <img class="avatar-img rounded-sm" src="assets/svg/components/graphics-8.svg" alt="Image Description">
+                                                        </div>
+                                                    </div>
+                                                    <div class="media-body">
+                                                        <div class="mb-2">
+                                                            <span class="d-block text-dark text-hover-primary font-size-1 font-weight-bold mb-1">Cryptocurrency Scams</span>
+                                                            <small class="d-block text-body">Scams and Phishing</small>
+                                                        </div>
+                                                        <div class="d-flex justify-content-between mb-1">
+                                                            <span class="d-block text-body small text-cap">Completed</span>
+                                                            <small class="text-dark font-weight-bold">25%</small>
+                                                        </div>
+                                                        <div class="progress" style="height: 6px;">
+                                                            <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                                <!-- End Course -->
+
+                                                <!-- Course -->
+                                                <a class="media mt-5" href="#">
+                                                    <div class="mt-1 mr-3">
+                                                        <div class="avatar">
+                                                            <img class="avatar-img rounded-sm" src="assets/svg/components/graphics-7.svg" alt="Image Description">
+                                                        </div>
+                                                    </div>
+                                                    <div class="media-body">
+                                                        <div class="mb-2">
+                                                            <span class="d-block text-dark text-hover-primary font-size-1 font-weight-bold mb-1">Fake News: Serbia and Western Balkans </span>
+                                                            <small class="d-block text-body">Disinformation and Fake News</small>
+                                                        </div>
+                                                        <div class="d-flex justify-content-between mb-1">
+                                                            <span class="d-block text-body small text-cap">Completed</span>
+                                                            <small class="text-dark font-weight-bold">100%</small>
+                                                        </div>
+                                                        <div class="progress" style="height: 6px;">
+                                                            <div class="progress-bar bg-success" role="progressbar" style="width: 100%;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                                <!-- End Course -->
+                                            </div>
+
+                                            <div class="card-footer text-center py-3">
+                                                <a class="font-size-1" href="#">
+                          See all
+                          <i class="fa fa-angle-right ml-1"></i>
+                        </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- End My Drafts - Submenu -->
+                                </li>
+                                <!-- End My Drafts -->
+
+
+                                <!-- End Pages -->
+
+                                <!-- Button -->
+                                <li class="navbar-nav-last-item">
+                                    <a class="btn btn-sm btn-primary transition-3d-hover" href="#" type="button" data-toggle="modal" data-target="#loginModal"> <i class="fas fa-plus mr-1"></i> Submit List
+                                    </a>
+                                </li>
+                                <!-- End Button -->
+                            </ul>
+
+
+                        </div>
+                        <!-- End Navigation -->
+                    </div>
+                </nav>
+                <!-- End Nav -->
+
+
+            </div>
+        </div>
+    </header>
+    <!-- ========== END HEADER ========== -->
+
+    <!-- ========== MAIN ========== -->
+    <main id="content" role="main">
+
+        <!-- Contact Form Section -->
+        <div class="container space-2 space-lg-2">
+
+            <!-- Title -->
+            <div class="w-md-80 w-lg-50 text-center mx-md-auto mb-5 mb-md-9">
+
+
+                <h2>Draft a List</h2>
+                <p>Create a list that will be shared and moderated by others.</p>
+            </div>
+            <!-- End Title -->
+
+            <!-- Step Form -->
+            <form class="js-step-form js-validate" data-hs-step-form-options='{
+        "progressSelector": "#advancedFormStepFormProgress",
+        "stepsSelector": "#advancedFormStepFormContent",
+        "isValidate": true
+      }'>
+                <!-- Step -->
+                <ul id="advancedFormStepFormProgress" class="js-step-progress step step-md step-inline mb-5">
+                    <li class="step-item">
+                        <div class="step-content-wrapper">
+                            <span class="step-icon step-icon-soft-primary">1</span>
+                            <div class="step-content">
+                                <span class="step-inline-title">General</span>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="step-item">
+                        <div class="step-content-wrapper">
+                            <span class="step-icon step-icon-soft-primary">2</span>
+                            <div class="step-content">
+                                <span class="step-inline-title">Details</span>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="step-item">
+                        <div class="step-content-wrapper">
+                            <span class="step-icon step-icon-soft-primary">3</span>
+                            <div class="step-content">
+                                <span class="step-inline-title">Items</span>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="step-item">
+                        <div class="step-content-wrapper">
+                            <span class="step-icon step-icon-soft-primary">4</span>
+                            <div class="step-content">
+                                <span class="step-inline-title">Review</span>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <!-- End Step -->
+
+                <!-- Content Step Form -->
+                <div id="advancedFormStepFormContent" class="border rounded p-4">
+                    <div id="advancedFormSelectStepOne" class="active">
+
+                        <!-- Input Group -->
+
+                        <div class="mb-4">
+                            <div id="advancedFormSelectStepOne" class="active">
+                                <div class="mb-4">
+                                    <label class="input-label" for="advancedFormFirstName">Picture</label>
+                                    <label class="avatar avatar-xl avatar-circle mr-4" for="avatarUploader">
+                                        <img id="avatarImg" class="avatar-img" src="assets/img/160x160/btc.png" alt="Image Description">
+                                    </label>
+                                    <div class="btn btn-sm btn-primary file-attachment-btn">Upload Image
+                                        <input type="file" class="js-file-attach file-attachment-btn-label" id="avatarUploader" data-hs-file-attach-options='{
+                                "textTarget": "#avatarImg",
+                                "mode": "image",
+                                "targetAttr": "src"
+                             }'>
+                                    </div>
+                                    <span class="mx-1"></span>
+                                    <a class="btn btn-sm btn-white" href="javascript:;">Delete</a>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="mb-4">
+                            <label class="input-label" for="advancedFormUsername">List Name</label>
+                            <div class="input-group input-group-sm">
+                                <input type="text" class="form-control" name="advancedFormUsername" id="advancedFormUsername" placeholder="Enter a name" aria-label="Username" required data-msg="Please enter a username address.">
+                            </div>
+                        </div>
+                        <!-- End Input Group -->
+
+
+                        <!-- Input Group -->
+                        <label class="input-label" for="advancedFormPassword">Description</label>
+                        <div class="">
+                            <!-- Quill -->
+                            <div class="quill-custom mb-4">
+                                <div class="js-quill" style="min-height: 8.5rem;" data-hs-quill-options='{
+                           "placeholder": "Describe your list",
+                            "modules": {
+                              "toolbar": [
+                                ["bold", "italic", "underline", "strike", "link", "image", "blockquote", "code", {"list": "bullet"}]
+                              ]
+                            }
+                           }'>
+                                </div>
+                            </div>
+                            <!-- End Quill -->
+                        </div>
+                        <!-- End Input Group -->
+
+                        <div class="d-flex justify-content-end">
+                            <button type="button" class="btn btn-sm btn-primary transition-3d-hover mr-1" data-hs-step-form-next-options='{
+                  "targetSelector": "#advancedFormSelectStepTwo"
+                }'>Next</button>
+                        </div>
+                    </div>
+
+                    <div id="advancedFormSelectStepTwo" style="display: none;">
+                        <!-- Input Group -->
+                        <div class="mb-4">
+                            <label class="input-label" for="advancedFormFirstName">First name</label>
+                            <div class="input-group input-group-sm">
+                                <input type="text" class="form-control" name="advancedFormFirstName" id="advancedFormFirstName" placeholder="First name" aria-label="First name" required data-msg="Please enter a first name.">
+                            </div>
+                        </div>
+                        <!-- End Input Group -->
+
+                        <!-- Input Group -->
+                        <div class="mb-4">
+                            <label class="input-label" for="advancedFormLastName">Last name</label>
+                            <div class="input-group input-group-sm">
+                                <input type="text" class="form-control" name="advancedFormLastName" id="advancedFormLastName" placeholder="Last name" aria-label="Last name" required data-msg="Please enter a last name.">
+                            </div>
+                        </div>
+                        <!-- End Input Group -->
+
+                        <!-- Input Group -->
+                        <div class="mb-4">
+                            <label class="input-label" for="advancedFormEmail">Email</label>
+                            <div class="input-group input-group-sm">
+                                <input type="email" class="form-control" name="advancedFormEmail" id="advancedFormEmail" placeholder="Email" aria-label="Email" required data-msg="Please enter an email address.">
+                            </div>
+                        </div>
+                        <!-- End Input Group -->
+
+                        <div class="d-flex justify-content-end">
+                            <a class="btn btn-sm btn-soft-secondary transition-3d-hover mr-1" href="javascript:;" data-hs-step-form-prev-options='{
+             "targetSelector": "#advancedFormSelectStepOne"
+           }'>Back</a>
+                            <button type="button" class="btn btn-sm btn-primary transition-3d-hover" data-hs-step-form-next-options='{
+                  "targetSelector": "#advancedFormSelectStepThree"
+                }'>Next</button>
+                        </div>
+                    </div>
+
+                    <div id="advancedFormSelectStepThree" style="display: none;">
+                        <!-- Input Group -->
+                        <div class="mb-4">
+                            <label class="input-label" for="advancedFormAddress1">Address 1</label>
+                            <div class="input-group input-group-sm">
+                                <input type="text" class="form-control" name="advancedFormAddress1" id="advancedFormAddress1" placeholder="Address" aria-label="Address" required data-msg="Please enter a valid address.">
+                            </div>
+                        </div>
+                        <!-- End Input Group -->
+
+                        <!-- Input Group -->
+                        <div class="mb-4">
+                            <label class="input-label" for="advancedFormAddress2">Address 2 <small class="text-body">(optional)</small></label>
+                            <div class="input-group input-group-sm">
+                                <input type="text" class="form-control" name="advancedFormAddress2" id="advancedFormAddress2" placeholder="Address" aria-label="Address">
+                            </div>
+                        </div>
+                        <!-- End Input Group -->
+
+                        <div class="d-flex justify-content-end">
+                            <a class="btn btn-sm btn-soft-secondary transition-3d-hover mr-1" href="javascript:;" data-hs-step-form-prev-options='{
+             "targetSelector": "#advancedFormSelectStepTwo"
+           }'>Back</a>
+                            <button type="button" class="btn btn-sm btn-primary transition-3d-hover" data-hs-step-form-next-options='{
+                  "targetSelector": "#advancedFormSelectStepFour"
+                }'>Next</button>
+                        </div>
+                    </div>
+
+                    <div id="advancedFormSelectStepFour" style="display: none;">
+                        You have successfully completed the form!
+
+                        <div class="d-flex justify-content-end">
+                            <a class="btn btn-sm btn-soft-secondary transition-3d-hover mr-1" href="javascript:;" data-hs-step-form-prev-options='{
+             "targetSelector": "#advancedFormSelectStepThree"
+           }'>Back</a>
+                            <button type="button" class="btn btn-sm btn-primary transition-3d-hover">Done</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Content Step Form -->
+            </form>
+            <!-- End Step Form -->
+
+        </div>
+    </main>
+    <!-- ========== END MAIN ========== -->
+    <!-- ========== FOOTER ========== -->
+
+
+    <!-- Lists -->
+    <div class="container">
+        <div class="border-top space-2">
+            <div class="row justify-content-md-between">
+                <div class="col-lg-4 mb-4 mb-lg-0">
+                    <a class="d-inline-flex mb-4" href="index.html" aria-label="Front">
+                        <img class="brand" src="assets/svg/logos/logo.svg" alt="Logo">
+                    </a>
+                    <p>Refine your online experiences.</p>
+                    <a class="btn btn-outline-pnk py-1" href="https://kleros.io/" target="_blank">Secured by <span   class="font-size-1 ml-1 mr-1 mb-5"><i class="icon-kleros_mark"></i></span>Kleros </a>
+
+                </div>
+
+                <div class="col-6 col-sm-4 col-lg-2 mb-4 mb-lg-0">
+                    <h5>Refine</h5>
+
+                    <!-- Nav Link -->
+                    <ul class="nav nav-sm nav-x-0 flex-column">
+                        <li class="nav-item"><a class="nav-link" href="../pages/about-agency.html">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../pages/services-agency.html">Blog</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../pages/careers.html">Integrations</a></li>
+                    </ul>
+                    <!-- End Nav Link -->
+                </div>
+
+                <div class="col-6 col-sm-4 col-lg-2 mb-4 mb-lg-0">
+                    <h5>Resources</h5>
+
+                    <!-- Nav Link -->
+                    <ul class="nav nav-sm nav-x-0 flex-column">
+                        <li class="nav-item"><a class="nav-link" href="#">FAQ</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Terms</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Privacy</a></li>
+                    </ul>
+                    <!-- End Nav Link -->
+                </div>
+
+                <div class="col-6 col-sm-4 col-lg-2">
+                    <h5>Resources</h5>
+
+                    <!-- Nav Link -->
+                    <ul class="nav nav-sm nav-x-0 flex-column">
+                        <li class="nav-item">
+
+
+                            <a class="btn btn-icon btn-m btn-ghost-secondary rounded-circle" href="#">
+                                <i class="fab fa-discord"></i>
+                            </a>
+
+
+                            <a class="btn btn-icon btn-m btn-ghost-secondary rounded-circle" href="#">
+                                <i class="fab fa-medium"></i>
+                            </a>
+
+
+                            <a class="btn btn-icon btn-m btn-ghost-secondary rounded-circle" href="#">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+
+
+                        </li>
+
+                    </ul>
+                    <!-- End Nav Link -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Lists -->
+    </footer>
+    <!-- ========== END FOOTER ========== -->
+
+    </div>
+    </div>
+    </aside>
+    <!-- End Account Sidebar Navigation -->
+    <!-- ========== END SECONDARY CONTENTS ========== -->
+
+    <!-- Go to Top -->
+    <a class="js-go-to go-to position-fixed" href="javascript:;" style="visibility: hidden;" data-hs-go-to-options='{
+       "offsetTop": 700,
+       "position": {
+         "init": {
+           "right": 15
+         },
+         "show": {
+           "bottom": 15
+         },
+         "hide": {
+           "bottom": -15
+         }
+       }
+     }'>
+        <i class="fas fa-angle-up"></i>
+    </a>
+    <!-- End Go to Top -->
+
+    <!-- JS Global Compulsory -->
+    <script src="assets/vendor/jquery/dist/jquery.min.js"></script>
+    <script src="assets/vendor/jquery-migrate/dist/jquery-migrate.min.js"></script>
+    <script src="assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- JS Implementing Plugins -->
+    <script src="assets/vendor/hs-header/dist/hs-header.min.js"></script>
+    <script src="assets/vendor/hs-go-to/dist/hs-go-to.min.js"></script>
+    <script src="assets/vendor/hs-unfold/dist/hs-unfold.min.js"></script>
+    <script src="assets/vendor/hs-mega-menu/dist/hs-mega-menu.min.js"></script>
+    <script src="assets/vendor/hs-show-animation/dist/hs-show-animation.min.js"></script>
+    <script src="assets/vendor/jquery-validation/dist/jquery.validate.min.js"></script>
+    <script src="assets/vendor/leaflet/dist/leaflet.js"></script>
+    <script src="assets/vendor/quill/dist/quill.min.js"></script>
+
+
+
+    <!-- JS Front -->
+    <script src="assets/js/hs.core.js"></script>
+    <script src="assets/js/hs.validation.js"></script>
+    <script src="assets/js/hs.leaflet.js"></script>
+
+    <script src="assets/js/hs.validation.js"></script>
+    <script src="assets/vendor/hs-step-form/dist/hs-step-form.min.js"></script>
+    <script src="assets/js/hs.quill.js"></script>
+
+    <!-- JS Plugins Init. -->
+    <script>
+        $(document).on('ready', function () {
+            // initialization of header
+            var header = new HSHeader($('#header')).init();
+
+
+
+            // initialization of step form
+            $('.js-step-form').each(function () {
+                var stepForm = new HSStepForm($(this)).init();
+            });
+
+
+            // initialization of unfold
+            var unfold = new HSUnfold('.js-hs-unfold-invoker').init();
+
+            // initialization of show animations
+            $('.js-animation-link').each(function () {
+                var showAnimation = new HSShowAnimation($(this)).init();
+            });
+
+
+            // initialization of quilljs editor
+            var quill = $.HSCore.components.HSQuill.init('.js-quill');
+            // initialization of form validation
+            $('.js-validate').each(function () {
+                var validation = $.HSCore.components.HSValidation.init($(this));
+            });
+
+            // initialization of leaflet
+            $('#map').each(function () {
+                var leaflet = $.HSCore.components.HSLeaflet.init($(this)[0]);
+
+                L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', {
+                    id: 'mapbox/light-v9'
+                }).addTo(leaflet);
+            });
+
+            // initialization of go to
+            $('.js-go-to').each(function () {
+                var goTo = new HSGoTo($(this)).init();
+            });
+        });
+    </script>
+
+    <!-- IE Support -->
+    <script>
+        if (/MSIE \d|Trident.*rv:/.test(navigator.userAgent)) document.write('<script src="assets/vendor/polifills.js"><\/script>');
+    </script>
+</body>
+
+</html>

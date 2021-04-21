@@ -1,0 +1,207 @@
+[
+  {
+    "label": "Intro page",
+    "category": "Starter",
+    "url": "index.html"
+  },{
+    "label": "Blog - Grid",
+    "category": "Blog",
+    "url": "blog-grid.html"
+  },{
+    "label": "Blog - List",
+    "category": "Blog",
+    "url": "blog-list.html"
+  },{
+    "label": "Calendar",
+    "category": "Calendar",
+    "url": "calendar.html"
+  },{
+    "label": "Card - Grid",
+    "category": "Card",
+    "url": "card-grid.html"
+  },{
+    "label": "Card - List",
+    "category": "Card",
+    "url": "card-list.html"
+  },{
+    "label": "Clients",
+    "category": "Clients",
+    "url": "clients.html"
+  },{
+    "label": "Accordion",
+    "category": "Components",
+    "url": "collapse.html"
+  },{
+    "label": "Collapse",
+    "category": "Components",
+    "url": "collapse.html"
+  },{
+    "label": "Comments",
+    "category": "Components",
+    "url": "comments.html"
+  },{
+    "label": "Contacts",
+    "category": "Components",
+    "url": "contacts.html"
+  },{
+    "label": "Countdown",
+    "category": "Components",
+    "url": "countdown.html"
+  },{
+    "label": "Call-to-action (CTA)",
+    "category": "Components",
+    "url": "cta.html"
+  },{
+    "label": "ecommerce",
+    "category": "Components",
+    "url": "Ecommerce.html"
+  },{
+    "label": "FAQ",
+    "category": "Components",
+    "url": "faq.html"
+  },{
+    "label": "Features general",
+    "category": "Features",
+    "url": "features-general.html"
+  },{
+    "label": "Features navs",
+    "category": "Features",
+    "url": "features-navs.html"
+  },{
+    "label": "Features stats",
+    "category": "Features",
+    "url": "features-stats.html"
+  },{
+    "label": "Features step",
+    "category": "Features",
+    "url": "features-step.html"
+  },{
+    "label": "Feedback",
+    "category": "Components",
+    "url": "feedback.html"
+  },{
+    "label": "Footers",
+    "category": "Footers",
+    "url": "footers.html"
+  },{
+    "label": "Form layouts - Authentication",
+    "category": "Form layouts",
+    "url": "form-layouts-authentication.html"
+  },{
+    "label": "Form layouts - Ecommerce",
+    "category": "Form layouts",
+    "url": "form-layouts-ecommerce.html"
+  },{
+    "label": "Form layouts - Feedback",
+    "category": "Form layouts",
+    "url": "form-layouts-feedback.html"
+  },{
+    "label": "Form layouts - Filters",
+    "category": "Form layouts",
+    "url": "form-layouts-filters.html"
+  },{
+    "label": "Form layouts - Search",
+    "category": "Form layouts",
+    "url": "form-layouts-search.html"
+  },{
+    "label": "Form layouts - Subscribe",
+    "category": "Form layouts",
+    "url": "form-layouts-subscribe.html"
+  },{
+    "label": "Gallery",
+    "category": "Gallery",
+    "url": "gallery.html"
+  },{
+    "label": "Hero",
+    "category": "Components",
+    "url": "hero.html"
+  },{
+    "label": "Icon blocks",
+    "category": "Components",
+    "url": "icon-blocks.html"
+  },{
+    "label": "Feedback & Reviews",
+    "category": "Components",
+    "url": "feedback-and-reviews.html"
+  },{
+    "label": "Reviews",
+    "category": "Components",
+    "url": "feedback-and-reviews.html"
+  },{
+    "label": "Notification",
+    "category": "Components",
+    "url": "notification.html"
+  },{
+    "label": "Modals",
+    "category": "Components",
+    "url": "modals.html"
+  },{
+    "label": "Portfolio",
+    "category": "Components",
+    "url": "portfolio.html"
+  },{
+    "label": "Pricing",
+    "category": "Components",
+    "url": "pricing.html"
+  },{
+    "label": "Sidebar examples",
+    "category": "Components",
+    "url": "sidebar-examples.html"
+  },{
+    "label": "Team",
+    "category": "Components",
+    "url": "team.html"
+  },{
+    "label": "Testimonials",
+    "category": "Testimonials",
+    "url": "testimonials.html"
+  },{
+    "label": "User profile",
+    "category": "Components",
+    "url": "user-profile.html"
+  },{
+    "label": "Headers",
+    "category": "Components",
+    "url": "headers.html"
+  },{
+    "category": "Header types",
+    "label": "Headers",
+    "url": "headers.html#header-types"
+  },{
+    "category": "Headers",
+    "label": "Headers - Demo headers",
+    "url": "headers.html#demo-headers"
+  },{
+    "category": "Headers",
+    "label": "Headers - Navbar alignments",
+    "url": "headers.html#header-navbar-alignments"
+  },{
+    "category": "Headers",
+    "label": "Headers - Events",
+    "url": "headers.html#header-events"
+  },{
+    "category": "Headers",
+    "label": "Headers - On scroll behaviors",
+    "url": "headers.html#header-onscroll-behaviors"
+  },{
+    "category": "Headers",
+    "label": "Headers - Navbar horizontal scroll",
+    "url": "headers.html#header-navbar-horizontal-scroll"
+  },{
+    "category": "Headers",
+    "label": "Headers - One-page navigation",
+    "url": "headers.html#header-one-page-navigation"
+  },{
+    "category": "Headers",
+    "label": "Headers - Search",
+    "url": "headers.html#search"
+  },{
+    "category": "Headers",
+    "label": "Headers - Account",
+    "url": "headers.html#account"
+  },{
+    "category": "Headers",
+    "label": "Headers - Shopping cart",
+    "url": "headers.html#shopping-cart"
+  }
+]

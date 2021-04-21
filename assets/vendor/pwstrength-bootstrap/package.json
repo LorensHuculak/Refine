@@ -1,0 +1,68 @@
+{
+  "_from": "pwstrength-bootstrap",
+  "_id": "pwstrength-bootstrap@3.0.5",
+  "_inBundle": false,
+  "_integrity": "sha512-HryYlh5v66QDGHCETQdnKIJWDzgjwfeLfqyh96H8g/CKIAYPvGF8LQYqz3b4xip1+OJ49Jjtg+b44nMmfjuH5A==",
+  "_location": "/pwstrength-bootstrap",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "pwstrength-bootstrap",
+    "name": "pwstrength-bootstrap",
+    "escapedName": "pwstrength-bootstrap",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/pwstrength-bootstrap/-/pwstrength-bootstrap-3.0.5.tgz",
+  "_shasum": "decabba0359e5f8e167c060faccdb933acdeeefb",
+  "_spec": "pwstrength-bootstrap",
+  "_where": "D:\\wamp\\www\\front-v1.0",
+  "author": {
+    "name": "Alejandro Blanco",
+    "email": "alejandro.b.e@gmail.com"
+  },
+  "bugs": {
+    "url": "https://github.com/ablanco/jquery.pwstrength.bootstrap/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "bootstrap": "^4.3.1",
+    "jquery": "^3.4.1"
+  },
+  "deprecated": false,
+  "description": "jQuery plugin for Twitter Bootstrap that provides rulesets for visualy displaying the quality of a users typed in password.",
+  "devDependencies": {
+    "grunt": "^1.0.4",
+    "grunt-contrib-concat": "~1.0.1",
+    "grunt-contrib-uglify": "^4.0.0",
+    "grunt-eslint": "^22.0.0",
+    "grunt-jasmine-node": "~0.3.1",
+    "grunt-shell": "~3.0.1",
+    "jsdom": "~9.11.0"
+  },
+  "homepage": "https://github.com/ablanco/jquery.pwstrength.bootstrap",
+  "keywords": [
+    "bootstrap",
+    "password",
+    "strength",
+    "meter",
+    "jquery-plugin",
+    "ecosystem:jquery"
+  ],
+  "license": "(GPL-3.0 OR MIT)",
+  "name": "pwstrength-bootstrap",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ablanco/jquery.pwstrength.bootstrap.git"
+  },
+  "scripts": {
+    "test": "grunt test"
+  },
+  "version": "3.0.5"
+}

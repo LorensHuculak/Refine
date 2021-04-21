@@ -1,0 +1,2122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Title -->
+    <title>Refine - Decentralized Block Lists</title>
+
+    <!-- Required Meta Tags Always Come First -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="favicon.png">
+
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600&display=swap" rel="stylesheet">
+
+    <!-- CSS Implementing Plugins -->
+    <link rel="stylesheet" href="assets/vendor/font-awesome/css/all.min.css">
+    <link rel="stylesheet" href="assets/vendor/hs-mega-menu/dist/hs-mega-menu.min.css">
+    <link rel="stylesheet" href="assets/vendor/select2/dist/css/select2.min.css">
+
+    <!-- CSS Front Template -->
+    <link rel="stylesheet" href="assets/css/theme.css">
+</head>
+
+<body>
+
+
+    <!-- Invoice Modal -->
+    <div class="modal fade" id="invoiceReceiptModal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <!-- Header -->
+                <div class="modal-top-cover  text-center" style="background-color:#1DA1F2;">
+                    <figure class="position-absolute right-0 bottom-0 left-0">
+                        <svg preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 1920 100.1">
+                            <path fill="#fff" d="M0,0c0,0,934.4,93.4,1920,0v100.1H0L0,0z" />
+                        </svg>
+                    </figure>
+
+                    <div class="modal-close">
+                        <button type="button" class="btn btn-icon btn-sm btn-ghost-light" data-dismiss="modal" aria-label="Close">
+                            <svg width="16" height="16" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg">
+                                <path fill="currentColor" d="M11.5,9.5l5-5c0.2-0.2,0.2-0.6-0.1-0.9l-1-1c-0.3-0.3-0.7-0.3-0.9-0.1l-5,5l-5-5C4.3,2.3,3.9,2.4,3.6,2.6l-1,1 C2.4,3.9,2.3,4.3,2.5,4.5l5,5l-5,5c-0.2,0.2-0.2,0.6,0.1,0.9l1,1c0.3,0.3,0.7,0.3,0.9,0.1l5-5l5,5c0.2,0.2,0.6,0.2,0.9-0.1l1-1 c0.3-0.3,0.3-0.7,0.1-0.9L11.5,9.5z" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <!-- End Header -->
+
+                <div class="modal-top-cover-avatar">
+                    <img class="avatar avatar-lg avatar-circle avatar-border-lg avatar-centered shadow-soft" src="assets/img/icons/twitter.svg" alt="Logo">
+                </div>
+
+                <!-- Body -->
+                <div class="modal-body pt-3 pb-sm-5 px-sm-5">
+                    <div class="text-center mb-5">
+                        <h3 class="mb-1">Authentication Required</h3>
+                        <span class="d-block">We need your authorization to update your Twitter feed.</span>
+                    </div>
+
+                    <!-- <div class="row mb-6">
+                        <div class="col-md-4 mb-3 mb-md-0">
+                            <small class="text-cap">Amount paid:</small>
+                            <span class="text-dark">$316.8</span>
+                        </div>
+
+                        <div class="col-md-4 mb-3 mb-md-0">
+                            <small class="text-cap">Date paid:</small>
+                            <span class="text-dark">April 22, 2020</span>
+                        </div>
+
+                        <div class="col-md-4">
+                            <small class="text-cap">Payment method:</small>
+                            <div class="d-flex align-items-center">
+                                <img class="avatar avatar-xss mr-2" src="assets/svg/brands/mastercard.svg" alt="Image Description">
+                                <span class="text-dark">•••• 4242</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <small class="text-cap mb-2">Summary</small>
+
+                    <ul class="list-group mb-4">
+                        <li class="list-group-item text-dark">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span>Payment to Front</span>
+                                <span>$264.00</span>
+                            </div>
+                        </li>
+                        <li class="list-group-item text-dark">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span>Tax fee</span>
+                                <span>$52.8</span>
+                            </div>
+                        </li>
+                        <li class="list-group-item list-group-item-light text-dark">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <strong>Amount paid</strong>
+                                <strong>$316.8</strong>
+                            </div>
+                        </li>
+                    </ul> -->
+
+
+                    <div class="mb-3">
+                        <button type="submit" class="btn btn-sm btn-primary btn-block"><i class="fas fa-unlock mr-2"></i>Authorize Refine</button>
+                    </div>
+
+                    <hr class="my-5">
+
+
+                    <p class="modal-footer-text">If you have any questions, please go to our <a href="mailto:example@gmail.com">Help Center</a> or or join <a class="text-nowrap" href="#">Discord.</a></p>
+                </div>
+                <!-- End Body -->
+            </div>
+        </div>
+    </div>
+    <!-- End Invoice Modal -->
+    <!-- ========== HEADER ========== -->
+    <header id="header" class="header">
+        <div class="js-mega-menu header-section">
+            <!-- Topbar -->
+            <div class="container">
+                <nav class="js-mega-menu navbar navbar-expand-lg z-index-999">
+                    <!-- Responsive Toggle Button -->
+                    <button type="button" class="navbar-toggler btn btn-xs btn-outline-secondary ml-auto" aria-label="Toggle navigation" aria-expanded="false" aria-controls="topBar" data-toggle="collapse" data-target="#topBar">
+                        Topbar
+                        <i class="fa fa-angle-down ml-2"></i>
+                    </button>
+                    <!-- End Responsive Toggle Button -->
+
+                    <div id="topBar" class="collapse navbar-collapse">
+                        <ul class="navbar-nav w-100">
+                            <li class="navbar-nav-item mr-auto">
+                                <a class="nav-link font-size-1 py-2 pl-0" href="../landings/index.html">
+
+
+                                </a>
+                            </li>
+
+
+                            <!-- Docs -->
+                            <li class="hs-has-mega-menu navbar-nav-item" data-hs-mega-menu-item-options='{
+                    "desktop": {
+                      "position": "right",
+                      "maxWidth": "260px"
+                    }
+                  }'>
+                                <a id="docsMegaMenu" class="hs-mega-menu-invoker nav-link nav-link-toggle font-size-1 py-2 pr-0" href="javascript:;" aria-haspopup="true" aria-expanded="false">Resources</a>
+
+                                <!-- Docs - Submenu -->
+                                <div class="hs-mega-menu dropdown-menu" aria-labelledby="docsMegaMenu" style="min-width: 330px;">
+                                    <!-- Promo Item -->
+                                    <div class="navbar-promo-item">
+                                        <a class="navbar-promo-link" href="documentation/index.html">
+                                            <div class="media align-items-center">
+                                                <img class="navbar-promo-icon" src="assets/svg/icons/icon-1.svg" alt="SVG">
+
+                                                <div class="media-body">
+                                                    <span class="navbar-promo-title">
+                            FAQ
+                          <!--  <span class="badge badge-primary badge-pill ml-1">v3.2</span> -->
+                                                    </span>
+                                                    <small class="navbar-promo-text">Help Center</small>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <!-- End Promo Item -->
+
+                                    <!-- Promo Item -->
+                                    <div class="navbar-promo-item">
+                                        <a class="navbar-promo-link" href="snippets/index.html">
+                                            <div class="media align-items-center">
+                                                <img class="navbar-promo-icon" src="assets/svg/icons/icon-2.svg" alt="SVG">
+                                                <div class="media-body">
+                                                    <span class="navbar-promo-title">Blog</span>
+                                                    <small class="navbar-promo-text">Read about Refine</small>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <!-- End Promo Item -->
+
+                                    <!-- Promo Item -->
+                                    <div class="navbar-promo-item">
+                                        <a class="navbar-promo-link" href="snippets/index.html">
+                                            <div class="media align-items-center">
+
+                                                <img class="navbar-promo-icon" src="../assets/svg/icons/icon-29.svg" alt="SVG">
+
+                                                <div class="media-body">
+                                                    <span class="navbar-promo-title">Integrations</span>
+                                                    <small class="navbar-promo-text">Our Partners</small>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <!-- End Promo Item -->
+
+                                    <div class="navbar-promo-footer">
+                                        <!-- List -->
+                                        <div class="row no-gutters">
+                                            <div class="col-6">
+                                                <div class="navbar-promo-footer-item">
+                                                    <span class="navbar-promo-footer-text">Check what's new</span>
+                                                    <a class="navbar-promo-footer-text" href="#">
+                            Changelog
+                          </a>
+                                                </div>
+                                            </div>
+                                            <div class="col-6 navbar-promo-footer-ver-divider">
+                                                <div class="navbar-promo-footer-item">
+                                                    <span class="navbar-promo-footer-text">Have a question?</span>
+                                                    <a class="navbar-promo-footer-text" href="#">
+                            Join our Discord
+                          </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- End List -->
+                                    </div>
+                                </div>
+                                <!-- End Docs - Submenu -->
+                            </li>
+                            <!-- End Docs -->
+
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+            <!-- End Topbar -->
+
+
+            <div id="logoAndNav" class="container mt-lg-n2">
+                <!-- Nav -->
+                <nav class="js-mega-menu navbar navbar-expand-lg">
+                    <div class="navbar-nav-wrap">
+                        <!-- Logo -->
+                        <a class="navbar-brand navbar-nav-wrap-brand" href="index.html" aria-label="Front">
+                            <img src="assets/svg/logos/logo.svg" alt="Logo">
+                        </a>
+                        <!-- End Logo -->
+
+                        <!-- Secondary Content -->
+                        <div class="navbar-nav-wrap-content">
+                            <!-- Search Classic 
+                            <div class="hs-unfold d-lg-none d-inline-block position-static">
+                                <a class="js-hs-unfold-invoker btn btn-xs btn-icon rounded-circle" href="javascript:;" data-hs-unfold-options='{
+                    "target": "#searchClassic",
+                    "type": "css-animation",
+                    "animationIn": "slideInUp"
+                   }'>
+                                    <i class="fas fa-search"></i>
+                                </a>
+
+                                <div id="searchClassic" class="hs-unfold-content dropdown-menu w-100 border-0 rounded-0 px-3 mt-0">
+                                    <form class="input-group input-group-sm input-group-merge">
+                                        <input type="text" class="form-control" placeholder="What do you want to learn?" aria-label="What do you want to learn?">
+                                        <div class="input-group-append">
+                                            <div class="input-group-text">
+                                                <i class="fas fa-search"></i>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                            <!-- End Search Classic -->
+
+                            <!-- Account -->
+                            <div class="ml-3 hs-unfold">
+                                <a class="js-hs-unfold-invoker rounded-circle" href="javascript:;" data-hs-unfold-options='{
+                    "target": "#accountDropdown",
+                    "type": "css-animation",
+                    "event": "hover",
+                    "duration": 50,
+                    "delay": 0,
+                    "hideOnScroll": "true"
+                   }'>
+                                    <span class="avatar avatar-xs avatar-circle">
+                    <img class="avatar-img" src="assets/img/icons/account.png" alt="Image Description">
+                  </span>
+                                </a>
+
+                                <div id="accountDropdown" class="hs-unfold-content dropdown-menu dropdown-menu-sm-right dropdown-menu-no-border-on-mobile p-0" style="min-width: 245px;">
+                                    <div class="card">
+                                        <!-- Header -->
+                                        <div class="card-header p-4">
+                                            <a class="media align-items-center" href="#">
+                                                <div class="avatar mr-3">
+                                                    <img class="avatar-img" src="assets/img/icons/account.png" alt="Image Description">
+                                                </div>
+                                                <div class="media-body">
+                                                    <span class="d-block font-weight-bold">0x9456...49E1 <!--<span class="badge badge-success ml-1">Pro</span> --></span>
+                                                    <span class="d-block small text-muted"><i class="mr-1 far fa-clone"></i>Copy Address</span>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <!-- End Header -->
+
+                                        <!-- Body -->
+                                        <div class="card-body py-3">
+
+
+
+                                            <a class="dropdown-item px-0" href="#">
+                                                <span class="dropdown-item-icon">
+                          <i class="fas fa-user"></i>
+                        </span> Account
+                                            </a>
+                                            <a class="dropdown-item px-0" href="#">
+                                                <span class="dropdown-item-icon">
+                          <i class="fas fa-bars"></i>
+                        </span> My Lists
+                                            </a>
+                                            <a class="dropdown-item px-0" href="#">
+                                                <span class="dropdown-item-icon">
+                          <i class="fas fa-shield-alt"></i>
+                        </span> Subscriptions
+                                            </a>
+                                            <a class="dropdown-item px-0" href="#">
+                                                <span class="dropdown-item-icon">
+                          <i class="fas fa-bell"></i>
+                        </span> Notifications
+                                            </a>
+
+                                            <div class="dropdown-divider"></div>
+
+                                            <a class="dropdown-item px-0" href="#">
+                                                <span class="dropdown-item-icon">
+                          <i class="fas fa-question-circle"></i>
+                        </span> Help
+                                            </a>
+                                            <a class="dropdown-item px-0" href="#">
+                                                <span class="dropdown-item-icon">
+                          <i class="fas fa-power-off"></i>
+                        </span> Sign out
+                                            </a>
+                                        </div>
+                                        <!-- End Body -->
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End Account -->
+                            <!-- Shopping Cart -->
+                            <li class="list-inline-item">
+                                <div class="hs-unfold">
+                                    <a class="js-hs-unfold-invoker btn btn-xs btn-icon btn-ghost-secondary" href="javascript:;" data-hs-unfold-options='{
+                    "target": "#shoppingCartDropdown",
+                    "type": "css-animation",
+                    "event": "hover",
+                    "hideOnScroll": "true"
+                   }'>
+                                        <i class="fas fa-bell"></i>
+                                    </a>
+
+                                    <div id="shoppingCartDropdown" class="hs-unfold-content dropdown-menu dropdown-menu-right text-center p-7" style="min-width: 250px;">
+                                        <figure class="max-w-9rem mx-auto mb-3">
+                                            <img class="img-fluid" src="assets/svg/illustrations/empty-cart.svg" alt="SVG">
+                                        </figure>
+                                        <span class="d-block">No Notifications</span>
+                                    </div>
+                                </div>
+                            </li>
+                            <!-- End Shopping Cart -->
+                        </div>
+
+                        <!-- End Secondary Content -->
+
+                        <!-- Responsive Toggle Button -->
+                        <button type="button" class="navbar-toggler navbar-nav-wrap-navbar-toggler btn btn-icon btn-sm rounded-circle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="navBar" data-toggle="collapse" data-target="#navBar">
+                            <span class="navbar-toggler-default">
+                <svg width="14" height="14" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg">
+                  <path fill="currentColor" d="M17.4,6.2H0.6C0.3,6.2,0,5.9,0,5.5V4.1c0-0.4,0.3-0.7,0.6-0.7h16.9c0.3,0,0.6,0.3,0.6,0.7v1.4C18,5.9,17.7,6.2,17.4,6.2z M17.4,14.1H0.6c-0.3,0-0.6-0.3-0.6-0.7V12c0-0.4,0.3-0.7,0.6-0.7h16.9c0.3,0,0.6,0.3,0.6,0.7v1.4C18,13.7,17.7,14.1,17.4,14.1z"/>
+                </svg>
+              </span>
+                            <span class="navbar-toggler-toggled">
+                <svg width="14" height="14" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg">
+                  <path fill="currentColor" d="M11.5,9.5l5-5c0.2-0.2,0.2-0.6-0.1-0.9l-1-1c-0.3-0.3-0.7-0.3-0.9-0.1l-5,5l-5-5C4.3,2.3,3.9,2.4,3.6,2.6l-1,1 C2.4,3.9,2.3,4.3,2.5,4.5l5,5l-5,5c-0.2,0.2-0.2,0.6,0.1,0.9l1,1c0.3,0.3,0.7,0.3,0.9,0.1l5-5l5,5c0.2,0.2,0.6,0.2,0.9-0.1l1-1 c0.3-0.3,0.3-0.7,0.1-0.9L11.5,9.5z"/>
+                </svg>
+              </span>
+                        </button>
+                        <!-- End Responsive Toggle Button -->
+
+                        <!-- Navigation -->
+                        <div id="navBar" class="navbar-nav-wrap-navbar collapse navbar-collapse">
+                            <ul class="navbar-nav">
+                                <!-- Pages -->
+
+                                <li class="navbar-nav-item">
+                                    <div class="hs-unfold">
+                                        <a class="nav-link js-hs-unfold-invoker " href="javascript:;" data-hs-unfold-options='{
+                    "target": "#footerLanguageExample2",
+                    "type": "css-animation",
+                    "animationIn": "slideInDown"
+                   }'> <i class="fas fa-atlas mr-1"></i> English</a>
+                                        <!-- Language Modal -->
+                                        <div id="footerLanguageExample2" class="hs-unfold-content dropdown-menu mb-2">
+                                            <a class="dropdown-item active" href="#">English</a>
+                                            <a class="dropdown-item" href="#">Deutsch</a>
+                                            <a class="dropdown-item" href="#">Español</a>
+                                            <a class="dropdown-item" href="#">Français</a>
+                                            <a class="dropdown-item" href="#">Italiano</a>
+                                            <a class="dropdown-item" href="#">日本語</a>
+                                            <a class="dropdown-item" href="#">한국어</a>
+                                            <a class="dropdown-item" href="#">Nederlands</a>
+                                            <a class="dropdown-item" href="#">Português</a>
+                                            <a class="dropdown-item" href="#">Русский</a>
+                                        </div>
+
+                                        <!-- End Language Modal -->
+                                    </div>
+
+                                </li>
+
+                                <li class="navbar-nav-item">
+                                    <a class="nav-link" href="index.html">Explore Lists</a>
+                                </li>
+
+                                <!-- My Courses -->
+                                <li class="hs-has-mega-menu navbar-nav-item d-none d-lg-inline-block" data-hs-mega-menu-item-options='{
+                      "desktop": {
+                        "position": "right",
+                        "maxWidth": "350px"
+                      }
+                    }'>
+                                    <a id="myCoursesMegaMenu" class="hs-mega-menu-invoker nav-link nav-link-toggle" href="javascript:;" aria-haspopup="true" aria-expanded="false">My Drafts</a>
+
+                                    <!-- My Courses - Submenu -->
+                                    <div class="hs-mega-menu dropdown-menu" aria-labelledby="myCoursesMegaMenu">
+                                        <div class="card">
+                                            <div class="card-header py-3">
+                                                <span class="text-dark font-weight-bold">My Drafts</span>
+                                            </div>
+
+                                            <div class="card-body">
+                                                <!-- Course -->
+                                                <a class="media" href="#">
+                                                    <div class="mt-1 mr-3">
+                                                        <div class="avatar">
+                                                            <img class="avatar-img rounded-sm" src="assets/svg/components/graphics-8.svg" alt="Image Description">
+                                                        </div>
+                                                    </div>
+                                                    <div class="media-body">
+                                                        <div class="mb-2">
+                                                            <span class="d-block text-dark text-hover-primary font-size-1 font-weight-bold mb-1">Cryptocurrency Scams</span>
+                                                            <small class="d-block text-body">Scams and Phishing</small>
+                                                        </div>
+                                                        <div class="d-flex justify-content-between mb-1">
+                                                            <span class="d-block text-body small text-cap">Completed</span>
+                                                            <small class="text-dark font-weight-bold">25%</small>
+                                                        </div>
+                                                        <div class="progress" style="height: 6px;">
+                                                            <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                                <!-- End Course -->
+
+                                                <!-- Course -->
+                                                <a class="media mt-5" href="#">
+                                                    <div class="mt-1 mr-3">
+                                                        <div class="avatar">
+                                                            <img class="avatar-img rounded-sm" src="assets/svg/components/graphics-7.svg" alt="Image Description">
+                                                        </div>
+                                                    </div>
+                                                    <div class="media-body">
+                                                        <div class="mb-2">
+                                                            <span class="d-block text-dark text-hover-primary font-size-1 font-weight-bold mb-1">Fake News: Serbia and Western Balkans </span>
+                                                            <small class="d-block text-body">Disinformation and Fake News</small>
+                                                        </div>
+                                                        <div class="d-flex justify-content-between mb-1">
+                                                            <span class="d-block text-body small text-cap">Completed</span>
+                                                            <small class="text-dark font-weight-bold">100%</small>
+                                                        </div>
+                                                        <div class="progress" style="height: 6px;">
+                                                            <div class="progress-bar bg-success" role="progressbar" style="width: 100%;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                                <!-- End Course -->
+                                            </div>
+
+                                            <div class="card-footer text-center py-3">
+                                                <a class="font-size-1" href="#">
+                          See all
+                          <i class="fa fa-angle-right ml-1"></i>
+                        </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- End My Drafts - Submenu -->
+                                </li>
+                                <!-- End My Drafts -->
+
+
+                                <!-- End Pages -->
+
+                                <!-- Button -->
+                                <li class="navbar-nav-last-item">
+                                    <a class="btn btn-sm btn-primary transition-3d-hover" href="#" type="button" data-toggle="modal" data-target="#loginModal"> <i class="fas fa-plus mr-1"></i> Submit List
+                                    </a>
+                                </li>
+                                <!-- End Button -->
+                            </ul>
+
+
+                        </div>
+                        <!-- End Navigation -->
+                    </div>
+                </nav>
+                <!-- End Nav -->
+
+
+            </div>
+        </div>
+    </header>
+    <!-- ========== END HEADER ========== -->
+
+    <!-- ========== MAIN CONTENT ========== -->
+    <main id="content" role="main">
+        <!-- Search Section -->
+        <div class="bg-light">
+            <div class="container py-3">
+                <div class="row justify-content-md-between align-items-md-center">
+                    <div class="col-md-5 mb-3 mb-md-0">
+                        <!-- Breadcrumb -->
+                        <nav class="d-inline-block rounded" aria-label="breadcrumb">
+                            <ol class="breadcrumb breadcrumb-no-gutter font-size-1 mb-0">
+                                <li class="breadcrumb-item"><a href="index.html">Lists</a></li>
+                                <li class="breadcrumb-item active"><a href="index.html">Scams and Phishing</a></li>
+                                <li class="breadcrumb-item active" aria-current="page">Crypto Scams</li>
+                            </ol>
+                        </nav>
+                        <!-- End Breadcrumb -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Search Section -->
+
+        <!-- App Description Section -->
+        <div class="container space-top-2 space-bottom-lg-2">
+            <!-- Content -->
+            <div class="row">
+                <div class="col-md-4 col-lg-3 mb-9 mb-md-0">
+                    <!-- List Info -->
+                    <div class="mr-lg-2">
+                        <div class="mb-3">
+                            <div class="text-center mx-auto mb-3">
+                                <img class="img-fluid" src="assets/img/160x160/btc.png" alt="Image Description" width="130">
+                            </div>
+
+                            <a class="btn btn-sm btn-block btn-primary transition-3d-hover" href="javascript:;" data-toggle="modal" data-target="#invoiceReceiptModal"> <i class="fas fa-shield-alt mr-2"></i> Subscribe</a>
+                        </div>
+
+                        <!-- Rating -->
+                        <p class="small text-center"></p>
+                        <div class="d-flex align-items-center flex-wrap mb-6">
+                            <ul class="list-inline mt-n1 mb-0 mr-2">
+                                <li class="list-inline-item mx-0"><img src="assets/svg/illustrations/star.svg" alt="Review rating" width="16"></li>
+                                <li class="list-inline-item mx-0"><img src="assets/svg/illustrations/star.svg" alt="Review rating" width="16"></li>
+                                <li class="list-inline-item mx-0"><img src="assets/svg/illustrations/star.svg" alt="Review rating" width="16"></li>
+                                <li class="list-inline-item mx-0"><img src="assets/svg/illustrations/star.svg" alt="Review rating" width="16"></li>
+                                <li class="list-inline-item mx-0"><img src="assets/svg/illustrations/star-half.svg" alt="Review rating" width="16"></li>
+                            </ul>
+
+                            <span class="d-inline-block">
+                    <span class="text-dark font-weight-bold mr-1 font-size-1">4.87</span>
+                            <span class="text-muted font-size-1">(1.5k+ reviews)</span>
+                            </span>
+                        </div>
+                        <!-- End Rating -->
+
+                        <div class="mb-md-7">
+                            <h1 class="h4">Categories</h1>
+
+                            <span class="d-inline-block mr-1 mb-2"><a class="btn btn-xs btn-soft-secondary" href="#">Featured</a></span>
+                            <span class="d-inline-block mr-1 mb-2"><a class="btn btn-xs btn-soft-secondary" href="#">Cryptocurrency</a></span>
+                            <span class="d-inline-block mr-1 mb-2"><a class="btn btn-xs btn-soft-secondary" href="#">Bitcoin</a></span>
+                            <span class="d-inline-block mr-1 mb-2"><a class="btn btn-xs btn-soft-secondary" href="#">Ethereum</a></span>
+                            <span class="d-inline-block mr-1 mb-2"><a class="btn btn-xs btn-soft-secondary" href="#">Elon Musk</a></span>
+
+                        </div>
+
+                        <div class="d-none d-md-block mb-7">
+                            <h2 class="h4">Contributor</h2>
+
+                            <a class="d-inline-block text-body" href="#">
+                                <div class="media align-items-center">
+                                    <div class="avatar avatar-xs mr-3">
+                                        <img class="avatar-img" src="assets/img/icons/account.png" alt="Image Description">
+                                    </div>
+                                    <div class="media-body">
+                                        Lorens Huculak
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <!-- <div class="d-none d-md-block mb-7">
+                            <h3 class="h4">Developer links</h3>
+
+                            <ul class="list-unstyled font-size-1">
+                                <li><a class="text-body" href="#"><i class="fas fa-angle-right mr-1"></i> Support</a></li>
+                                <li><a class="text-body" href="#"><i class="fas fa-angle-right mr-1"></i> Documentation</a></li>
+                                <li><a class="text-body" href="#"><i class="fas fa-angle-right mr-1"></i> Privacy Policy</a></li>
+                            </ul>
+                        </div> -->
+
+                        <div class="d-none d-md-block">
+                            <a class="small text-body" href="#"><i class="far fa-flag mr-1"></i> Challenge this list</a>
+                        </div>
+                    </div>
+                    <!-- End List Info -->
+                </div>
+
+                <div class="col-md-8 col-lg-9 column-divider-md">
+                    <div class="ml-lg-2">
+                        <div class="mb-5">
+                            <h2>Crypto Scams <img class="ml-1" src="assets/svg/illustrations/top-vendor.svg" alt="Image Description" title="Top Vendor" width="20"></h2>
+                        </div>
+
+                        <!-- Nav Classic -->
+                        <ul class="nav nav-classic nav-rounded nav-justified border" id="pills-tab" role="tablist">
+                            <li class="nav-item">
+                                <a class="nav-link font-weight-bold active" id="pills-one-example1-tab" data-toggle="pill" href="#pills-one-example1" role="tab" aria-controls="pills-one-example1" aria-selected="true">
+                                    <div class="d-md-flex justify-content-md-center align-items-md-center">
+                                        <figure class="d-none d-md-block w-100 max-w-5rem mr-3">
+                                            <img class="img-fluid" src="assets/svg/icons/icon-24.svg" alt="SVG">
+                                        </figure>
+                                        List info
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link font-weight-bold" id="pills-two-example1-tab" data-toggle="pill" href="#pills-two-example1" role="tab" aria-controls="pills-two-example1" aria-selected="false">
+                                    <div class="d-md-flex justify-content-md-center align-items-md-center">
+                                        <figure class="d-none d-md-block w-100 max-w-5rem mr-3">
+                                            <img class="img-fluid" src="assets/svg/icons/icon-7.svg" alt="SVG">
+                                        </figure>
+                                        Reviews
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link font-weight-bold" id="pills-three-example1-tab" data-toggle="pill" href="#pills-three-example1" role="tab" aria-controls="pills-three-example1" aria-selected="false">
+                                    <div class="d-md-flex justify-content-md-center align-items-md-center">
+                                        <figure class="d-none d-md-block w-100 max-w-5rem mr-3">
+
+                                            <img class="img-fluid" src="assets/svg/icons/icon-1.svg" alt="SVG">
+
+                                        </figure>
+                                        Details
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                        <!-- End Nav Classic -->
+
+                        <!-- Tab Content -->
+                        <div class="tab-content" id="pills-tabContent">
+                            <div class="tab-pane fade pt-6 show active" id="pills-one-example1" role="tabpanel" aria-labelledby="pills-one-example1-tab">
+                                <p>Use Crypto Scams on Twitter to:</p>
+
+                                <ul class="text-body pl-4 mb-3">
+                                    <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
+                                    <li>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
+                                    <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
+                                    <li>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
+
+                                </ul>
+
+                                <!-- Read More - Collapse -->
+                                <div class="collapse" id="collapseDescriptionSection">
+                                    <p>With over 100 lectures and more than 20 hours of video this comprehensive course leaves no stone unturned! This course includes quizzes, tests, and homework assignments as well as 3 major projects to create a Python project portfolio!</p>
+
+                                    <p>This course will teach you Python in a practical manner, with every lecture comes a full coding screencast and a corresponding code notebook! Learn in whatever manner is best for you!</p>
+
+                                    <p>We will start by helping you get Python installed on your computer, regardless of your operating system, whether its Linux, MacOS, or Windows, we've got you covered!</p>
+
+                                    <p>We cover a wide variety of topics, including:</p>
+
+                                    <ul class="text-body pl-6">
+                                        <li>Command Line Basics</li>
+                                        <li>Installing Python</li>
+                                        <li>Running Python Code</li>
+                                        <li>Strings</li>
+                                        <li>Lists&nbsp;</li>
+                                        <li>Dictionaries</li>
+                                        <li>Tuples</li>
+                                        <li>Sets</li>
+                                        <li>Number Data Types</li>
+                                        <li>Print Formatting</li>
+                                        <li>Functions</li>
+                                        <li>Scope</li>
+                                        <li>args/kwargs</li>
+                                        <li>Built-in Functions</li>
+                                        <li>Debugging and Error Handling</li>
+                                        <li>Modules</li>
+                                        <li>External Modules</li>
+                                        <li>Object Oriented Programming</li>
+                                        <li>Inheritance</li>
+                                        <li>Polymorphism</li>
+                                        <li>File I/O</li>
+                                        <li>Advanced Methods</li>
+                                        <li>Unit Tests</li>
+                                        <li>and much more!</li>
+                                    </ul>
+
+                                    <p>This course comes with a 30 day money back guarantee! If you are not satisfied in any way, you'll get your money back. Plus you will keep access to the Notebooks as a thank you for trying out the course!</p>
+                                </div>
+                                <!-- End Read More - Collapse -->
+
+
+
+
+
+                                <!-- Link -->
+                                <a class="link link-collapse small font-size-1 font-weight-bold pt-1" data-toggle="collapse" href="#collapseDescriptionSection" role="button" aria-expanded="false" aria-controls="collapseDescriptionSection">
+                                    <span class="link-collapse-default">Read more</span>
+                                    <span class="link-collapse-active">Read less</span>
+                                    <span class="link-icon ml-1">+</span>
+                                </a>
+                                <!-- End Link -->
+
+
+                                <!-- Collapse -->
+                                <div class="border-top pt-7 mt-7">
+                                    <div class="row mb-4">
+                                        <div class="col-8">
+                                            <h3 class="mb-0">List Items</h3>
+                                        </div>
+                                        <div class="col-4 text-right">
+                                            <div class="row">
+                                                <div class="col-lg-6">
+                                                    <span class="font-size-1">Contributor</span>
+                                                </div>
+                                                <div class="col-lg-6">
+                                                    <span class="font-size-1">Status</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Card -->
+                                    <div class="card border mb-1">
+                                        <div class="card-header card-collapse" id="coursesHeadingTwo">
+                                            <a class="btn btn-link btn-sm btn-block card-btn collapsed p-3" href="javascript:;" role="button" data-toggle="collapse" data-target="#coursesCollapseTwo" aria-expanded="false" aria-controls="coursesCollapseTwo">
+                                                <!-- Header -->
+                                                <span class="row">
+                    <span class="col-8">
+                      <span class="media">
+                        <span class="card-btn-toggle mr-3 ml-0">
+                          <span class="card-btn-toggle-default">&plus;</span>
+                                                <span class="card-btn-toggle-active">&minus;</span>
+                                                </span>
+                                                <span class="media-body">
+                          <span class="text-body font-weight-bold mr-5">ETH Giveaway</span>
+                                                </span>
+                                                </span>
+                                                </span>
+                                                <span class="col-4 text-right">
+                      <span class="row">
+                        <span class="col-lg-6">
+                          <span class="text-muted">@lhuculak</span>
+                                                </span>
+                                                <span class="col-lg-6">
+                          <span class="text-muted">    <i class="fas fa-check-circle text-success mt-1 mr-2"></i></span>
+                                                </span>
+                                                </span>
+                                                </span>
+                                                </span>
+                                                <!-- End Header -->
+                                            </a>
+                                        </div>
+                                        <div id="coursesCollapseTwo" class="collapse" aria-labelledby="coursesHeadingTwo">
+                                            <div class="card-body p-0">
+                                                <!-- Course Program -->
+                                                <div class="border-bottom py-3 pr-3 pl-6">
+                                                    <div class="row">
+                                                        <div class="col-8">
+                                                            <a class="media font-size-1 mr-5" href="#">
+                                                                <i class="fa fa-play-circle min-w-3rem text-center opacity-lg mt-1 mr-2 ml-1"></i>
+                                                                <span class="media-body">
+                            <span>Course line courses</span>
+                                                                </span>
+                                                            </a>
+                                                        </div>
+                                                        <div class="col-4 text-right">
+                                                            <div class="row">
+                                                                <div class="col-lg-6">
+                                                                    <a class="font-size-1" href="#">Preview</a>
+                                                                </div>
+                                                                <div class="col-lg-6">
+                                                                    <span class="text-primary font-size-1">08:15</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- End Course Program -->
+
+                                                <!-- Course Program -->
+                                                <div class="border-bottom py-3 pr-3 pl-6">
+                                                    <div class="row">
+                                                        <div class="col-8">
+                                                            <a class="media font-size-1 mr-5" href="#">
+                                                                <i class="fa fa-play-circle min-w-3rem text-center opacity-lg mt-1 mr-2 ml-1"></i>
+                                                                <span class="media-body">
+                            <span>Installing Python (Step by step)</span>
+                                                                </span>
+                                                            </a>
+                                                        </div>
+                                                        <div class="col-4 text-right">
+                                                            <div class="row">
+                                                                <div class="col-lg-6">
+                                                                    <a class="font-size-1" href="#">Preview</a>
+                                                                </div>
+                                                                <div class="col-lg-6">
+                                                                    <span class="text-primary font-size-1">08:18</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- End Course Program -->
+
+                                                <!-- Course Program -->
+                                                <div class="border-bottom py-3 pr-3 pl-6">
+                                                    <div class="row">
+                                                        <div class="col-8">
+                                                            <a class="media font-size-1 mr-5" href="#">
+                                                                <i class="fa fa-play-circle min-w-3rem text-center opacity-lg mt-1 mr-2 ml-1"></i>
+                                                                <span class="media-body">
+                            <span>Running Python code</span>
+                                                                </span>
+                                                            </a>
+                                                        </div>
+                                                        <div class="col-4 text-right">
+                                                            <div class="row">
+                                                                <div class="col-lg-6">
+                                                                    <a class="font-size-1" href="#">Preview</a>
+                                                                </div>
+                                                                <div class="col-lg-6">
+                                                                    <span class="text-primary font-size-1">17:50</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- End Course Program -->
+
+                                                <!-- Course Program -->
+                                                <div class="border-bottom py-3 pr-3 pl-6">
+                                                    <div class="row">
+                                                        <div class="col-8">
+                                                            <span class="media text-body font-size-1 mr-5">
+                          <i class="fa fa-play-circle min-w-3rem text-center opacity-lg mt-1 mr-2 ml-1"></i>
+                          <span class="media-body">
+                            <span>Getting the notebooks and the course material</span>
+                                                            </span>
+                                                            </span>
+                                                        </div>
+                                                        <div class="col-4 text-right">
+                                                            <div class="row">
+                                                                <div class="col-lg-6">
+                                                                </div>
+                                                                <div class="col-lg-6">
+                                                                    <span class="font-size-1">02:22</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- End Course Program -->
+
+                                                <!-- Course Program -->
+                                                <div class="border-bottom py-3 pr-3 pl-6">
+                                                    <div class="row">
+                                                        <div class="col-8">
+                                                            <span class="media text-body font-size-1 mr-5">
+                          <i class="fa fa-play-circle min-w-3rem text-center opacity-lg mt-1 mr-2 ml-1"></i>
+                          <span class="media-body">
+                            <span>Git and Github overview (Optional)</span>
+                                                            </span>
+                                                            </span>
+                                                        </div>
+                                                        <div class="col-4 text-right">
+                                                            <div class="row">
+                                                                <div class="col-lg-6">
+                                                                </div>
+                                                                <div class="col-lg-6">
+                                                                    <span class="font-size-1">02:49</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- End Course Program -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- End Card -->
+
+                                    <!-- Card -->
+                                    <div class="card border mb-1">
+                                        <div class="card-header card-collapse" id="coursesHeadingThree">
+                                            <a class="btn btn-link btn-sm btn-block card-btn collapsed p-3" href="javascript:;" role="button" data-toggle="collapse" data-target="#coursesCollapseThree" aria-expanded="false" aria-controls="coursesCollapseThree">
+                                                <!-- Header -->
+                                                <span class="row">
+                    <span class="col-8">
+                      <span class="media">
+                        <span class="card-btn-toggle mr-3 ml-0">
+                          <span class="card-btn-toggle-default">&plus;</span>
+                                                <span class="card-btn-toggle-active">&minus;</span>
+                                                </span>
+                                                <span class="media-body">
+                          <span class="text-body font-weight-bold mr-5">Lorem Ipsum</span>
+                                                </span>
+                                                </span>
+                                                </span>
+                                                <span class="col-4 text-right">
+                      <span class="row">
+                        <span class="col-lg-6">
+                          <span class="text-muted">@lhuculak</span>
+                                                </span>
+                                                <span class="col-lg-6">
+                          <span class="text-muted">    <i class="fas fa-check-circle text-success mt-1 mr-2"></i></span>
+                                                </span>
+                                                </span>
+                                                </span>
+                                                </span>
+                                                <!-- End Header -->
+                                            </a>
+                                        </div>
+                                        <div id="coursesCollapseThree" class="collapse" aria-labelledby="coursesHeadingThree">
+                                            <div class="card-body p-0">
+                                                <!-- Course Program -->
+                                                <div class="border-bottom py-3 pr-3 pl-6">
+                                                    <div class="row">
+                                                        <div class="col-8">
+                                                            <span class="media text-body font-size-1 mr-5">
+                          <i class="fa fa-play-circle min-w-3rem text-center opacity-lg mt-1 mr-2 ml-1"></i>
+                          <span class="media-body">
+                            <span>Lorem Ipsum</span>
+                                                            </span>
+                                                            </span>
+                                                        </div>
+                                                        <div class="col-4 text-right">
+                                                            <div class="row">
+                                                                <div class="col-lg-6">
+                                                                </div>
+                                                                <div class="col-lg-6">
+                                                                    <span class="font-size-1">04:02</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- End Course Program -->
+
+                                                <!-- Course Program -->
+                                                <div class="border-bottom py-3 pr-3 pl-6">
+                                                    <div class="row">
+                                                        <div class="col-8">
+                                                            <a class="media font-size-1 mr-5" href="#">
+                                                                <i class="fa fa-play-circle min-w-3rem text-center opacity-lg mt-1 mr-2 ml-1"></i>
+                                                                <span class="media-body">
+                            <span>Python numbers</span>
+                                                                </span>
+                                                            </a>
+                                                        </div>
+                                                        <div class="col-4 text-right">
+                                                            <div class="row">
+                                                                <div class="col-lg-6">
+                                                                    <a class="font-size-1" href="#">Preview</a>
+                                                                </div>
+                                                                <div class="col-lg-6">
+                                                                    <span class="text-primary font-size-1">04:11</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- End Course Program -->
+
+                                                <!-- Course Program -->
+                                                <div class="border-bottom py-3 pr-3 pl-6">
+                                                    <div class="row">
+                                                        <div class="col-8">
+                                                            <span class="media text-body font-size-1 mr-5">
+                          <i class="fa fa-code min-w-3rem text-center opacity-lg mt-1 mr-2 ml-1"></i>
+                          <span class="media-body">
+                            <span>Numbers: Simple Arithmetic</span>
+                                                            </span>
+                                                            </span>
+                                                        </div>
+                                                        <div class="col-4 text-right">
+                                                            <div class="row">
+                                                                <div class="col-lg-6">
+                                                                </div>
+                                                                <div class="col-lg-6">
+                                                                    <span class="font-size-1">1 question</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- End Course Program -->
+
+                                                <!-- Course Program -->
+                                                <div class="border-bottom py-3 pr-3 pl-6">
+                                                    <div class="row">
+                                                        <div class="col-8">
+                                                            <span class="media text-body font-size-1 mr-5">
+                          <i class="fa fa-file min-w-3rem text-center opacity-lg mt-1 mr-2 ml-1"></i>
+                          <span class="media-body">
+                            <span>Numbers - FAQ</span>
+                                                            </span>
+                                                            </span>
+                                                        </div>
+                                                        <div class="col-4 text-right">
+                                                            <div class="row">
+                                                                <div class="col-lg-6">
+                                                                </div>
+                                                                <div class="col-lg-6">
+                                                                    <span class="font-size-1">02:49</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- End Course Program -->
+
+                                                <!-- Course Program -->
+                                                <div class="border-bottom py-3 pr-3 pl-6">
+                                                    <div class="row">
+                                                        <div class="col-8">
+                                                            <span class="media text-body font-size-1 mr-5">
+                          <i class="fa fa-bolt min-w-3rem text-center opacity-lg mt-1 mr-2 ml-1"></i>
+                          <span class="media-body">
+                            <span>Numbers Quiz</span>
+                                                            </span>
+                                                            </span>
+                                                        </div>
+                                                        <div class="col-4 text-right">
+                                                            <div class="row">
+                                                                <div class="col-lg-6">
+                                                                </div>
+                                                                <div class="col-lg-6">
+                                                                    <span class="font-size-1">3 questions</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- End Course Program -->
+
+                                                <!-- Course Program -->
+                                                <div class="border-bottom py-3 pr-3 pl-6">
+                                                    <div class="row">
+                                                        <div class="col-8">
+                                                            <span class="media text-body font-size-1 mr-5">
+                          <i class="fa fa-play-circle min-w-3rem text-center opacity-lg mt-1 mr-2 ml-1"></i>
+                          <span class="media-body">
+                            <span>Variable Assignments</span>
+                                                            </span>
+                                                            </span>
+                                                        </div>
+                                                        <div class="col-4 text-right">
+                                                            <div class="row">
+                                                                <div class="col-lg-6">
+                                                                </div>
+                                                                <div class="col-lg-6">
+                                                                    <span class="font-size-1">07:54</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- End Course Program -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- End Card -->
+
+                                    <!-- Card -->
+                                    <div class="card border mb-1">
+                                        <div class="card-header card-collapse" id="coursesHeadingFour">
+                                            <a class="btn btn-link btn-sm btn-block card-btn collapsed p-3" href="javascript:;" role="button" data-toggle="collapse" data-target="#coursesCollapseFour" aria-expanded="false" aria-controls="coursesCollapseFour">
+                                                <!-- Header -->
+                                                <span class="row">
+                    <span class="col-8">
+                      <span class="media">
+                        <span class="card-btn-toggle mr-3 ml-0">
+                          <span class="card-btn-toggle-default">&plus;</span>
+                                                <span class="card-btn-toggle-active">&minus;</span>
+                                                </span>
+                                                <span class="media-body">
+                          <span class="text-body font-weight-bold mr-5">Lorem Ipsum</span>
+                                                </span>
+                                                </span>
+                                                </span>
+                                                <span class="col-4 text-right">
+                      <span class="row">
+                        <span class="col-lg-6">
+                          <span class="text-muted">@lhuculak</span>
+                                                </span>
+                                                <span class="col-lg-6">
+                          <span class="text-muted">    <i class="fas fa-check-circle text-success mt-1 mr-2"></i></span>
+                                                </span>
+                                                </span>
+                                                </span>
+                                                </span>
+                                                <!-- End Header -->
+                                            </a>
+                                        </div>
+                                        <div id="coursesCollapseFour" class="collapse" aria-labelledby="coursesHeadingFour">
+                                            <div class="card-body p-0">
+                                                <!-- Course Program -->
+                                                <div class="border-bottom py-3 pr-3 pl-6">
+                                                    <div class="row">
+                                                        <div class="col-8">
+                                                            <span class="media text-body font-size-1 mr-5">
+                          <i class="fa fa-play-circle min-w-3rem text-center opacity-lg mt-1 mr-2 ml-1"></i>
+                          <span class="media-body">
+                            <span>Comparison Operators in Python</span>
+                                                            </span>
+                                                            </span>
+                                                        </div>
+                                                        <div class="col-4 text-right">
+                                                            <div class="row">
+                                                                <div class="col-lg-6">
+                                                                </div>
+                                                                <div class="col-lg-6">
+                                                                    <span class="font-size-1">03:26</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- End Course Program -->
+
+                                                <!-- Course Program -->
+                                                <div class="border-bottom py-3 pr-3 pl-6">
+                                                    <div class="row">
+                                                        <div class="col-8">
+                                                            <span class="media text-body font-size-1 mr-5">
+                          <i class="fa fa-play-circle min-w-3rem text-center opacity-lg mt-1 mr-2 ml-1"></i>
+                          <span class="media-body">
+                            <span>Chaining Comparison Operators in Python with Logical Operators</span>
+                                                            </span>
+                                                            </span>
+                                                        </div>
+                                                        <div class="col-4 text-right">
+                                                            <div class="row">
+                                                                <div class="col-lg-6">
+                                                                </div>
+                                                                <div class="col-lg-6">
+                                                                    <span class="font-size-1">05:42</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- End Course Program -->
+
+                                                <!-- Course Program -->
+                                                <div class="border-bottom py-3 pr-3 pl-6">
+                                                    <div class="row">
+                                                        <div class="col-8">
+                                                            <span class="media text-body font-size-1 mr-5">
+                          <i class="fa fa-bolt min-w-3rem text-center opacity-lg mt-1 mr-2 ml-1"></i>
+                          <span class="media-body">
+                            <span>Comparison Operators Quiz</span>
+                                                            </span>
+                                                            </span>
+                                                        </div>
+                                                        <div class="col-4 text-right">
+                                                            <div class="row">
+                                                                <div class="col-lg-6">
+                                                                </div>
+                                                                <div class="col-lg-6">
+                                                                    <span class="font-size-1">5 questions</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- End Course Program -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- End Card -->
+
+                                    <!-- Card -->
+                                    <div class="card border mb-1">
+                                        <div class="card-header card-collapse" id="coursesHeadingFive">
+                                            <a class="btn btn-link btn-sm btn-block card-btn collapsed p-3" href="javascript:;" role="button" data-toggle="collapse" data-target="#coursesCollapseFive" aria-expanded="false" aria-controls="coursesCollapseFive">
+                                                <!-- Header -->
+                                                <span class="row">
+                    <span class="col-8">
+                      <span class="media">
+                        <span class="card-btn-toggle mr-3 ml-0">
+                          <span class="card-btn-toggle-default">&plus;</span>
+                                                <span class="card-btn-toggle-active">&minus;</span>
+                                                </span>
+                                                <span class="media-body">
+                          <span class="text-body font-weight-bold mr-5">Lorem Ipsum</span>
+                                                </span>
+                                                </span>
+                                                </span>
+                                                <span class="col-4 text-right">
+                      <span class="row">
+                        <span class="col-lg-6">
+                          <span class="text-muted">@lhuculak</span>
+                                                </span>
+                                                <span class="col-lg-6">
+                          <span class="text-muted">    <i class="fas fa-check-circle text-success mt-1 mr-2"></i></span>
+                                                </span>
+                                                </span>
+                                                </span>
+                                                </span>
+                                                <!-- End Header -->
+                                            </a>
+                                        </div>
+                                        <div id="coursesCollapseFive" class="collapse" aria-labelledby="coursesHeadingFive">
+                                            <div class="card-body p-0">
+                                                <!-- Course Program -->
+                                                <div class="border-bottom py-3 pr-3 pl-6">
+                                                    <div class="row">
+                                                        <div class="col-8">
+                                                            <span class="media text-body font-size-1 mr-5">
+                          <i class="fa fa-play-circle min-w-3rem text-center opacity-lg mt-1 mr-2 ml-1"></i>
+                          <span class="media-body">
+                            <span>If Elif and Else Statements in Python</span>
+                                                            </span>
+                                                            </span>
+                                                        </div>
+                                                        <div class="col-4 text-right">
+                                                            <div class="row">
+                                                                <div class="col-lg-6">
+                                                                </div>
+                                                                <div class="col-lg-6">
+                                                                    <span class="font-size-1">    <i class="fas fa-check-circle text-success mt-1 mr-2"></i></span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- End Course Program -->
+
+                                                <!-- Course Program -->
+                                                <div class="border-bottom py-3 pr-3 pl-6">
+                                                    <div class="row">
+                                                        <div class="col-8">
+                                                            <span class="media text-body font-size-1 mr-5">
+                          <i class="fa fa-play-circle min-w-3rem text-center opacity-lg mt-1 mr-2 ml-1"></i>
+                          <span class="media-body">
+                            <span>For Loops in Python</span>
+                                                            </span>
+                                                            </span>
+                                                        </div>
+                                                        <div class="col-4 text-right">
+                                                            <div class="row">
+                                                                <div class="col-lg-6">
+                                                                </div>
+                                                                <div class="col-lg-6">
+                                                                    <span class="font-size-1">18:17</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- End Course Program -->
+
+                                                <!-- Course Program -->
+                                                <div class="border-bottom py-3 pr-3 pl-6">
+                                                    <div class="row">
+                                                        <div class="col-8">
+                                                            <span class="media text-body font-size-1 mr-5">
+                          <i class="fa fa-play-circle min-w-3rem text-center opacity-lg mt-1 mr-2 ml-1"></i>
+                          <span class="media-body">
+                            <span>While Loops in Python</span>
+                                                            </span>
+                                                            </span>
+                                                        </div>
+                                                        <div class="col-4 text-right">
+                                                            <div class="row">
+                                                                <div class="col-lg-6">
+                                                                </div>
+                                                                <div class="col-lg-6">
+                                                                    <span class="font-size-1">10:35</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- End Course Program -->
+
+                                                <!-- Course Program -->
+                                                <div class="border-bottom py-3 pr-3 pl-6">
+                                                    <div class="row">
+                                                        <div class="col-8">
+                                                            <span class="media text-body font-size-1 mr-5">
+                          <i class="fa fa-play-circle min-w-3rem text-center opacity-lg mt-1 mr-2 ml-1"></i>
+                          <span class="media-body">
+                            <span>Useful Operators in Python</span>
+                                                            </span>
+                                                            </span>
+                                                        </div>
+                                                        <div class="col-4 text-right">
+                                                            <div class="row">
+                                                                <div class="col-lg-6">
+                                                                </div>
+                                                                <div class="col-lg-6">
+                                                                    <span class="font-size-1">16:08</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- End Course Program -->
+
+                                                <!-- Course Program -->
+                                                <div class="border-bottom py-3 pr-3 pl-6">
+                                                    <div class="row">
+                                                        <div class="col-8">
+                                                            <span class="media text-body font-size-1 mr-5">
+                          <i class="fa fa-play-circle min-w-3rem text-center opacity-lg mt-1 mr-2 ml-1"></i>
+                          <span class="media-body">
+                            <span>List Comprehensions in Python</span>
+                                                            </span>
+                                                            </span>
+                                                        </div>
+                                                        <div class="col-4 text-right">
+                                                            <div class="row">
+                                                                <div class="col-lg-6">
+                                                                </div>
+                                                                <div class="col-lg-6">
+                                                                    <span class="font-size-1">11:26</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- End Course Program -->
+
+                                                <!-- Course Program -->
+                                                <div class="border-bottom py-3 pr-3 pl-6">
+                                                    <div class="row">
+                                                        <div class="col-8">
+                                                            <span class="media text-body font-size-1 mr-5">
+                          <i class="fa fa-play-circle min-w-3rem text-center opacity-lg mt-1 mr-2 ml-1"></i>
+                          <span class="media-body">
+                            <span>Python Statements Test Overview</span>
+                                                            </span>
+                                                            </span>
+                                                        </div>
+                                                        <div class="col-4 text-right">
+                                                            <div class="row">
+                                                                <div class="col-lg-6">
+                                                                </div>
+                                                                <div class="col-lg-6">
+                                                                    <span class="font-size-1">02:27</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- End Course Program -->
+
+                                                <!-- Course Program -->
+                                                <div class="border-bottom py-3 pr-3 pl-6">
+                                                    <div class="row">
+                                                        <div class="col-8">
+                                                            <span class="media text-body font-size-1 mr-5">
+                          <i class="fa fa-play-circle min-w-3rem text-center opacity-lg mt-1 mr-2 ml-1"></i>
+                          <span class="media-body">
+                            <span>Python Statements Test Solutions</span>
+                                                            </span>
+                                                            </span>
+                                                        </div>
+                                                        <div class="col-4 text-right">
+                                                            <div class="row">
+                                                                <div class="col-lg-6">
+                                                                </div>
+                                                                <div class="col-lg-6">
+                                                                    <span class="font-size-1">07:19</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- End Course Program -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- End Card -->
+
+                                    <!-- View More - Collapse -->
+                                    <div class="collapse" id="collapseCoursesContentSection">
+                                        <!-- Card -->
+                                        <div class="card border mb-1">
+                                            <div class="card-header card-collapse" id="coursesHeadingSix">
+                                                <a class="btn btn-link btn-sm btn-block card-btn collapsed p-3" href="javascript:;" role="button" data-toggle="collapse" data-target="#coursesCollapseSix" aria-expanded="false" aria-controls="coursesCollapseSix">
+                                                    <!-- Header -->
+                                                    <span class="row">
+                      <span class="col-8">
+                        <span class="media">
+                          <span class="card-btn-toggle mr-3 ml-0">
+                            <span class="card-btn-toggle-default">&plus;</span>
+                                                    <span class="card-btn-toggle-active">&minus;</span>
+                                                    </span>
+                                                    <span class="media-body">
+                            <span class="text-body font-weight-bold mr-5">Modules and packages</span>
+                                                    </span>
+                                                    </span>
+                                                    </span>
+                                                    <span class="col-4 text-right">
+                        <span class="row">
+                          <span class="col-lg-6">
+                            <span class="text-muted">3 lectures</span>
+                                                    </span>
+                                                    <span class="col-lg-6">
+                            <span class="text-muted">29:10</span>
+                                                    </span>
+                                                    </span>
+                                                    </span>
+                                                    </span>
+                                                    <!-- End Header -->
+                                                </a>
+                                            </div>
+                                            <div id="coursesCollapseSix" class="collapse" aria-labelledby="coursesHeadingSix">
+                                                <div class="card-body p-0">
+                                                    <!-- Course Program -->
+                                                    <div class="border-bottom py-3 pr-3 pl-6">
+                                                        <div class="row">
+                                                            <div class="col-8">
+                                                                <span class="media text-body font-size-1 mr-5">
+                            <i class="fa fa-play-circle min-w-3rem text-center opacity-lg mt-1 mr-2 ml-1"></i>
+                            <span class="media-body">
+                              <span>Pip Install and PyPi</span>
+                                                                </span>
+                                                                </span>
+                                                            </div>
+                                                            <div class="col-4 text-right">
+                                                                <div class="row">
+                                                                    <div class="col-lg-6">
+                                                                    </div>
+                                                                    <div class="col-lg-6">
+                                                                        <span class="text-muted">07:46</span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- End Course Program -->
+
+                                                    <!-- Course Program -->
+                                                    <div class="border-bottom py-3 pr-3 pl-6">
+                                                        <div class="row">
+                                                            <div class="col-8">
+                                                                <span class="media text-body font-size-1 mr-5">
+                            <i class="fa fa-play-circle min-w-3rem text-center opacity-lg mt-1 mr-2 ml-1"></i>
+                            <span class="media-body">
+                              <span>Modules and Packages</span>
+                                                                </span>
+                                                                </span>
+                                                            </div>
+                                                            <div class="col-4 text-right">
+                                                                <div class="row">
+                                                                    <div class="col-lg-6">
+                                                                    </div>
+                                                                    <div class="col-lg-6">
+                                                                        <span class="text-muted">11:39</span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- End Course Program -->
+
+                                                    <!-- Course Program -->
+                                                    <div class="border-bottom py-3 pr-3 pl-6">
+                                                        <div class="row">
+                                                            <div class="col-8">
+                                                                <span class="media text-body font-size-1 mr-5">
+                            <i class="fa fa-play-circle min-w-3rem text-center opacity-lg mt-1 mr-2 ml-1"></i>
+                            <span class="media-body">
+                              <span>__name__ and "__main__"</span>
+                                                                </span>
+                                                                </span>
+                                                            </div>
+                                                            <div class="col-4 text-right">
+                                                                <div class="row">
+                                                                    <div class="col-lg-6">
+                                                                    </div>
+                                                                    <div class="col-lg-6">
+                                                                        <span class="text-muted">09:45</span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- End Course Program -->
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- End Card -->
+
+                                        <!-- Card -->
+                                        <div class="card border mb-1">
+                                            <div class="card-header card-collapse" id="coursesHeadingSeven">
+                                                <a class="btn btn-link btn-sm btn-block card-btn collapsed p-3" href="javascript:;" role="button" data-toggle="collapse" data-target="#coursesCollapseSeven" aria-expanded="false" aria-controls="coursesCollapseSeven">
+                                                    <!-- Header -->
+                                                    <span class="row">
+                      <span class="col-8">
+                        <span class="media">
+                          <span class="card-btn-toggle mr-3 ml-0">
+                            <span class="card-btn-toggle-default">&plus;</span>
+                                                    <span class="card-btn-toggle-active">&minus;</span>
+                                                    </span>
+                                                    <span class="media-body">
+                            <span class="text-body font-weight-bold mr-5">Errors and exceptions handling</span>
+                                                    </span>
+                                                    </span>
+                                                    </span>
+                                                    <span class="col-4 text-right">
+                        <span class="row">
+                          <span class="col-lg-6">
+                            <span class="text-muted">5 lectures</span>
+                                                    </span>
+                                                    <span class="col-lg-6">
+                            <span class="text-muted">45:14</span>
+                                                    </span>
+                                                    </span>
+                                                    </span>
+                                                    </span>
+                                                    <!-- End Header -->
+                                                </a>
+                                            </div>
+                                            <div id="coursesCollapseSeven" class="collapse" aria-labelledby="coursesHeadingSeven">
+                                                <div class="card-body p-0">
+                                                    <!-- Course Program -->
+                                                    <div class="border-bottom py-3 pr-3 pl-6">
+                                                        <div class="row">
+                                                            <div class="col-8">
+                                                                <span class="media text-body font-size-1 mr-5">
+                            <i class="fa fa-play-circle min-w-3rem text-center opacity-lg mt-1 mr-2 ml-1"></i>
+                            <span class="media-body">
+                              <span>Errors and Exception Handling</span>
+                                                                </span>
+                                                                </span>
+                                                            </div>
+                                                            <div class="col-4 text-right">
+                                                                <div class="row">
+                                                                    <div class="col-lg-6">
+                                                                    </div>
+                                                                    <div class="col-lg-6">
+                                                                        <span class="text-muted">17:19</span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- End Course Program -->
+
+                                                    <!-- Course Program -->
+                                                    <div class="border-bottom py-3 pr-3 pl-6">
+                                                        <div class="row">
+                                                            <div class="col-8">
+                                                                <span class="media text-body font-size-1 mr-5">
+                            <i class="fa fa-play-circle min-w-3rem text-center opacity-lg mt-1 mr-2 ml-1"></i>
+                            <span class="media-body">
+                              <span>Errors and Exceptions Homework</span>
+                                                                </span>
+                                                                </span>
+                                                            </div>
+                                                            <div class="col-4 text-right">
+                                                                <div class="row">
+                                                                    <div class="col-lg-6">
+                                                                    </div>
+                                                                    <div class="col-lg-6">
+                                                                        <span class="text-muted">01:30</span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- End Course Program -->
+
+                                                    <!-- Course Program -->
+                                                    <div class="border-bottom py-3 pr-3 pl-6">
+                                                        <div class="row">
+                                                            <div class="col-8">
+                                                                <span class="media text-body font-size-1 mr-5">
+                            <i class="fa fa-play-circle min-w-3rem text-center opacity-lg mt-1 mr-2 ml-1"></i>
+                            <span class="media-body">
+                              <span>Errors and Exception Homework - Solutions</span>
+                                                                </span>
+                                                                </span>
+                                                            </div>
+                                                            <div class="col-4 text-right">
+                                                                <div class="row">
+                                                                    <div class="col-lg-6">
+                                                                    </div>
+                                                                    <div class="col-lg-6">
+                                                                        <span class="text-muted">05:16</span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- End Course Program -->
+
+                                                    <!-- Course Program -->
+                                                    <div class="border-bottom py-3 pr-3 pl-6">
+                                                        <div class="row">
+                                                            <div class="col-8">
+                                                                <span class="media text-body font-size-1 mr-5">
+                            <i class="fa fa-play-circle min-w-3rem text-center opacity-lg mt-1 mr-2 ml-1"></i>
+                            <span class="media-body">
+                              <span>Pylint Overview</span>
+                                                                </span>
+                                                                </span>
+                                                            </div>
+                                                            <div class="col-4 text-right">
+                                                                <div class="row">
+                                                                    <div class="col-lg-6">
+                                                                    </div>
+                                                                    <div class="col-lg-6">
+                                                                        <span class="text-muted">11:36</span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- End Course Program -->
+
+                                                    <!-- Course Program -->
+                                                    <div class="border-bottom py-3 pr-3 pl-6">
+                                                        <div class="row">
+                                                            <div class="col-8">
+                                                                <span class="media text-body font-size-1 mr-5">
+                            <i class="fa fa-play-circle min-w-3rem text-center opacity-lg mt-1 mr-2 ml-1"></i>
+                            <span class="media-body">
+                              <span>Running tests with the Unittest Library</span>
+                                                                </span>
+                                                                </span>
+                                                            </div>
+                                                            <div class="col-4 text-right">
+                                                                <div class="row">
+                                                                    <div class="col-lg-6">
+                                                                    </div>
+                                                                    <div class="col-lg-6">
+                                                                        <span class="text-muted">09:33</span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- End Course Program -->
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- End Card -->
+                                    </div>
+                                    <!-- End View More - Collapse -->
+
+                                    <!-- Link -->
+                                    <div class="card border">
+                                        <a class="link link-collapse btn btn-link btn-sm btn-block card-btn text-center p-3" data-toggle="collapse" href="#collapseCoursesContentSection" role="button" aria-expanded="false" aria-controls="collapseCoursesContentSection">
+                                            <span class="link-collapse-default">2 more items</span>
+                                            <span class="link-collapse-active">View less</span>
+                                        </a>
+                                    </div>
+                                    <!-- End Link -->
+                                </div>
+                                <!-- End Collapse -->
+
+
+
+
+
+                                <!--    <img class="img-fluid rounded mb-4" src="assets/img/900x450/img5.jpg" alt="Image Description">
+                                <img class="img-fluid rounded mb-4" src="assets/img/900x450/img4.jpg" alt="Image Description"> -->
+
+                            </div>
+
+                            <div class="tab-pane fade pt-6" id="pills-two-example1" role="tabpanel" aria-labelledby="pills-two-example1-tab">
+                                <!-- Review Header -->
+                                <div class="d-sm-flex justify-content-sm-between align-items-sm-center border-bottom pb-3 mb-4">
+                                    <div class="d-flex align-items-center mb-2 mb-sm-0">
+                                        <h4 class="mb-0">Reviews <small class="text-muted ml-1">(156)</small></h4>
+                                    </div>
+
+                                    <!-- Select -->
+                                    <select class="js-custom-select" data-hs-select2-options='{
+                          "minimumResultsForSearch": "Infinity",
+                          "customClass": "btn btn-sm btn-white dropdown-toggle",
+                          "dropdownAutoWidth": true,
+                          "width": "auto"
+                        }'>
+                                        <option value="showCategoryByFilterSelect1" selected>Newest first</option>
+                                        <option value="showCategoryByFilterSelect2">Highest rated</option>
+                                        <option value="showCategoryByFilterSelect3">Lowest rated</option>
+                                    </select>
+                                    <!-- End Select -->
+                                </div>
+                                <!-- End Review Header -->
+
+                                <!-- Review -->
+                                <div class="media">
+                                    <div class="avatar avatar-circle mr-3">
+                                        <img class="avatar-img" src="assets/img/100x100/img1.jpg" alt="Image Description">
+                                    </div>
+                                    <div class="media-body border-bottom pb-6 mb-6">
+                                        <span class="h4">Christina Kray</span>
+
+                                        <p>Just started using Refine for Twitter, and finding it to serve all my needs and it integrates perfectly with Refine! Sharing diagrams is now much easier for our team.</p>
+
+                                        <small class="text-body mr-2">Was this review helpful?</small>
+                                        <a class="small mr-2" href="javascript:;">Yes</a>
+                                        <a class="small" href="javascript:;">No</a>
+
+                                        <!-- Reply -->
+                                        <div class="card bg-light shadow-none p-3 mt-4">
+                                            <div class="media">
+                                                <div class="avatar mr-3">
+                                                    <img class="avatar-img" src="assets/img/icons/account.png" alt="Image Description">
+                                                </div>
+                                                <div class="media-body">
+                                                    <span class="d-block text-dark font-weight-bold">Lorens Huculak</span>
+                                                    <p>Thanks for the review Maria! Let us know if you ever need anything.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- End Reply -->
+                                    </div>
+                                </div>
+                                <!-- End Review -->
+
+                                <!-- Review -->
+                                <div class="media">
+                                    <div class="avatar avatar-circle mr-3">
+                                        <img class="avatar-img" src="assets/img/100x100/img3.jpg" alt="Image Description">
+                                    </div>
+                                    <div class="media-body border-bottom pb-6 mb-6">
+                                        <span class="h4">Dave Austin</span>
+
+                                        <p>This is a pretty cool integration. It is fun and easy to use. I had to make a few sharing for work and Gliffy helped me get the job done. If I had a tablet or touch screen, I would use this more.</p>
+
+                                        <small class="text-body mr-2">Was this review helpful?</small>
+                                        <a class="small mr-2" href="javascript:;">Yes</a>
+                                        <a class="small" href="javascript:;">No</a>
+
+                                        <!-- Reply -->
+                                        <div class="card bg-light shadow-none p-3 mt-4">
+                                            <div class="media">
+                                                <div class="avatar mr-3">
+                                                    <img class="avatar-img" src="assets/img/icons/account.png" alt="Image Description">
+                                                </div>
+                                                <div class="media-body">
+                                                    <span class="d-block text-dark font-weight-bold">Lorens Huculak</span>
+                                                    <p>Love it Dave! We're all about keeping it fun and easy.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- End Reply -->
+                                    </div>
+                                </div>
+                                <!-- End Review -->
+
+                                <!-- Review -->
+                                <div class="media">
+                                    <div class="avatar avatar-circle mr-3">
+                                        <img class="avatar-img" src="assets/img/100x100/img11.jpg" alt="Image Description">
+                                    </div>
+                                    <div class="media-body border-bottom pb-6 mb-6">
+                                        <span class="h4">Nika Mundada</span>
+
+                                        <p>I love Refine! It's super easy to get started and works great with Refine pages.</p>
+
+                                        <small class="text-body mr-2">Was this review helpful?</small>
+                                        <a class="small mr-2" href="javascript:;">Yes</a>
+                                        <a class="small" href="javascript:;">No</a>
+
+                                        <!-- Reply -->
+                                        <div class="card bg-light shadow-none p-3 mt-4">
+                                            <div class="media">
+                                                <div class="avatar mr-3">
+                                                    <img class="avatar-img" src="assets/img/icons/account.png" alt="Image Description">
+                                                </div>
+                                                <div class="media-body">
+                                                    <span class="d-block text-dark font-weight-bold">Lorens Huculak</span>
+                                                    <p>Thanks for the feedback Nika!</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- End Reply -->
+                                    </div>
+                                </div>
+                                <!-- End Review -->
+
+                                <div class="text-center">
+                                    <a class="font-weight-bold" href="#">Read More Reviews <i class="fas fa-angle-right ml-1"></i></a>
+                                </div>
+                            </div>
+
+                            <div class="tab-pane fade pt-6" id="pills-three-example1" role="tabpanel" aria-labelledby="pills-three-example1-tab">
+
+
+
+
+
+                            </div>
+                        </div>
+                        <!-- End Tab Content -->
+                    </div>
+                </div>
+            </div>
+            <!-- End Content -->
+        </div>
+        <!-- End List Description Section -->
+
+        <!-- Related Items Section -->
+        <div class="container space-2 space-bottom-lg-3">
+            <!-- Title -->
+            <div class="d-flex justify-content-between align-items-center mb-3">
+                <h3 class="mb-0">Related Lists</h3>
+                <a class="font-size-1 font-weight-bold" href="#">View All <i class='fas fa-angle-right fa-sm ml-1'></i></a>
+            </div>
+            <!-- End Title -->
+
+            <div class="row mx-n2">
+                <!-- Card -->
+                <div class="col-sm-6 col-md-4 px-2 mb-3">
+                    <div class="card card-frame h-100">
+                        <a class="card-body" href="list.html">
+                            <div class="media">
+                                <div class="avatar avatar-xs mt-1 mr-3">
+                                    <img class="avatar-img" src="assets/img/160x160/img5.jpg" alt="Image Description">
+                                </div>
+                                <div class="media-body">
+                                    <div class="d-flex align-items-center">
+                                        <span class="d-block text-dark font-weight-bold">Spotify</span>
+                                        <img class="ml-2" src="assets/svg/illustrations/top-vendor.svg" alt="Image Description" title="Top Vendor" width="16">
+                                    </div>
+                                    <small class="d-block text-body">Lorem Ipsum</small>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <!-- End Card -->
+
+                <!-- Card -->
+                <div class="col-sm-6 col-md-4 px-2 mb-3">
+                    <div class="card card-frame h-100">
+                        <a class="card-body" href="list.html">
+                            <div class="media">
+                                <div class="avatar avatar-xs mt-1 mr-3">
+                                    <img class="avatar-img" src="assets/img/160x160/img3.jpg" alt="Image Description">
+                                </div>
+                                <div class="media-body">
+                                    <div class="d-flex align-items-center">
+                                        <span class="d-block text-dark font-weight-bold">Slack</span>
+                                    </div>
+                                    <small class="d-block text-body">Lorem Ipsum</small>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <!-- End Card -->
+
+                <!-- Card -->
+                <div class="col-sm-6 col-md-4 px-2 mb-3">
+                    <div class="card card-frame h-100">
+                        <a class="card-body" href="list.html">
+                            <div class="media">
+                                <div class="avatar avatar-xs mt-1 mr-3">
+                                    <img class="avatar-img" src="assets/img/icons/account.png" alt="Image Description">
+                                </div>
+                                <div class="media-body">
+                                    <div class="d-flex align-items-center">
+                                        <span class="d-block text-dark font-weight-bold">Crypto Scams</span>
+                                        <img class="ml-2" src="assets/svg/illustrations/top-vendor.svg" alt="Image Description" title="Top Vendor" width="16">
+                                    </div>
+                                    <small class="d-block text-body">Lorem Ipsum</small>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <!-- End Card -->
+
+                <!-- Card -->
+                <div class="col-sm-6 col-md-4 px-2 mb-3 mb-md-0">
+                    <div class="card card-frame h-100">
+                        <a class="card-body" href="list.html">
+                            <div class="media">
+                                <div class="avatar avatar-xs mt-1 mr-3">
+                                    <img class="avatar-img" src="assets/img/160x160/img12.png" alt="Image Description">
+                                </div>
+                                <div class="media-body">
+                                    <div class="d-flex align-items-center">
+                                        <span class="d-block text-dark font-weight-bold">Atlassian</span>
+                                    </div>
+                                    <small class="d-block text-body">Lorem Ipsum</small>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <!-- End Card -->
+
+                <!-- Card -->
+                <div class="col-sm-6 col-md-4 px-2 mb-3 mb-sm-0">
+                    <div class="card card-frame h-100">
+                        <a class="card-body" href="list.html">
+                            <div class="media">
+                                <div class="avatar avatar-xs mt-1 mr-3">
+                                    <img class="avatar-img" src="assets/img/160x160/img18.png" alt="Image Description">
+                                </div>
+                                <div class="media-body">
+                                    <div class="d-flex align-items-center">
+                                        <span class="d-block text-dark font-weight-bold">Behance</span>
+                                        <img class="ml-2" src="assets/svg/illustrations/top-vendor.svg" alt="Image Description" title="Top Vendor" width="16">
+                                    </div>
+                                    <small class="d-block text-body">Lorem Ipsum</small>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <!-- End Card -->
+
+                <!-- Card -->
+                <div class="col-sm-6 col-md-4 px-2">
+                    <div class="card card-frame h-100">
+                        <a class="card-body" href="list.html">
+                            <div class="media">
+                                <div class="avatar avatar-xs mt-1 mr-3">
+                                    <img class="avatar-img" src="assets/img/160x160/img11.jpg" alt="Image Description">
+                                </div>
+                                <div class="media-body">
+                                    <div class="d-flex align-items-center">
+                                        <span class="d-block text-dark font-weight-bold">InVision</span>
+                                    </div>
+                                    <small class="d-block text-body">Lorem Ipsum</small>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <!-- End Card -->
+            </div>
+        </div>
+        <!-- End Related Items Section -->
+    </main>
+    <!-- ========== END MAIN CONTENT ========== -->
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="bg-light">
+        <!-- Info -->
+        <div class="container space-2">
+            <div class="row align-items-md-center text-center text-md-left">
+                <div class="col-md-6 mb-3 mb-md-0">
+                    <h2>Share your Block List on Refine.</h2>
+                    <p class="mb-0">Take control of your own social media - collectively.</p>
+                </div>
+                <div class="col-md-6 text-md-right">
+                    <a class="btn btn-primary transition-3d-hover" type="button" href="wizard1.html">Submit your List</a>
+                </div>
+            </div>
+        </div>
+        <!-- End Info -->
+
+        <!-- Lists -->
+        <div class="container">
+            <div class="border-top space-2">
+                <div class="row justify-content-md-between">
+                    <div class="col-lg-4 mb-4 mb-lg-0">
+                        <a class="d-inline-flex mb-4" href="index.html" aria-label="Front">
+                            <img class="brand" src="assets/svg/logos/logo.svg" alt="Logo">
+                        </a>
+                        <p>Refine your online experiences.</p>
+                        <a class="btn btn-outline-pnk py-1" href="https://kleros.io/" target="_blank">Secured by <span   class="font-size-1 ml-1 mr-1 mb-5"><i class="icon-kleros_mark"></i></span>Kleros </a>
+
+                    </div>
+
+                    <div class="col-6 col-sm-4 col-lg-2 mb-4 mb-lg-0">
+                        <h5>Refine</h5>
+
+                        <!-- Nav Link -->
+                        <ul class="nav nav-sm nav-x-0 flex-column">
+                            <li class="nav-item"><a class="nav-link" href="">About</a></li>
+                            <li class="nav-item"><a class="nav-link" href="">Blog</a></li>
+                            <li class="nav-item"><a class="nav-link" href="">Integrations</a></li>
+                        </ul>
+                        <!-- End Nav Link -->
+                    </div>
+
+                    <div class="col-6 col-sm-4 col-lg-2 mb-4 mb-lg-0">
+                        <h5>Resources</h5>
+
+                        <!-- Nav Link -->
+                        <ul class="nav nav-sm nav-x-0 flex-column">
+                            <li class="nav-item"><a class="nav-link" href="#">FAQ</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Terms</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Privacy</a></li>
+                        </ul>
+                        <!-- End Nav Link -->
+                    </div>
+
+                    <div class="col-6 col-sm-4 col-lg-2">
+                        <h5>Resources</h5>
+
+                        <!-- Nav Link -->
+                        <ul class="nav nav-sm nav-x-0 flex-column">
+                            <li class="nav-item">
+
+
+                                <a class="btn btn-icon btn-m btn-ghost-secondary rounded-circle" href="#">
+                                    <i class="fab fa-discord"></i>
+                                </a>
+
+
+                                <a class="btn btn-icon btn-m btn-ghost-secondary rounded-circle" href="#">
+                                    <i class="fab fa-medium"></i>
+                                </a>
+
+
+                                <a class="btn btn-icon btn-m btn-ghost-secondary rounded-circle" href="#">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+
+
+                            </li>
+
+                        </ul>
+                        <!-- End Nav Link -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Lists -->
+    </footer>
+    <!-- ========== END FOOTER ========== -->
+
+    <!-- Go to Top -->
+    <a class="js-go-to go-to position-fixed" href="javascript:;" style="visibility: hidden;" data-hs-go-to-options='{
+       "offsetTop": 700,
+       "position": {
+         "init": {
+           "right": 15
+         },
+         "show": {
+           "bottom": 15
+         },
+         "hide": {
+           "bottom": -15
+         }
+       }
+     }'>
+        <i class="fas fa-angle-up"></i>
+    </a>
+    <!-- End Go to Top -->
+
+    <!-- JS Global Compulsory -->
+    <script src="assets/vendor/jquery/dist/jquery.min.js"></script>
+    <script src="assets/vendor/jquery-migrate/dist/jquery-migrate.min.js"></script>
+    <script src="assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- JS Implementing Plugins -->
+    <script src="assets/vendor/hs-header/dist/hs-header.min.js"></script>
+    <script src="assets/vendor/hs-go-to/dist/hs-go-to.min.js"></script>
+    <script src="assets/vendor/hs-mega-menu/dist/hs-mega-menu.min.js"></script>
+    <script src="assets/vendor/select2/dist/js/select2.full.min.js"></script>
+    <script src="assets/vendor/hs-unfold/dist/hs-unfold.min.js"></script>
+
+
+    <!-- JS Front -->
+    <script src="assets/js/hs.core.js"></script>
+    <script src="assets/js/hs.select2.js"></script>
+
+    <!-- JS Plugins Init. -->
+    <script>
+        $(document).on('ready', function () {
+            // initialization of header
+            var header = new HSHeader($('#header')).init();
+
+            // initialization of mega menu
+            var megaMenu = new HSMegaMenu($('.js-mega-menu')).init();
+
+            // initialization of unfold
+            var unfold = new HSUnfold('.js-hs-unfold-invoker').init();
+
+            // initialization of select2
+            $('.js-custom-select').each(function () {
+                var select2 = $.HSCore.components.HSSelect2.init($(this));
+            });
+
+            // initialization of go to
+            $('.js-go-to').each(function () {
+                var goTo = new HSGoTo($(this)).init();
+            });
+        });
+    </script>
+
+    <!-- IE Support -->
+    <script>
+        if (/MSIE \d|Trident.*rv:/.test(navigator.userAgent)) document.write('<script src="assets/vendor/polifills.js"><\/script>');
+    </script>
+</body>
+
+</html>

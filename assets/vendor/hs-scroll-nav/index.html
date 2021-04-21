@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!-- Title -->
+		<title>Scroll Nav</title>
+		
+		<!-- Required Meta Tags Always Come First -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		
+		<!-- Favicon -->
+		<link rel="shortcut icon" href="../../../favicon.ico">
+		
+		<!-- Google Fonts -->
+		<link href="//fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
+		
+		<!-- CSS Implementing Plugins -->
+		
+		<!-- CSS Front Template -->
+		<link rel="stylesheet" href="../../../assets/css/theme.css">
+		
+		<style>
+			.js-scroll-nav {
+				position: sticky;
+				top: 1.5rem;
+				padding-left: 1.5rem;
+			}
+			
+			.js-scroll-nav li.active a {
+				color: #ff0000;
+			}
+		</style>
+	</head>
+	<body>
+		<div style="height: 20vh;"></div>
+		
+		<div class="container">
+			<div class="row">
+				<div class="col-xl-2 order-xl-2 d-none d-xl-inline-block">
+					<ul class="js-scroll-nav list-unstyled">
+						<li>
+							<a href="#scrollNav1">Scroll Nav 1</a>
+						</li>
+						<li>
+							<ul class="pl-4">
+								<li>
+									<a href="#scrollNav2">Scroll Nav 2</a>
+								</li>
+								<li>
+									<a href="#scrollNav3">Scroll Nav 3</a>
+								</li>
+								<li>
+									<a href="#scrollNav4">Scroll Nav 4</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a href="#scrollNav5">Scroll Nav 5</a>
+						</li>
+						<li>
+							<a href="#scrollNav6">Scroll Nav 6</a>
+						</li>
+					</ul>
+				</div>
+				
+				<div class="col-xl-10 order-xl-1">
+					<div id="scrollNav1" class="scroll-nav-section" style="height: 50vh; background-color: #000;"></div>
+					
+					<div id="scrollNav2" class="scroll-nav-section" style="height: 50vh;"></div>
+					
+					<div id="scrollNav3" class="scroll-nav-section" style="height: 50vh; background-color: #000;"></div>
+					
+					<div id="scrollNav4" class="scroll-nav-section" style="height: 50vh;"></div>
+					
+					<div id="scrollNav5" class="scroll-nav-section" style="height: 50vh; background-color: #000;"></div>
+					
+					<div id="scrollNav6" class="scroll-nav-section" style="height: 50vh;"></div>
+				</div>
+			</div>
+		</div>
+		
+		<div style="height: 20vh;"></div>
+		
+		<script src="../../../assets/vendor/jquery/dist/jquery.min.js"></script>
+		<script src="../../../assets/vendor/jquery-migrate/dist/jquery-migrate.min.js"></script>
+		<script src="../../../assets/vendor/popper.js/dist/umd/popper.min.js"></script>
+		<script src="../../../assets/vendor/bootstrap/dist/js/bootstrap.min.js"></script>
+		
+		<script src="./dist/hs-scroll-nav.min.js"></script>
+		
+		<script>
+			$(document).on('ready', function () {
+				$('.js-scroll-nav').each(function () {
+					var scrollNav = new HSScrollNav($(this)).init();
+				});
+			});
+		</script>
+	</body>
+</html>

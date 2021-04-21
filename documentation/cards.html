@@ -1,0 +1,1304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Title -->
+  <title>Cards - Front Documentation | Front - Responsive Website Template</title>
+
+  <!-- Required Meta Tags Always Come First -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="../favicon.ico">
+
+  <!-- Font -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap" rel="stylesheet">
+
+  <!-- CSS Implementing Plugins -->
+  <link rel="stylesheet" href="../assets/vendor/font-awesome/css/all.min.css">
+  <link rel="stylesheet" href="../documentation/assets/vendor/jquery-ui/themes/base/jquery-ui.min.css">
+  <link rel="stylesheet" href="../documentation/assets/vendor/prism/prism.css">
+
+  <!-- CSS Front Template -->
+  <link rel="stylesheet" href="../assets/css/theme.css">
+
+  <!-- CSS Front Doc -->
+  <link rel="stylesheet" href="../documentation/assets/css/docs.css">
+</head>
+<body>
+  <!-- ========== HEADER ========== -->
+  <header id="header" class="header header-sticky-top header-docs header-box-shadow">
+    <div class="header-section">
+      <div id="logoAndNav" class="container-fluid px-xl-7">
+        <nav class="navbar d-block d-md-flex justify-content-start">
+          <div class="d-flex align-items-center">
+            <a class="navbar-brand" href="index.html" aria-label="Front">
+              <img src="../assets/svg/logos/logo.svg" alt="Logo">
+            </a>
+            <a href="changelog.html">
+              <span class="badge badge-soft-primary ml-2">v3.2</span>
+            </a>
+          </div>
+
+          <!-- Nav Links -->
+          <ul class="nav nav-classic nav-sm border-0 nav-docs-space">
+            <li class="nav-item">
+              <a class="nav-link d-flex align-items-center px-2 px-sm-3 active" href="index.html">
+                <svg class="d-none d-sm-block mr-2 mb-0" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" d="M1 2.5A1.5 1.5 0 012.5 1h3A1.5 1.5 0 017 2.5v3A1.5 1.5 0 015.5 7h-3A1.5 1.5 0 011 5.5v-3zM2.5 2a.5.5 0 00-.5.5v3a.5.5 0 00.5.5h3a.5.5 0 00.5-.5v-3a.5.5 0 00-.5-.5h-3zm6.5.5A1.5 1.5 0 0110.5 1h3A1.5 1.5 0 0115 2.5v3A1.5 1.5 0 0113.5 7h-3A1.5 1.5 0 019 5.5v-3zm1.5-.5a.5.5 0 00-.5.5v3a.5.5 0 00.5.5h3a.5.5 0 00.5-.5v-3a.5.5 0 00-.5-.5h-3zM1 10.5A1.5 1.5 0 012.5 9h3A1.5 1.5 0 017 10.5v3A1.5 1.5 0 015.5 15h-3A1.5 1.5 0 011 13.5v-3zm1.5-.5a.5.5 0 00-.5.5v3a.5.5 0 00.5.5h3a.5.5 0 00.5-.5v-3a.5.5 0 00-.5-.5h-3zm6.5.5A1.5 1.5 0 0110.5 9h3a1.5 1.5 0 011.5 1.5v3a1.5 1.5 0 01-1.5 1.5h-3A1.5 1.5 0 019 13.5v-3zm1.5-.5a.5.5 0 00-.5.5v3a.5.5 0 00.5.5h3a.5.5 0 00.5-.5v-3a.5.5 0 00-.5-.5h-3z" clip-rule="evenodd"/>
+                </svg>
+                <span class="d-none d-sm-block">Documentation</span>
+                <span class="d-sm-none">Docs</span>
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link d-flex align-items-center px-2 px-sm-3" href="../snippets/index.html">
+                <svg class="d-none d-sm-block mr-2 mb-0" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" d="M14.5 13.5h-13A.5.5 0 011 13V6a.5.5 0 01.5-.5h13a.5.5 0 01.5.5v7a.5.5 0 01-.5.5zm-13 1A1.5 1.5 0 010 13V6a1.5 1.5 0 011.5-1.5h13A1.5 1.5 0 0116 6v7a1.5 1.5 0 01-1.5 1.5h-13zM2 3a.5.5 0 00.5.5h11a.5.5 0 000-1h-11A.5.5 0 002 3zm2-2a.5.5 0 00.5.5h7a.5.5 0 000-1h-7A.5.5 0 004 1z" clip-rule="evenodd"/>
+                </svg>
+                Snippets
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link d-flex align-items-center px-2 px-sm-3" target="_blank" href="../html/landings/index.html">
+                Main Demo
+                <svg class="d-block ml-2 mb-0" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" d="M1.5 13A1.5 1.5 0 003 14.5h8a1.5 1.5 0 001.5-1.5V9a.5.5 0 00-1 0v4a.5.5 0 01-.5.5H3a.5.5 0 01-.5-.5V5a.5.5 0 01.5-.5h4a.5.5 0 000-1H3A1.5 1.5 0 001.5 5v8zm7-11a.5.5 0 01.5-.5h5a.5.5 0 01.5.5v5a.5.5 0 01-1 0V2.5H9a.5.5 0 01-.5-.5z" clip-rule="evenodd"/>
+                  <path fill-rule="evenodd" d="M14.354 1.646a.5.5 0 010 .708l-8 8a.5.5 0 01-.708-.708l8-8a.5.5 0 01.708 0z" clip-rule="evenodd"/>
+                </svg>
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link d-none d-xl-flex align-items-center px-2 px-sm-3" target="_blank" href="https://htmlstream.com/contact-us">
+                Get Support
+                <svg class="d-none d-sm-block ml-2 mb-0" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" d="M1.5 13A1.5 1.5 0 003 14.5h8a1.5 1.5 0 001.5-1.5V9a.5.5 0 00-1 0v4a.5.5 0 01-.5.5H3a.5.5 0 01-.5-.5V5a.5.5 0 01.5-.5h4a.5.5 0 000-1H3A1.5 1.5 0 001.5 5v8zm7-11a.5.5 0 01.5-.5h5a.5.5 0 01.5.5v5a.5.5 0 01-1 0V2.5H9a.5.5 0 01-.5-.5z" clip-rule="evenodd"/>
+                  <path fill-rule="evenodd" d="M14.354 1.646a.5.5 0 010 .708l-8 8a.5.5 0 01-.708-.708l8-8a.5.5 0 01.708 0z" clip-rule="evenodd"/>
+                </svg>
+              </a>
+            </li>
+          </ul>
+          <!-- End Nav Links -->
+
+          <!-- Header Search -->
+          <form class="form-inline input-group input-group-sm input-group-merge input-group-flush d-none d-lg-flex ml-auto" style="max-width: 300px;">
+            <input class="js-hs-docs-search form-control" type="text" placeholder="Search docs..." aria-label="Search docs..." aria-describedby="docsSearch" data-url="assets/ajax/autocomplete-data-for-documentation-search.json">
+            <div class="input-group-append">
+              <span class="input-group-text" id="docsSearch">
+                <i class="fas fa-search"></i>
+              </span>
+            </div>
+          </form>
+          <!-- End Header Search -->
+        </nav>
+      </div>
+    </div>
+  </header>
+  <!-- ========== END HEADER ========== -->
+
+  <!-- ========== MAIN CONTENT ========== -->
+  <main class="container-fluid space-top-3 space-top-md-2 pl-lg-7 pr-xl-7">
+    <div class="row justify-content-lg-end">
+      <!-- Sidebar -->
+      <nav class="col-lg-3 col-xl-2 hs-sidebar navbar-expand-lg px-0 ml-xl-7">
+        <div class="d-flex d-lg-none justify-content-between mb-3">
+          <!-- Sidebar Search -->
+          <form class="col form-inline input-group-sm">
+            <input class="js-hs-docs-search form-control form-control-sm w-100" type="text" placeholder="Search..." data-url="assets/ajax/autocomplete-data-for-documentation-search.json">
+          </form>
+          <!-- End Sidebar Search -->
+
+          <!-- Responsive Toggle Button -->
+          <button class="btn btn-link pl-0" type="button" data-toggle="collapse" data-target="#sidebar-nav" aria-controls="sidebar-nav" aria-expanded="false" aria-label="Toggle navigation">
+            <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 30 30" width="30" height="30" focusable="false">
+              <path stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M4 7h22M4 15h22M4 23h22"/>
+            </svg>
+          </button>
+          <!-- End Responsive Toggle Button -->
+        </div>
+
+        <!-- Sidebar Nav -->
+        <div class="collapse navbar-collapse" id="sidebar-nav">
+          <div id="sidebarNav" class="hs-sidebar-scrollbar hs-sidebar-sticky pl-2 pl-md-0 pr-2">
+            <span class="hs-sidebar-heading">Getting started</span>
+            <ul class="hs-sidebar-nav">
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="index.html">Introduction</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="gulp.html">Gulp</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="customization.html">Customization</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="credits.html">Credits</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="changelog.html">Changelog</a></li>
+            </ul>
+
+            <span class="hs-sidebar-heading">Content</span>
+            <ul class="hs-sidebar-nav">
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="typography.html">Typography</a></li>
+              <li class="hs-sidebar-item">
+                <span class="hs-sidebar-link">Icons:</span>
+                <ul class="hs-sidebar-nav ml-2">
+                  <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="exclusive-svg.html">Exclusive SVG set</a></li>
+                  <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="font-awesome.html">Font Awesome</a></li>
+                </ul>
+              </li>
+            </ul>
+
+            <span class="hs-sidebar-heading">Components</span>
+            <ul class="hs-sidebar-nav">
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="alerts.html">Alerts</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="avatars.html">Avatars</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="badge.html">Badge</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="breadcrumb.html">Breadcrumb</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="buttons.html">Buttons</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link active" href="cards.html">Cards</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="collapse.html">Collapse</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="devices.html">Devices</a></li>
+              <li class="hs-sidebar-item">
+                <span class="hs-sidebar-link">Dividers:</span>
+                <ul class="hs-sidebar-nav ml-2 mb-0">
+                  <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="css-divider.html">CSS divider</a></li>
+                  <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="svg-divider.html">SVG divider</a></li>
+                </ul>
+              </li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="forms.html">Forms</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="legend-indicator.html">Legend indicator</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="list-group.html">List group</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="modal.html">Modal</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="navbar.html">Navbar</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="navs.html">Navs</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="pagination.html">Pagination</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="popovers.html">Popovers</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="progress.html">Progress</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="spinners.html">Spinners</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="step.html">Step</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="sticky-footer.html">Sticky footer</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="tabs.html">Tabs</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="tables.html">Tables</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="text-highlight.html">Text Highlight</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="tooltips.html">Tooltips</a></li>
+            </ul>
+
+            <span class="hs-sidebar-heading">Utilities</span>
+            <ul class="hs-sidebar-nav">
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="borders.html">Borders</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="colors.html">Colors</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="content-alignments.html">Content alignments (with position)</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="links.html">Links</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="positions.html">Positions</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="shadows.html">Shadows</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="sizing.html">Sizing</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="spacings.html">Spacings</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="text.html">Text</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="transforms.html">Transforms</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="transitions.html">Transitions</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="others.html">Others</a></li>
+            </ul>
+
+            <span class="hs-sidebar-heading">HS Libraries</span>
+            <ul class="hs-sidebar-nav">
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="add-field.html">Add field</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="unfold.html">Unfold (Dropdown and others)</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="headers.html">Headers</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="header-mega-menu.html">Header mega menu</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="header-fullscreen.html">Header fullscreen</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="header-searches.html">Header searches</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="counters.html">Counters</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="file-attach.html">File attach</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="go-to.html">Go-to</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="page-preloader.html">Page preloader</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="progress-animation.html">Progress animation</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="quantity-counter.html">Quantity counter</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="scroll-nav.html">Scroll nav</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="show-animation.html">Show animation</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="step-form.html">Step form (Wizards)</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="sticky-block.html">Sticky block</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="toggle-state.html">Toggle state</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="toggle-switch.html">Toggle switch</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="switch.html">Switch</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="video-bg.html">Video background</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="video-player.html">Video player</a></li>
+            </ul>
+
+            <span class="hs-sidebar-heading">Other Libraries</span>
+            <ul class="hs-sidebar-nav">
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="aos.html">Aos (Animate on scroll)</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="chartjs.html">Chartjs</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="circles.html">Circles (Pie chart)</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="clipboard.html">Clipboard</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="countdown.html">Countdown</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="cubeportfolio.html">Cubeportfolio</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="dropzone.html">Dropzone (Drag n' drop file uploader)</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="fancybox.html">Fancybox</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="range-slider.html">Range slider</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="quill.html">Quill</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="select2.html">Select2</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="input-mask.html">Input mask</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="leaflet.html">Leaflet (Map)</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="parallax.html">Parallax</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="slick-carousel.html">Slick carousel</a></li>
+              <li class="hs-sidebar-item">
+                <span class="hs-sidebar-link">Social APIs:</span>
+                <ul class="hs-sidebar-nav ml-2 mb-0">
+                  <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="social-api-facebook.html">Facebook</a></li>
+                  <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="social-api-twitter.html">Twitter</a></li>
+                </ul>
+              </li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="typedjs.html">Typed.js</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="validation.html">Validation</a></li>
+            </ul>
+          </div>
+        </div>
+        <!-- End Sidebar Nav -->
+      </nav>
+      <!-- End Sidebar -->
+
+      <div class="col-lg-10 space-top-1 space-bottom-2">
+        <div class="pl-lg-9 pl-xl-8">
+          <div class="hs-docs-content-divider">
+            <h1>Cards</h1>
+            <p class="lead">Front's cards provide a flexible and extensible content container with multiple variants and options.</p>
+            <a href="https://getbootstrap.com/docs/4.4/components/card/" target="_blank">Bootstrap Card documentation <i class="fas fa-external-link-alt fa-xs"></i></a>
+          </div>
+
+          <div id="basic-example" class="hs-docs-content-divider">
+            <h2 class="hs-docs-heading">Basic example <a class="anchorjs-link" href="#basic-example" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
+
+            <div class="tab-wrapper">
+              <!-- Nav Classic -->
+              <ul class="nav nav-classic" id="pills-tab-10" role="tablist">
+                <li class="nav-item">
+                  <a class="nav-link active" id="pills-result-tab-10" data-toggle="pill" href="#pills-result-10" role="tab" aria-controls="pills-result-10" aria-selected="true">Preview</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="pills-html-tab-10" data-toggle="pill" href="#pills-html-10" role="tab" aria-controls="pills-html-10" aria-selected="false">HTML</a>
+                </li>
+              </ul>
+              <!-- End Nav Classic -->
+
+              <!-- Tab Content -->
+              <div class="tab-content" id="pills-tabContent-10">
+                <div class="tab-pane fade p-4 show active" id="pills-result-10" role="tabpanel" aria-labelledby="pills-result-tab-10">
+                  <div class="row">
+                    <div class="col-md-4">
+                      <div class="card">
+                        <img class="card-img-top" src="assets/img/img7.jpg" alt="Card image cap">
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="pills-html-10" role="tabpanel" aria-labelledby="pills-html-tab-10">
+                  <pre class="rounded">
+                    <code class="language-markup" data-lang="html">
+                      &lt;div class="row"&gt;
+                        &lt;div class="col-md-4"&gt;
+                          &lt;div class="card"&gt;
+                            &lt;img class="card-img-top" src="..." alt="Card image cap"&gt;
+                            &lt;div class="card-body"&gt;
+                              &lt;h5 class="card-title"&gt;Card title&lt;/h5&gt;
+                              &lt;p class="card-text"&gt;This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.&lt;/p&gt;
+                              &lt;p class="card-text"&gt;&lt;small class="text-muted"&gt;Last updated 3 mins ago&lt;/small&gt;&lt;/p&gt;
+                            &lt;/div&gt;
+                          &lt;/div&gt;
+                        &lt;/div&gt;
+                      &lt;/div&gt;
+                    </code>
+                  </pre>
+                </div>
+              </div>
+              <!-- End Tab Content -->
+            </div>
+          </div>
+
+          <div id="card-frame" class="hs-docs-content-divider">
+            <h2 class="hs-docs-heading">Card frame <a class="anchorjs-link" href="#card-frame" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
+            <p>Use <code class="highlighter-rouge">.card-frame</code> class to add transition to the border on hover.</p>
+
+            <div class="tab-wrapper">
+              <!-- Nav Classic -->
+              <ul class="nav nav-classic" id="pills-tab-5" role="tablist">
+                <li class="nav-item">
+                  <a class="nav-link active" id="pills-result-tab-5" data-toggle="pill" href="#pills-result-5" role="tab" aria-controls="pills-result-5" aria-selected="true">Preview</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="pills-html-tab-5" data-toggle="pill" href="#pills-html-5" role="tab" aria-controls="pills-html-5" aria-selected="false">HTML</a>
+                </li>
+              </ul>
+              <!-- End Nav Classic -->
+
+              <!-- Tab Content -->
+              <div class="tab-content" id="pills-tabContent-5">
+                <div class="tab-pane fade p-4 show active" id="pills-result-5" role="tabpanel" aria-labelledby="pills-result-tab-5">
+                  <a class="card card-frame" href="#">
+                    <div class="card-body">
+                      This is some text within a card body.
+                    </div>
+                  </a>
+                </div>
+                <div class="tab-pane fade" id="pills-html-5" role="tabpanel" aria-labelledby="pills-html-tab-5">
+                  <pre class="rounded">
+                    <code class="language-markup" data-lang="html">
+                      &lt;a class="card card-frame" href="#"&gt;
+                        &lt;div class="card-body"&gt;
+                          This is some text within a card body.
+                        &lt;/div&gt;
+                      &lt;/a"&gt;
+                    </code>
+                  </pre>
+                </div>
+              </div>
+              <!-- End Tab Content -->
+            </div>
+
+            <p>Use <code class="highlighter-rouge">.card-frame-highlighted</code> class to enable highlighted style.</p>
+
+            <div class="tab-wrapper">
+              <!-- Nav Classic -->
+              <ul class="nav nav-classic" id="pills-tab-6" role="tablist">
+                <li class="nav-item">
+                  <a class="nav-link active" id="pills-result-tab-6" data-toggle="pill" href="#pills-result-6" role="tab" aria-controls="pills-result-6" aria-selected="true">Preview</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="pills-html-tab-6" data-toggle="pill" href="#pills-html-6" role="tab" aria-controls="pills-html-6" aria-selected="false">HTML</a>
+                </li>
+              </ul>
+              <!-- End Nav Classic -->
+
+              <!-- Tab Content -->
+              <div class="tab-content" id="pills-tabContent-6">
+                <div class="tab-pane fade p-4 show active" id="pills-result-6" role="tabpanel" aria-labelledby="pills-result-tab-6">
+                  <div class="card card-frame card-frame-highlighted">
+                    <div class="card-body">
+                      This is some text within a highlighted card body.
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="pills-html-6" role="tabpanel" aria-labelledby="pills-html-tab-6">
+                  <pre class="rounded">
+                    <code class="language-markup" data-lang="html">
+                      &lt;div class="card card-frame card-frame-highlighted"&gt;
+                        &lt;div class="card-body"&gt;
+                          This is some text within a highlighted card body.
+                        &lt;/div&gt;
+                      &lt;/div&gt;
+                    </code>
+                  </pre>
+                </div>
+              </div>
+              <!-- End Tab Content -->
+            </div>
+          </div>
+
+          <div id="card-hover-shadow" class="hs-docs-content-divider">
+            <h2 class="hs-docs-heading">Card shadow on hover <a class="anchorjs-link" href="#card-hover-shadow" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
+            <p>Use <code class="highlighter-rouge">.card-hover-shadow</code> class to animate card with shadow around on hover.</p>
+
+            <div class="tab-wrapper">
+              <!-- Nav Classic -->
+              <ul class="nav nav-classic" id="pills-tab-9" role="tablist">
+                <li class="nav-item">
+                  <a class="nav-link active" id="pills-result-tab-9" data-toggle="pill" href="#pills-result-9" role="tab" aria-controls="pills-result-9" aria-selected="true">Preview</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="pills-html-tab-9" data-toggle="pill" href="#pills-html-9" role="tab" aria-controls="pills-html-9" aria-selected="false">HTML</a>
+                </li>
+              </ul>
+              <!-- End Nav Classic -->
+
+              <!-- Tab Content -->
+              <div class="tab-content" id="pills-tabContent-9">
+                <div class="tab-pane fade p-4 show active" id="pills-result-9" role="tabpanel" aria-labelledby="pills-result-tab-9">
+                  <a class="card card-hover-shadow transition-3d-hover" href="#">
+                    <div class="card-body">
+                      This is some text within a card body.
+                    </div>
+                  </a>
+                </div>
+                <div class="tab-pane fade" id="pills-html-9" role="tabpanel" aria-labelledby="pills-html-tab-9">
+                  <pre class="rounded">
+                    <code class="language-markup" data-lang="html">
+                      &lt;a class="card card-hover-shadow transition-3d-hover" href="#"&gt;
+                        &lt;div class="card-body"&gt;
+                          This is some text within a card body.
+                        &lt;/div&gt;
+                      &lt;/a"&gt;
+                    </code>
+                  </pre>
+                </div>
+              </div>
+              <!-- End Tab Content -->
+            </div>
+          </div>
+
+          <div id="card-bordered" class="hs-docs-content-divider">
+            <h2 class="hs-docs-heading">Card bordered <span class="badge badge-success ml-1">New</span> <a class="anchorjs-link" href="#card-bordered" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
+
+            <div class="tab-wrapper">
+              <!-- Nav Classic -->
+              <ul class="nav nav-classic" id="pills-tab-12" role="tablist">
+                <li class="nav-item">
+                  <a class="nav-link active" id="pills-result-tab-12" data-toggle="pill" href="#pills-result-12" role="tab" aria-controls="pills-result-12" aria-selected="true">Preview</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="pills-html-tab-12" data-toggle="pill" href="#pills-html-12" role="tab" aria-controls="pills-html-12" aria-selected="false">HTML</a>
+                </li>
+              </ul>
+              <!-- End Nav Classic -->
+
+              <!-- Tab Content -->
+              <div class="tab-content" id="pills-tabContent-12">
+                <div class="tab-pane fade p-4 show active" id="pills-result-12" role="tabpanel" aria-labelledby="pills-result-tab-12">
+                  <div class="card card-bordered">
+                    <div class="card-body">
+                      This is some text within a card body.
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="pills-html-12" role="tabpanel" aria-labelledby="pills-html-tab-12">
+                  <pre class="rounded">
+                    <code class="language-markup" data-lang="html">
+                      &lt;div class="card card-bordered"&gt;
+                        &lt;div class="card-body"&gt;
+                          This is some text within a card body.
+                        &lt;/div&gt;
+                      &lt;/div"&gt;
+                    </code>
+                  </pre>
+                </div>
+              </div>
+              <!-- End Tab Content -->
+            </div>
+          </div>
+
+          <div id="card-dashed" class="hs-docs-content-divider">
+            <h2 class="hs-docs-heading">Card dashed <span class="badge badge-success ml-1">New</span> <a class="anchorjs-link" href="#card-dashed" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
+
+            <div class="tab-wrapper">
+              <!-- Nav Classic -->
+              <ul class="nav nav-classic" id="pills-tab-11" role="tablist">
+                <li class="nav-item">
+                  <a class="nav-link active" id="pills-result-tab-11" data-toggle="pill" href="#pills-result-11" role="tab" aria-controls="pills-result-11" aria-selected="true">Preview</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="pills-html-tab-11" data-toggle="pill" href="#pills-html-11" role="tab" aria-controls="pills-html-11" aria-selected="false">HTML</a>
+                </li>
+              </ul>
+              <!-- End Nav Classic -->
+
+              <!-- Tab Content -->
+              <div class="tab-content" id="pills-tabContent-11">
+                <div class="tab-pane fade p-4 show active" id="pills-result-11" role="tabpanel" aria-labelledby="pills-result-tab-11">
+                  <a class="card card-dashed" href="#">
+                    <div class="card-body card-body-centered card-dashed-body">
+                      <i class="fas fa-credit-card fa-lg mb-2"></i>
+                      Add a new card
+                    </div>
+                  </a>
+                </div>
+                <div class="tab-pane fade" id="pills-html-11" role="tabpanel" aria-labelledby="pills-html-tab-11">
+                  <pre class="rounded">
+                    <code class="language-markup" data-lang="html">
+                      &lt;a class="card card-dashed" href="#"&gt;
+                        &lt;div class="card-body card-body-centered card-dashed-body"&gt;
+                          &lt;i class="fas fa-credit-card fa-lg mb-2"&gt;&lt;/i&gt;
+                          Add a new card
+                        &lt;/div&gt;
+                      &lt;/a"&gt;
+                    </code>
+                  </pre>
+                </div>
+              </div>
+              <!-- End Tab Content -->
+            </div>
+          </div>
+
+          <div id="card-body-centered" class="hs-docs-content-divider">
+            <h2 class="hs-docs-heading">Card body centered <span class="badge badge-success ml-1">New</span> <a class="anchorjs-link" href="#card-body-centered" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
+
+            <div class="tab-wrapper">
+              <!-- Nav Classic -->
+              <ul class="nav nav-classic" id="pills-tab-13" role="tablist">
+                <li class="nav-item">
+                  <a class="nav-link active" id="pills-result-tab-13" data-toggle="pill" href="#pills-result-13" role="tab" aria-controls="pills-result-13" aria-selected="true">Preview</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="pills-html-tab-13" data-toggle="pill" href="#pills-html-13" role="tab" aria-controls="pills-html-13" aria-selected="false">HTML</a>
+                </li>
+              </ul>
+              <!-- End Nav Classic -->
+
+              <!-- Tab Content -->
+              <div class="tab-content" id="pills-tabContent-13">
+                <div class="tab-pane fade p-4 show active" id="pills-result-13" role="tabpanel" aria-labelledby="pills-result-tab-13">
+                  <div class="card">
+                    <div class="card-body card-body-centered" style="min-height: 15rem;">
+                      This text is center aligned
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="pills-html-13" role="tabpanel" aria-labelledby="pills-html-tab-13">
+                  <pre class="rounded">
+                    <code class="language-markup" data-lang="html">
+                      &lt;div class="card-body"&gt;
+                        &lt;div class="card-body card-body-centered" style="min-height: 15rem;"&gt;
+                          This text is center aligned
+                        &lt;/div&gt;
+                      &lt;/div&gt;
+                    </code>
+                  </pre>
+                </div>
+              </div>
+              <!-- End Tab Content -->
+            </div>
+          </div>
+
+          <div id="card-columns" class="hs-docs-content-divider">
+            <h2 class="hs-docs-heading">Card columns <a class="anchorjs-link" href="#card-columns" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
+            <p>Cards can be organized into <a href="https://masonry.desandro.com/" target="_blank">Masonry <i class="fas fa-external-link-alt fa-xs"></i></a>-like columns with just CSS by wrapping them in <code class="highlighter-rouge">.card-columns</code>. Cards are built with CSS <code class="highlighter-rouge">column</code> properties instead of flexbox for easier alignment. Cards are ordered from top to bottom and left to right.</p>
+
+            <p>Control any <code class="highlighter-rouge">column</code> across all viewports with responsive <code class="highlighter-rouge">.card{-sm|-md|-lg|-xl}-columns.</code> classes.</p>
+          </div>
+
+          <div id="card-count" class="hs-docs-content-divider">
+            <h2 class="hs-docs-heading">Card count <a class="anchorjs-link" href="#card-count" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
+            <p>Front's <code class="highlighter-rouge">card-columns</code> include five tiers of predefined classes for building complex responsive layouts. Customize the size of your columns on extra small, small, medium, large, or extra large devices however you see fit.</p>
+
+            <p>Cards can be organized from <code class="highlighter-rouge">2 to 4</code> columns.</p>
+
+            <p>For <code class="highlighter-rouge">card-columns</code> that are the same from the smallest of devices to the largest, use the <code class="highlighter-rouge">.card{2|3|4}columns</code> across all viewports.</p>
+          </div>
+
+          <div id="card-count-example" class="hs-docs-content-divider">
+            <h2 class="hs-docs-heading">Example <a class="anchorjs-link" href="#card-count-example" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
+            <p>This example shows <code class="highlighter-rouge">1 column</code> to small devices, <code class="highlighter-rouge">2 columns</code> from small to large devices, and <code class="highlighter-rouge">3 columns</code> from large to higher devices.</p>
+
+            <div class="tab-wrapper">
+              <!-- Nav Classic -->
+              <ul class="nav nav-classic" id="pills-tab-1" role="tablist">
+                <li class="nav-item">
+                  <a class="nav-link active" id="pills-result-tab-1" data-toggle="pill" href="#pills-result-1" role="tab" aria-controls="pills-result-1" aria-selected="true">Preview</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="pills-html-tab-1" data-toggle="pill" href="#pills-html-1" role="tab" aria-controls="pills-html-1" aria-selected="false">HTML</a>
+                </li>
+              </ul>
+              <!-- End Nav Classic -->
+
+              <!-- Tab Content -->
+              <div class="tab-content" id="pills-tabContent-1">
+                <div class="tab-pane fade p-4 show active" id="pills-result-1" role="tabpanel" aria-labelledby="pills-result-tab-1">
+                  <div class="card-sm-columns card-sm-2-count card-lg-3-count">
+                    <div class="card mb-3">
+                      <img class="card-img-top" src="assets/img/img7.jpg" alt="Card image cap">
+                      <div class="card-body">
+                        <h5 class="card-title">Card title that wraps to a new line</h5>
+                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                      </div>
+                    </div>
+                    <div class="card p-3">
+                      <blockquote class="blockquote mb-0 card-body">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                        <footer class="blockquote-footer">
+                          <small class="text-muted">
+                            Someone famous in <cite title="Source Title">Source Title</cite>
+                          </small>
+                        </footer>
+                      </blockquote>
+                    </div>
+                    <div class="card mb-3">
+                      <img class="card-img-top" src="assets/img/img23.jpg" alt="Card image cap">
+                      <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                      </div>
+                    </div>
+                    <div class="card bg-primary text-white text-center p-3 mb-3">
+                      <blockquote class="blockquote mb-0">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat.
+                        <footer class="blockquote-footer text-light">
+                          <small>
+                            Someone famous in <cite title="Source Title">Source Title</cite>
+                          </small>
+                        </footer>
+                      </blockquote>
+                    </div>
+                    <div class="card text-center mb-3">
+                      <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This card has a regular title and short paragraphy of text below it.</p>
+                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                      </div>
+                    </div>
+                    <div class="card mb-3">
+                      <img class="card-img" src="assets/img/img8.jpg" alt="Card image">
+                    </div>
+                    <div class="card p-3 text-right mb-3">
+                      <blockquote class="blockquote mb-0">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                        <footer class="blockquote-footer">
+                          <small class="text-muted">
+                            Someone famous in <cite title="Source Title">Source Title</cite>
+                          </small>
+                        </footer>
+                      </blockquote>
+                    </div>
+                    <div class="card mb-3">
+                      <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This is another card with title and supporting text below. This card has some additional content to make it slightly taller overall.</p>
+                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="pills-html-1" role="tabpanel" aria-labelledby="pills-html-tab-1">
+                  <pre class="rounded">
+                    <code class="language-markup" data-lang="html">
+                      &lt;div class="card-sm-columns card-sm-2-count card-lg-3-count"&gt;
+                        &lt;div class="card mb-3"&gt;
+                          &lt;img class="card-img-top" src="..." alt="Card image cap"&gt;
+                          &lt;div class="card-body"&gt;
+                            &lt;h5 class="card-title"&gt;Card title that wraps to a new line&lt;/h5&gt;
+                            &lt;p class="card-text"&gt;This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.&lt;/p&gt;
+                          &lt;/div&gt;
+                        &lt;/div&gt;
+                        &lt;div class="card p-3"&gt;
+                          &lt;blockquote class="blockquote mb-0 card-body"&gt;
+                            &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.&lt;/p&gt;
+                            &lt;footer class="blockquote-footer"&gt;
+                              &lt;small class="text-muted"&gt;
+                                Someone famous in &lt;cite title="Source Title"&gt;Source Title&lt;/cite&gt;
+                              &lt;/small&gt;
+                            &lt;/footer&gt;
+                          &lt;/blockquote&gt;
+                        &lt;/div&gt;
+                        &lt;div class="card mb-3"&gt;
+                          &lt;img class="card-img-top" src="..." alt="Card image cap"&gt;
+                          &lt;div class="card-body"&gt;
+                            &lt;h5 class="card-title"&gt;Card title&lt;/h5&gt;
+                            &lt;p class="card-text"&gt;This card has supporting text below as a natural lead-in to additional content.&lt;/p&gt;
+                            &lt;p class="card-text"&gt;&lt;small class="text-muted"&gt;Last updated 3 mins ago&lt;/small&gt;&lt;/p&gt;
+                          &lt;/div&gt;
+                        &lt;/div&gt;
+                        &lt;div class="card bg-primary text-white text-center p-3 mb-3"&gt;
+                          &lt;blockquote class="blockquote mb-0"&gt;
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat.
+                            &lt;footer class="blockquote-footer text-light"&gt;
+                              &lt;small&gt;
+                                Someone famous in &lt;cite title="Source Title"&gt;Source Title&lt;/cite&gt;
+                              &lt;/small&gt;
+                            &lt;/footer&gt;
+                          &lt;/blockquote&gt;
+                        &lt;/div&gt;
+                        &lt;div class="card text-center mb-3"&gt;
+                          &lt;div class="card-body"&gt;
+                            &lt;h5 class="card-title"&gt;Card title&lt;/h5&gt;
+                            &lt;p class="card-text"&gt;This card has a regular title and short paragraphy of text below it.&lt;/p&gt;
+                            &lt;p class="card-text"&gt;&lt;small class="text-muted"&gt;Last updated 3 mins ago&lt;/small&gt;&lt;/p&gt;
+                          &lt;/div&gt;
+                        &lt;/div&gt;
+                        &lt;div class="card mb-3"&gt;
+                          &lt;img class="card-img" src="assets/i... alt="Card image"&gt;
+                        &lt;/div&gt;
+                        &lt;div class="card p-3 text-right mb-3"&gt;
+                          &lt;blockquote class="blockquote mb-0"&gt;
+                            &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.&lt;/p&gt;
+                            &lt;footer class="blockquote-footer"&gt;
+                              &lt;small class="text-muted"&gt;
+                                Someone famous in &lt;cite title="Source Title"&gt;Source Title&lt;/cite&gt;
+                              &lt;/small&gt;
+                            &lt;/footer&gt;
+                          &lt;/blockquote&gt;
+                        &lt;/div&gt;
+                        &lt;div class="card mb-3"&gt;
+                          &lt;div class="card-body"&gt;
+                            &lt;h5 class="card-title"&gt;Card title&lt;/h5&gt;
+                            &lt;p class="card-text"&gt;This is another card with title and supporting text below. This card has some additional content to make it slightly taller overall.&lt;/p&gt;
+                            &lt;p class="card-text"&gt;&lt;small class="text-muted"&gt;Last updated 3 mins ago&lt;/small&gt;&lt;/p&gt;
+                          &lt;/div&gt;
+                        &lt;/div&gt;
+                      &lt;/div&gt;
+                    </code>
+                  </pre>
+                </div>
+              </div>
+              <!-- End Tab Content -->
+            </div>
+
+            <p>Card column numbers can also be extended and customized by adding or removing numbers via <code class="highlighter-rouge">scss/_theme-variables.scss</code> to the <code class="highlighter-rouge">$card-count</code>.</p>
+          </div>
+
+          <div id="card-gap" class="hs-docs-content-divider">
+            <h2 class="hs-docs-heading">Card gap <a class="anchorjs-link" href="#card-gap" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
+            <p>Front's <code class="highlighter-rouge">card-gap</code> includes five sizing predefined classes for separating layouts. These classes are ideal for customizing card column gutters across breakpoints.</p>
+
+            <p>For <code class="highlighter-rouge">card-gap</code> use the <code class="highlighter-rouge">.card-{sm|md|lg|xl}-{1|2|3|4|5}-gap</code> across all viewports.</p>
+
+            <p>Here's an example of <code class="highlighter-rouge">.card-lg-3-gap</code> size in use:</p>
+
+            <div class="tab-wrapper">
+              <!-- Nav Classic -->
+              <ul class="nav nav-classic" id="pills-tab-7" role="tablist">
+                <li class="nav-item">
+                  <a class="nav-link active" id="pills-result-tab-7" data-toggle="pill" href="#pills-result-7" role="tab" aria-controls="pills-result-7" aria-selected="true">Preview</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="pills-html-tab-7" data-toggle="pill" href="#pills-html-7" role="tab" aria-controls="pills-html-7" aria-selected="false">HTML</a>
+                </li>
+              </ul>
+              <!-- End Nav Classic -->
+
+              <!-- Tab Content -->
+              <div class="tab-content" id="pills-tabContent-7">
+                <div class="tab-pane fade p-4 show active" id="pills-result-7" role="tabpanel" aria-labelledby="pills-result-tab-7">
+                  <div class="card-sm-columns card-sm-2-count card-lg-3-count card-lg-3-gap">
+                    <div class="card mb-8">
+                      <img class="card-img-top" src="assets/img/img7.jpg" alt="Card image cap">
+                      <div class="card-body">
+                        <h5 class="card-title">Card title that wraps to a new line</h5>
+                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                      </div>
+                    </div>
+                    <div class="card p-3">
+                      <blockquote class="blockquote mb-0 card-body">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                        <footer class="blockquote-footer">
+                          <small class="text-muted">
+                            Someone famous in <cite title="Source Title">Source Title</cite>
+                          </small>
+                        </footer>
+                      </blockquote>
+                    </div>
+                    <div class="card mb-8">
+                      <img class="card-img-top" src="assets/img/img23.jpg" alt="Card image cap">
+                      <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                      </div>
+                    </div>
+                    <div class="card bg-primary text-white text-center p-3 mb-8">
+                      <blockquote class="blockquote mb-0">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat.
+                        <footer class="blockquote-footer text-light">
+                          <small>
+                            Someone famous in <cite title="Source Title">Source Title</cite>
+                          </small>
+                        </footer>
+                      </blockquote>
+                    </div>
+                    <div class="card text-center mb-8">
+                      <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This card has a regular title and short paragraphy of text below it.</p>
+                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                      </div>
+                    </div>
+                    <div class="card mb-8">
+                      <img class="card-img" src="assets/img/img8.jpg" alt="Card image">
+                    </div>
+                    <div class="card p-3 text-right mb-8">
+                      <blockquote class="blockquote mb-0">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                        <footer class="blockquote-footer">
+                          <small class="text-muted">
+                            Someone famous in <cite title="Source Title">Source Title</cite>
+                          </small>
+                        </footer>
+                      </blockquote>
+                    </div>
+                    <div class="card mb-8">
+                      <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This is another card with title and supporting text below. This card has some additional content to make it slightly taller overall.</p>
+                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="pills-html-7" role="tabpanel" aria-labelledby="pills-html-tab-7">
+                  <pre class="rounded">
+                    <code class="language-markup" data-lang="html">
+                      &lt;div class="card-sm-columns card-sm-2-count card-lg-3-count card-lg-3-gap"&gt;
+                        &lt;div class="card mb-8"&gt;
+                          &lt;img class="card-img-top" src="..." alt="Card image cap"&gt;
+                          &lt;div class="card-body"&gt;
+                            &lt;h5 class="card-title"&gt;Card title that wraps to a new line&lt;/h5&gt;
+                            &lt;p class="card-text"&gt;This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.&lt;/p&gt;
+                          &lt;/div&gt;
+                        &lt;/div&gt;
+                        &lt;div class="card p-3"&gt;
+                          &lt;blockquote class="blockquote mb-0 card-body"&gt;
+                            &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.&lt;/p&gt;
+                            &lt;footer class="blockquote-footer"&gt;
+                              &lt;small class="text-muted"&gt;
+                                Someone famous in &lt;cite title="Source Title"&gt;Source Title&lt;/cite&gt;
+                              &lt;/small&gt;
+                            &lt;/footer&gt;
+                          &lt;/blockquote&gt;
+                        &lt;/div&gt;
+                        &lt;div class="card mb-8"&gt;
+                          &lt;img class="card-img-top" src="..." alt="Card image cap"&gt;
+                          &lt;div class="card-body"&gt;
+                            &lt;h5 class="card-title"&gt;Card title&lt;/h5&gt;
+                            &lt;p class="card-text"&gt;This card has supporting text below as a natural lead-in to additional content.&lt;/p&gt;
+                            &lt;p class="card-text"&gt;&lt;small class="text-muted"&gt;Last updated 3 mins ago&lt;/small&gt;&lt;/p&gt;
+                          &lt;/div&gt;
+                        &lt;/div&gt;
+                        &lt;div class="card bg-primary text-white text-center p-3 mb-8"&gt;
+                          &lt;blockquote class="blockquote mb-0"&gt;
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat.
+                            &lt;footer class="blockquote-footer text-light"&gt;
+                              &lt;small&gt;
+                                Someone famous in &lt;cite title="Source Title"&gt;Source Title&lt;/cite&gt;
+                              &lt;/small&gt;
+                            &lt;/footer&gt;
+                          &lt;/blockquote&gt;
+                        &lt;/div&gt;
+                        &lt;div class="card text-center mb-8"&gt;
+                          &lt;div class="card-body"&gt;
+                            &lt;h5 class="card-title"&gt;Card title&lt;/h5&gt;
+                            &lt;p class="card-text"&gt;This card has a regular title and short paragraphy of text below it.&lt;/p&gt;
+                            &lt;p class="card-text"&gt;&lt;small class="text-muted"&gt;Last updated 3 mins ago&lt;/small&gt;&lt;/p&gt;
+                          &lt;/div&gt;
+                        &lt;/div&gt;
+                        &lt;div class="card mb-8"&gt;
+                          &lt;img class="card-img" src="assets/i... alt="Card image"&gt;
+                        &lt;/div&gt;
+                        &lt;div class="card p-3 text-right mb-8"&gt;
+                          &lt;blockquote class="blockquote mb-0"&gt;
+                            &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.&lt;/p&gt;
+                            &lt;footer class="blockquote-footer"&gt;
+                              &lt;small class="text-muted"&gt;
+                                Someone famous in &lt;cite title="Source Title"&gt;Source Title&lt;/cite&gt;
+                              &lt;/small&gt;
+                            &lt;/footer&gt;
+                          &lt;/blockquote&gt;
+                        &lt;/div&gt;
+                        &lt;div class="card mb-8"&gt;
+                          &lt;div class="card-body"&gt;
+                            &lt;h5 class="card-title"&gt;Card title&lt;/h5&gt;
+                            &lt;p class="card-text"&gt;This is another card with title and supporting text below. This card has some additional content to make it slightly taller overall.&lt;/p&gt;
+                            &lt;p class="card-text"&gt;&lt;small class="text-muted"&gt;Last updated 3 mins ago&lt;/small&gt;&lt;/p&gt;
+                          &lt;/div&gt;
+                        &lt;/div&gt;
+                      &lt;/div&gt;
+                    </code>
+                  </pre>
+                </div>
+              </div>
+              <!-- End Tab Content -->
+            </div>
+          </div>
+
+          <div id="card-gutters" class="hs-docs-content-divider">
+            <h2 class="hs-docs-heading">Card gutters <a class="anchorjs-link" href="#card-gutters" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
+            <p><code class="highlighter-rouge">card-gutters</code> are perfect classes to build equal height blocks and break them in specific breakpoints.</p>
+
+            <p>Card gutters include <code class="highlighter-rouge">.card-*-gutters-1</code> <span class="text-dark font-weight-bold">(4px)</span>, <code class="highlighter-rouge">card-*-gutters-2</code> <span class="text-dark font-weight-bold">(8px)</span>, and <code class="highlighter-rouge">card-*-gutters-3</code> <span class="text-dark font-weight-bold">(15px)</span> gutter class options.</p>
+
+            <p>These classes are available for <code class="highlighter-rouge">.card{-sm|-md|-lg|-xl}-gutters-*</code> breakpoints. However, they can easily be extended via <code class="highlighter-rouge">scss/front/cards/_cards.scss</code>.</p>
+          </div>
+
+          <div id="card-gutters-examples" class="hs-docs-content-divider">
+            <h2 class="hs-docs-heading">Examples <a class="anchorjs-link" href="#card-gutters-examples" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
+
+            <div class="tab-wrapper">
+              <!-- Nav Classic -->
+              <ul class="nav nav-classic" id="pills-tab-2" role="tablist">
+                <li class="nav-item">
+                  <a class="nav-link active" id="pills-result-tab-2" data-toggle="pill" href="#pills-result-2" role="tab" aria-controls="pills-result-2" aria-selected="true">Preview</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="pills-html-tab-2" data-toggle="pill" href="#pills-html-2" role="tab" aria-controls="pills-html-2" aria-selected="false">HTML</a>
+                </li>
+              </ul>
+              <!-- End Nav Classic -->
+
+              <!-- Tab Content -->
+              <div class="tab-content" id="pills-tabContent-2">
+                <div class="tab-pane fade p-4 show active" id="pills-result-2" role="tabpanel" aria-labelledby="pills-result-tab-2">
+                  <div class="card-deck card-sm-gutters-1 d-block d-sm-flex">
+                    <div class="card mb-3">
+                      <img class="card-img-top" src="assets/img/img7.jpg" alt="Card image cap">
+                      <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                      </div>
+                    </div>
+                    <div class="card mb-3">
+                      <img class="card-img-top" src="assets/img/img8.jpg" alt="Card image cap">
+                      <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                      </div>
+                    </div>
+                    <div class="card mb-3">
+                      <img class="card-img-top" src="assets/img/img9.jpg" alt="Card image cap">
+                      <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This is another card with title and supporting text below. This card has some additional content to make it slightly taller overall.</p>
+                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="pills-html-2" role="tabpanel" aria-labelledby="pills-html-tab-2">
+                  <pre class="rounded">
+                    <code class="language-markup" data-lang="html">
+                      &lt;div class="card-deck card-sm-gutters-1 d-block d-sm-flex"&gt;
+                        &lt;div class="card mb-3"&gt;
+                          &lt;img class="card-img-top" src="..." alt="Card image cap"&gt;
+                          &lt;div class="card-body"&gt;
+                            &lt;h5 class="card-title"&gt;Card title&lt;/h5&gt;
+                            &lt;p class="card-text"&gt;This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.&lt;/p&gt;
+                            &lt;p class="card-text"&gt;&lt;small class="text-muted"&gt;Last updated 3 mins ago&lt;/small&gt;&lt;/p&gt;
+                          &lt;/div&gt;
+                        &lt;/div&gt;
+                        &lt;div class="card mb-3"&gt;
+                          &lt;img class="card-img-top" src="..." alt="Card image cap"&gt;
+                          &lt;div class="card-body"&gt;
+                            &lt;h5 class="card-title"&gt;Card title&lt;/h5&gt;
+                            &lt;p class="card-text"&gt;This card has supporting text below as a natural lead-in to additional content.&lt;/p&gt;
+                            &lt;p class="card-text"&gt;&lt;small class="text-muted"&gt;Last updated 3 mins ago&lt;/small&gt;&lt;/p&gt;
+                          &lt;/div&gt;
+                        &lt;/div&gt;
+                        &lt;div class="card mb-3"&gt;
+                          &lt;img class="card-img-top" src="..." alt="Card image cap"&gt;
+                          &lt;div class="card-body"&gt;
+                            &lt;h5 class="card-title"&gt;Card title&lt;/h5&gt;
+                            &lt;p class="card-text"&gt;This is another card with title and supporting text below. This card has some additional content to make it slightly taller overall.&lt;/p&gt;
+                            &lt;p class="card-text"&gt;&lt;small class="text-muted"&gt;Last updated 3 mins ago&lt;/small&gt;&lt;/p&gt;
+                          &lt;/div&gt;
+                        &lt;/div&gt;
+                      &lt;/div&gt;
+                    </code>
+                  </pre>
+                </div>
+              </div>
+              <!-- End Tab Content -->
+            </div>
+
+            <div class="tab-wrapper">
+              <!-- Nav Classic -->
+              <ul class="nav nav-classic" id="pills-tab-3" role="tablist">
+                <li class="nav-item">
+                  <a class="nav-link active" id="pills-result-tab-3" data-toggle="pill" href="#pills-result-3" role="tab" aria-controls="pills-result-3" aria-selected="true">Preview</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="pills-html-tab-3" data-toggle="pill" href="#pills-html-3" role="tab" aria-controls="pills-html-3" aria-selected="false">HTML</a>
+                </li>
+              </ul>
+              <!-- End Nav Classic -->
+
+              <!-- Tab Content -->
+              <div class="tab-content" id="pills-tabContent-3">
+                <div class="tab-pane fade p-4 show active" id="pills-result-3" role="tabpanel" aria-labelledby="pills-result-tab-3">
+                  <div class="card-deck card-sm-gutters-2 d-block d-sm-flex">
+                    <div class="card mb-3">
+                      <img class="card-img-top" src="assets/img/img7.jpg" alt="Card image cap">
+                      <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                      </div>
+                    </div>
+                    <div class="card mb-3">
+                      <img class="card-img-top" src="assets/img/img8.jpg" alt="Card image cap">
+                      <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                      </div>
+                    </div>
+                    <div class="card mb-3">
+                      <img class="card-img-top" src="assets/img/img9.jpg" alt="Card image cap">
+                      <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This is another card with title and supporting text below. This card has some additional content to make it slightly taller overall.</p>
+                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="pills-html-3" role="tabpanel" aria-labelledby="pills-html-tab-3">
+                  <pre class="rounded">
+                    <code class="language-markup" data-lang="html">
+                      &lt;div class="card-deck card-sm-gutters-2 d-block d-sm-flex"&gt;
+                        &lt;div class="card mb-3"&gt;
+                          &lt;img class="card-img-top" src="..." alt="Card image cap"&gt;
+                          &lt;div class="card-body"&gt;
+                            &lt;h5 class="card-title"&gt;Card title&lt;/h5&gt;
+                            &lt;p class="card-text"&gt;This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.&lt;/p&gt;
+                            &lt;p class="card-text"&gt;&lt;small class="text-muted"&gt;Last updated 3 mins ago&lt;/small&gt;&lt;/p&gt;
+                          &lt;/div&gt;
+                        &lt;/div&gt;
+                        &lt;div class="card mb-3"&gt;
+                          &lt;img class="card-img-top" src="..." alt="Card image cap"&gt;
+                          &lt;div class="card-body"&gt;
+                            &lt;h5 class="card-title"&gt;Card title&lt;/h5&gt;
+                            &lt;p class="card-text"&gt;This card has supporting text below as a natural lead-in to additional content.&lt;/p&gt;
+                            &lt;p class="card-text"&gt;&lt;small class="text-muted"&gt;Last updated 3 mins ago&lt;/small&gt;&lt;/p&gt;
+                          &lt;/div&gt;
+                        &lt;/div&gt;
+                        &lt;div class="card mb-3"&gt;
+                          &lt;img class="card-img-top" src="..." alt="Card image cap"&gt;
+                          &lt;div class="card-body"&gt;
+                            &lt;h5 class="card-title"&gt;Card title&lt;/h5&gt;
+                            &lt;p class="card-text"&gt;This is another card with title and supporting text below. This card has some additional content to make it slightly taller overall.&lt;/p&gt;
+                            &lt;p class="card-text"&gt;&lt;small class="text-muted"&gt;Last updated 3 mins ago&lt;/small&gt;&lt;/p&gt;
+                          &lt;/div&gt;
+                        &lt;/div&gt;
+                      &lt;/div&gt;
+                    </code>
+                  </pre>
+                </div>
+              </div>
+              <!-- End Tab Content -->
+            </div>
+
+            <div class="tab-wrapper">
+              <!-- Nav Classic -->
+              <ul class="nav nav-classic" id="pills-tab-4" role="tablist">
+                <li class="nav-item">
+                  <a class="nav-link active" id="pills-result-tab-4" data-toggle="pill" href="#pills-result-4" role="tab" aria-controls="pills-result-4" aria-selected="true">Preview</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="pills-html-tab-4" data-toggle="pill" href="#pills-html-4" role="tab" aria-controls="pills-html-4" aria-selected="false">HTML</a>
+                </li>
+              </ul>
+              <!-- End Nav Classic -->
+
+              <!-- Tab Content -->
+              <div class="tab-content" id="pills-tabContent-4">
+                <div class="tab-pane fade p-4 show active" id="pills-result-4" role="tabpanel" aria-labelledby="pills-result-tab-4">
+                  <div class="card-deck card-sm-gutters-3 d-block d-sm-flex">
+                    <div class="card mb-3">
+                      <img class="card-img-top" src="assets/img/img7.jpg" alt="Card image cap">
+                      <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                      </div>
+                    </div>
+                    <div class="card mb-3">
+                      <img class="card-img-top" src="assets/img/img8.jpg" alt="Card image cap">
+                      <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                      </div>
+                    </div>
+                    <div class="card mb-3">
+                      <img class="card-img-top" src="assets/img/img9.jpg" alt="Card image cap">
+                      <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This is another card with title and supporting text below. This card has some additional content to make it slightly taller overall.</p>
+                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="pills-html-4" role="tabpanel" aria-labelledby="pills-html-tab-4">
+                  <pre class="rounded">
+                    <code class="language-markup" data-lang="html">
+                      &lt;div class="card-deck card-sm-gutters-3 d-block d-sm-flex"&gt;
+                        &lt;div class="card mb-3"&gt;
+                          &lt;img class="card-img-top" src="..." alt="Card image cap"&gt;
+                          &lt;div class="card-body"&gt;
+                            &lt;h5 class="card-title"&gt;Card title&lt;/h5&gt;
+                            &lt;p class="card-text"&gt;This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.&lt;/p&gt;
+                            &lt;p class="card-text"&gt;&lt;small class="text-muted"&gt;Last updated 3 mins ago&lt;/small&gt;&lt;/p&gt;
+                          &lt;/div&gt;
+                        &lt;/div&gt;
+                        &lt;div class="card mb-3"&gt;
+                          &lt;img class="card-img-top" src="..." alt="Card image cap"&gt;
+                          &lt;div class="card-body"&gt;
+                            &lt;h5 class="card-title"&gt;Card title&lt;/h5&gt;
+                            &lt;p class="card-text"&gt;This card has supporting text below as a natural lead-in to additional content.&lt;/p&gt;
+                            &lt;p class="card-text"&gt;&lt;small class="text-muted"&gt;Last updated 3 mins ago&lt;/small&gt;&lt;/p&gt;
+                          &lt;/div&gt;
+                        &lt;/div&gt;
+                        &lt;div class="card mb-3"&gt;
+                          &lt;img class="card-img-top" src="..." alt="Card image cap"&gt;
+                          &lt;div class="card-body"&gt;
+                            &lt;h5 class="card-title"&gt;Card title&lt;/h5&gt;
+                            &lt;p class="card-text"&gt;This is another card with title and supporting text below. This card has some additional content to make it slightly taller overall.&lt;/p&gt;
+                            &lt;p class="card-text"&gt;&lt;small class="text-muted"&gt;Last updated 3 mins ago&lt;/small&gt;&lt;/p&gt;
+                          &lt;/div&gt;
+                        &lt;/div&gt;
+                      &lt;/div&gt;
+                    </code>
+                  </pre>
+                </div>
+              </div>
+              <!-- End Tab Content -->
+            </div>
+          </div>
+
+          <div id="card-group-break" class="hs-docs-content-divider">
+            <h2 class="hs-docs-heading">Card group break <a class="anchorjs-link" href="#card-group-break" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
+            <p>Use <a href="http://getbootstrap.com/docs/4.3.1/components/card/#card-layout" target="_blank">card groups <i class="fas fa-external-link-alt fa-xs"></i></a> to render cards as a single, attached element with equal width and height columns. Card groups use <code class="highlighter-rouge">display: flex;</code> to achieve their uniform sizing.</p>
+
+            <p>To break card group (equal height) groups, use <code class="highlighter-rouge">.card-group-{-sm|-md|-lg}-break</code> classes to line them vertically.</p>
+          </div>
+
+          <div id="card-group-break-example" class="hs-docs-content-divider">
+            <h2 class="hs-docs-heading">Example <a class="anchorjs-link" href="#card-group-break-example" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
+            <p>This example break card group on <code class="highlighter-rouge">md (medium)</code> device resolution.</p>
+
+            <div class="tab-wrapper">
+              <!-- Nav Classic -->
+              <ul class="nav nav-classic" id="pills-tab-8" role="tablist">
+                <li class="nav-item">
+                  <a class="nav-link active" id="pills-result-tab-8" data-toggle="pill" href="#pills-result-8" role="tab" aria-controls="pills-result-8" aria-selected="true">Preview</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="pills-html-tab-8" data-toggle="pill" href="#pills-html-8" role="tab" aria-controls="pills-html-8" aria-selected="false">HTML</a>
+                </li>
+              </ul>
+              <!-- End Nav Classic -->
+
+              <!-- Tab Content -->
+              <div class="tab-content" id="pills-tabContent-8">
+                <div class="tab-pane fade p-4 show active" id="pills-result-8" role="tabpanel" aria-labelledby="pills-result-tab-8">
+                  <div class="card-group card-group-md-break">
+                    <div class="card">
+                      <img class="card-img-top" src="assets/img/img7.jpg" alt="Card image cap">
+                      <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <img class="card-img-top" src="assets/img/img8.jpg" alt="Card image cap">
+                      <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <img class="card-img-top" src="assets/img/img9.jpg" alt="Card image cap">
+                      <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="pills-html-8" role="tabpanel" aria-labelledby="pills-html-tab-8">
+                  <pre class="rounded">
+                    <code class="language-markup" data-lang="html">
+                      &lt;div class="card-group card-group-md-break"&gt;
+                        &lt;div class="card"&gt;
+                          &lt;img class="card-img-top" src="..." alt="Card image cap"&gt;
+                          &lt;div class="card-body"&gt;
+                            &lt;h5 class="card-title"&gt;Card title&lt;/h5&gt;
+                            &lt;p class="card-text"&gt;This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.&lt;/p&gt;
+                            &lt;p class="card-text"&gt;&lt;small class="text-muted"&gt;Last updated 3 mins ago&lt;/small&gt;&lt;/p&gt;
+                          &lt;/div&gt;
+                        &lt;/div&gt;
+                        &lt;div class="card"&gt;
+                          &lt;img class="card-img-top" src="..." alt="Card image cap"&gt;
+                          &lt;div class="card-body"&gt;
+                            &lt;h5 class="card-title"&gt;Card title&lt;/h5&gt;
+                            &lt;p class="card-text"&gt;This card has supporting text below as a natural lead-in to additional content.&lt;/p&gt;
+                            &lt;p class="card-text"&gt;&lt;small class="text-muted"&gt;Last updated 3 mins ago&lt;/small&gt;&lt;/p&gt;
+                          &lt;/div&gt;
+                        &lt;/div&gt;
+                        &lt;div class="card"&gt;
+                          &lt;img class="card-img-top" src="..." alt="Card image cap"&gt;
+                          &lt;div class="card-body"&gt;
+                            &lt;h5 class="card-title"&gt;Card title&lt;/h5&gt;
+                            &lt;p class="card-text"&gt;This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.&lt;/p&gt;
+                            &lt;p class="card-text"&gt;&lt;small class="text-muted"&gt;Last updated 3 mins ago&lt;/small&gt;&lt;/p&gt;
+                          &lt;/div&gt;
+                        &lt;/div&gt;
+                      &lt;/div&gt;
+                    </code>
+                  </pre>
+                </div>
+              </div>
+              <!-- End Tab Content -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <!-- ========== END MAIN CONTENT ========== -->
+
+  <!-- Go to Top -->
+  <a class="js-go-to go-to position-fixed" href="javascript:;" style="visibility: hidden;"
+     data-hs-go-to-options='{
+       "offsetTop": 700,
+       "position": {
+         "init": {
+           "right": 15
+         },
+         "show": {
+           "bottom": 15
+         },
+         "hide": {
+           "bottom": -15
+         }
+       }
+     }'>
+    <i class="fas fa-angle-up"></i>
+  </a>
+  <!-- End Go to Top -->
+
+  <!-- JS Global Compulsory -->
+  <script src="../assets/vendor/jquery/dist/jquery.min.js"></script>
+  <script src="../assets/vendor/jquery-migrate/dist/jquery-migrate.min.js"></script>
+  <script src="../assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- JS Implementing Plugins -->
+  <script src="../assets/vendor/hs-header/dist/hs-header.min.js"></script>
+  <script src="../assets/vendor/hs-go-to/dist/hs-go-to.min.js"></script>
+  <script src="../assets/vendor/hs-scroll-to-in-overflowed-container/dist/hs-scroll-to-in-overflowed-container.min.js"></script>
+  <script src="../documentation/assets/vendor/jquery-ui/jquery-ui.core.min.js"></script>
+  <script src="../documentation/assets/vendor/jquery-ui/ui/widgets/menu.js"></script>
+  <script src="../documentation/assets/vendor/jquery-ui/ui/widgets/mouse.js"></script>
+  <script src="../documentation/assets/vendor/jquery-ui/ui/widgets/autocomplete.js"></script>
+  <script src="../documentation/assets/vendor/prism/prism.js"></script>
+
+  <!-- JS Front -->
+  <script src="../assets/js/hs.core.js"></script>
+  <script src="../documentation/assets/js/components/hs.autocomplete-local-search.js"></script>
+
+  <!-- JS Plugins Init. -->
+  <script>
+    $(document).on('ready', function () {
+      // initialization of header
+      var header = new HSHeader($('#header')).init();
+
+      // initialization of go to
+      $('.js-go-to').each(function () {
+        var goTo = new HSGoTo($(this)).init();
+      });
+
+      // initialization scroll to in overflowed container
+      var scrollToInOverflowedContainerNav = new HSScrollToInOverflowedContainer($('#sidebarNav'), {
+        targetEl: "#sidebarNav .hs-sidebar-link.active"
+      }).init();
+    });
+
+    $(window).on('load', function () {
+      // initialization of autocomplet
+      $.HSCore.components.HSLocalSearchAutocomplete.init('.js-hs-docs-search');
+    });
+  </script>
+</body>
+</html>

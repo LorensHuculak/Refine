@@ -1,0 +1,15 @@
+/*------------------------------------
+  Background Gradients
+------------------------------------*/
+
+.gradient-y-sm-primary {
+	@include gradient-y($start-color: $gradient-transparent, $end-color: rgba($gradient-primary, .075));
+}
+
+.gradient-y-gray {
+	@include gradient-y($start-color: $gradient-transparent, $end-color: rgba($gradient-gray-300, .5));
+}
+
+.gradient-y-lg-white {
+  @include gradient-y($start-color: $gradient-transparent, $end-color: $gradient-white);
+}

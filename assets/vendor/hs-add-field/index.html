@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Title -->
+  <title>Settings | Front - Admin &amp; Dashboard Template</title>
+
+  <!-- Required Meta Tags Always Come First -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="../../../favicon.ico">
+
+  <!-- Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+
+  <!-- CSS Implementing Plugins -->
+  <link rel="stylesheet" href="../icon-set/style.css">
+
+  <!-- CSS Front Template -->
+  <link rel="stylesheet" href="../../css/theme.css">
+</head>
+<body>
+
+  <main id="content" role="main" class="main">
+    <!-- Content -->
+    <div class="content container">
+      <div class="row">
+        <div class="col-5">
+          <form action="">
+            <!-- Add Input Fields -->
+            <div class="js-add-field"
+                 data-hs-add-field-options='{
+                    "template": "#fields-template",
+                    "container": "#fields-container",
+                    "defaultCreated": 2
+                  }'>
+
+              <!-- Container For Fields -->
+              <div id="fields-container"></div>
+              <!-- End Container For Fields -->
+
+              <div class="form-group">
+                <a href="javascript:;" class="js-create-field">Add Input +</a>
+              </div>
+            </div>
+            <!-- End Add Input Fields -->
+
+            <button class="btn btn-primary">Submit</button>
+          </form>
+
+          <!-- Template For Fields -->
+          <div id="fields-template" class="form-group" style="display: none;">
+            <div class="input-group">
+              <input type="text" class="form-control" placeholder="Enter project" data-name="input" required>
+
+              <select class="custom-select" data-name="select">
+                <option>Select me</option>
+                <option>Option 1</option>
+                <option>Option 2</option>
+                <option>Option 3</option>
+              </select>
+
+              <button type="button" class="js-delete-field btn btn-link">Delete</button>
+            </div>
+          </div>
+          <!-- End Template For Fields -->
+        </div>
+      </div>
+    </div>
+    <!-- End Content -->
+  </main>
+  <!-- ========== END MAIN CONTENT ========== -->
+
+  <!-- JS Global Compulsory -->
+  <script src="../jquery/dist/jquery.min.js"></script>
+  <script src="../jquery-migrate/dist/jquery-migrate.min.js"></script>
+  <script src="../bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- JS Implementing Plugins -->
+  <script src="dist/hs-add-field.min.js"></script>
+
+  <!-- JS Plugins Init. -->
+  <script>
+    $(document).on('ready', function () {
+      // initialization of sticky blocks
+      $('.js-add-field').each(function () {
+        new HSAddField($(this)).init();
+      });
+    });
+  </script>
+
+  <!-- IE Support -->
+  <script>
+    if (/MSIE \d|Trident.*rv:/.test(navigator.userAgent)) document.write('<script src="../assets/vendor/polifills.js"><\/script>');
+  </script>
+</body>
+</html>

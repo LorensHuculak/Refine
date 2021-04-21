@@ -1,0 +1,63 @@
+{
+  "_from": "jquery-countdown",
+  "_id": "jquery-countdown@2.2.0",
+  "_inBundle": false,
+  "_integrity": "sha1-unjtXXzxB7OxysnGugeZfUqi3O8=",
+  "_location": "/jquery-countdown",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "jquery-countdown",
+    "name": "jquery-countdown",
+    "escapedName": "jquery-countdown",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/jquery-countdown/-/jquery-countdown-2.2.0.tgz",
+  "_shasum": "ba78ed5d7cf107b3b1cac9c6ba07997d4aa2dcef",
+  "_spec": "jquery-countdown",
+  "_where": "D:\\wamp\\www\\front-v1.0",
+  "author": {
+    "name": "Edson Hilios"
+  },
+  "bugs": {
+    "url": "https://github.com/hilios/jQuery.countdown/issues"
+  },
+  "bundleDependencies": false,
+  "deprecated": false,
+  "description": "The Final Countdown for jQuery",
+  "devDependencies": {
+    "grunt": "~0.4",
+    "grunt-contrib-clean": "~0.5",
+    "grunt-contrib-compress": "~0.6",
+    "grunt-contrib-jshint": "~0.10",
+    "grunt-contrib-uglify": "~0.4",
+    "grunt-jsonlint": "~1.0",
+    "grunt-karma": "~0.8",
+    "grunt-version": "~0.3",
+    "karma": "~0.12",
+    "karma-coverage": "~0.2",
+    "karma-phantomjs-launcher": "~0.1",
+    "karma-qunit": "~0.1",
+    "karma-requirejs": "~0.2",
+    "karma-sinon": "~1.0",
+    "requirejs": "~2.1"
+  },
+  "homepage": "http://hilios.github.io/jQuery.countdown/",
+  "main": "dist/jquery.countdown.js",
+  "name": "jquery-countdown",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hilios/jQuery.countdown.git"
+  },
+  "scripts": {
+    "test": "grunt test"
+  },
+  "version": "2.2.0"
+}

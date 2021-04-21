@@ -1,0 +1,926 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Title -->
+  <title>Cubeportfolio - Front Documentation | Front - Responsive Website Template</title>
+
+  <!-- Required Meta Tags Always Come First -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="../favicon.ico">
+
+  <!-- Font -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap" rel="stylesheet">
+
+  <!-- CSS Implementing Plugins -->
+  <link rel="stylesheet" href="../assets/vendor/font-awesome/css/all.min.css">
+  <link rel="stylesheet" href="../assets/vendor/cubeportfolio/css/cubeportfolio.min.css">
+  <link rel="stylesheet" href="assets/vendor/jquery-ui/themes/base/jquery-ui.min.css">
+  <link rel="stylesheet" href="assets/vendor/prism/prism.css">
+
+  <!-- CSS Front Template -->
+  <link rel="stylesheet" href="../assets/css/theme.css">
+
+  <!-- CSS Front Doc -->
+  <link rel="stylesheet" href="assets/css/docs.css">
+</head>
+<body>
+  <!-- ========== HEADER ========== -->
+  <header id="header" class="header header-sticky-top header-docs header-box-shadow">
+    <div class="header-section">
+      <div id="logoAndNav" class="container-fluid px-xl-7">
+        <nav class="navbar d-block d-md-flex justify-content-start">
+          <div class="d-flex align-items-center">
+            <a class="navbar-brand" href="index.html" aria-label="Front">
+              <img src="../assets/svg/logos/logo.svg" alt="Logo">
+            </a>
+            <a href="changelog.html">
+              <span class="badge badge-soft-primary ml-2">v3.2</span>
+            </a>
+          </div>
+
+          <!-- Nav Links -->
+          <ul class="nav nav-classic nav-sm border-0 nav-docs-space">
+            <li class="nav-item">
+              <a class="nav-link d-flex align-items-center px-2 px-sm-3 active" href="index.html">
+                <svg class="d-none d-sm-block mr-2 mb-0" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" d="M1 2.5A1.5 1.5 0 012.5 1h3A1.5 1.5 0 017 2.5v3A1.5 1.5 0 015.5 7h-3A1.5 1.5 0 011 5.5v-3zM2.5 2a.5.5 0 00-.5.5v3a.5.5 0 00.5.5h3a.5.5 0 00.5-.5v-3a.5.5 0 00-.5-.5h-3zm6.5.5A1.5 1.5 0 0110.5 1h3A1.5 1.5 0 0115 2.5v3A1.5 1.5 0 0113.5 7h-3A1.5 1.5 0 019 5.5v-3zm1.5-.5a.5.5 0 00-.5.5v3a.5.5 0 00.5.5h3a.5.5 0 00.5-.5v-3a.5.5 0 00-.5-.5h-3zM1 10.5A1.5 1.5 0 012.5 9h3A1.5 1.5 0 017 10.5v3A1.5 1.5 0 015.5 15h-3A1.5 1.5 0 011 13.5v-3zm1.5-.5a.5.5 0 00-.5.5v3a.5.5 0 00.5.5h3a.5.5 0 00.5-.5v-3a.5.5 0 00-.5-.5h-3zm6.5.5A1.5 1.5 0 0110.5 9h3a1.5 1.5 0 011.5 1.5v3a1.5 1.5 0 01-1.5 1.5h-3A1.5 1.5 0 019 13.5v-3zm1.5-.5a.5.5 0 00-.5.5v3a.5.5 0 00.5.5h3a.5.5 0 00.5-.5v-3a.5.5 0 00-.5-.5h-3z" clip-rule="evenodd"/>
+                </svg>
+                <span class="d-none d-sm-block">Documentation</span>
+                <span class="d-sm-none">Docs</span>
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link d-flex align-items-center px-2 px-sm-3" href="../snippets/index.html">
+                <svg class="d-none d-sm-block mr-2 mb-0" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" d="M14.5 13.5h-13A.5.5 0 011 13V6a.5.5 0 01.5-.5h13a.5.5 0 01.5.5v7a.5.5 0 01-.5.5zm-13 1A1.5 1.5 0 010 13V6a1.5 1.5 0 011.5-1.5h13A1.5 1.5 0 0116 6v7a1.5 1.5 0 01-1.5 1.5h-13zM2 3a.5.5 0 00.5.5h11a.5.5 0 000-1h-11A.5.5 0 002 3zm2-2a.5.5 0 00.5.5h7a.5.5 0 000-1h-7A.5.5 0 004 1z" clip-rule="evenodd"/>
+                </svg>
+                Snippets
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link d-flex align-items-center px-2 px-sm-3" target="_blank" href="../html/landings/index.html">
+                Main Demo
+                <svg class="d-block ml-2 mb-0" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" d="M1.5 13A1.5 1.5 0 003 14.5h8a1.5 1.5 0 001.5-1.5V9a.5.5 0 00-1 0v4a.5.5 0 01-.5.5H3a.5.5 0 01-.5-.5V5a.5.5 0 01.5-.5h4a.5.5 0 000-1H3A1.5 1.5 0 001.5 5v8zm7-11a.5.5 0 01.5-.5h5a.5.5 0 01.5.5v5a.5.5 0 01-1 0V2.5H9a.5.5 0 01-.5-.5z" clip-rule="evenodd"/>
+                  <path fill-rule="evenodd" d="M14.354 1.646a.5.5 0 010 .708l-8 8a.5.5 0 01-.708-.708l8-8a.5.5 0 01.708 0z" clip-rule="evenodd"/>
+                </svg>
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link d-none d-xl-flex align-items-center px-2 px-sm-3" target="_blank" href="https://htmlstream.com/contact-us">
+                Get Support
+                <svg class="d-none d-sm-block ml-2 mb-0" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" d="M1.5 13A1.5 1.5 0 003 14.5h8a1.5 1.5 0 001.5-1.5V9a.5.5 0 00-1 0v4a.5.5 0 01-.5.5H3a.5.5 0 01-.5-.5V5a.5.5 0 01.5-.5h4a.5.5 0 000-1H3A1.5 1.5 0 001.5 5v8zm7-11a.5.5 0 01.5-.5h5a.5.5 0 01.5.5v5a.5.5 0 01-1 0V2.5H9a.5.5 0 01-.5-.5z" clip-rule="evenodd"/>
+                  <path fill-rule="evenodd" d="M14.354 1.646a.5.5 0 010 .708l-8 8a.5.5 0 01-.708-.708l8-8a.5.5 0 01.708 0z" clip-rule="evenodd"/>
+                </svg>
+              </a>
+            </li>
+          </ul>
+          <!-- End Nav Links -->
+
+          <!-- Header Search -->
+          <form class="form-inline input-group input-group-sm input-group-merge input-group-flush d-none d-lg-flex ml-auto" style="max-width: 300px;">
+            <input class="js-hs-docs-search form-control" type="text" placeholder="Search docs..." aria-label="Search docs..." aria-describedby="docsSearch" data-url="assets/ajax/autocomplete-data-for-documentation-search.json">
+            <div class="input-group-append">
+              <span class="input-group-text" id="docsSearch">
+                <i class="fas fa-search"></i>
+              </span>
+            </div>
+          </form>
+          <!-- End Header Search -->
+        </nav>
+      </div>
+    </div>
+  </header>
+  <!-- ========== END HEADER ========== -->
+
+  <!-- ========== MAIN CONTENT ========== -->
+  <main class="container-fluid space-top-3 space-top-md-2 pl-lg-7 pr-xl-7">
+    <div class="row justify-content-lg-end">
+      <!-- Sidebar -->
+      <nav class="col-lg-3 col-xl-2 hs-sidebar navbar-expand-lg px-0 ml-xl-7">
+        <div class="d-flex d-lg-none justify-content-between mb-3">
+          <!-- Sidebar Search -->
+          <form class="col form-inline input-group-sm">
+            <input class="js-hs-docs-search form-control form-control-sm w-100" type="text" placeholder="Search..." data-url="assets/ajax/autocomplete-data-for-documentation-search.json">
+          </form>
+          <!-- End Sidebar Search -->
+
+          <!-- Responsive Toggle Button -->
+          <button class="btn btn-link pl-0" type="button" data-toggle="collapse" data-target="#sidebar-nav" aria-controls="sidebar-nav" aria-expanded="false" aria-label="Toggle navigation">
+            <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 30 30" width="30" height="30" focusable="false">
+              <path stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M4 7h22M4 15h22M4 23h22"/>
+            </svg>
+          </button>
+          <!-- End Responsive Toggle Button -->
+        </div>
+
+        <!-- Sidebar Nav -->
+        <div class="collapse navbar-collapse" id="sidebar-nav">
+          <div id="sidebarNav" class="hs-sidebar-scrollbar hs-sidebar-sticky pl-2 pl-md-0 pr-2">
+            <span class="hs-sidebar-heading">Getting started</span>
+            <ul class="hs-sidebar-nav">
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="index.html">Introduction</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="gulp.html">Gulp</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="customization.html">Customization</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="credits.html">Credits</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="changelog.html">Changelog</a></li>
+            </ul>
+
+            <span class="hs-sidebar-heading">Content</span>
+            <ul class="hs-sidebar-nav">
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="typography.html">Typography</a></li>
+              <li class="hs-sidebar-item">
+                <span class="hs-sidebar-link">Icons:</span>
+                <ul class="hs-sidebar-nav ml-2">
+                  <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="exclusive-svg.html">Exclusive SVG set</a></li>
+                  <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="font-awesome.html">Font Awesome</a></li>
+                </ul>
+              </li>
+            </ul>
+
+            <span class="hs-sidebar-heading">Components</span>
+            <ul class="hs-sidebar-nav">
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="alerts.html">Alerts</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="avatars.html">Avatars</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="badge.html">Badge</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="breadcrumb.html">Breadcrumb</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="buttons.html">Buttons</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="cards.html">Cards</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="collapse.html">Collapse</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="devices.html">Devices</a></li>
+              <li class="hs-sidebar-item">
+                <span class="hs-sidebar-link">Dividers:</span>
+                <ul class="hs-sidebar-nav ml-2 mb-0">
+                  <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="css-divider.html">CSS divider</a></li>
+                  <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="svg-divider.html">SVG divider</a></li>
+                </ul>
+              </li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="forms.html">Forms</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="legend-indicator.html">Legend indicator</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="list-group.html">List group</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="modal.html">Modal</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="navbar.html">Navbar</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="navs.html">Navs</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="pagination.html">Pagination</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="popovers.html">Popovers</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="progress.html">Progress</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="spinners.html">Spinners</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="step.html">Step</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="sticky-footer.html">Sticky footer</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="tabs.html">Tabs</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="tables.html">Tables</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="text-highlight.html">Text Highlight</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="tooltips.html">Tooltips</a></li>
+            </ul>
+
+            <span class="hs-sidebar-heading">Utilities</span>
+            <ul class="hs-sidebar-nav">
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="borders.html">Borders</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="colors.html">Colors</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="content-alignments.html">Content alignments (with position)</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="links.html">Links</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="positions.html">Positions</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="shadows.html">Shadows</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="sizing.html">Sizing</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="spacings.html">Spacings</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="text.html">Text</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="transforms.html">Transforms</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="transitions.html">Transitions</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="others.html">Others</a></li>
+            </ul>
+
+            <span class="hs-sidebar-heading">HS Libraries</span>
+            <ul class="hs-sidebar-nav">
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="add-field.html">Add field</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="unfold.html">Unfold (Dropdown and others)</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="headers.html">Headers</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="header-mega-menu.html">Header mega menu</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="header-fullscreen.html">Header fullscreen</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="header-searches.html">Header searches</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="counters.html">Counters</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="file-attach.html">File attach</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="go-to.html">Go-to</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="page-preloader.html">Page preloader</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="progress-animation.html">Progress animation</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="quantity-counter.html">Quantity counter</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="scroll-nav.html">Scroll nav</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="show-animation.html">Show animation</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="step-form.html">Step form (Wizards)</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="sticky-block.html">Sticky block</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="toggle-state.html">Toggle state</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="toggle-switch.html">Toggle switch</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="switch.html">Switch</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="video-bg.html">Video background</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="video-player.html">Video player</a></li>
+            </ul>
+
+            <span class="hs-sidebar-heading">Other Libraries</span>
+            <ul class="hs-sidebar-nav">
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="aos.html">Aos (Animate on scroll)</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="chartjs.html">Chartjs</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="circles.html">Circles (Pie chart)</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="clipboard.html">Clipboard</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="countdown.html">Countdown</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link active" href="cubeportfolio.html">Cubeportfolio</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="dropzone.html">Dropzone (Drag n' drop file uploader)</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="fancybox.html">Fancybox</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="range-slider.html">Range slider</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="quill.html">Quill</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="select2.html">Select2</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="input-mask.html">Input mask</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="leaflet.html">Leaflet (Map)</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="parallax.html">Parallax</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="slick-carousel.html">Slick carousel</a></li>
+              <li class="hs-sidebar-item">
+                <span class="hs-sidebar-link">Social APIs:</span>
+                <ul class="hs-sidebar-nav ml-2 mb-0">
+                  <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="social-api-facebook.html">Facebook</a></li>
+                  <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="social-api-twitter.html">Twitter</a></li>
+                </ul>
+              </li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="typedjs.html">Typed.js</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="validation.html">Validation</a></li>
+            </ul>
+          </div>
+        </div>
+        <!-- End Sidebar Nav -->
+      </nav>
+      <!-- End Sidebar -->
+
+      <div class="col-lg-10 space-top-1 space-bottom-2">
+        <div class="pl-lg-9 pl-xl-8">
+          <div class="hs-docs-content-divider">
+            <h1>Cubeportfolio</h1>
+            <p class="lead">Showcase your latest works with a jQuery grid plugin that provides powerful portfolio system, beautiful animated filtering or any other ordered grid content.</p>
+            <a href="../assets/vendor/cubeportfolio/documentation/index.html" target="_blank">Cubeportfolio documentation <i class="fas fa-external-link-alt fa-xs"></i></a>
+          </div>
+
+          <div id="how-to-use" class="hs-docs-content-divider">
+            <h2 class="hs-docs-heading">How to use? <a class="anchorjs-link" href="#how-to-use" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
+            <p>Copy-paste the stylesheet <code class="highlighter-rouge">&lt;link&gt;</code> into your <code class="highlighter-rouge">&lt;head&gt;</code> to load the CSS.</p>
+
+            <pre class="rounded">
+              <code class="language-html" data-lang="html">
+                &lt;link rel="stylesheet" href="../../assets/vendor/cubeportfolio/css/cubeportfolio.min.css"&gt;
+              </code>
+            </pre>
+
+            <p>Copy-paste the following <code class="highlighter-rouge">&lt;script&gt;</code> near the end of your pages under <em><u>JS Implementing Plugins</u></em> to enable it.</p>
+
+            <pre class="rounded">
+              <code class="language-html" data-lang="html">
+                &lt;script src="../../assets/vendor/cubeportfolio/js/jquery.cubeportfolio.min.js"&gt;&lt;/script&gt;
+              </code>
+            </pre>
+
+            <p>Copy-paste the following <code class="highlighter-rouge">&lt;script&gt;</code> near the end of your pages under <em><u>JS Front</u></em> to enable it.</p>
+
+            <pre class="rounded">
+              <code class="language-html" data-lang="html">
+                &lt;script src="../../assets/js/hs.cubeportfolio.js"&gt;&lt;/script&gt;
+              </code>
+            </pre>
+
+            <p>Copy-paste the init function under <em><u>JS Plugins Init.</u></em>, before the closing <code class="highlighter-rouge">&lt;/body&gt;</code> tag, to enable it.</p>
+
+            <pre class="rounded">
+              <code class="language-html" data-lang="html">
+                &lt;script&gt;
+                  $(document).on('ready', function () {
+                    // initialization of cubeportfolio
+                    $('.cbp').each(function () {
+                      var cbp = $.HSCore.components.HSCubeportfolio.init($(this), {
+                        layoutMode: 'grid',
+                        filters: '#filterControls'
+                      });
+                    });
+                  });
+                &lt;/script&gt;
+              </code>
+            </pre>
+          </div>
+
+          <div id="basic-example" class="hs-docs-content-divider">
+            <h2 class="hs-docs-heading">Basic example <a class="anchorjs-link" href="#basic-example" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
+
+            <div class="tab-wrapper">
+              <!-- Nav Classic -->
+              <ul class="nav nav-classic" id="pills-tab-1" role="tablist">
+                <li class="nav-item">
+                  <a class="nav-link active" id="pills-result-tab-1" data-toggle="pill" href="#pills-result-1" role="tab" aria-controls="pills-result-1" aria-selected="true">Preview</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="pills-html-tab-1" data-toggle="pill" href="#pills-html-1" role="tab" aria-controls="pills-html-1" aria-selected="false">HTML</a>
+                </li>
+              </ul>
+              <!-- End Nav Classic -->
+
+              <!-- Tab Content -->
+              <div class="tab-content" id="pills-tabContent-1">
+                <div class="tab-pane fade p-4 show active" id="pills-result-1" role="tabpanel" aria-labelledby="pills-result-tab-1">
+                  <div class="cubeportfolio">
+                    <!-- Filter -->
+                    <ul id="filterControls" class="list-inline cbp-l-filters-alignRight text-center">
+                      <li class="list-inline-item cbp-filter-item cbp-filter-item-active cubeportfolio-item" data-filter="*">All</li>
+                      <li class="list-inline-item cbp-filter-item cubeportfolio-item" data-filter=".branding">Branding</li>
+                      <li class="list-inline-item cbp-filter-item cubeportfolio-item" data-filter=".abstract">Abstract</li>
+                      <li class="list-inline-item cbp-filter-item cubeportfolio-item" data-filter=".graphic">Graphic</li>
+                      <li class="list-inline-item cbp-filter-item cubeportfolio-item" data-filter=".illustration">Illustration</li>
+                    </ul>
+                    <!-- End Filter -->
+
+                    <!-- Content -->
+                    <div class="cbp"
+                         data-hs-cbp-options='{
+                           "animationType": "quicksand",
+                           "gapHorizontal": 32,
+                           "gapVertical": 32,
+                           "mediaQueries": [
+                             {"width": 1500, "cols": 4},
+                             {"width": 1100, "cols": 4},
+                             {"width": 800, "cols": 3},
+                             {"width": 480, "cols": 2},
+                             {"width": 380, "cols": 1}
+                           ]
+                         }'>
+                      <!-- Item -->
+                      <div class="cbp-item rounded graphic">
+                        <a class="cbp-caption" href="#">
+                          <div class="cbp-caption-defaultWrap">
+                            <img src="assets/img/img19.jpg" alt="Image Description">
+                          </div>
+                          <div class="cbp-caption-activeWrap bg-primary">
+                            <div class="cbp-l-caption-alignCenter">
+                              <div class="cbp-l-caption-body">
+                                <h4 class="text-white mb-0">Remind Me More</h4>
+                                <p class="small text-white-70 mb-0">
+                                  by Tiberiu Neamu
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+                      <!-- End Item -->
+
+                      <!-- Item -->
+                      <div class="cbp-item rounded branding">
+                        <a class="cbp-caption" href="#">
+                          <div class="cbp-caption-defaultWrap">
+                            <img src="assets/img/img19.jpg" alt="Image Description">
+                          </div>
+                          <div class="cbp-caption-activeWrap bg-primary">
+                            <div class="cbp-l-caption-alignCenter">
+                              <div class="cbp-l-caption-body">
+                                <h4 class="text-white mb-0">Workout Buddy</h4>
+                                <p class="small text-white-70 mb-0">
+                                  by Tiberiu Neamu
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+                      <!-- End Item -->
+
+                      <!-- Item -->
+                      <div class="cbp-item rounded abstract illustration">
+                        <a class="cbp-caption" href="#">
+                          <div class="cbp-caption-defaultWrap">
+                            <img src="assets/img/img19.jpg" alt="Image Description">
+                          </div>
+                          <div class="cbp-caption-activeWrap bg-primary">
+                            <div class="cbp-l-caption-alignCenter">
+                              <div class="cbp-l-caption-body">
+                                <h4 class="text-white mb-0">Tiger</h4>
+                                <p class="small text-white-70 mb-0">
+                                  by Cosmin Capitanu
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+                      <!-- End Item -->
+
+                      <!-- Item -->
+                      <div class="cbp-item rounded abstract illustration">
+                        <a class="cbp-caption" href="#">
+                          <div class="cbp-caption-defaultWrap">
+                            <img src="assets/img/img19.jpg" alt="Image Description">
+                          </div>
+                          <div class="cbp-caption-activeWrap bg-primary">
+                            <div class="cbp-l-caption-alignCenter">
+                              <div class="cbp-l-caption-body">
+                                <h4 class="text-white mb-0">Tiger</h4>
+                                <p class="small text-white-70 mb-0">
+                                  by Cosmin Capitanu
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+                      <!-- End Item -->
+
+                      <!-- Item -->
+                      <div class="cbp-item rounded graphic illustration">
+                        <a class="cbp-caption" href="#">
+                          <div class="cbp-caption-defaultWrap">
+                            <img src="assets/img/img19.jpg" alt="Image Description">
+                          </div>
+                          <div class="cbp-caption-activeWrap bg-primary">
+                            <div class="cbp-l-caption-alignCenter">
+                              <div class="cbp-l-caption-body">
+                                <h4 class="text-white mb-0">Tiger</h4>
+                                <p class="small text-white-70 mb-0">
+                                  by Cosmin Capitanu
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+                      <!-- End Item -->
+
+                      <!-- Item -->
+                      <div class="cbp-item rounded graphic illustration">
+                        <a class="cbp-caption" href="#">
+                          <div class="cbp-caption-defaultWrap">
+                            <img src="assets/img/img19.jpg" alt="Image Description">
+                          </div>
+                          <div class="cbp-caption-activeWrap bg-primary">
+                            <div class="cbp-l-caption-alignCenter">
+                              <div class="cbp-l-caption-body">
+                                <h4 class="text-white mb-0">Tiger</h4>
+                                <p class="small text-white-70 mb-0">
+                                  by Cosmin Capitanu
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+                      <!-- End Item -->
+                    </div>
+                    <!-- End Content -->
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="pills-html-1" role="tabpanel" aria-labelledby="pills-html-tab-1">
+                  <pre class="rounded">
+                    <code class="language-markup" data-lang="html">
+                      &lt;div class="cubeportfolio"&gt;
+                        &lt;!-- Filter --&gt;
+                        &lt;ul id="filterControls" class="list-inline cbp-l-filters-alignRight text-center"&gt;
+                          &lt;li class="list-inline-item cbp-filter-item cbp-filter-item-active cubeportfolio-item" data-filter="*"&gt;All&lt;/li&gt;
+                          &lt;li class="list-inline-item cbp-filter-item cubeportfolio-item" data-filter=".branding"&gt;Branding&lt;/li&gt;
+                          &lt;li class="list-inline-item cbp-filter-item cubeportfolio-item" data-filter=".abstract"&gt;Abstract&lt;/li&gt;
+                          &lt;li class="list-inline-item cbp-filter-item cubeportfolio-item" data-filter=".graphic"&gt;Graphic&lt;/li&gt;
+                          &lt;li class="list-inline-item cbp-filter-item cubeportfolio-item" data-filter=".illustration"&gt;Illustration&lt;/li&gt;
+                        &lt;/ul&gt;
+                        &lt;!-- End Filter --&gt;
+
+                        &lt;!-- Content --&gt;
+                        &lt;div class="cbp"
+                             data-hs-cbp-options='{
+                             "animationType": "quicksand",
+                             "gapHorizontal": 32,
+                             "gapVertical": 32,
+                             "mediaQueries": [
+                               {"width": 1500, "cols": 4},
+                               {"width": 1100, "cols": 4},
+                               {"width": 800, "cols": 3},
+                               {"width": 480, "cols": 2},
+                               {"width": 380, "cols": 1}
+                             ]
+                           }'&gt;
+                          &lt;!-- Item --&gt;
+                          &lt;div class="cbp-item rounded graphic"&gt;
+                            &lt;a class="cbp-caption" href="#"&gt;
+                              &lt;div class="cbp-caption-defaultWrap"&gt;
+                                &lt;img src="../../assets/img/380x360/img1.jpg" alt="Image Description"&gt;
+                              &lt;/div&gt;
+                              &lt;div class="cbp-caption-activeWrap bg-primary"&gt;
+                                &lt;div class="cbp-l-caption-alignCenter"&gt;
+                                  &lt;div class="cbp-l-caption-body"&gt;
+                                    &lt;h4 class="text-white mb-0"&gt;Remind Me More&lt;/h4&gt;
+                                    &lt;p class="small text-white-70 mb-0"&gt;
+                                      by Tiberiu Neamu
+                                    &lt;/p&gt;
+                                  &lt;/div&gt;
+                                &lt;/div&gt;
+                              &lt;/div&gt;
+                            &lt;/a&gt;
+                          &lt;/div&gt;
+                          &lt;!-- End Item --&gt;
+
+                          &lt;!-- Item --&gt;
+                          &lt;div class="cbp-item rounded branding"&gt;
+                            &lt;a class="cbp-caption" href="#"&gt;
+                              &lt;div class="cbp-caption-defaultWrap"&gt;
+                                &lt;img src="../../assets/img/380x360/img1.jpg" alt="Image Description"&gt;
+                              &lt;/div&gt;
+                              &lt;div class="cbp-caption-activeWrap bg-primary"&gt;
+                                &lt;div class="cbp-l-caption-alignCenter"&gt;
+                                  &lt;div class="cbp-l-caption-body"&gt;
+                                    &lt;h4 class="text-white mb-0"&gt;Workout Buddy&lt;/h4&gt;
+                                    &lt;p class="small text-white-70 mb-0"&gt;
+                                      by Tiberiu Neamu
+                                    &lt;/p&gt;
+                                  &lt;/div&gt;
+                                &lt;/div&gt;
+                              &lt;/div&gt;
+                            &lt;/a&gt;
+                          &lt;/div&gt;
+                          &lt;!-- End Item --&gt;
+
+                          &lt;!-- Item --&gt;
+                          &lt;div class="cbp-item rounded abstract illustration"&gt;
+                            &lt;a class="cbp-caption" href="#"&gt;
+                              &lt;div class="cbp-caption-defaultWrap"&gt;
+                                &lt;img src="../../assets/img/380x360/img1.jpg" alt="Image Description"&gt;
+                              &lt;/div&gt;
+                              &lt;div class="cbp-caption-activeWrap bg-primary"&gt;
+                                &lt;div class="cbp-l-caption-alignCenter"&gt;
+                                  &lt;div class="cbp-l-caption-body"&gt;
+                                    &lt;h4 class="text-white mb-0"&gt;Tiger&lt;/h4&gt;
+                                    &lt;p class="small text-white-70 mb-0"&gt;
+                                      by Cosmin Capitanu
+                                    &lt;/p&gt;
+                                  &lt;/div&gt;
+                                &lt;/div&gt;
+                              &lt;/div&gt;
+                            &lt;/a&gt;
+                          &lt;/div&gt;
+                          &lt;!-- End Item --&gt;
+
+                          &lt;!-- Item --&gt;
+                          &lt;div class="cbp-item rounded abstract illustration"&gt;
+                            &lt;a class="cbp-caption" href="#"&gt;
+                              &lt;div class="cbp-caption-defaultWrap"&gt;
+                                &lt;img src="../../assets/img/380x360/img1.jpg" alt="Image Description"&gt;
+                              &lt;/div&gt;
+                              &lt;div class="cbp-caption-activeWrap bg-primary"&gt;
+                                &lt;div class="cbp-l-caption-alignCenter"&gt;
+                                  &lt;div class="cbp-l-caption-body"&gt;
+                                    &lt;h4 class="text-white mb-0"&gt;Tiger&lt;/h4&gt;
+                                    &lt;p class="small text-white-70 mb-0"&gt;
+                                      by Cosmin Capitanu
+                                    &lt;/p&gt;
+                                  &lt;/div&gt;
+                                &lt;/div&gt;
+                              &lt;/div&gt;
+                            &lt;/a&gt;
+                          &lt;/div&gt;
+                          &lt;!-- End Item --&gt;
+
+                          &lt;!-- Item --&gt;
+                          &lt;div class="cbp-item rounded graphic illustration"&gt;
+                            &lt;a class="cbp-caption" href="#"&gt;
+                              &lt;div class="cbp-caption-defaultWrap"&gt;
+                                &lt;img src="../../assets/img/380x360/img1.jpg" alt="Image Description"&gt;
+                              &lt;/div&gt;
+                              &lt;div class="cbp-caption-activeWrap bg-primary"&gt;
+                                &lt;div class="cbp-l-caption-alignCenter"&gt;
+                                  &lt;div class="cbp-l-caption-body"&gt;
+                                    &lt;h4 class="text-white mb-0"&gt;Tiger&lt;/h4&gt;
+                                    &lt;p class="small text-white-70 mb-0"&gt;
+                                      by Cosmin Capitanu
+                                    &lt;/p&gt;
+                                  &lt;/div&gt;
+                                &lt;/div&gt;
+                              &lt;/div&gt;
+                            &lt;/a&gt;
+                          &lt;/div&gt;
+                          &lt;!-- End Item --&gt;
+
+                          &lt;!-- Item --&gt;
+                          &lt;div class="cbp-item rounded graphic illustration"&gt;
+                            &lt;a class="cbp-caption" href="#"&gt;
+                              &lt;div class="cbp-caption-defaultWrap"&gt;
+                                &lt;img src="../../assets/img/380x360/img1.jpg" alt="Image Description"&gt;
+                              &lt;/div&gt;
+                              &lt;div class="cbp-caption-activeWrap bg-primary"&gt;
+                                &lt;div class="cbp-l-caption-alignCenter"&gt;
+                                  &lt;div class="cbp-l-caption-body"&gt;
+                                    &lt;h4 class="text-white mb-0"&gt;Tiger&lt;/h4&gt;
+                                    &lt;p class="small text-white-70 mb-0"&gt;
+                                      by Cosmin Capitanu
+                                    &lt;/p&gt;
+                                  &lt;/div&gt;
+                                &lt;/div&gt;
+                              &lt;/div&gt;
+                            &lt;/a&gt;
+                          &lt;/div&gt;
+                          &lt;!-- End Item --&gt;
+                        &lt;/div&gt;
+                        &lt;!-- End Content --&gt;
+                      &lt;/div&gt;
+                    </code>
+                  </pre>
+                </div>
+              </div>
+              <!-- End Tab Content -->
+            </div>
+          </div>
+
+          <div id="scss" class="hs-docs-content-divider">
+            <h2 class="hs-docs-heading">SCSS <a class="anchorjs-link" href="#scss" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
+            <p>SCSS-files of the component can be found here <code class="highlighter-rouge">assets/scss/front/vendor/cubeportfolio/</code></p>
+          </div>
+
+          <div id="js-behavior">
+            <h2 class="hs-docs-heading">JavaScript behavior <a class="anchorjs-link" href="#js-behavior" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
+          </div>
+
+          <div id="extend" class="hs-docs-content-divider">
+            <h2 class="hs-docs-heading">Extend <a class="anchorjs-link" href="#extend" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
+            <p>By assigning a variable, you can call the standard methods of the plugin:</p>
+
+            <pre class="rounded">
+              <code class="language-html" data-lang="html">
+                &lt;script&gt;
+                  $(document).on('ready', function () {
+                    // initialization of cubeportfolio
+                    $('.cbp').each(function () {
+                      var cbp = $.HSCore.components.HSCubeportfolio.init($(this));
+
+                      cbp.cubeportfolio('layout', function() {
+                        console.log('Layout!!!');
+                      });
+                    });
+                  });
+                &lt;/script&gt;
+              </code>
+            </pre>
+          </div>
+
+          <div id="attributes" class="hs-docs-content-divider">
+            <h2 class="hs-docs-heading">Attributes <a class="anchorjs-link" href="#attributes" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
+            <p>By assigning a variable, you can call the standard methods of the plugin:</p>
+
+            <pre class="rounded">
+              <code class="language-markup" data-lang="html">
+                data-hs-cbp-options='{
+                   ...
+                }' - array
+              </code>
+            </pre>
+          </div>
+
+          <div id="methods" class="hs-docs-content-divider">
+            <h2 class="hs-docs-heading">Methods <a class="anchorjs-link" href="#methods" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
+            <p>Options can be passed via data attributes or JavaScript. For data attributes, append the option name to <code class="highlighter-rouge">data-hs-cbp-options='{}'</code>. For more detailed or missing attributes/functions, see the official <a href="../assets/vendor/cubeportfolio/documentation/index.html" target="_blank">Cubeportfolio documentation <i class="fas fa-external-link-alt fa-xs"></i></a> documentation page.</p>
+
+            <table class="table table-bordered table-striped">
+              <thead>
+                <tr>
+                  <th style="width: 25%;">Parameters</th>
+                  <th>Description</th>
+                  <th style="width: 17%;">Default value</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <p><code class="highlighter-rouge">defaultFilter</code></p>
+                  </td>
+                  <td>Default filter for plugin. Option available only for `layoutMode: 'grid'</td>
+                  <td><code class="highlighter-rouge">'*'</code></td>
+                </tr>
+                <tr>
+                  <td>
+                    <p><code class="highlighter-rouge">displayTypeSpeed</code></p>
+                  </td>
+                  <td>Defines the speed of displaying the items (when displayType: 'default' this option will have no effect)</td>
+                  <td><code class="highlighter-rouge">100</code></td>
+                </tr>
+                <tr>
+                  <td>
+                    <p><code class="highlighter-rouge">sortByDimension</code></p>
+                  </td>
+                  <td>Filter the items by dimension (bigger to smallest) if there are gaps in grid. Option available only for `layoutMode: 'mosaic'</td>
+                  <td><code class="highlight-rouge">true</code></td>
+                </tr>
+                <tr>
+                  <td>
+                    <p><code class="highlighter-rouge">lightboxGallery</code></p>
+                  </td>
+                  <td>Enable / disable gallery mode for lightbox popup</td>
+                  <td><code class="highlight-rouge">true</code></td>
+                </tr>
+                <tr>
+                  <td>
+                    <p><code class="highlighter-rouge">singlePageInlineInFocus</code></p>
+                  </td>
+                  <td>Push the open panel in focus and at close go back to the former stage</td>
+                  <td><code class="highlight-rouge">true</code></td>
+                </tr>
+                <tr>
+                  <td>
+                    <p><code class="highlighter-rouge">singlePageDeeplinking</code></p>
+                  </td>
+                  <td>Enable / disable the deeplinking feature for singlePage popup</td>
+                  <td><code class="highlight-rouge">true</code></td>
+                </tr>
+                <tr>
+                  <td>
+                    <p><code class="highlighter-rouge">singlePageStickyNavigation</code></p>
+                  </td>
+                  <td>Enable / disable the sticky navigation for singlePage popup</td>
+                  <td><code class="highlight-rouge">true</code></td>
+                </tr>
+                <tr>
+                  <td>
+                    <p><code class="highlighter-rouge">gridAdjustment</code></p>
+                  </td>
+                  <td>Adjust the layout grid. For more information, see <a href="../assets/vendor/cubeportfolio/documentation/index.html" target="_blank">Cubeportfolio documentation <i class="fas fa-external-link-alt fa-xs"></i></a></td>
+                  <td><code class="highlight-rouge">'responsive'</code></td>
+                </tr>
+                <tr>
+                  <td>
+                    <p><code class="highlighter-rouge">displayType</code></p>
+                  </td>
+                  <td>The plugin will display his content based on the following value. For more information, see <a href="../assets/vendor/cubeportfolio/documentation/index.html" target="_blank">Cubeportfolio documentation <i class="fas fa-external-link-alt fa-xs"></i></a></td>
+                  <td><code class="highlight-rouge">'sequentially'</code></td>
+                </tr>
+                <tr>
+                  <td>
+                    <p><code class="highlighter-rouge">singlePageInlinePosition</code></p>
+                  </td>
+                  <td>Define the position of singlePage Inline block</td>
+                  <td><code class="highlight-rouge">'below'</code></td>
+                </tr>
+                <tr>
+                  <td>
+                    <p><code class="highlighter-rouge">lightboxTitleSrc</code></p>
+                  </td>
+                  <td>Attribute of the delegate item that contains caption for lightbox</td>
+                  <td><code class="highlight-rouge">'data-title'</code></td>
+                </tr>
+                <tr>
+                  <td>
+                    <p><code class="highlighter-rouge">lightboxDelegate</code></p>
+                  </td>
+                  <td>Define any clickable elements you wish to use to trigger lightbox popup on click</td>
+                  <td><code class="highlight-rouge">'.cbp-lightbox'</code></td>
+                </tr>
+                <tr>
+                  <td>
+                    <p><code class="highlighter-rouge">singlePageInlineDelegate</code></p>
+                  </td>
+                  <td>Define any clickable elements you wish to use to trigger singlePageInline popup on click</td>
+                  <td><code class="highlight-rouge">'.cbp-singlePageInline'</code></td>
+                </tr>
+                <tr>
+                  <td>
+                    <p><code class="highlighter-rouge">singlePageDelegate</code></p>
+                  </td>
+                  <td>Define any clickable elements you wish to use to trigger singlePage popup on click</td>
+                  <td><code class="highlight-rouge">'.cbp-singlePage'</code></td>
+                </tr>
+                <tr>
+                  <td>
+                    <p><code class="highlighter-rouge">lightboxCounter</code></p>
+                  </td>
+                  <td>Markup of the lightbox counter. To hide the counter for lightbox put this option to an empty string (e.g. '')</td>
+                  <td><code class="highlight-rouge">'&lt;div class="cbp-popup-lightbox-counter"&gt;{{current}} of {{total}}&lt;/div&gt;'</code></td>
+                </tr>
+                <tr>
+                  <td>
+                    <p><code class="highlighter-rouge">appendItems</code></p>
+                  </td>
+                  <td>Public API</td>
+                  <td><pre class="rounded"><code class="language-markup" data-lang="html">
+                    '&lt;div class="logo cbp-item"&gt;my awesome content to append to plugin&lt;/div&gt;
+                    &lt;div class="logo cbp-item"&gt;my second awesome content to append to plugin&lt;/div&gt;'</code></pre></td>
+                </tr>
+                <tr>
+                  <td>
+                    <p><code class="highlighter-rouge">singlePageCounter</code></p>
+                  </td>
+                  <td>Markup of the singlePage counter. To hide the counter for singlePage put this option to an empty string (e.g. '')</td>
+                  <td><code class="highlight-rouge">'&lt;div class="cbp-popup-singlePage-counter"&gt;{{current}} of {{total}}&lt;/div&gt;'</code></td>
+                </tr>
+                <tr>
+                  <td>
+                    <p><code class="highlighter-rouge">mediaQueries</code></p>
+                  </td>
+                  <td>Define `media queries` for columns layout. For more information, see <a href="../assets/vendor/cubeportfolio/documentation/index.html" target="_blank">Cubeportfolio documentation <i class="fas fa-external-link-alt fa-xs"></i></a></td>
+                  <td><pre class="rounded"><code class="language-markup" data-lang="html">
+                    mediaQueries: [{
+                      width: 1500,
+                      cols: 3
+                    }, {
+                      width: 1100,
+                      cols: 3
+                    }, {
+                      width: 800,
+                      cols: 3
+                    }, {
+                      width: 480,
+                      cols: 2,
+                      options: {
+                        caption: '',
+                        gapHorizontal: 10,
+                        gapVertical: 10
+                      }
+                    }]
+                  </code></pre></td>
+                </tr>
+                <tr>
+                  <td>
+                    <p><code class="highlighter-rouge">caption</code></p>
+                  </td>
+                  <td>Caption - the overlay that is shown when you put the mouse over an item. NOTE: If you don't want to have captions set this option to an empty string (e.g. caption: '')</td>
+                  <td><code class="highlight-rouge">'overlayBottomAlong'</code></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <!-- ========== END MAIN CONTENT ========== -->
+
+  <!-- Go to Top -->
+  <a class="js-go-to go-to position-fixed" href="javascript:;" style="visibility: hidden;"
+     data-hs-go-to-options='{
+       "offsetTop": 700,
+       "position": {
+         "init": {
+           "right": 15
+         },
+         "show": {
+           "bottom": 15
+         },
+         "hide": {
+           "bottom": -15
+         }
+       }
+     }'>
+    <i class="fas fa-angle-up"></i>
+  </a>
+  <!-- End Go to Top -->
+
+  <!-- JS Global Compulsory -->
+  <script src="../assets/vendor/jquery/dist/jquery.min.js"></script>
+  <script src="../assets/vendor/jquery-migrate/dist/jquery-migrate.min.js"></script>
+  <script src="../assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- JS Implementing Plugins -->
+  <script src="../assets/vendor/hs-header/dist/hs-header.min.js"></script>
+  <script src="../assets/vendor/hs-go-to/dist/hs-go-to.min.js"></script>
+  <script src="../assets/vendor/hs-scroll-to-in-overflowed-container/dist/hs-scroll-to-in-overflowed-container.min.js"></script>
+  <script src="../assets/vendor/cubeportfolio/js/jquery.cubeportfolio.min.js"></script>
+  <script src="assets/vendor/jquery-ui/jquery-ui.core.min.js"></script>
+  <script src="assets/vendor/jquery-ui/ui/widgets/menu.js"></script>
+  <script src="assets/vendor/jquery-ui/ui/widgets/mouse.js"></script>
+  <script src="assets/vendor/jquery-ui/ui/widgets/autocomplete.js"></script>
+  <script src="assets/vendor/prism/prism.js"></script>
+
+  <!-- JS Front -->
+  <script src="../assets/js/hs.core.js"></script>
+  <script src="../assets/js/hs.cubeportfolio.js"></script>
+  <script src="../documentation/assets/js/components/hs.autocomplete-local-search.js"></script>
+
+  <!-- JS Plugins Init. -->
+  <script>
+    $(document).on('ready', function () {
+      // initialization of header
+      var header = new HSHeader($('#header')).init();
+
+      // initialization of go to
+      $('.js-go-to').each(function () {
+        var goTo = new HSGoTo($(this)).init();
+      });
+
+      // initialization of cubeportfolio
+      $('.cbp').each(function () {
+        var cbp = $.HSCore.components.HSCubeportfolio.init($(this), {
+          layoutMode: 'grid',
+          filters: '#filterControls'
+        });
+      });
+
+      // initialization scroll to in overflowed container
+      var scrollToInOverflowedContainerNav = new HSScrollToInOverflowedContainer($('#sidebarNav'), {
+        targetEl: "#sidebarNav .hs-sidebar-link.active"
+      }).init();
+    });
+
+    $(window).on('load', function () {
+      // initialization of autocomplet
+      $.HSCore.components.HSLocalSearchAutocomplete.init('.js-hs-docs-search');
+    });
+  </script>
+</body>
+</html>

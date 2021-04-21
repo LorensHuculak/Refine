@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!-- Title -->
+		<title>File Attach</title>
+		
+		<!-- Required Meta Tags Always Come First -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		
+		<!-- Favicon -->
+		<link rel="shortcut icon" href="../../../favicon.ico">
+		
+		<!-- Google Fonts -->
+		<link href="//fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
+		
+		<!-- CSS Implementing Plugins -->
+		
+		<!-- CSS Front Template -->
+		<link rel="stylesheet" href="../../../assets/css/theme.css">
+	</head>
+	<body>
+		
+		<div style="height: 20vh;"></div>
+		
+		<div class="container">
+			
+			<div class="form-group">
+				<label class="file-attachment-input py-8" for="floorplanAttachmentInput">
+					<span class="d-block">Upload floorplan</span>
+					<input id="floorplanAttachmentInput" name="images-attachment" type="file" class="js-file-attach file-attachment-input__label"
+					       data-hs-file-attach-options='{
+					         "textTarget": "#floorplanFileUploadText",
+					         "maxFileSize": "Infinity"
+					       }'>
+					<span id="floorplanFileUploadText"></span>
+				</label>
+			</div>
+			
+			<div class="form-group">
+				<label class="file-attachment-input py-8" for="floorplanAttachmentInput2">
+					<span class="d-block">Upload floorplan</span>
+					<input id="floorplanAttachmentInput2" name="images-attachment" type="file" class="js-file-attach file-attachment-input__label"
+					       data-hs-file-attach-options='{
+					         "textTarget": "#floorplanFileUploadText2",
+					         "maxFileSize": "Infinity"
+					       }'>
+					<span id="floorplanFileUploadText2"></span>
+				</label>
+			</div>
+			
+			<div class="form-group">
+				<label class="file-attachment-input py-8" for="floorplanAttachmentInput3">
+					<span class="d-block mb-2">Upload floorplan</span>
+					<small class="d-block text-muted">Maximum file size is 1MB</small>
+					<input id="floorplanAttachmentInput3" name="images-attachment" type="file" class="js-file-attach file-attachment-input__label"
+					       data-hs-file-attach-options='{
+					         "textTarget": "#floorplanFileUploadText3"
+					       }'>
+					<span id="floorplanFileUploadText3"></span>
+				</label>
+			</div>
+		
+		</div>
+		
+		<div style="height: 20vh;"></div>
+		
+		<script src="../../../assets/vendor/jquery/dist/jquery.min.js"></script>
+		<script src="../../../assets/vendor/jquery-migrate/dist/jquery-migrate.min.js"></script>
+		<script src="../../../assets/vendor/popper.js/dist/umd/popper.min.js"></script>
+		<script src="../../../assets/vendor/bootstrap/dist/js/bootstrap.min.js"></script>
+		
+		<script src="./dist/hs-file-attach.min.js"></script>
+		
+		<script>
+			$(document).on('ready', function () {
+				$('.js-file-attach').each(function () {
+					var fileAttach = new HSFileAttach($(this)).init();
+				});
+			});
+		</script>
+	</body>
+</html>

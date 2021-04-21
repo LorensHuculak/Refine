@@ -1,0 +1,1131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Title -->
+  <title>Avatars - Front Documentation | Front - Responsive Website Template</title>
+
+  <!-- Required Meta Tags Always Come First -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="../favicon.ico">
+
+  <!-- Font -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap" rel="stylesheet">
+
+  <!-- CSS Implementing Plugins -->
+  <link rel="stylesheet" href="../assets/vendor/font-awesome/css/all.min.css">
+  <link rel="stylesheet" href="../documentation/assets/vendor/jquery-ui/themes/base/jquery-ui.min.css">
+  <link rel="stylesheet" href="../documentation/assets/vendor/prism/prism.css">
+
+  <!-- CSS Front Template -->
+  <link rel="stylesheet" href="../assets/css/theme.css">
+
+  <!-- CSS Front Doc -->
+  <link rel="stylesheet" href="../documentation/assets/css/docs.css">
+</head>
+<body>
+  <!-- ========== HEADER ========== -->
+  <header id="header" class="header header-sticky-top header-docs header-box-shadow">
+    <div class="header-section">
+      <div id="logoAndNav" class="container-fluid px-xl-7">
+        <nav class="navbar d-block d-md-flex justify-content-start">
+          <div class="d-flex align-items-center">
+            <a class="navbar-brand" href="index.html" aria-label="Front">
+              <img src="../assets/svg/logos/logo.svg" alt="Logo">
+            </a>
+            <a href="changelog.html">
+              <span class="badge badge-soft-primary ml-2">v3.2</span>
+            </a>
+          </div>
+
+          <!-- Nav Links -->
+          <ul class="nav nav-classic nav-sm border-0 nav-docs-space">
+            <li class="nav-item">
+              <a class="nav-link d-flex align-items-center px-2 px-sm-3 active" href="index.html">
+                <svg class="d-none d-sm-block mr-2 mb-0" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" d="M1 2.5A1.5 1.5 0 012.5 1h3A1.5 1.5 0 017 2.5v3A1.5 1.5 0 015.5 7h-3A1.5 1.5 0 011 5.5v-3zM2.5 2a.5.5 0 00-.5.5v3a.5.5 0 00.5.5h3a.5.5 0 00.5-.5v-3a.5.5 0 00-.5-.5h-3zm6.5.5A1.5 1.5 0 0110.5 1h3A1.5 1.5 0 0115 2.5v3A1.5 1.5 0 0113.5 7h-3A1.5 1.5 0 019 5.5v-3zm1.5-.5a.5.5 0 00-.5.5v3a.5.5 0 00.5.5h3a.5.5 0 00.5-.5v-3a.5.5 0 00-.5-.5h-3zM1 10.5A1.5 1.5 0 012.5 9h3A1.5 1.5 0 017 10.5v3A1.5 1.5 0 015.5 15h-3A1.5 1.5 0 011 13.5v-3zm1.5-.5a.5.5 0 00-.5.5v3a.5.5 0 00.5.5h3a.5.5 0 00.5-.5v-3a.5.5 0 00-.5-.5h-3zm6.5.5A1.5 1.5 0 0110.5 9h3a1.5 1.5 0 011.5 1.5v3a1.5 1.5 0 01-1.5 1.5h-3A1.5 1.5 0 019 13.5v-3zm1.5-.5a.5.5 0 00-.5.5v3a.5.5 0 00.5.5h3a.5.5 0 00.5-.5v-3a.5.5 0 00-.5-.5h-3z" clip-rule="evenodd"/>
+                </svg>
+                <span class="d-none d-sm-block">Documentation</span>
+                <span class="d-sm-none">Docs</span>
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link d-flex align-items-center px-2 px-sm-3" href="../snippets/index.html">
+                <svg class="d-none d-sm-block mr-2 mb-0" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" d="M14.5 13.5h-13A.5.5 0 011 13V6a.5.5 0 01.5-.5h13a.5.5 0 01.5.5v7a.5.5 0 01-.5.5zm-13 1A1.5 1.5 0 010 13V6a1.5 1.5 0 011.5-1.5h13A1.5 1.5 0 0116 6v7a1.5 1.5 0 01-1.5 1.5h-13zM2 3a.5.5 0 00.5.5h11a.5.5 0 000-1h-11A.5.5 0 002 3zm2-2a.5.5 0 00.5.5h7a.5.5 0 000-1h-7A.5.5 0 004 1z" clip-rule="evenodd"/>
+                </svg>
+                Snippets
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link d-flex align-items-center px-2 px-sm-3" target="_blank" href="../html/landings/index.html">
+                Main Demo
+                <svg class="d-block ml-2 mb-0" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" d="M1.5 13A1.5 1.5 0 003 14.5h8a1.5 1.5 0 001.5-1.5V9a.5.5 0 00-1 0v4a.5.5 0 01-.5.5H3a.5.5 0 01-.5-.5V5a.5.5 0 01.5-.5h4a.5.5 0 000-1H3A1.5 1.5 0 001.5 5v8zm7-11a.5.5 0 01.5-.5h5a.5.5 0 01.5.5v5a.5.5 0 01-1 0V2.5H9a.5.5 0 01-.5-.5z" clip-rule="evenodd"/>
+                  <path fill-rule="evenodd" d="M14.354 1.646a.5.5 0 010 .708l-8 8a.5.5 0 01-.708-.708l8-8a.5.5 0 01.708 0z" clip-rule="evenodd"/>
+                </svg>
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link d-none d-xl-flex align-items-center px-2 px-sm-3" target="_blank" href="https://htmlstream.com/contact-us">
+                Get Support
+                <svg class="d-none d-sm-block ml-2 mb-0" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" d="M1.5 13A1.5 1.5 0 003 14.5h8a1.5 1.5 0 001.5-1.5V9a.5.5 0 00-1 0v4a.5.5 0 01-.5.5H3a.5.5 0 01-.5-.5V5a.5.5 0 01.5-.5h4a.5.5 0 000-1H3A1.5 1.5 0 001.5 5v8zm7-11a.5.5 0 01.5-.5h5a.5.5 0 01.5.5v5a.5.5 0 01-1 0V2.5H9a.5.5 0 01-.5-.5z" clip-rule="evenodd"/>
+                  <path fill-rule="evenodd" d="M14.354 1.646a.5.5 0 010 .708l-8 8a.5.5 0 01-.708-.708l8-8a.5.5 0 01.708 0z" clip-rule="evenodd"/>
+                </svg>
+              </a>
+            </li>
+          </ul>
+          <!-- End Nav Links -->
+
+          <!-- Header Search -->
+          <form class="form-inline input-group input-group-sm input-group-merge input-group-flush d-none d-lg-flex ml-auto" style="max-width: 300px;">
+            <input class="js-hs-docs-search form-control" type="text" placeholder="Search docs..." aria-label="Search docs..." aria-describedby="docsSearch" data-url="assets/ajax/autocomplete-data-for-documentation-search.json">
+            <div class="input-group-append">
+              <span class="input-group-text" id="docsSearch">
+                <i class="fas fa-search"></i>
+              </span>
+            </div>
+          </form>
+          <!-- End Header Search -->
+        </nav>
+      </div>
+    </div>
+  </header>
+  <!-- ========== END HEADER ========== -->
+
+  <!-- ========== MAIN CONTENT ========== -->
+  <main class="container-fluid space-top-3 space-top-md-2 pl-lg-7 pr-xl-7">
+    <div class="row justify-content-lg-end">
+      <!-- Sidebar -->
+      <nav class="col-lg-3 col-xl-2 hs-sidebar navbar-expand-lg px-0 ml-xl-7">
+        <div class="d-flex d-lg-none justify-content-between mb-3">
+          <!-- Sidebar Search -->
+          <form class="col form-inline input-group-sm">
+            <input class="js-hs-docs-search form-control form-control-sm w-100" type="text" placeholder="Search..." data-url="assets/ajax/autocomplete-data-for-documentation-search.json">
+          </form>
+          <!-- End Sidebar Search -->
+
+          <!-- Responsive Toggle Button -->
+          <button class="btn btn-link pl-0" type="button" data-toggle="collapse" data-target="#sidebar-nav" aria-controls="sidebar-nav" aria-expanded="false" aria-label="Toggle navigation">
+            <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 30 30" width="30" height="30" focusable="false">
+              <path stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M4 7h22M4 15h22M4 23h22"/>
+            </svg>
+          </button>
+          <!-- End Responsive Toggle Button -->
+        </div>
+
+        <!-- Sidebar Nav -->
+        <div class="collapse navbar-collapse" id="sidebar-nav">
+          <div id="sidebarNav" class="hs-sidebar-scrollbar hs-sidebar-sticky pl-2 pl-md-0 pr-2">
+            <span class="hs-sidebar-heading">Getting started</span>
+            <ul class="hs-sidebar-nav">
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="index.html">Introduction</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="gulp.html">Gulp</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="customization.html">Customization</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="credits.html">Credits</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="changelog.html">Changelog</a></li>
+            </ul>
+
+            <span class="hs-sidebar-heading">Content</span>
+            <ul class="hs-sidebar-nav">
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="typography.html">Typography</a></li>
+              <li class="hs-sidebar-item">
+                <span class="hs-sidebar-link">Icons:</span>
+                <ul class="hs-sidebar-nav ml-2">
+                  <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="exclusive-svg.html">Exclusive SVG set</a></li>
+                  <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="font-awesome.html">Font Awesome</a></li>
+                </ul>
+              </li>
+            </ul>
+
+            <span class="hs-sidebar-heading">Components</span>
+            <ul class="hs-sidebar-nav">
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="alerts.html">Alerts</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link active" href="avatars.html">Avatars</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="badge.html">Badge</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="breadcrumb.html">Breadcrumb</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="buttons.html">Buttons</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="cards.html">Cards</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="collapse.html">Collapse</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="devices.html">Devices</a></li>
+              <li class="hs-sidebar-item">
+                <span class="hs-sidebar-link">Dividers:</span>
+                <ul class="hs-sidebar-nav ml-2 mb-0">
+                  <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="css-divider.html">CSS divider</a></li>
+                  <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="svg-divider.html">SVG divider</a></li>
+                </ul>
+              </li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="forms.html">Forms</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="legend-indicator.html">Legend indicator</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="list-group.html">List group</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="modal.html">Modal</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="navbar.html">Navbar</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="navs.html">Navs</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="pagination.html">Pagination</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="popovers.html">Popovers</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="progress.html">Progress</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="spinners.html">Spinners</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="step.html">Step</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="sticky-footer.html">Sticky footer</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="tabs.html">Tabs</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="tables.html">Tables</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="text-highlight.html">Text Highlight</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="tooltips.html">Tooltips</a></li>
+            </ul>
+
+            <span class="hs-sidebar-heading">Utilities</span>
+            <ul class="hs-sidebar-nav">
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="borders.html">Borders</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="colors.html">Colors</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="content-alignments.html">Content alignments (with position)</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="links.html">Links</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="positions.html">Positions</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="shadows.html">Shadows</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="sizing.html">Sizing</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="spacings.html">Spacings</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="text.html">Text</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="transforms.html">Transforms</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="transitions.html">Transitions</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="others.html">Others</a></li>
+            </ul>
+
+            <span class="hs-sidebar-heading">HS Libraries</span>
+            <ul class="hs-sidebar-nav">
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="add-field.html">Add field</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="unfold.html">Unfold (Dropdown and others)</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="headers.html">Headers</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="header-mega-menu.html">Header mega menu</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="header-fullscreen.html">Header fullscreen</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="header-searches.html">Header searches</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="counters.html">Counters</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="file-attach.html">File attach</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="go-to.html">Go-to</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="page-preloader.html">Page preloader</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="progress-animation.html">Progress animation</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="quantity-counter.html">Quantity counter</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="scroll-nav.html">Scroll nav</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="show-animation.html">Show animation</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="step-form.html">Step form (Wizards)</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="sticky-block.html">Sticky block</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="toggle-state.html">Toggle state</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="toggle-switch.html">Toggle switch</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="switch.html">Switch</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="video-bg.html">Video background</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="video-player.html">Video player</a></li>
+            </ul>
+
+            <span class="hs-sidebar-heading">Other Libraries</span>
+            <ul class="hs-sidebar-nav">
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="aos.html">Aos (Animate on scroll)</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="chartjs.html">Chartjs</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="circles.html">Circles (Pie chart)</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="clipboard.html">Clipboard</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="countdown.html">Countdown</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="cubeportfolio.html">Cubeportfolio</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="dropzone.html">Dropzone (Drag n' drop file uploader)</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="fancybox.html">Fancybox</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="range-slider.html">Range slider</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="quill.html">Quill</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="select2.html">Select2</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="input-mask.html">Input mask</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="leaflet.html">Leaflet (Map)</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="parallax.html">Parallax</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="slick-carousel.html">Slick carousel</a></li>
+              <li class="hs-sidebar-item">
+                <span class="hs-sidebar-link">Social APIs:</span>
+                <ul class="hs-sidebar-nav ml-2 mb-0">
+                  <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="social-api-facebook.html">Facebook</a></li>
+                  <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="social-api-twitter.html">Twitter</a></li>
+                </ul>
+              </li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="typedjs.html">Typed.js</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="validation.html">Validation</a></li>
+            </ul>
+          </div>
+        </div>
+        <!-- End Sidebar Nav -->
+      </nav>
+      <!-- End Sidebar -->
+
+      <div class="col-lg-10 space-top-1 space-bottom-2">
+        <div class="pl-lg-9 pl-xl-8">
+          <div class="hs-docs-content-divider">
+            <h1>Avatars</h1>
+            <p class="lead">Examples for opting different size of image classes.</p>
+          </div>
+
+          <div id="example" class="hs-docs-content-divider">
+            <h2 class="hs-docs-heading">Example <a class="anchorjs-link" href="#example" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
+            <p>Avatar classes are applied to the image so that it scales with the parent element. Use <code class="highlighter-rouge">.avatar-xs</code>, <code class="highlighter-rouge">.avatar-sm</code>, <code class="highlighter-rouge">.avatar</code>, <code class="highlighter-rouge">.avatar-lg</code>, <code class="highlighter-rouge">.avatar-xl</code> or <code class="highlighter-rouge">.avatar-xxl</code> classes to change size.</p>
+
+            <div class="tab-wrapper">
+              <!-- Nav Classic -->
+              <ul class="nav nav-classic" id="pills-tab-1" role="tablist">
+                <li class="nav-item">
+                  <a class="nav-link active" id="pills-result-tab-1" data-toggle="pill" href="#pills-result-1" role="tab" aria-controls="pills-result-1" aria-selected="true">Preview</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="pills-html-tab-1" data-toggle="pill" href="#pills-html-1" role="tab" aria-controls="pills-html-1" aria-selected="false">HTML</a>
+                </li>
+              </ul>
+              <!-- End Nav Classic -->
+
+              <!-- Tab Content -->
+              <div class="tab-content" id="pills-tabContent-1">
+                <div class="tab-pane fade p-4 show active" id="pills-result-1" role="tabpanel" aria-labelledby="pills-result-tab-1">
+                  <span class="avatar avatar-xxl avatar-circle">
+                    <img class="avatar-img" src="../assets/img/160x160/img2.jpg" alt="Image Description">
+                  </span>
+                  <span class="avatar avatar-xl avatar-circle">
+                    <img class="avatar-img" src="../assets/img/160x160/img2.jpg" alt="Image Description">
+                  </span>
+                  <span class="avatar avatar-lg avatar-circle">
+                    <img class="avatar-img" src="../assets/img/160x160/img2.jpg" alt="Image Description">
+                  </span>
+                  <span class="avatar avatar-circle">
+                    <img class="avatar-img" src="../assets/img/160x160/img2.jpg" alt="Image Description">
+                  </span>
+                  <span class="avatar avatar-sm avatar-circle">
+                    <img class="avatar-img" src="../assets/img/160x160/img2.jpg" alt="Image Description">
+                  </span>
+                  <span class="avatar avatar-xs avatar-circle">
+                    <img class="avatar-img" src="../assets/img/160x160/img2.jpg" alt="Image Description">
+                  </span>
+                </div>
+                <div class="tab-pane fade" id="pills-html-1" role="tabpanel" aria-labelledby="pills-html-tab-1">
+                  <pre class="rounded">
+                    <code class="language-markup" data-lang="html">
+                      &lt;span class="avatar avatar-xxl avatar-circle"&gt;
+                        &lt;img class="avatar-img" src="../../assets/img/160x160/img2.jpg" alt="Image Description"&gt;
+                      &lt;/span&gt;
+                      &lt;span class="avatar avatar-xl avatar-circle"&gt;
+                        &lt;img class="avatar-img" src="../../assets/img/160x160/img2.jpg" alt="Image Description"&gt;
+                      &lt;/span&gt;
+                      &lt;span class="avatar avatar-lg avatar-circle"&gt;
+                        &lt;img class="avatar-img" src="../../assets/img/160x160/img2.jpg" alt="Image Description"&gt;
+                      &lt;/span&gt;
+                      &lt;span class="avatar avatar-circle"&gt;
+                        &lt;img class="avatar-img" src="../../assets/img/160x160/img2.jpg" alt="Image Description"&gt;
+                      &lt;/span&gt;
+                      &lt;span class="avatar avatar-sm avatar-circle"&gt;
+                        &lt;img class="avatar-img" src="../../assets/img/160x160/img2.jpg" alt="Image Description"&gt;
+                      &lt;/span&gt;
+                      &lt;span class="avatar avatar-xs avatar-circle"&gt;
+                        &lt;img class="avatar-img" src="../../assets/img/160x160/img2.jpg" alt="Image Description"&gt;
+                      &lt;/span&gt;
+                    </code>
+                  </pre>
+                </div>
+              </div>
+              <!-- End Tab Content -->
+            </div>
+          </div>
+
+          <div id="initials" class="hs-docs-content-divider">
+            <h2 class="hs-docs-heading">Initials <a class="anchorjs-link" href="#initials" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
+
+            <div class="tab-wrapper">
+              <!-- Nav Classic -->
+              <ul class="nav nav-classic" id="pills-tab-3" role="tablist">
+                <li class="nav-item">
+                  <a class="nav-link active" id="pills-result-tab-3" data-toggle="pill" href="#pills-result-3" role="tab" aria-controls="pills-result-3" aria-selected="true">Preview</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="pills-html-tab-3" data-toggle="pill" href="#pills-html-3" role="tab" aria-controls="pills-html-3" aria-selected="false">HTML</a>
+                </li>
+              </ul>
+              <!-- End Nav Classic -->
+
+              <!-- Tab Content -->
+              <div class="tab-content" id="pills-tabContent-3">
+                <div class="tab-pane fade p-4 show active" id="pills-result-3" role="tabpanel" aria-labelledby="pills-result-tab-3">
+                  <span class="avatar avatar-xl avatar-primary avatar-circle">
+                    <span class="avatar-initials">A</span>
+                  </span>
+                  <span class="avatar avatar-lg avatar-primary avatar-circle">
+                    <span class="avatar-initials">A</span>
+                  </span>
+                  <span class="avatar avatar-primary avatar-circle">
+                    <span class="avatar-initials">A</span>
+                  </span>
+                  <span class="avatar avatar-sm avatar-primary avatar-circle">
+                    <span class="avatar-initials">A</span>
+                  </span>
+                  <span class="avatar avatar-xs avatar-primary avatar-circle">
+                    <span class="avatar-initials">A</span>
+                  </span>
+                </div>
+                <div class="tab-pane fade" id="pills-html-3" role="tabpanel" aria-labelledby="pills-html-tab-3">
+                  <pre class="rounded">
+                    <code class="language-markup" data-lang="html">
+                      &lt;span class="avatar avatar-xl avatar-primary avatar-circle"&gt;
+                        &lt;span class="avatar-initials"&gt;A&lt;/span&gt;
+                      &lt;/span&gt;
+                      &lt;span class="avatar avatar-lg avatar-primary avatar-circle"&gt;
+                        &lt;span class="avatar-initials"&gt;A&lt;/span&gt;
+                      &lt;/span&gt;
+                      &lt;span class="avatar avatar-primary avatar-circle"&gt;
+                        &lt;span class="avatar-initials"&gt;A&lt;/span&gt;
+                      &lt;/span&gt;
+                      &lt;span class="avatar avatar-sm avatar-primary avatar-circle"&gt;
+                        &lt;span class="avatar-initials"&gt;A&lt;/span&gt;
+                      &lt;/span&gt;
+                      &lt;span class="avatar avatar-xs avatar-primary avatar-circle"&gt;
+                        &lt;span class="avatar-initials"&gt;A&lt;/span&gt;
+                      &lt;/span&gt;
+                    </code>
+                  </pre>
+                </div>
+              </div>
+              <!-- End Tab Content -->
+            </div>
+          </div>
+
+          <div id="shapes" class="hs-docs-content-divider">
+            <h2 class="hs-docs-heading">Shapes <a class="anchorjs-link" href="#shapes" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
+            <p>Use border classes or <code class="highlighter-rouge">.avatar-circle</code> to make avatars more rounded.</p>
+
+            <div class="tab-wrapper">
+              <!-- Nav Classic -->
+              <ul class="nav nav-classic" id="pills-tab-2" role="tablist">
+                <li class="nav-item">
+                  <a class="nav-link active" id="pills-result-tab-2" data-toggle="pill" href="#pills-result-2" role="tab" aria-controls="pills-result-2" aria-selected="true">Preview</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="pills-html-tab-2" data-toggle="pill" href="#pills-html-2" role="tab" aria-controls="pills-html-2" aria-selected="false">HTML</a>
+                </li>
+              </ul>
+              <!-- End Nav Classic -->
+
+              <!-- Tab Content -->
+              <div class="tab-content" id="pills-tabContent-2">
+                <div class="tab-pane fade p-4 show active" id="pills-result-2" role="tabpanel" aria-labelledby="pills-result-tab-2">
+                  <span class="avatar">
+                    <img class="avatar-img" src="../assets/img/160x160/img2.jpg" alt="Image Description">
+                  </span>
+                  <span class="avatar avatar-circle">
+                    <img class="avatar-img" src="../assets/img/160x160/img2.jpg" alt="Image Description">
+                  </span>
+                </div>
+                <div class="tab-pane fade" id="pills-html-2" role="tabpanel" aria-labelledby="pills-html-tab-2">
+                  <pre class="rounded">
+                    <code class="language-markup" data-lang="html">
+                      &lt;span class="avatar"&gt;
+                        &lt;img class="avatar-img" src="../../assets/img/160x160/img2.jpg" alt="Image Description"&gt;
+                      &lt;/span&gt;
+                      &lt;span class="avatar avatar-circle"&gt;
+                        &lt;img class="avatar-img" src="../../assets/img/160x160/img2.jpg" alt="Image Description"&gt;
+                      &lt;/span&gt;
+                    </code>
+                  </pre>
+                </div>
+              </div>
+              <!-- End Tab Content -->
+            </div>
+
+            <div class="tab-wrapper">
+              <!-- Nav Classic -->
+              <ul class="nav nav-classic" id="pills-tab-11" role="tablist">
+                <li class="nav-item">
+                  <a class="nav-link active" id="pills-result-tab-11" data-toggle="pill" href="#pills-result-11" role="tab" aria-controls="pills-result-11" aria-selected="true">Preview</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="pills-html-tab-11" data-toggle="pill" href="#pills-html-11" role="tab" aria-controls="pills-html-11" aria-selected="false">HTML</a>
+                </li>
+              </ul>
+              <!-- End Nav Classic -->
+
+              <!-- Tab Content -->
+              <div class="tab-content" id="pills-tabContent-11">
+                <div class="tab-pane fade p-4 show active" id="pills-result-11" role="tabpanel" aria-labelledby="pills-result-tab-11">
+                  <span class="avatar avatar-primary">
+                    <span class="avatar-initials">A</span>
+                  </span>
+                  <span class="avatar avatar-primary avatar-circle">
+                    <span class="avatar-initials">A</span>
+                  </span>
+                </div>
+                <div class="tab-pane fade" id="pills-html-11" role="tabpanel" aria-labelledby="pills-html-tab-11">
+                  <pre class="rounded">
+                    <code class="language-markup" data-lang="html">
+                      &lt;span class="avatar avatar-primary"&gt;
+                        &lt;span class="avatar-initials"&gt;A&lt;/span&gt;
+                      &lt;/span&gt;
+                      &lt;span class="avatar avatar-primary avatar-circle"&gt;
+                        &lt;span class="avatar-initials"&gt;A&lt;/span&gt;
+                      &lt;/span&gt;
+                    </code>
+                  </pre>
+                </div>
+              </div>
+              <!-- End Tab Content -->
+            </div>
+          </div>
+
+          <div id="colors" class="hs-docs-content-divider">
+            <h2 class="hs-docs-heading">Colors <a class="anchorjs-link" href="#colors" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
+
+            <div class="tab-wrapper">
+              <!-- Nav Classic -->
+              <ul class="nav nav-classic" id="pills-tab-7" role="tablist">
+                <li class="nav-item">
+                  <a class="nav-link active" id="pills-result-tab-7" data-toggle="pill" href="#pills-result-7" role="tab" aria-controls="pills-result-7" aria-selected="true">Preview</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="pills-html-tab-7" data-toggle="pill" href="#pills-html-7" role="tab" aria-controls="pills-html-7" aria-selected="false">HTML</a>
+                </li>
+              </ul>
+              <!-- End Nav Classic -->
+
+              <!-- Tab Content -->
+              <div class="tab-content" id="pills-tabContent-7">
+                <div class="tab-pane fade p-4 show active" id="pills-result-7" role="tabpanel" aria-labelledby="pills-result-tab-7">
+                  <span class="avatar avatar-primary avatar-circle">
+                    <span class="avatar-initials">A</span>
+                  </span>
+                  <span class="avatar avatar-secondary avatar-circle">
+                    <span class="avatar-initials">A</span>
+                  </span>
+                  <span class="avatar avatar-success avatar-circle">
+                    <span class="avatar-initials">A</span>
+                  </span>
+                  <span class="avatar avatar-danger avatar-circle">
+                    <span class="avatar-initials">A</span>
+                  </span>
+                  <span class="avatar avatar-warning avatar-circle">
+                    <span class="avatar-initials">A</span>
+                  </span>
+                  <span class="avatar avatar-info avatar-circle">
+                    <span class="avatar-initials">A</span>
+                  </span>
+                  <span class="avatar avatar-light avatar-circle">
+                    <span class="avatar-initials">A</span>
+                  </span>
+                  <span class="avatar avatar-dark avatar-circle">
+                    <span class="avatar-initials">A</span>
+                  </span>
+                  <span class="avatar avatar-navy avatar-circle">
+                    <span class="avatar-initials">A</span>
+                  </span>
+                </div>
+                <div class="tab-pane fade" id="pills-html-7" role="tabpanel" aria-labelledby="pills-html-tab-7">
+                  <pre class="rounded">
+                    <code class="language-markup" data-lang="html">
+                      &lt;span class="avatar avatar-primary avatar-circle"&gt;
+                        &lt;span class="avatar-initials"&gt;A&lt;/span&gt;
+                      &lt;/span&gt;
+                      &lt;span class="avatar avatar-secondary avatar-circle"&gt;
+                        &lt;span class="avatar-initials"&gt;A&lt;/span&gt;
+                      &lt;/span&gt;
+                      &lt;span class="avatar avatar-success avatar-circle"&gt;
+                        &lt;span class="avatar-initials"&gt;A&lt;/span&gt;
+                      &lt;/span&gt;
+                      &lt;span class="avatar avatar-danger avatar-circle"&gt;
+                        &lt;span class="avatar-initials"&gt;A&lt;/span&gt;
+                      &lt;/span&gt;
+                      &lt;span class="avatar avatar-warning avatar-circle"&gt;
+                        &lt;span class="avatar-initials"&gt;A&lt;/span&gt;
+                      &lt;/span&gt;
+                      &lt;span class="avatar avatar-info avatar-circle"&gt;
+                        &lt;span class="avatar-initials"&gt;A&lt;/span&gt;
+                      &lt;/span&gt;
+                      &lt;span class="avatar avatar-light avatar-circle"&gt;
+                        &lt;span class="avatar-initials"&gt;A&lt;/span&gt;
+                      &lt;/span&gt;
+                      &lt;span class="avatar avatar-dark avatar-circle"&gt;
+                        &lt;span class="avatar-initials"&gt;A&lt;/span&gt;
+                      &lt;/span&gt;
+                      &lt;span class="avatar avatar-navy avatar-circle"&gt;
+                        &lt;span class="avatar-initials"&gt;A&lt;/span&gt;
+                      &lt;/span&gt;
+                    </code>
+                  </pre>
+                </div>
+              </div>
+              <!-- End Tab Content -->
+            </div>
+
+            <div class="tab-wrapper">
+              <!-- Nav Classic -->
+              <ul class="nav nav-classic" id="pills-tab-10" role="tablist">
+                <li class="nav-item">
+                  <a class="nav-link active" id="pills-result-tab-10" data-toggle="pill" href="#pills-result-10" role="tab" aria-controls="pills-result-10" aria-selected="true">Preview</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="pills-html-tab-10" data-toggle="pill" href="#pills-html-10" role="tab" aria-controls="pills-html-10" aria-selected="false">HTML</a>
+                </li>
+              </ul>
+              <!-- End Nav Classic -->
+
+              <!-- Tab Content -->
+              <div class="tab-content" id="pills-tabContent-10">
+                <div class="tab-pane fade p-4 show active" id="pills-result-10" role="tabpanel" aria-labelledby="pills-result-tab-10">
+                  <span class="avatar avatar-soft-primary avatar-circle">
+                    <span class="avatar-initials">A</span>
+                  </span>
+                  <span class="avatar avatar-soft-secondary avatar-circle">
+                    <span class="avatar-initials">A</span>
+                  </span>
+                  <span class="avatar avatar-soft-success avatar-circle">
+                    <span class="avatar-initials">A</span>
+                  </span>
+                  <span class="avatar avatar-soft-danger avatar-circle">
+                    <span class="avatar-initials">A</span>
+                  </span>
+                  <span class="avatar avatar-soft-warning avatar-circle">
+                    <span class="avatar-initials">A</span>
+                  </span>
+                  <span class="avatar avatar-soft-info avatar-circle">
+                    <span class="avatar-initials">A</span>
+                  </span>
+                  <span class="avatar avatar-soft-light avatar-circle">
+                    <span class="avatar-initials">A</span>
+                  </span>
+                  <span class="avatar avatar-soft-dark avatar-circle">
+                    <span class="avatar-initials">A</span>
+                  </span>
+                  <span class="avatar avatar-soft-navy avatar-circle">
+                    <span class="avatar-initials">A</span>
+                  </span>
+                </div>
+                <div class="tab-pane fade" id="pills-html-10" role="tabpanel" aria-labelledby="pills-html-tab-10">
+                  <pre class="rounded">
+                    <code class="language-markup" data-lang="html">
+                      &lt;span class="avatar avatar-soft-primary avatar-circle"&gt;
+                        &lt;span class="avatar-initials"&gt;A&lt;/span&gt;
+                      &lt;/span&gt;
+                      &lt;span class="avatar avatar-soft-secondary avatar-circle"&gt;
+                        &lt;span class="avatar-initials"&gt;A&lt;/span&gt;
+                      &lt;/span&gt;
+                      &lt;span class="avatar avatar-soft-success avatar-circle"&gt;
+                        &lt;span class="avatar-initials"&gt;A&lt;/span&gt;
+                      &lt;/span&gt;
+                      &lt;span class="avatar avatar-soft-danger avatar-circle"&gt;
+                        &lt;span class="avatar-initials"&gt;A&lt;/span&gt;
+                      &lt;/span&gt;
+                      &lt;span class="avatar avatar-soft-warning avatar-circle"&gt;
+                        &lt;span class="avatar-initials"&gt;A&lt;/span&gt;
+                      &lt;/span&gt;
+                      &lt;span class="avatar avatar-soft-info avatar-circle"&gt;
+                        &lt;span class="avatar-initials"&gt;A&lt;/span&gt;
+                      &lt;/span&gt;
+                      &lt;span class="avatar avatar-soft-light avatar-circle"&gt;
+                        &lt;span class="avatar-initials"&gt;A&lt;/span&gt;
+                      &lt;/span&gt;
+                      &lt;span class="avatar avatar-soft-dark avatar-circle"&gt;
+                        &lt;span class="avatar-initials"&gt;A&lt;/span&gt;
+                      &lt;/span&gt;
+                      &lt;span class="avatar avatar-soft-navy avatar-circle"&gt;
+                        &lt;span class="avatar-initials"&gt;A&lt;/span&gt;
+                      &lt;/span&gt;
+                    </code>
+                  </pre>
+                </div>
+              </div>
+              <!-- End Tab Content -->
+            </div>
+          </div>
+
+          <div id="border" class="hs-docs-content-divider">
+            <h2 class="hs-docs-heading">Border <span class="badge badge-success ml-1">New</span> <a class="anchorjs-link" href="#border" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
+            <p>Use <code class="highlighter-rouge">.avatar-border-lg</code> to wrap avatars with white border color.</p>
+
+            <div class="tab-wrapper">
+              <!-- Nav Classic -->
+              <ul class="nav nav-classic" id="pills-tab-12" role="tablist">
+                <li class="nav-item">
+                  <a class="nav-link active" id="pills-result-tab-12" data-toggle="pill" href="#pills-result-12" role="tab" aria-controls="pills-result-12" aria-selected="true">Preview</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="pills-html-tab-12" data-toggle="pill" href="#pills-html-12" role="tab" aria-controls="pills-html-12" aria-selected="false">HTML</a>
+                </li>
+              </ul>
+              <!-- End Nav Classic -->
+
+              <!-- Tab Content -->
+              <div class="tab-content" id="pills-tabContent-12">
+                <div class="tab-pane fade p-4 show active bg-navy" id="pills-result-12" role="tabpanel" aria-labelledby="pills-result-tab-12">
+                  <span class="avatar avatar-xl avatar-circle avatar-border-lg">
+                    <img class="avatar-img" src="../assets/img/160x160/img2.jpg" alt="Image Description">
+                  </span>
+                </div>
+                <div class="tab-pane fade" id="pills-html-12" role="tabpanel" aria-labelledby="pills-html-tab-12">
+                  <pre class="rounded">
+                    <code class="language-markup" data-lang="html">
+                      &lt;span class="avatar avatar-xl avatar-circle avatar-border-lg"&gt;
+                        &lt;img class="avatar-img" src="../../assets/img/160x160/img2.jpg" alt="Image Description"&gt;
+                      &lt;/span&gt;
+                    </code>
+                  </pre>
+                </div>
+              </div>
+              <!-- End Tab Content -->
+            </div>
+          </div>
+
+          <div id="centered" class="hs-docs-content-divider">
+            <h2 class="hs-docs-heading">Centered <span class="badge badge-success ml-1">New</span> <a class="anchorjs-link" href="#centered" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
+            <p>Use <code class="highlighter-rouge">.avatar-centered</code> to center align.</p>
+
+            <div class="tab-wrapper">
+              <!-- Nav Classic -->
+              <ul class="nav nav-classic" id="pills-tab-13" role="tablist">
+                <li class="nav-item">
+                  <a class="nav-link active" id="pills-result-tab-13" data-toggle="pill" href="#pills-result-13" role="tab" aria-controls="pills-result-13" aria-selected="true">Preview</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="pills-html-tab-13" data-toggle="pill" href="#pills-html-13" role="tab" aria-controls="pills-html-13" aria-selected="false">HTML</a>
+                </li>
+              </ul>
+              <!-- End Nav Classic -->
+
+              <!-- Tab Content -->
+              <div class="tab-content" id="pills-tabContent-13">
+                <div class="tab-pane fade p-4 show active" id="pills-result-13" role="tabpanel" aria-labelledby="pills-result-tab-13">
+                  <span class="avatar avatar-xl avatar-centered avatar-circle avatar-border-lg">
+                    <img class="avatar-img" src="../assets/img/160x160/img2.jpg" alt="Image Description">
+                  </span>
+                </div>
+                <div class="tab-pane fade" id="pills-html-13" role="tabpanel" aria-labelledby="pills-html-tab-13">
+                  <pre class="rounded">
+                    <code class="language-markup" data-lang="html">
+                      &lt;span class="avatar avatar-xl avatar-centered avatar-circle avatar-border-lg"&gt;
+                        &lt;img class="avatar-img" src="../../assets/img/160x160/img2.jpg" alt="Image Description"&gt;
+                      &lt;/span&gt;
+                    </code>
+                  </pre>
+                </div>
+              </div>
+              <!-- End Tab Content -->
+            </div>
+          </div>
+
+          <div id="group" class="hs-docs-content-divider">
+            <h2 class="hs-docs-heading">Group <a class="anchorjs-link" href="#group" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
+            <p>Group your avatars with the help of a <code class="highlighter-rouge">.avatar-group</code> class.</p>
+
+            <div class="tab-wrapper">
+              <!-- Nav Classic -->
+              <ul class="nav nav-classic" id="pills-tab-8" role="tablist">
+                <li class="nav-item">
+                  <a class="nav-link active" id="pills-result-tab-8" data-toggle="pill" href="#pills-result-8" role="tab" aria-controls="pills-result-8" aria-selected="true">Preview</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="pills-html-tab-8" data-toggle="pill" href="#pills-html-8" role="tab" aria-controls="pills-html-8" aria-selected="false">HTML</a>
+                </li>
+              </ul>
+              <!-- End Nav Classic -->
+
+              <!-- Tab Content -->
+              <div class="tab-content" id="pills-tabContent-8">
+                <div class="tab-pane fade p-4 show active" id="pills-result-8" role="tabpanel" aria-labelledby="pills-result-tab-8">
+                  <div class="row align-items-center">
+                    <div class="col-auto">
+                      <div class="avatar-group mb-1">
+                        <span class="avatar avatar-xl avatar-circle">
+                          <img class="avatar-img" src="../assets/img/100x100/img11.jpg" alt="Image Description">
+                        </span>
+                        <span class="avatar avatar-xl avatar-navy avatar-circle">
+                          <span class="avatar-initials">A</span>
+                        </span>
+                        <span class="avatar avatar-xl avatar-circle">
+                          <img class="avatar-img" src="../assets/img/100x100/img3.jpg" alt="Image Description">
+                        </span>
+                        <span class="avatar avatar-xl avatar-primary avatar-circle">
+                          <span class="avatar-initials">3+</span>
+                        </span>
+                      </div>
+                    </div>
+
+                    <div class="col-auto">
+                      <div class="avatar-group mb-1">
+                        <span class="avatar avatar-lg avatar-circle">
+                          <img class="avatar-img" src="../assets/img/100x100/img11.jpg" alt="Image Description">
+                        </span>
+                        <span class="avatar avatar-lg avatar-navy avatar-circle">
+                          <span class="avatar-initials">A</span>
+                        </span>
+                        <span class="avatar avatar-lg avatar-circle">
+                          <img class="avatar-img" src="../assets/img/100x100/img3.jpg" alt="Image Description">
+                        </span>
+                        <span class="avatar avatar-lg avatar-primary avatar-circle">
+                          <span class="avatar-initials">3+</span>
+                        </span>
+                      </div>
+                    </div>
+
+                    <div class="col-auto">
+                      <div class="avatar-group mb-1">
+                        <span class="avatar avatar-circle">
+                          <img class="avatar-img" src="../assets/img/100x100/img11.jpg" alt="Image Description">
+                        </span>
+                        <span class="avatar avatar-navy avatar-circle">
+                          <span class="avatar-initials">A</span>
+                        </span>
+                        <span class="avatar avatar-circle">
+                          <img class="avatar-img" src="../assets/img/100x100/img3.jpg" alt="Image Description">
+                        </span>
+                        <span class="avatar avatar-primary avatar-circle">
+                          <span class="avatar-initials">3+</span>
+                        </span>
+                      </div>
+                    </div>
+
+                    <div class="col-auto">
+                      <div class="avatar-group mb-1">
+                        <span class="avatar avatar-sm avatar-circle">
+                          <img class="avatar-img" src="../assets/img/100x100/img11.jpg" alt="Image Description">
+                        </span>
+                        <span class="avatar avatar-sm avatar-navy avatar-circle">
+                          <span class="avatar-initials">A</span>
+                        </span>
+                        <span class="avatar avatar-sm avatar-circle">
+                          <img class="avatar-img" src="../assets/img/100x100/img3.jpg" alt="Image Description">
+                        </span>
+                        <span class="avatar avatar-sm avatar-primary avatar-circle">
+                          <span class="avatar-initials">3+</span>
+                        </span>
+                      </div>
+                    </div>
+
+                    <div class="col-auto">
+                      <div class="avatar-group mb-1">
+                        <span class="avatar avatar-xs avatar-circle">
+                          <img class="avatar-img" src="../assets/img/100x100/img11.jpg" alt="Image Description">
+                        </span>
+                        <span class="avatar avatar-xs avatar-navy avatar-circle">
+                          <span class="avatar-initials">A</span>
+                        </span>
+                        <span class="avatar avatar-xs avatar-circle">
+                          <img class="avatar-img" src="../assets/img/100x100/img3.jpg" alt="Image Description">
+                        </span>
+                        <span class="avatar avatar-xs avatar-primary avatar-circle">
+                          <span class="avatar-initials">3+</span>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="pills-html-8" role="tabpanel" aria-labelledby="pills-html-tab-8">
+                  <pre class="rounded">
+                    <code class="language-markup" data-lang="html">
+                      &lt;div class="row align-items-center"&gt;
+                        &lt;div class="col-auto"&gt;
+                          &lt;div class="avatar-group mb-1"&gt;
+                            &lt;span class="avatar avatar-xl avatar-circle"&gt;
+                              &lt;img class="avatar-img" src="../../assets/img/100x100/img11.jpg" alt="Image Description"&gt;
+                            &lt;/span&gt;
+                            &lt;span class="avatar avatar-xl avatar-navy avatar-circle"&gt;
+                              &lt;span class="avatar-initials"&gt;A&lt;/span&gt;
+                            &lt;/span&gt;
+                            &lt;span class="avatar avatar-xl avatar-circle"&gt;
+                              &lt;img class="avatar-img" src="../../assets/img/100x100/img3.jpg" alt="Image Description"&gt;
+                            &lt;/span&gt;
+                            &lt;span class="avatar avatar-xl avatar-primary avatar-circle"&gt;
+                              &lt;span class="avatar-initials"&gt;3+&lt;/span&gt;
+                            &lt;/span&gt;
+                          &lt;/div&gt;
+                        &lt;/div&gt;
+
+                        &lt;div class="col-auto"&gt;
+                          &lt;div class="avatar-group mb-1"&gt;
+                            &lt;span class="avatar avatar-lg avatar-circle"&gt;
+                              &lt;img class="avatar-img" src="../../assets/img/100x100/img11.jpg" alt="Image Description"&gt;
+                            &lt;/span&gt;
+                            &lt;span class="avatar avatar-lg avatar-navy avatar-circle"&gt;
+                              &lt;span class="avatar-initials"&gt;A&lt;/span&gt;
+                            &lt;/span&gt;
+                            &lt;span class="avatar avatar-lg avatar-circle"&gt;
+                              &lt;img class="avatar-img" src="../../assets/img/100x100/img3.jpg" alt="Image Description"&gt;
+                            &lt;/span&gt;
+                            &lt;span class="avatar avatar-lg avatar-primary avatar-circle"&gt;
+                              &lt;span class="avatar-initials"&gt;3+&lt;/span&gt;
+                            &lt;/span&gt;
+                          &lt;/div&gt;
+                        &lt;/div&gt;
+
+                        &lt;div class="col-auto"&gt;
+                          &lt;div class="avatar-group mb-1"&gt;
+                            &lt;span class="avatar avatar-circle"&gt;
+                              &lt;img class="avatar-img" src="../../assets/img/100x100/img11.jpg" alt="Image Description"&gt;
+                            &lt;/span&gt;
+                            &lt;span class="avatar avatar-navy avatar-circle"&gt;
+                              &lt;span class="avatar-initials"&gt;A&lt;/span&gt;
+                            &lt;/span&gt;
+                            &lt;span class="avatar avatar-circle"&gt;
+                              &lt;img class="avatar-img" src="../../assets/img/100x100/img3.jpg" alt="Image Description"&gt;
+                            &lt;/span&gt;
+                            &lt;span class="avatar avatar-primary avatar-circle"&gt;
+                              &lt;span class="avatar-initials"&gt;3+&lt;/span&gt;
+                            &lt;/span&gt;
+                          &lt;/div&gt;
+                        &lt;/div&gt;
+
+                        &lt;div class="col-auto"&gt;
+                          &lt;div class="avatar-group mb-1"&gt;
+                            &lt;span class="avatar avatar-sm avatar-circle"&gt;
+                              &lt;img class="avatar-img" src="../../assets/img/100x100/img11.jpg" alt="Image Description"&gt;
+                            &lt;/span&gt;
+                            &lt;span class="avatar avatar-sm avatar-navy avatar-circle"&gt;
+                              &lt;span class="avatar-initials"&gt;A&lt;/span&gt;
+                            &lt;/span&gt;
+                            &lt;span class="avatar avatar-sm avatar-circle"&gt;
+                              &lt;img class="avatar-img" src="../../assets/img/100x100/img3.jpg" alt="Image Description"&gt;
+                            &lt;/span&gt;
+                            &lt;span class="avatar avatar-sm avatar-primary avatar-circle"&gt;
+                              &lt;span class="avatar-initials"&gt;3+&lt;/span&gt;
+                            &lt;/span&gt;
+                          &lt;/div&gt;
+                        &lt;/div&gt;
+
+                        &lt;div class="col-auto"&gt;
+                          &lt;div class="avatar-group mb-1"&gt;
+                            &lt;span class="avatar avatar-xs avatar-circle"&gt;
+                              &lt;img class="avatar-img" src="../../assets/img/100x100/img11.jpg" alt="Image Description"&gt;
+                            &lt;/span&gt;
+                            &lt;span class="avatar avatar-xs avatar-navy avatar-circle"&gt;
+                              &lt;span class="avatar-initials"&gt;A&lt;/span&gt;
+                            &lt;/span&gt;
+                            &lt;span class="avatar avatar-xs avatar-circle"&gt;
+                              &lt;img class="avatar-img" src="../../assets/img/100x100/img3.jpg" alt="Image Description"&gt;
+                            &lt;/span&gt;
+                            &lt;span class="avatar avatar-xs avatar-primary avatar-circle"&gt;
+                              &lt;span class="avatar-initials"&gt;3+&lt;/span&gt;
+                            &lt;/span&gt;
+                          &lt;/div&gt;
+                        &lt;/div&gt;
+                      &lt;/div&gt;
+                    </code>
+                  </pre>
+                </div>
+              </div>
+              <!-- End Tab Content -->
+            </div>
+          </div>
+
+          <div id="status" class="hs-docs-content-divider">
+            <h2 class="hs-docs-heading">Status <a class="anchorjs-link" href="#status" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
+            <p>Looking for larger or smaller status size? Add <code>.avatar-sm-status</code> or <code>.avatar-lg-status</code> for additional sizes.</p>
+
+            <div class="tab-wrapper">
+              <!-- Nav Classic -->
+              <ul class="nav nav-classic" id="pills-tab-9" role="tablist">
+                <li class="nav-item">
+                  <a class="nav-link active" id="pills-result-tab-9" data-toggle="pill" href="#pills-result-9" role="tab" aria-controls="pills-result-9" aria-selected="true">Preview</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="pills-html-tab-9" data-toggle="pill" href="#pills-html-9" role="tab" aria-controls="pills-html-9" aria-selected="false">HTML</a>
+                </li>
+              </ul>
+              <!-- End Nav Classic -->
+
+              <!-- Tab Content -->
+              <div class="tab-content" id="pills-tabContent-9">
+                <div class="tab-pane fade p-4 show active" id="pills-result-9" role="tabpanel" aria-labelledby="pills-result-tab-9">
+                  <div class="mb-5">
+                    <div class="avatar mr-3">
+                      <img class="avatar-img" src="../assets/img/160x160/img2.jpg" alt="Image Description">
+                      <span class="avatar-status avatar-sm-status avatar-primary"></span>
+                    </div>
+                    <div class="avatar avatar-circle mr-3">
+                      <img class="avatar-img" src="../assets/img/160x160/img2.jpg" alt="Image Description">
+                      <span class="avatar-status avatar-sm-status avatar-primary"></span>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="pills-html-9" role="tabpanel" aria-labelledby="pills-html-tab-9">
+                  <pre class="rounded">
+                    <code class="language-markup" data-lang="html">
+                      &lt;div class="avatar mr-3"&gt;
+                        &lt;img class="avatar-img" src="../../assets/img/160x160/img2.jpg" alt="Image Description"&gt;
+                        &lt;span class="avatar-status avatar-sm-status avatar-primary"&gt;&lt;/span&gt;
+                      &lt;/div&gt;
+                      &lt;div class="avatar avatar-circle mr-3"&gt;
+                        &lt;img class="avatar-img" src="../../assets/img/160x160/img2.jpg" alt="Image Description"&gt;
+                        &lt;span class="avatar-status avatar-sm-status avatar-primary"&gt;&lt;/span&gt;
+                      &lt;/div&gt;
+                    </code>
+                  </pre>
+                </div>
+              </div>
+              <!-- End Tab Content -->
+            </div>
+          </div>
+
+          <div id="status-color-variants" class="hs-docs-content-divider">
+            <h2 class="hs-docs-heading">Color variants <a class="anchorjs-link" href="#status-color-variants" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
+            <p>Use predefined color classes.</p>
+
+            <div class="tab-wrapper">
+              <!-- Nav Classic -->
+              <ul class="nav nav-classic" id="pills-tab-6" role="tablist">
+                <li class="nav-item">
+                  <a class="nav-link active" id="pills-result-tab-6" data-toggle="pill" href="#pills-result-6" role="tab" aria-controls="pills-result-6" aria-selected="true">Preview</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="pills-html-tab-6" data-toggle="pill" href="#pills-html-6" role="tab" aria-controls="pills-html-6" aria-selected="false">HTML</a>
+                </li>
+              </ul>
+              <!-- End Nav Classic -->
+
+              <!-- Tab Content -->
+              <div class="tab-content" id="pills-tabContent-6">
+                <div class="tab-pane fade p-4 show active" id="pills-result-6" role="tabpanel" aria-labelledby="pills-result-tab-6">
+                  <div class="avatar avatar-circle mr-3">
+                    <img class="avatar-img" src="../assets/img/160x160/img2.jpg" alt="Image Description">
+                    <span class="avatar-status avatar-sm-status avatar-primary"></span>
+                  </div>
+                  <div class="avatar avatar-circle mr-3">
+                    <img class="avatar-img" src="../assets/img/160x160/img2.jpg" alt="Image Description">
+                    <span class="avatar-status avatar-sm-status avatar-secondary"></span>
+                  </div>
+                  <div class="avatar avatar-circle mr-3">
+                    <img class="avatar-img" src="../assets/img/160x160/img2.jpg" alt="Image Description">
+                    <span class="avatar-status avatar-sm-status avatar-success"></span>
+                  </div>
+                  <div class="avatar avatar-circle mr-3">
+                    <img class="avatar-img" src="../assets/img/160x160/img2.jpg" alt="Image Description">
+                    <span class="avatar-status avatar-sm-status avatar-danger"></span>
+                  </div>
+                  <div class="avatar avatar-circle mr-3">
+                    <img class="avatar-img" src="../assets/img/160x160/img2.jpg" alt="Image Description">
+                    <span class="avatar-status avatar-sm-status avatar-warning"></span>
+                  </div>
+                  <div class="avatar avatar-circle mr-3">
+                    <img class="avatar-img" src="../assets/img/160x160/img2.jpg" alt="Image Description">
+                    <span class="avatar-status avatar-sm-status avatar-info"></span>
+                  </div>
+                  <div class="avatar avatar-circle mr-3">
+                    <img class="avatar-img" src="../assets/img/160x160/img2.jpg" alt="Image Description">
+                    <span class="avatar-status avatar-sm-status avatar-light"></span>
+                  </div>
+                  <div class="avatar avatar-circle mr-3">
+                    <img class="avatar-img" src="../assets/img/160x160/img2.jpg" alt="Image Description">
+                    <span class="avatar-status avatar-sm-status avatar-dark"></span>
+                  </div>
+                  <div class="avatar avatar-circle mr-3">
+                    <img class="avatar-img" src="../assets/img/160x160/img2.jpg" alt="Image Description">
+                    <span class="avatar-status avatar-sm-status avatar-navy"></span>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="pills-html-6" role="tabpanel" aria-labelledby="pills-html-tab-6">
+                  <pre class="rounded">
+                    <code class="language-markup" data-lang="html">
+                      &lt;div class="avatar avatar-circle mr-3"&gt;
+                        &lt;img class="avatar-img" src="../../assets/img/160x160/img2.jpg" alt="Image Description"&gt;
+                        &lt;span class="avatar-status avatar-sm-status avatar-primary"&gt;&lt;/span&gt;
+                      &lt;/div&gt;
+                      &lt;div class="avatar avatar-circle mr-3"&gt;
+                        &lt;img class="avatar-img" src="../../assets/img/160x160/img2.jpg" alt="Image Description"&gt;
+                        &lt;span class="avatar-status avatar-sm-status avatar-secondary"&gt;&lt;/span&gt;
+                      &lt;/div&gt;
+                      &lt;div class="avatar avatar-circle mr-3"&gt;
+                        &lt;img class="avatar-img" src="../../assets/img/160x160/img2.jpg" alt="Image Description"&gt;
+                        &lt;span class="avatar-status avatar-sm-status avatar-success"&gt;&lt;/span&gt;
+                      &lt;/div&gt;
+                      &lt;div class="avatar avatar-circle mr-3"&gt;
+                        &lt;img class="avatar-img" src="../../assets/img/160x160/img2.jpg" alt="Image Description"&gt;
+                        &lt;span class="avatar-status avatar-sm-status avatar-danger"&gt;&lt;/span&gt;
+                      &lt;/div&gt;
+                      &lt;div class="avatar avatar-circle mr-3"&gt;
+                        &lt;img class="avatar-img" src="../../assets/img/160x160/img2.jpg" alt="Image Description"&gt;
+                        &lt;span class="avatar-status avatar-sm-status avatar-warning"&gt;&lt;/span&gt;
+                      &lt;/div&gt;
+                      &lt;div class="avatar avatar-circle mr-3"&gt;
+                        &lt;img class="avatar-img" src="../../assets/img/160x160/img2.jpg" alt="Image Description"&gt;
+                        &lt;span class="avatar-status avatar-sm-status avatar-info"&gt;&lt;/span&gt;
+                      &lt;/div&gt;
+                      &lt;div class="avatar avatar-circle mr-3"&gt;
+                        &lt;img class="avatar-img" src="../../assets/img/160x160/img2.jpg" alt="Image Description"&gt;
+                        &lt;span class="avatar-status avatar-sm-status avatar-light"&gt;&lt;/span&gt;
+                      &lt;/div&gt;
+                      &lt;div class="avatar avatar-circle mr-3"&gt;
+                        &lt;img class="avatar-img" src="../../assets/img/160x160/img2.jpg" alt="Image Description"&gt;
+                        &lt;span class="avatar-status avatar-sm-status avatar-dark"&gt;&lt;/span&gt;
+                      &lt;/div&gt;
+                      &lt;div class="avatar avatar-circle mr-3"&gt;
+                        &lt;img class="avatar-img" src="../../assets/img/160x160/img2.jpg" alt="Image Description"&gt;
+                        &lt;span class="avatar-status avatar-sm-status avatar-navy"&gt;&lt;/span&gt;
+                      &lt;/div&gt;
+                    </code>
+                  </pre>
+                </div>
+              </div>
+              <!-- End Tab Content -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <!-- ========== END MAIN CONTENT ========== -->
+
+  <!-- Go to Top -->
+  <a class="js-go-to go-to position-fixed" href="javascript:;" style="visibility: hidden;"
+     data-hs-go-to-options='{
+       "offsetTop": 700,
+       "position": {
+         "init": {
+           "right": 15
+         },
+         "show": {
+           "bottom": 15
+         },
+         "hide": {
+           "bottom": -15
+         }
+       }
+     }'>
+    <i class="fas fa-angle-up"></i>
+  </a>
+  <!-- End Go to Top -->
+
+  <!-- JS Global Compulsory -->
+  <script src="../assets/vendor/jquery/dist/jquery.min.js"></script>
+  <script src="../assets/vendor/jquery-migrate/dist/jquery-migrate.min.js"></script>
+  <script src="../assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- JS Implementing Plugins -->
+  <script src="../assets/vendor/hs-header/dist/hs-header.min.js"></script>
+  <script src="../assets/vendor/hs-go-to/dist/hs-go-to.min.js"></script>
+  <script src="../assets/vendor/hs-scroll-to-in-overflowed-container/dist/hs-scroll-to-in-overflowed-container.min.js"></script>
+  <script src="../documentation/assets/vendor/jquery-ui/jquery-ui.core.min.js"></script>
+  <script src="../documentation/assets/vendor/jquery-ui/ui/widgets/menu.js"></script>
+  <script src="../documentation/assets/vendor/jquery-ui/ui/widgets/mouse.js"></script>
+  <script src="../documentation/assets/vendor/jquery-ui/ui/widgets/autocomplete.js"></script>
+  <script src="../documentation/assets/vendor/prism/prism.js"></script>
+
+  <!-- JS Front -->
+  <script src="../assets/js/hs.core.js"></script>
+  <script src="../documentation/assets/js/components/hs.autocomplete-local-search.js"></script>
+
+  <!-- JS Plugins Init. -->
+  <script>
+    $(document).on('ready', function () {
+      // initialization of header
+      var header = new HSHeader($('#header')).init();
+
+      // initialization of go to
+      $('.js-go-to').each(function () {
+        var goTo = new HSGoTo($(this)).init();
+      });
+
+      // initialization scroll to in overflowed container
+      var scrollToInOverflowedContainerNav = new HSScrollToInOverflowedContainer($('#sidebarNav'), {
+        targetEl: "#sidebarNav .hs-sidebar-link.active"
+      }).init();
+    });
+
+    $(window).on('load', function () {
+      // initialization of autocomplet
+      $.HSCore.components.HSLocalSearchAutocomplete.init('.js-hs-docs-search');
+    });
+  </script>
+</body>
+</html>

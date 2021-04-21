@@ -1,0 +1,82 @@
+{
+  "_from": "dropzone",
+  "_id": "dropzone@5.7.0",
+  "_inBundle": false,
+  "_integrity": "sha512-kOltiZXH5cO/72I22JjE+w6BoT6uaVLfWdFMsi1PMKFkU6BZWpqRwjnsRm0o6ANGTBuZar5Piu7m/CbKqRPiYg==",
+  "_location": "/dropzone",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "dropzone",
+    "name": "dropzone",
+    "escapedName": "dropzone",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/dropzone/-/dropzone-5.7.0.tgz",
+  "_shasum": "8d1007f3ebcc6e6d64096823f854d898f7564ef2",
+  "_spec": "dropzone",
+  "_where": "D:\\wamp\\www\\front-v1.0",
+  "bugs": {
+    "url": "https://gitlab.com/meno/dropzone/issues",
+    "email": "m@tias.me"
+  },
+  "bundleDependencies": false,
+  "contributors": [
+    {
+      "name": "Matias Meno",
+      "email": "m@tias.me",
+      "url": "http://www.colorglare.com"
+    }
+  ],
+  "deprecated": false,
+  "description": "Handles drag and drop of files for you.",
+  "devDependencies": {
+    "@babel/core": "^7.8.4",
+    "@babel/preset-env": "^7.8.4",
+    "chai": "4.2.x",
+    "grunt": "^1.0.4",
+    "grunt-babel": "^8.0.0",
+    "grunt-contrib-concat": "^1.0.1",
+    "grunt-contrib-sass": "^1.0.0",
+    "grunt-contrib-uglify": "^4.0.1",
+    "grunt-contrib-watch": "^1.1.0",
+    "grunt-text-replace": "^0.4.0",
+    "marked": "^0.8.0",
+    "mocha": "^7.0.1",
+    "mocha-headless-chrome": "^2.0.3",
+    "sinon": "8.1.1"
+  },
+  "homepage": "http://www.dropzonejs.com",
+  "keywords": [
+    "dragndrop",
+    "drag and drop",
+    "file upload",
+    "upload"
+  ],
+  "license": "MIT",
+  "main": "./dist/dropzone.js",
+  "maintainers": [
+    {
+      "name": "Matias Meno",
+      "email": "m@tias.me",
+      "url": "http://www.colorglare.com"
+    }
+  ],
+  "name": "dropzone",
+  "repository": {
+    "type": "git",
+    "url": "git+https://gitlab.com/meno/dropzone.git"
+  },
+  "scripts": {
+    "test": "grunt && npm run test-prebuilt",
+    "test-prebuilt": "mocha-headless-chrome -f test/test-prebuilt.html -a no-sandbox -a disable-setuid-sandbox"
+  },
+  "version": "5.7.0"
+}

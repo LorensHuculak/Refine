@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!-- Title -->
+		<title>Switch Text</title>
+
+		<!-- Required Meta Tags Always Come First -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+		<!-- Favicon -->
+		<link rel="shortcut icon" href="../../../favicon.ico">
+
+		<!-- Google Fonts -->
+		<link href="//fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
+
+		<!-- CSS Implementing Plugins -->
+		<link rel="stylesheet" href="../../../assets/vendor/ion-rangeslider/css/ion.rangeSlider.css">
+
+		<!-- CSS Front Template -->
+		<link rel="stylesheet" href="../../../assets/css/theme.css">
+	</head>
+	<body>
+		<div style="height: 20vh;"></div>
+
+		<div class="container">
+			<div class="btn-group btn-group-toggle btn-group-segment btn-group-pills mt-5 mb-5"
+			     data-toggle="buttons">
+				<label class="btn active">
+					<input type="radio" name="options" id="option1" class="js-switch-text" checked
+					       data-hs-switch-text-options='{
+                   "target": [{
+                     "selector": "#rangeSliderResult",
+                     "text": 500
+                   }, {
+                     "selector": "#rangeSliderSecondaryResult",
+                     "text": 50000
+                   }],
+                   "startUpdateOnChange": true
+                 }'> monthly
+				</label>
+				<label class="btn">
+					<input type="radio" name="options" id="option2" class="js-switch-text"
+					       data-hs-switch-text-options='{
+                   "target": [{
+                     "selector": "#rangeSliderResult",
+                     "text": 250
+                   }, {
+                     "selector": "#rangeSliderSecondaryResult",
+                     "text": 25000
+                   }],
+                   "startUpdateOnChange": true
+                 }'> early
+				</label>
+			</div>
+
+			<!-- Range Slider -->
+			<div class="display-4 text-dark">
+				$<span id="rangeSliderResult"></span>/mo
+			</div>
+			<div class="d-flex justify-content-center mb-5">
+				Maximum ad spend:
+				<span class="text-primary ml-1">
+          $<span id="rangeSliderSecondaryResult"></span>/mo
+        </span>
+			</div>
+
+			<input class="js-ion-range-slider" type="text"
+			       data-hs-ion-range-slider-options='{
+               "extra_classes": "range-slider",
+               "type": "single",
+               "min": 250,
+							 "max": 750,
+							 "step": 25,
+							 "from": 500,
+							 "secondary_val": {
+							   "steps": [250, 275, 300, 325, 350, 375, 400, 425, 450, 475, 500, 525, 550, 575, 600, 625, 650, 675, 700, 725, 750],
+							   "values": [25000, 27000, 30000, 32000, 35000, 37000, 40000, 42000, 45000, 47000, 50000, 52000, 55000, 57000, 60000, 62000, 65000, 67000, 70000, 72000, 75000]
+							 },
+               "prefix": "$",
+               "secondary_target_el": "#rangeSliderSecondaryResult",
+               "result_min_target_el": "#rangeSliderResult"
+             }'>
+		</div>
+
+		<div style="height: 20vh;"></div>
+
+		<script src="../../../assets/vendor/jquery/dist/jquery.min.js"></script>
+		<script src="../../../assets/vendor/jquery-migrate/dist/jquery-migrate.min.js"></script>
+		<script src="../../../assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+		<script src="../../../assets/vendor/ion-rangeslider/js/ion.rangeSlider.min.js"></script>
+
+		<script src="./dist/hs-switch-text.min.js"></script>
+
+		<script src="../../../assets/js/hs.core.js"></script>
+		<script src="../../../assets/js/hs.ion-range-slider.js"></script>
+
+		<script>
+			$(document).on('ready', function () {
+				// initialization of ion range slider
+				var ionRangeSlider = $.HSCore.components.HSIonRangeSlider.init($('.js-ion-range-slider'), {
+					cusOnChange: function () {
+						var $checked = $('.js-switch-text:checked'),
+							defData = JSON.parse($checked.attr('data-hs-switch-text-options'));
+
+						defData.target[0].text = $('#rangeSliderResult').text();
+						defData.target[1].text = $('#rangeSliderSecondaryResult').text();
+
+						$checked.attr('data-hs-switch-text-options', JSON.stringify(defData));
+					}
+				});
+
+				// initialization of switch
+				$('.js-switch-text').each(function () {
+					var switchText = new HSSwitchText($(this), {
+						afterChange: function () {
+							ionRangeSlider.data('ionRangeSlider').update({
+								from: $(this)[0].target[0].text
+							});
+						}
+					}).init();
+				});
+			});
+		</script>
+	</body>
+</html>

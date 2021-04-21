@@ -1,0 +1,1391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Title -->
+  <title>App Tool | Front - Responsive Website Template</title>
+
+  <!-- Required Meta Tags Always Come First -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="../../favicon.ico">
+
+  <!-- Font -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600&display=swap" rel="stylesheet">
+
+  <!-- CSS Implementing Plugins -->
+  <link rel="stylesheet" href="../../assets/vendor/font-awesome/css/all.min.css">
+  <link rel="stylesheet" href="../../assets/vendor/hs-mega-menu/dist/hs-mega-menu.min.css">
+  <link rel="stylesheet" href="../../assets/vendor/aos/dist/aos.css">
+
+  <!-- CSS Front Template -->
+  <link rel="stylesheet" href="../../assets/css/theme.css">
+</head>
+<body>
+  <!-- Search Content -->
+  <div id="searchSlideDown" class="hs-unfold-content dropdown-unfold search-slide-down">
+    <form>
+      <!-- Input Group -->
+      <div class="input-group input-group-borderless search-slide-down-input bg-white rounded mb-2">
+        <div class="input-group-prepend">
+          <span class="input-group-text">
+            <i class="fas fa-search"></i>
+          </span>
+        </div>
+        <input id="searchSlideDownControl" type="search" class="form-control" placeholder="Search Front" aria-label="Search Front">
+        <div class="input-group-append">
+          <a class="js-hs-search-unfold-invoker input-group-text" href="javascript:;"
+             data-hs-unfold-options='{
+               "target": "#searchSlideDown",
+               "type": "css-animation",
+               "animationIn": "fadeIn search-slide-down-show",
+               "animationOut": "fadeOutUp",
+               "cssAnimatedClass": null,
+               "hasOverlay": true,
+               "overlayClass": ".search-slide-down-bg-overlay",
+               "overlayStyles": {
+                 "background": "rgba(33, 50, 91, .7)"
+               },
+               "duration": 800,
+               "hideOnScroll": false
+             }'>
+            <i class="fas fa-times" aria-hidden="true"></i>
+          </a>
+        </div>
+      </div>
+      <!-- End Input Group -->
+
+      <!-- Suggestions Content -->
+      <div class="rounded bg-white search-slide-down-suggestions py-3 px-5">
+        <ul class="list-unstyled list-sm-article mb-0">
+          <li><a href="../pages/about-agency.html">About Front</a></li>
+          <li><a href="javascript:;">Getting Started</a></li>
+          <li><a href="../../documentation/index.html">Documentation</a></li>
+        </ul>
+      </div>
+      <!-- End Suggestions Content -->
+    </form>
+  </div>
+  <!-- End Search Content -->
+
+  <!-- ========== HEADER ========== -->
+  <header id="header" class="header header-bg-transparent header-abs-top">
+    <div class="header-section">
+      <div id="logoAndNav" class="container">
+        <!-- Nav -->
+        <nav class="js-mega-menu navbar navbar-expand-lg">
+          <div class="navbar-nav-wrap">
+            <!-- Logo -->
+            <a class="navbar-brand navbar-nav-wrap-brand" href="index.html" aria-label="Front">
+              <img src="../../assets/svg/logos/logo.svg" alt="Logo">
+            </a>
+            <!-- End Logo -->
+
+            <!-- Secondary Content -->
+            <div class="navbar-nav-wrap-content text-center">
+              <!-- Search -->
+              <div class="d-none d-sm-inline-block mx-3">
+                <a class="js-hs-search-unfold-invoker btn btn-xs btn-icon btn-ghost-secondary search-slide-down-trigger" href="javascript:;" role="button"
+                   data-hs-unfold-options='{
+                     "target": "#searchSlideDown",
+                     "type": "css-animation",
+                     "animationIn": "fadeIn search-slide-down-show",
+                     "animationOut": "fadeOutUp",
+                     "cssAnimatedClass": null,
+                     "hasOverlay": true,
+                     "overlayClass": ".search-slide-down-bg-overlay",
+                     "overlayStyles": {
+                       "background": "rgba(33, 50, 91, .7)"
+                     },
+                     "duration": 800,
+                     "hideOnScroll": false
+                   }'>
+                  <i class="fas fa-search search-slide-down-trigger-icon"></i>
+                </a>
+              </div>
+              <!-- End Search -->
+
+              <!-- Button -->
+              <div class="hs-unfold">
+                <a class="js-hs-unfold-invoker btn btn-sm btn-outline-primary" href="javascript:;"
+                   data-hs-unfold-options='{
+                    "target": "#signUpDropdown",
+                    "type": "css-animation",
+                    "animationIn": "slideInUp"
+                   }'>
+                  Sign Up
+                  <i class="fas fa-angle-down ml-1"></i>
+                </a>
+
+                <div id="signUpDropdown" class="hs-unfold-content dropdown-menu dropdown-menu-right py-0" style="min-width: 350px;">
+                  <div class="card p-5">
+                    <form class="js-validate">
+                      <!-- Login -->
+                      <div id="login">
+                        <!-- Title -->
+                        <div class="text-center mb-7">
+                          <h3 class="mb-0">Sign In to Front</h3>
+                          <p>Login to manage your account.</p>
+                        </div>
+                        <!-- End Title -->
+
+                        <!-- Input Group -->
+                        <div class="js-form-message mb-4">
+                          <label class="input-label">Email</label>
+                          <div class="input-group input-group-sm mb-2">
+                            <input type="email" class="form-control" name="email" id="signinEmail" placeholder="Email" aria-label="Email" required
+                                   data-msg="Please enter a valid email address.">
+                          </div>
+                        </div>
+                        <!-- End Input Group -->
+
+                        <!-- Input Group -->
+                        <div class="js-form-message mb-3">
+                          <label class="input-label">Password</label>
+                          <div class="input-group input-group-sm mb-2">
+                            <input type="password" class="form-control" name="password" id="signinPassword" placeholder="Password" aria-label="Password" required
+                                   data-msg="Your password is invalid. Please try again.">
+                          </div>
+                        </div>
+                        <!-- End Input Group -->
+
+                        <div class="d-flex justify-content-end mb-4">
+                          <a class="js-animation-link font-size-1 link-underline" href="javascript:;"
+                             data-hs-show-animation-options='{
+                               "targetSelector": "#forgotPassword",
+                               "groupName": "idForm"
+                             }'>Forgot Password?</a>
+                        </div>
+
+                        <div class="mb-3">
+                          <button type="submit" class="btn btn-sm btn-primary btn-block">Sign In</button>
+                        </div>
+
+                        <div class="text-center">
+                          <span class="font-size-1 text-muted">Do not have an account?</span>
+                          <a class="js-animation-link font-size-1 font-weight-bold" href="javascript:;"
+                             data-hs-show-animation-options='{
+                               "targetSelector": "#signup",
+                               "groupName": "idForm"
+                             }'>Sign Up
+                          </a>
+                        </div>
+                      </div>
+
+                      <!-- Signup -->
+                      <div id="signup" style="display: none; opacity: 0;">
+                        <!-- Title -->
+                        <div class="text-center mb-7">
+                          <h3 class="mb-0">Create your account</h3>
+                          <p>Fill out the form to get started.</p>
+                        </div>
+                        <!-- End Title -->
+
+                        <!-- Input Group -->
+                        <div class="js-form-message mb-4">
+                          <label class="input-label">Email</label>
+                          <div class="input-group input-group-sm mb-2">
+                            <input type="email" class="form-control" name="email" id="signupEmail" placeholder="Email" aria-label="Email" required
+                                   data-msg="Please enter a valid email address.">
+                          </div>
+                        </div>
+                        <!-- End Input Group -->
+
+                        <!-- Input Group -->
+                        <div class="js-form-message mb-4">
+                          <label class="input-label">Password</label>
+                          <div class="input-group input-group-sm mb-2">
+                            <input type="password" class="form-control" name="password" id="signupPassword" placeholder="Password" aria-label="Password" required
+                                   data-msg="Your password is invalid. Please try again.">
+                          </div>
+                        </div>
+                        <!-- End Input Group -->
+
+                        <!-- Input Group -->
+                        <div class="js-form-message mb-4">
+                          <label class="input-label">Confirm Password</label>
+                          <div class="input-group input-group-sm mb-2">
+                            <input type="password" class="form-control" name="confirmPassword" id="signupConfirmPassword" placeholder="Confirm Password" aria-label="Confirm Password" required
+                                   data-msg="Password does not match the confirm password.">
+                          </div>
+                        </div>
+                        <!-- End Input Group -->
+
+                        <div class="mb-3">
+                          <button type="submit" class="btn btn-sm btn-primary btn-block">Sign Up</button>
+                        </div>
+
+                        <div class="text-center">
+                          <span class="font-size-1 text-muted">Already have an account?</span>
+                          <a class="js-animation-link font-size-1 font-weight-bold" href="javascript:;"
+                             data-hs-show-animation-options='{
+                               "targetSelector": "#login",
+                               "groupName": "idForm"
+                             }'>Sign In
+                          </a>
+                        </div>
+                      </div>
+                      <!-- End Signup -->
+
+                      <!-- Forgot Password -->
+                      <div id="forgotPassword" style="display: none; opacity: 0;">
+                        <!-- Title -->
+                        <div class="text-center mb-7">
+                          <h3 class="mb-0">Recover password</h3>
+                          <p>Instructions will be sent to you.</p>
+                        </div>
+                        <!-- End Title -->
+
+                        <!-- Input Group -->
+                        <div class="js-form-message">
+                          <label class="sr-only" for="recoverEmail">Your email</label>
+                          <div class="input-group input-group-sm mb-2">
+                            <input type="email" class="form-control" name="email" id="recoverEmail" placeholder="Your email" aria-label="Your email" required
+                                   data-msg="Please enter a valid email address.">
+                          </div>
+                        </div>
+                        <!-- End Input Group -->
+
+                        <div class="mb-3">
+                          <button type="submit" class="btn btn-sm btn-primary btn-block">Recover Password</button>
+                        </div>
+
+                        <div class="text-center mb-4">
+                          <span class="font-size-1 text-muted">Remember your password?</span>
+                          <a class="js-animation-link font-size-1 font-weight-bold" href="javascript:;"
+                             data-hs-show-animation-options='{
+                               "targetSelector": "#login",
+                               "groupName": "idForm"
+                             }'>Login
+                          </a>
+                        </div>
+                      </div>
+                      <!-- End Forgot Password -->
+                    </form>
+                  </div>
+                </div>
+              </div>
+              <!-- End Button -->
+            </div>
+            <!-- End Secondary Content -->
+
+            <!-- Responsive Toggle Button -->
+            <button type="button" class="navbar-toggler navbar-nav-wrap-toggler btn btn-icon btn-sm rounded-circle"
+                    aria-label="Toggle navigation"
+                    aria-expanded="false"
+                    aria-controls="navBar"
+                    data-toggle="collapse"
+                    data-target="#navBar">
+              <span class="navbar-toggler-default">
+                <svg width="14" height="14" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg">
+                  <path fill="currentColor" d="M17.4,6.2H0.6C0.3,6.2,0,5.9,0,5.5V4.1c0-0.4,0.3-0.7,0.6-0.7h16.9c0.3,0,0.6,0.3,0.6,0.7v1.4C18,5.9,17.7,6.2,17.4,6.2z M17.4,14.1H0.6c-0.3,0-0.6-0.3-0.6-0.7V12c0-0.4,0.3-0.7,0.6-0.7h16.9c0.3,0,0.6,0.3,0.6,0.7v1.4C18,13.7,17.7,14.1,17.4,14.1z"/>
+                </svg>
+              </span>
+              <span class="navbar-toggler-toggled">
+                <svg width="14" height="14" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg">
+                  <path fill="currentColor" d="M11.5,9.5l5-5c0.2-0.2,0.2-0.6-0.1-0.9l-1-1c-0.3-0.3-0.7-0.3-0.9-0.1l-5,5l-5-5C4.3,2.3,3.9,2.4,3.6,2.6l-1,1 C2.4,3.9,2.3,4.3,2.5,4.5l5,5l-5,5c-0.2,0.2-0.2,0.6,0.1,0.9l1,1c0.3,0.3,0.7,0.3,0.9,0.1l5-5l5,5c0.2,0.2,0.6,0.2,0.9-0.1l1-1 c0.3-0.3,0.3-0.7,0.1-0.9L11.5,9.5z"/>
+                </svg>
+              </span>
+            </button>
+            <!-- End Responsive Toggle Button -->
+
+            <!-- Navigation -->
+            <div id="navBar" class="collapse navbar-collapse navbar-nav-wrap-collapse">
+              <div class="navbar-body header-abs-top-inner">
+                <ul class="navbar-nav">
+                  <!-- Home -->
+                  <li class="hs-has-mega-menu navbar-nav-item">
+                    <a id="homeMegaMenu" class="hs-mega-menu-invoker nav-link nav-link-toggle" href="javascript:;" aria-haspopup="true" aria-expanded="false">Landings</a>
+
+                    <!-- Home - Mega Menu -->
+                    <div class="hs-mega-menu dropdown-menu w-100" aria-labelledby="homeMegaMenu">
+                      <div class="row no-gutters">
+                        <div class="col-lg-6">
+                          <!-- Banner Image -->
+                          <div class="navbar-banner" style="background-image: url(../../assets/img/750x750/img1.jpg);">
+                            <div class="navbar-banner-content">
+                              <div class="mb-4">
+                                <span class="h2 d-block text-white">Branding Works</span>
+                                <p class="text-white">Experience a level of our quality in both design &amp; customization works.</p>
+                              </div>
+                              <a class="btn btn-primary btn-sm transition-3d-hover" href="#">Learn More <i class="fas fa-angle-right fa-sm ml-1"></i></a>
+                            </div>
+                          </div>
+                          <!-- End Banner Image -->
+                        </div>
+
+                        <div class="col-lg-6">
+                          <div class="row mega-menu-body">
+                            <div class="col-sm-6 mb-3 mb-sm-0">
+                              <span class="d-block h5">Classic</span>
+                              <a class="dropdown-item" href="index.html">Agency</a>
+                              <a class="dropdown-item" href="classic-analytics.html">Analytics <span class="badge badge-primary badge-pill ml-2">Hot</span></a>
+                              <a class="dropdown-item" href="classic-studio.html">Studio</a>
+                              <a class="dropdown-item" href="classic-marketing.html">Marketing</a>
+                              <a class="dropdown-item" href="classic-advertisement.html" target="_blank">Advertisement <span class="badge badge-primary badge-pill ml-2">Hot</span></a>
+                              <a class="dropdown-item" href="classic-consulting.html">Consulting</a>
+                              <a class="dropdown-item" href="classic-portfolio.html">Portfolio</a>
+                              <a class="dropdown-item" href="classic-software.html">Software</a>
+                              <a class="dropdown-item" href="classic-business.html">Business</a>
+                            </div>
+
+                            <div class="col-sm-6">
+                              <span class="d-block h5">App</span>
+                              <div class="mb-3">
+                                <a class="dropdown-item" href="app-ui-kit.html">UI Kit</a>
+                                <a class="dropdown-item" href="app-saas.html">SaaS</a>
+                                <a class="dropdown-item" href="app-workflow.html">Workflow</a>
+                                <a class="dropdown-item" href="app-payment.html">Payment</a>
+                                <a class="dropdown-item" href="app-tool.html">Tool</a>
+                              </div>
+
+                              <span class="d-block h5">Onepages</span>
+                              <a class="dropdown-item" href="onepage-corporate.html">Corporate</a>
+                              <a class="dropdown-item" href="onepage-saas.html">SaaS <span class="badge badge-primary badge-pill ml-2">Hot</span></a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- End Home - Mega Menu -->
+                  </li>
+                  <!-- End Home -->
+
+                  <!-- Pages -->
+                  <li class="hs-has-sub-menu navbar-nav-item">
+                    <a id="pagesMegaMenu" class="hs-mega-menu-invoker nav-link nav-link-toggle" href="javascript:;" aria-haspopup="true" aria-expanded="false" aria-labelledby="pagesSubMenu">Pages</a>
+
+                    <!-- Pages - Submenu -->
+                    <div id="pagesSubMenu" class="hs-sub-menu dropdown-menu" aria-labelledby="pagesMegaMenu" style="min-width: 230px;">
+                      <!-- Account -->
+                      <div class="hs-has-sub-menu">
+                        <a id="navLinkPagesAccount" class="hs-mega-menu-invoker dropdown-item dropdown-item-toggle" href="javascript:;" aria-haspopup="true" aria-expanded="false" aria-controls="navSubmenuPagesAccount">Account <span class="badge badge-success badge-pill ml-2">New</span></a>
+
+                        <div id="navSubmenuPagesAccount" class="hs-sub-menu dropdown-menu" aria-labelledby="navLinkPagesAccount" style="min-width: 230px;">
+                          <a class="dropdown-item" href="../account/index.html">Personal info</a>
+                          <a class="dropdown-item" href="../account/login-and-security.html">Login &amp; security</a>
+                          <a class="dropdown-item" href="../account/notifications.html">Notifications</a>
+                          <a class="dropdown-item" href="../account/preferences.html">Preferences</a>
+                          <a class="dropdown-item" href="../account/orders.html">Orders</a>
+                          <a class="dropdown-item" href="../account/wishlist.html">Wishlist</a>
+                          <a class="dropdown-item" href="../account/billing.html">Plans &amp; payment</a>
+                          <a class="dropdown-item" href="../account/address.html">Address</a>
+                          <a class="dropdown-item" href="../account/teams.html">Teams</a>
+                        </div>
+                      </div>
+                      <!-- Account -->
+
+                      <!-- Company -->
+                      <div class="hs-has-sub-menu">
+                        <a id="navLinkPagesCompany" class="hs-mega-menu-invoker dropdown-item dropdown-item-toggle" href="javascript:;" aria-haspopup="true" aria-expanded="false" aria-controls="navSubmenuPagesCompany">Company</a>
+
+                        <div id="navSubmenuPagesCompany" class="hs-sub-menu dropdown-menu" aria-labelledby="navLinkPagesCompany" style="min-width: 230px;">
+                          <a class="dropdown-item" href="../pages/about-agency.html">About Agency</a>
+                          <a class="dropdown-item" href="../pages/services-agency.html">Services Agency</a>
+                          <a class="dropdown-item" href="../pages/customers.html">Customers</a>
+                          <a class="dropdown-item" href="../pages/customer-story.html">Customer story</a>
+                          <a class="dropdown-item" href="../pages/careers.html">Careers</a>
+                          <a class="dropdown-item" href="../pages/careers-single.html">Careers Single</a>
+                          <a class="dropdown-item" href="../pages/hire-us.html">Hire Us</a>
+                        </div>
+                      </div>
+                      <!-- Company -->
+
+                      <!-- Portfolio -->
+                      <div class="hs-has-sub-menu">
+                        <a id="navLinkPagesPortfolio" class="hs-mega-menu-invoker dropdown-item dropdown-item-toggle" href="javascript:;" aria-haspopup="true" aria-expanded="false" aria-controls="navSubmenuPagesPortfolio">Portfolio</a>
+
+                        <div id="navSubmenuPagesPortfolio" class="hs-sub-menu dropdown-menu" aria-labelledby="navLinkPagesPortfolio" style="min-width: 230px;">
+                          <a class="dropdown-item" href="../portfolio/grid.html">Grid</a>
+                          <a class="dropdown-item" href="../portfolio/masonry.html">Masonry</a>
+                          <a class="dropdown-item" href="../portfolio/modern.html">Modern</a>
+                          <div class="dropdown-divider"></div>
+                          <a class="dropdown-item" href="../portfolio/case-studies-branding.html">Case Studies Branding</a>
+                          <a class="dropdown-item" href="../portfolio/case-studies-product.html">Case Studies Product</a>
+                          <div class="dropdown-divider"></div>
+                          <a class="dropdown-item" href="../portfolio/single-page-list.html">Single Page List</a>
+                          <a class="dropdown-item" href="../portfolio/single-page-grid.html">Single Page Grid</a>
+                          <a class="dropdown-item" href="../portfolio/single-page-masonry.html">Single Page Masonry</a>
+                        </div>
+                      </div>
+                      <!-- End Portfolio -->
+
+                      <!-- Login -->
+                      <div class="hs-has-sub-menu">
+                        <a id="navLinkPagesLogin" class="hs-mega-menu-invoker dropdown-item dropdown-item-toggle" href="javascript:;" aria-haspopup="true" aria-expanded="false" aria-controls="navSubmenuPagesLogin">Login &amp; Signup</a>
+
+                        <div id="navSubmenuPagesLogin" class="hs-sub-menu dropdown-menu" aria-labelledby="navLinkPagesLogin" style="min-width: 230px;">
+                          <a class="dropdown-item" href="../pages/login.html">Login</a>
+                          <a class="dropdown-item" href="../pages/signup.html">Signup</a>
+                          <a class="dropdown-item" href="../pages/recover-account.html">Recover Account</a>
+                          <div class="dropdown-divider"></div>
+                          <a class="dropdown-item" href="../pages/login-simple.html">Login Simple</a>
+                          <a class="dropdown-item" href="../pages/signup-simple.html">Signup Simple</a>
+                          <a class="dropdown-item" href="../pages/recover-account-simple.html">Recover Account Simple</a>
+                        </div>
+                      </div>
+                      <!-- Signup -->
+
+                      <!-- Contacts -->
+                      <div class="hs-has-sub-menu">
+                        <a id="navLinkContactsServices" class="hs-mega-menu-invoker dropdown-item dropdown-item-toggle" href="javascript:;" aria-haspopup="true" aria-expanded="false" aria-controls="navSubmenuContactsServices">Contacts</a>
+
+                        <div id="navSubmenuContactsServices" class="hs-sub-menu dropdown-menu" aria-labelledby="navLinkContactsServices" style="min-width: 230px;">
+                          <a class="dropdown-item" href="../pages/contacts-agency.html">Contacts Agency</a>
+                          <a class="dropdown-item" href="../pages/contacts-start-up.html">Contacts Start-Up</a>
+                        </div>
+                      </div>
+                      <!-- Contacts -->
+
+                      <!-- Utilities -->
+                      <div class="hs-has-sub-menu">
+                        <a id="navLinkPagesUtilities" class="hs-mega-menu-invoker dropdown-item dropdown-item-toggle" href="javascript:;" aria-haspopup="true" aria-expanded="false" aria-controls="navSubmenuPagesUtilities">Utilities</a>
+
+                        <div id="navSubmenuPagesUtilities" class="hs-sub-menu dropdown-menu" aria-labelledby="navLinkPagesUtilities" style="min-width: 230px;">
+                          <a class="dropdown-item" href="../pages/pricing.html">Pricing</a>
+                          <a class="dropdown-item" href="../pages/faq.html">FAQ</a>
+                          <a class="dropdown-item" href="../pages/terms.html">Terms &amp; Conditions</a>
+                          <a class="dropdown-item" href="../pages/privacy.html">Privacy &amp; Policy</a>
+                        </div>
+                      </div>
+                      <!-- Utilities -->
+
+                      <!-- Specialty -->
+                      <div class="hs-has-sub-menu">
+                        <a id="navLinkPagesSpecialty" class="hs-mega-menu-invoker dropdown-item dropdown-item-toggle" href="javascript:;" aria-haspopup="true" aria-expanded="false" aria-controls="navSubmenuPagesSpecialty">Specialty</a>
+
+                        <div id="navSubmenuPagesSpecialty" class="hs-sub-menu dropdown-menu" aria-labelledby="navLinkPagesSpecialty" style="min-width: 230px;">
+                          <a class="dropdown-item" href="../pages/cover-page.html">Cover Page</a>
+                          <a class="dropdown-item" href="../pages/coming-soon.html">Coming Soon</a>
+                          <a class="dropdown-item" href="../pages/maintenance-mode.html">Maintenance Mode</a>
+                          <a class="dropdown-item" href="../pages/status.html">Status</a>
+                          <a class="dropdown-item" href="../pages/invoice.html">Invoice</a>
+                          <a class="dropdown-item" href="../pages/error-404.html">Error 404</a>
+                        </div>
+                      </div>
+                      <!-- Specialty -->
+                    </div>
+                    <!-- End Pages - Submenu -->
+                  </li>
+                  <!-- End Pages -->
+
+                  <!-- Blog -->
+                  <li class="hs-has-sub-menu navbar-nav-item">
+                    <a id="blogMegaMenu" class="hs-mega-menu-invoker nav-link nav-link-toggle" href="javascript:;" aria-haspopup="true" aria-expanded="false" aria-labelledby="blogSubMenu">Blog</a>
+
+                    <!-- Blog - Submenu -->
+                    <div id="blogSubMenu" class="hs-sub-menu dropdown-menu" aria-labelledby="blogMegaMenu" style="min-width: 230px;">
+                      <a class="dropdown-item" href="../blog/journal.html">Journal</a>
+                      <a class="dropdown-item" href="../blog/metro.html">Metro</a>
+                      <a class="dropdown-item" href="../blog/newsroom.html">Newsroom</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="../blog/blog-profile.html">Blog Profile</a>
+                      <a class="dropdown-item" href="../blog/single-article.html">Single Article</a>
+                    </div>
+                    <!-- End Submenu -->
+                  </li>
+                  <!-- End Blog -->
+
+                  <!-- Shop -->
+                  <li class="hs-has-mega-menu navbar-nav-item"
+                      data-hs-mega-menu-item-options='{
+                        "desktop": {
+                          "position": "right",
+                          "maxWidth": "440px"
+                        }
+                      }'>
+                    <a id="shopMegaMenu" class="hs-mega-menu-invoker nav-link nav-link-toggle" href="javascript:;" aria-haspopup="true" aria-expanded="false">Shop</a>
+
+                    <!-- Shop - Mega Menu -->
+                    <div class="hs-mega-menu dropdown-menu mega-menu-position-right-fix" aria-labelledby="shopMegaMenu">
+                      <div class="mega-menu-body">
+                        <span class="d-block h5">Shop Elements</span>
+
+                        <div class="row">
+                          <div class="col-sm-6">
+                            <a class="dropdown-item" href="../shop/classic.html">Classic</a>
+                            <a class="dropdown-item" href="../shop/categories.html">Categories</a>
+                            <a class="dropdown-item" href="../shop/categories-sidebar.html">Categories Sidebar</a>
+                            <a class="dropdown-item" href="../shop/products-grid.html">Products Grid</a>
+                            <a class="dropdown-item" href="../shop/products-list.html">Products List</a>
+                          </div>
+
+                          <div class="col-sm-6">
+                            <a class="dropdown-item" href="../shop/single-product.html">Single Product</a>
+                            <a class="dropdown-item" href="../shop/empty-cart.html">Empty Cart</a>
+                            <a class="dropdown-item" href="../shop/cart.html">Cart</a>
+                            <a class="dropdown-item" href="../shop/checkout.html">Checkout</a>
+                            <a class="dropdown-item" href="../shop/order-completed.html">Order Completed</a>
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- Mega Menu Banner -->
+                      <div class="navbar-product-banner">
+                        <div class="d-flex align-items-end">
+                          <img class="img-fluid mr-4" src="../../assets/img/mockups/img4.png" alt="Image Description">
+                          <div class="navbar-product-banner-content">
+                            <div class="mb-4">
+                              <span class="h4 d-block text-primary">Win T-shirt</span>
+                              <p>Win one of our Front brand T-shirts.</p>
+                            </div>
+                            <a class="btn btn-sm btn-soft-primary transition-3d-hover" href="../shop/classic.html">Learn More <i class="fas fa-angle-right fa-sm ml-1"></i></a>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- End Mega Menu Banner -->
+                    </div>
+                    <!-- End Shop - Mega Menu -->
+                  </li>
+                  <!-- End Shop -->
+
+                  <!-- Demos -->
+                  <li class="hs-has-mega-menu navbar-nav-item"
+                      data-hs-mega-menu-item-options='{
+                        "desktop": {
+                          "position": "right",
+                          "maxWidth": "900px"
+                        }
+                      }'>
+                    <a id="demosMegaMenu" class="hs-mega-menu-invoker nav-link nav-link-toggle" href="javascript:;" aria-haspopup="true" aria-expanded="false">Demos</a>
+
+                    <!-- Demos - Mega Menu -->
+                    <div class="hs-mega-menu dropdown-menu w-100" aria-labelledby="demosMegaMenu">
+                      <div class="row no-gutters">
+                        <div class="col-lg-8">
+                          <div class="navbar-promo-card-deck">
+                            <!-- Promo Item -->
+                            <div class="navbar-promo-card navbar-promo-item">
+                              <a class="navbar-promo-link" href="../course/index.html">
+                                <div class="media align-items-center">
+                                  <img class="navbar-promo-icon" src="../../assets/svg/icons/icon-67.svg" alt="SVG">
+                                  <div class="media-body">
+                                    <span class="navbar-promo-title">Course <span class="badge badge-success badge-pill ml-1">New</span></span>
+                                    <span class="navbar-promo-text">Learn On-demand demo</span>
+                                  </div>
+                                </div>
+                              </a>
+                            </div>
+                            <!-- End Promo Item -->
+
+                            <!-- Promo Item -->
+                            <div class="navbar-promo-card navbar-promo-item">
+                              <a class="navbar-promo-link" href="../app-marketplace/index.html">
+                                <div class="media align-items-center">
+                                  <img class="navbar-promo-icon" src="../../assets/svg/icons/icon-45.svg" alt="SVG">
+                                  <div class="media-body">
+                                    <span class="navbar-promo-title">App Marketplace</span>
+                                    <span class="navbar-promo-text">Marketplace app demo</span>
+                                  </div>
+                                </div>
+                              </a>
+                            </div>
+                            <!-- End Promo Item -->
+                          </div>
+
+                          <div class="navbar-promo-card-deck">
+                            <!-- Promo Item -->
+                            <div class="navbar-promo-card navbar-promo-item">
+                              <a class="navbar-promo-link" href="../help-desk/index.html">
+                                <div class="media align-items-center">
+                                  <img class="navbar-promo-icon" src="../../assets/svg/icons/icon-4.svg" alt="SVG">
+                                  <div class="media-body">
+                                    <span class="navbar-promo-title">Help Desk</span>
+                                    <span class="navbar-promo-text">Help desk demo</span>
+                                  </div>
+                                </div>
+                              </a>
+                            </div>
+                            <!-- End Promo Item -->
+
+                            <!-- Promo Item -->
+                            <div class="navbar-promo-card navbar-promo-item">
+                              <a class="navbar-promo-link" href="../account/index.html">
+                                <div class="media align-items-center">
+                                  <img class="navbar-promo-icon" src="../../assets/svg/icons/icon-5.svg" alt="SVG">
+                                  <div class="media-body">
+                                    <span class="navbar-promo-title">Account</span>
+                                    <span class="navbar-promo-text">Account demo</span>
+                                  </div>
+                                </div>
+                              </a>
+                            </div>
+                            <!-- End Promo Item -->
+                          </div>
+
+                          <div class="navbar-promo-card-deck">
+                            <!-- Promo Item -->
+                            <div class="navbar-promo-card navbar-promo-item">
+                              <a class="navbar-promo-link disabled" href="javascript:;">
+                                <div class="media align-items-center">
+                                  <img class="navbar-promo-icon" src="../../assets/svg/icons/icon-19.svg" alt="SVG">
+                                  <div class="media-body">
+                                    <span class="navbar-promo-title">Job</span>
+                                    <span class="navbar-promo-text">Coming soon...</span>
+                                  </div>
+                                </div>
+                              </a>
+                            </div>
+                            <!-- End Promo Item -->
+
+                            <!-- Promo Item -->
+                            <div class="navbar-promo-card navbar-promo-item">
+                              <a class="navbar-promo-link disabled" href="javascript:;">
+                                <div class="media align-items-center">
+                                  <img class="navbar-promo-icon" src="../../assets/svg/icons/icon-13.svg" alt="SVG">
+                                  <div class="media-body">
+                                    <span class="navbar-promo-title">House</span>
+                                    <span class="navbar-promo-text">Coming soon...</span>
+                                  </div>
+                                </div>
+                              </a>
+                            </div>
+                            <!-- End Promo Item -->
+                          </div>
+                        </div>
+
+                        <!-- Promo -->
+                        <div class="col-lg-4 navbar-promo d-none d-lg-block">
+                          <a class="d-block navbar-promo-inner" href="#">
+                            <div class="position-relative">
+                              <img class="img-fluid rounded mb-3" src="../../assets/img/380x227/img1.jpg" alt="Image Description">
+                            </div>
+                            <span class="navbar-promo-text font-size-1">Front makes you look at things from a different perspectives.</span>
+                          </a>
+                        </div>
+                        <!-- End Promo -->
+                      </div>
+                    </div>
+                    <!-- End Demos - Mega Menu -->
+                  </li>
+                  <!-- End Demos -->
+
+                  <!-- Docs -->
+                  <li class="hs-has-mega-menu navbar-nav-item"
+                      data-hs-mega-menu-item-options='{
+                        "desktop": {
+                          "position": "right",
+                          "maxWidth": "260px"
+                        }
+                      }'>
+                    <a id="docsMegaMenu" class="hs-mega-menu-invoker nav-link nav-link-toggle" href="javascript:;" aria-haspopup="true" aria-expanded="false">Docs</a>
+
+                    <!-- Docs - Submenu -->
+                    <div class="hs-mega-menu dropdown-menu" aria-labelledby="docsMegaMenu" style="min-width: 330px;">
+                      <!-- Promo Item -->
+                      <div class="navbar-promo-item">
+                        <a class="navbar-promo-link" href="../../documentation/index.html">
+                          <div class="media align-items-center">
+                            <img class="navbar-promo-icon" src="../../assets/svg/icons/icon-2.svg" alt="SVG">
+                            <div class="media-body">
+                              <span class="navbar-promo-title">
+                                Documentation
+                                <span class="badge badge-primary badge-pill ml-1">v3.2</span>
+                              </span>
+                              <small class="navbar-promo-text">Development guides</small>
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+                      <!-- End Promo Item -->
+
+                      <!-- Promo Item -->
+                      <div class="navbar-promo-item">
+                        <a class="navbar-promo-link" href="../../snippets/index.html">
+                          <div class="media align-items-center">
+                            <img class="navbar-promo-icon" src="../../assets/svg/icons/icon-1.svg" alt="SVG">
+                            <div class="media-body">
+                              <span class="navbar-promo-title">Snippets</span>
+                              <small class="navbar-promo-text">Start building</small>
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+                      <!-- End Promo Item -->
+
+                      <div class="navbar-promo-footer">
+                        <!-- List -->
+                        <div class="row no-gutters">
+                          <div class="col-6">
+                            <div class="navbar-promo-footer-item">
+                              <span class="navbar-promo-footer-text">Check what's new</span>
+                              <a class="navbar-promo-footer-text" href="../../documentation/changelog.html">
+                                Changelog
+                              </a>
+                            </div>
+                          </div>
+                          <div class="col-6 navbar-promo-footer-ver-divider">
+                            <div class="navbar-promo-footer-item">
+                              <span class="navbar-promo-footer-text">Have a question?</span>
+                              <a class="navbar-promo-footer-text" href="http://htmlstream.com/contact-us">
+                                Contact us
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- End List -->
+                      </div>
+                    </div>
+                    <!-- End Docs - Submenu -->
+                  </li>
+                  <!-- End Docs -->
+                </ul>
+              </div>
+            </div>
+            <!-- End Navigation -->
+          </div>
+        </nav>
+        <!-- End Nav -->
+      </div>
+    </div>
+  </header>
+  <!-- ========== END HEADER ========== -->
+
+  <!-- ========== MAIN CONTENT ========== -->
+  <main id="content" role="main">
+    <!-- Hero Section -->
+    <div class="gradient-x-overlay-sm-indigo position-relative overflow-hidden">
+      <div class="container space-top-3 space-top-lg-4 space-bottom-2">
+        <div class="w-lg-60 text-center mx-lg-auto">
+          <div class="mb-5">
+            <h1 class="display-4 mb-3">The <span class="text-primary">#1</span> software development tool.</h1>
+            <p class="lead">Front Software is built for every member of your software team to plan, track, and release great software.</p>
+          </div>
+          <a class="btn btn-soft-indigo transition-3d-hover" href="#">Contact Sales</a>
+          <small class="text-muted my-3 my-sm-0 mx-2 mx-sm-3">or</small>
+          <a class="btn btn-primary transition-3d-hover" href="#">See Pricing  <i class="fas fa-angle-right ml-1"></i></a>
+        </div>
+      </div>
+
+      <!-- Mockup -->
+      <div class="container space-2">
+        <div class="position-relative w-lg-75 text-center mx-lg-auto">
+          <div class="position-relative shadow-lg z-index-2 rounded-lg" data-aos="fade-up" data-aos-offset="-50">
+            <img class="img-fluid rounded-lg" src="../../assets/img/1618x1010/img3.jpg" alt="Image Description">
+          </div>
+
+          <figure class="max-w-15rem w-100 position-absolute top-0 right-0" data-aos="fade-up" data-aos-delay="100" data-aos-offset="-50">
+            <div class="mt-n11 mr-n11">
+              <img class="img-fluid" src="../../assets/svg/components/dots-1.svg" alt="Image Description">
+            </div>
+          </figure>
+          <figure class="max-w-15rem w-100 position-absolute bottom-0 left-0" data-aos="fade-up">
+            <div class="mb-n7 ml-n7">
+              <img class="img-fluid" src="../../assets/svg/components/dots-1.svg" alt="Image Description">
+            </div>
+          </figure>
+        </div>
+      </div>
+      <!-- End Mockup -->
+
+      <!-- SVG Background Shape -->
+      <figure class="w-35 position-absolute top-0 right-0 z-index-n1 mt-n11 mr-n11">
+        <img class="img-fluid" src="../../assets/svg/components/half-circle-1.svg" alt="Image Description">
+      </figure>
+
+      <figure class="w-25 position-absolute bottom-0 left-0 z-index-n1 mb-n11 ml-n11">
+        <img class="img-fluid" src="../../assets/svg/components/half-circle-2.svg" alt="Image Description">
+      </figure>
+      <!-- End SVG Background Shape -->
+    </div>
+    <!-- End Hero Section -->
+
+    <!-- Clients Section -->
+    <div class="container space-1">
+      <div class="w-lg-75 mx-lg-auto">
+        <div class="text-center mb-4">
+          <h2 class="divider divider-text">Trusted by the world's best</h2>
+        </div>
+
+        <div class="row justify-content-between text-center">
+          <div class="col-4 col-lg-2 mb-5 mb-lg-0">
+            <div class="mx-3">
+              <img class="max-w-11rem max-w-md-13rem mx-auto" src="../../assets/svg/clients-logo/amazon.svg" alt="Image Description">
+            </div>
+          </div>
+          <div class="col-4 col-lg-2 mb-5 mb-lg-0">
+            <div class="mx-3">
+              <img class="max-w-11rem max-w-md-13rem mx-auto" src="../../assets/svg/clients-logo/netflix.svg" alt="Image Description">
+            </div>
+          </div>
+          <div class="col-4 col-lg-2 mb-5 mb-lg-0">
+            <div class="mx-3">
+              <img class="max-w-11rem max-w-md-13rem mx-auto" src="../../assets/svg/clients-logo/paypal.svg" alt="Image Description">
+            </div>
+          </div>
+          <div class="col-4 col-lg-2">
+            <div class="mx-3">
+              <img class="max-w-11rem max-w-md-13rem mx-auto" src="../../assets/svg/clients-logo/slack.svg" alt="Image Description">
+            </div>
+          </div>
+          <div class="col-4 col-lg-2">
+            <div class="mx-3">
+              <img class="max-w-11rem max-w-md-13rem mx-auto" src="../../assets/svg/clients-logo/samsung.svg" alt="Image Description">
+            </div>
+          </div>
+          <div class="col-4 col-lg-2">
+            <div class="mx-3">
+              <img class="max-w-11rem max-w-md-13rem mx-auto" src="../../assets/svg/clients-logo/stripe.svg" alt="Image Description">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Clients Section -->
+
+    <!-- Features Section -->
+    <div class="container space-2 space-lg-3">
+      <div class="row align-items-lg-center">
+        <div class="col-lg-5 order-lg-2 mb-7 mb-lg-0">
+          <div class="mb-5">
+            <h2 class="mb-3">Lightning-fast development with pre-built solutions</h2>
+            <p>Every team has a unique process for shipping software. Use an out-of-the-box workflow, or create one to match the way your team works.</p>
+          </div>
+
+          <!-- Info -->
+          <div class="media pb-3">
+            <span class="icon icon-xs icon-soft-indigo icon-circle mr-3">
+              <i class="fas fa-check"></i>
+            </span>
+            <div class="media-body">
+              <p class="text-dark mb-0">Extensive API documentation</p>
+            </div>
+          </div>
+          <div class="media py-3">
+            <span class="icon icon-xs icon-soft-indigo icon-circle mr-3">
+              <i class="fas fa-check"></i>
+            </span>
+            <div class="media-body">
+              <p class="text-dark mb-0">Customizable &amp; open source</p>
+            </div>
+          </div>
+          <div class="media pt-3">
+            <span class="icon icon-xs icon-soft-indigo icon-circle mr-3">
+              <i class="fas fa-check"></i>
+            </span>
+            <div class="media-body">
+              <p class="text-dark mb-0">Continiously improved</p>
+            </div>
+          </div>
+          <!-- End Info -->
+        </div>
+
+        <div class="col-lg-7 order-lg-1">
+          <!-- Card Block -->
+          <div class="pr-lg-4" data-aos="fade-up">
+            <div class="card shadow-none bg-soft-primary text-indigo text-center w-lg-75 overflow-hidden pt-9 px-5 mx-lg-auto">
+              <div class="px-5 mb-5">
+                <h3>Choose a workflow, or make your own with Front Software</h3>
+              </div>
+
+              <!-- Device Mockup -->
+              <div class="device device-half-iphone-x w-85 mx-auto">
+                <img class="device-half-iphone-x-frame" src="../../assets/svg/components/half-iphone-x.svg" alt="Image Description">
+                <img class="device-half-iphone-x-screen" src="../../assets/img/407x472/img7.jpg" alt="Image Description">
+              </div>
+              <!-- End Device Mockup -->
+            </div>
+          </div>
+          <!-- End Card Block -->
+        </div>
+      </div>
+    </div>
+    <!-- End Features Section -->
+
+    <!-- CTA Section -->
+    <div class="container">
+      <div class="w-lg-85 mx-lg-auto">
+        <div class="card overflow-hidden p-5">
+          <div class="row justify-content-md-start align-items-md-center text-center text-md-left">
+            <div class="col-md-8 col-lg-5 offset-lg-3 mb-3 mb-md-0">
+              <h3 class="h4 text-indigo mb-0">Revolutionizing the way your team works!</h3>
+            </div>
+
+            <div class="col-md-4 text-md-right">
+              <a class="btn btn-primary transition-3d-hover" href="#">Explore Docs</a>
+            </div>
+          </div>
+
+          <!-- SVG Component -->
+          <figure class="w-35 position-absolute top-0 left-0 mt-n11 ml-n11">
+            <img class="img-fluid" src="../../assets/svg/components/half-circle-2.svg" alt="Image Description">
+          </figure>
+          <!-- End SVG Component -->
+        </div>
+      </div>
+    </div>
+    <!-- End CTA Section -->
+
+    <!-- Features Section -->
+    <div class="container space-2 space-lg-3">
+      <div class="row align-items-lg-center">
+        <div class="col-lg-5 mb-7 mb-lg-0">
+          <div class="mb-5">
+            <h2 class="mb-3">The best software teams ship early and often.</h2>
+            <p>Front Software is built for every member of your software team to plan, track, and release great software.</p>
+          </div>
+
+          <!-- Info -->
+          <div class="media pb-3">
+            <span class="icon icon-xs icon-soft-indigo icon-circle mr-3">
+              <i class="fas fa-check"></i>
+            </span>
+            <div class="media-body">
+              <p class="text-dark mb-0">Knowledge management</p>
+            </div>
+          </div>
+          <div class="media py-3">
+            <span class="icon icon-xs icon-soft-indigo icon-circle mr-3">
+              <i class="fas fa-check"></i>
+            </span>
+            <div class="media-body">
+              <p class="text-dark mb-0">Development workflow</p>
+            </div>
+          </div>
+          <div class="media pt-3">
+            <span class="icon icon-xs icon-soft-indigo icon-circle mr-3">
+              <i class="fas fa-check"></i>
+            </span>
+            <div class="media-body">
+              <p class="text-dark mb-0">Continuous integration</p>
+            </div>
+          </div>
+          <!-- End Info -->
+        </div>
+
+        <div class="col-lg-7">
+          <!-- Card Block -->
+          <div class="pl-lg-4" data-aos="fade-up">
+            <div class="card shadow-none bg-soft-info text-indigo text-center w-lg-75 overflow-hidden pt-9 px-5 mx-lg-auto">
+              <div class="px-5 mb-5">
+                <h3>Integrate with the tools and workflow you already use</h3>
+              </div>
+
+              <!-- Device Mockup -->
+              <div class="device device-half-iphone-x w-85 mx-auto">
+                <img class="device-half-iphone-x-frame" src="../../assets/svg/components/half-iphone-x.svg" alt="Image Description">
+                <img class="device-half-iphone-x-screen" src="../../assets/img/407x472/img8.jpg" alt="Image Description">
+              </div>
+              <!-- End Device Mockup -->
+            </div>
+          </div>
+          <!-- End Card Block -->
+        </div>
+      </div>
+    </div>
+    <!-- End Features Section -->
+
+    <!-- Icons Section -->
+    <div class="position-relative bg-primary overflow-hidden">
+      <div class="container space-top-2 space-top-lg-3 position-relative z-index-2">
+        <!-- Title -->
+        <div class="w-md-80 w-lg-50 text-center mx-md-auto mb-5 mb-md-9">
+          <h2 class="text-white">Go Front with ease.</h2>
+          <p class="text-white-70">Whether you’re a seasoned agile expert, or just getting started, Jira Software unlocks the power of agile.</p>
+        </div>
+        <!-- End Title -->
+
+        <!-- Icon Blocks -->
+        <div class="w-lg-80 mx-lg-auto mb-11">
+          <div class="row mb-9">
+            <div class="col-6 col-md-4 mb-7">
+              <!-- Icon Block -->
+              <span class="d-block text-white font-size-2 mb-3">
+                <i class="fas fa-align-center"></i>
+              </span>
+              <h4 class="text-white mb-3">Flexible planning</h4>
+              <p class="text-white-70">Front Software's rich planning features enable your team to flexibly plan.</p>
+              <!-- End Icon Block -->
+            </div>
+
+            <div class="col-6 col-md-4 mb-7">
+              <!-- Icon Block -->
+              <span class="d-block text-white font-size-2 mb-3">
+                <i class="fas fa-code-branch"></i>
+              </span>
+              <h4 class="text-white mb-3">Accurate estimations</h4>
+              <p class="text-white-70">Use story points, hours, t-shirt sizes, or your own estimation technique.</p>
+              <!-- End Icon Block -->
+            </div>
+
+            <div class="col-6 col-md-4 mb-7">
+              <!-- Icon Block -->
+              <span class="d-block text-white font-size-2 mb-3">
+                <i class="fas fa-shapes"></i>
+              </span>
+              <h4 class="text-white mb-3">Value-driven prioritization</h4>
+              <p class="text-white-70">Order user stories, issues, and bugs in your product backlog with simple dragging.</p>
+              <!-- End Icon Block -->
+            </div>
+
+            <div class="col-6 col-md-4 mb-7 mb-md-0">
+              <!-- Icon Block -->
+              <span class="d-block text-white font-size-2 mb-3">
+                <i class="fas fa-clone"></i>
+              </span>
+              <h4 class="text-white mb-3">Transparent execution</h4>
+              <p class="text-white-70">Front Software brings a new level of transparency to your team's work.</p>
+              <!-- End Icon Block -->
+            </div>
+
+            <div class="col-6 col-md-4">
+              <!-- Icon Block -->
+              <span class="d-block text-white font-size-2 mb-3">
+                <i class="fas fa-check-circle"></i>
+              </span>
+              <h4 class="text-white mb-3">Actionable results</h4>
+              <p class="text-white-70">Extensive reporting functionality gives your team critical insight into their agile process.</p>
+              <!-- End Icon Block -->
+            </div>
+
+            <div class="col-6 col-md-4">
+              <!-- Icon Block -->
+              <span class="d-block text-white font-size-2 mb-3">
+                <i class="fas fa-compress"></i>
+              </span>
+              <h4 class="text-white mb-3">Scalable evolution <span class="badge badge-warning badge-pill ml-1">Coming soon</span></h4>
+              <p class="text-white-70">Front Software is agile project management designed for any teams.</p>
+              <!-- End Icon Block -->
+            </div>
+          </div>
+
+          <!-- Buttons -->
+          <div class="text-center">
+            <div class="mb-3">
+              <a class="btn btn-sm btn-light btn-wide transition-3d-hover" href="#">Sign up and Start Building</a>
+              <small class="d-block d-sm-inline-block text-white-70 my-3 my-sm-0 mx-sm-3">or</small>
+              <a class="btn btn-sm btn-indigo btn-wide transition-3d-hover" href="#">Talk to our Experts</a>
+            </div>
+            <p class="small text-white-70">Start free trial. * No credit card required.</p>
+          </div>
+          <!-- End Buttons -->
+        </div>
+        <!-- End Icon Blocks -->
+
+        <div class="w-85 w-md-75 w-lg-65 text-center mx-auto">
+          <img class="img-fluid" src="../../assets/svg/illustrations/ai-creation.svg" alt="Image Description">
+        </div>
+      </div>
+
+      <!-- SVG Background Shape -->
+      <figure class="w-35 position-absolute top-0 right-0">
+        <div class="mt-n11 mr-n11">
+          <img class="img-fluid" src="../../assets/svg/components/half-circle-3.svg" alt="Image Description">
+        </div>
+      </figure>
+      <figure class="w-25 position-absolute bottom-0 left-0">
+        <div class="mb-n11 ml-n11">
+          <img class="img-fluid" src="../../assets/svg/components/half-circle-2.svg" alt="Image Description">
+        </div>
+      </figure>
+      <!-- End SVG Background Shape -->
+    </div>
+    <!-- End Icons Section -->
+
+    <!-- Pricing Section -->
+    <div class="container space-2 space-lg-3">
+      <!-- Title -->
+      <div class="w-md-80 w-lg-50 text-center mx-md-auto mb-5 mb-md-9">
+        <h2>Choose a plan that's right for you.</h2>
+        <p>Everything you need. From front to back.</p>
+      </div>
+      <!-- End Title -->
+
+      <!-- Table -->
+      <div class="table-responsive-lg w-lg-75 mx-lg-auto">
+        <table class="table table-striped table-borderless">
+          <thead class="text-center">
+            <tr>
+              <th scope="col" class="w-40"></th>
+              <th scope="col" class="w-20">
+                <span class="text-dark">Starter</span>
+                <small class="d-block text-body">$0/mon</small>
+              </th>
+              <th scope="col" class="w-20 border-left border-right">
+                <span class="text-dark">Growth</span>
+                <span class="badge badge-warning badge-pill ml-1">Hot</span>
+                <small class="d-block text-body">$60/mon</small>
+              </th>
+              <th scope="col" class="w-20">
+                <span class="text-dark">Scale</span>
+                <small class="d-block text-body">Custom</small>
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="border-top border-bottom">
+              <th scope="row" class="bg-white text-dark pt-5 pb-3 px-4 mb-0">Cross-platform UI toolkit</th>
+              <td class="bg-white"></td>
+              <td class="bg-white border-left border-right"></td>
+              <td class="bg-white"></td>
+            </tr>
+            <tr>
+              <th scope="row" class="font-size-1 py-3 px-4">14-days free trial</th>
+              <td class="text-center p-3">
+                <i class="fas fa-check-circle text-success mr-2"></i>
+              </td>
+              <td class="text-center border-left border-right p-3">
+                <i class="fas fa-check-circle text-success mr-2"></i>
+              </td>
+              <td class="text-center p-3">
+                <i class="fas fa-check-circle text-success mr-2"></i>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row" class="font-size-1 py-3 px-4">No user limit</th>
+              <td class="text-center text-body p-3"></td>
+              <td class="text-center border-left border-right p-3">
+                <i class="fas fa-check-circle text-success mr-2"></i>
+              </td>
+              <td class="text-center p-3">
+                <i class="fas fa-check-circle text-success mr-2"></i>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row" class="font-size-1 py-3 px-4">Long-term support</th>
+              <td class="text-center text-body py-3 px-4"></td>
+              <td class="text-center text-body border-left border-right py-3 px-4"></td>
+              <td class="text-center p-3">
+                <i class="fas fa-check-circle text-success mr-2"></i>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row" class="font-size-1 py-3 px-4">Email support</th>
+              <td class="text-center text-body p-3">
+                <span class="badge badge-soft-primary badge-pill font-weight-normal py-2 px-3">Add-on available</span>
+              </td>
+              <td class="text-center text-body border-left border-right py-3 px-4"></td>
+              <td class="text-center p-3">
+                <i class="fas fa-check-circle text-success mr-2"></i>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row" class="bg-white text-dark pt-5 pb-3 px-4 mb-0">Developer tools</th>
+              <td class="bg-white"></td>
+              <td class="bg-white border-left border-right"></td>
+              <td class="bg-white"></td>
+            </tr>
+            <tr>
+              <th scope="row" class="font-size-1 py-3 px-4">Removal of Front branding</th>
+              <td class="text-center text-body p-3"></td>
+              <td class="text-center border-left border-right p-3">
+                <i class="fas fa-check-circle text-success mr-2"></i>
+              </td>
+              <td class="text-center p-3">
+                <i class="fas fa-check-circle text-success mr-2"></i>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row" class="font-size-1 py-3 px-4">Active maintenance &amp; support</th>
+              <td class="text-center p-3">
+                <i class="fas fa-check-circle text-success mr-2"></i>
+              </td>
+              <td class="text-center border-left border-right p-3">
+                <i class="fas fa-check-circle text-success mr-2"></i>
+              </td>
+              <td class="text-center p-3">
+                <i class="fas fa-check-circle text-success mr-2"></i>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row" class="font-size-1 py-3 px-4">Data storage for 365 days</th>
+              <td class="text-center text-body p-3"></td>
+              <td class="text-center text-body border-left border-right p-3">
+                <span class="badge badge-soft-primary badge-pill font-weight-normal py-2 px-3">Add-on available</span>
+              </td>
+              <td class="text-center p-3">
+                <i class="fas fa-check-circle text-success mr-2"></i>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row" class="bg-white p-3"></th>
+              <td class="bg-white text-center p-3">
+                <button type="button" class="btn btn-sm btn-soft-indigo text-nowrap transition-3d-hover">Choose Plan</button>
+              </td>
+              <td class="bg-white text-center border-left border-right p-3">
+                <button type="button" class="btn btn-sm btn-soft-indigo text-nowrap transition-3d-hover">Choose Plan</button>
+              </td>
+              <td class="bg-white text-center p-3">
+                <button type="button" class="btn btn-sm btn-primary text-nowrap transition-3d-hover">Contact Us</button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <!-- End Table -->
+    </div>
+    <!-- End Pricing Section -->
+  </main>
+  <!-- ========== END MAIN CONTENT ========== -->
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="gradient-x-overlay-sm-indigo overflow-hidden">
+    <div class="container space-top-2 space-bottom-1">
+      <!-- CTA -->
+      <div class="row justify-content-lg-between align-items-lg-center text-center text-lg-left">
+        <div class="col-lg-5 mb-3 mb-lg-0">
+          <h2 class="text-indigo">One tool for your entire team. Get started now!</h2>
+        </div>
+        <div class="col-lg-5 text-lg-right">
+          <a class="btn btn-primary transition-3d-hover" href="#">Get Started</a>
+          <small class="text-muted my-3 my-sm-0 mx-2 mx-sm-3">or</small>
+          <a class="btn btn-soft-indigo transition-3d-hover" href="#">Explore</a>
+        </div>
+      </div>
+      <!-- End CTA -->
+
+      <hr class="my-9">
+
+      <!-- Content -->
+      <div class="row">
+        <div class="col-6 col-lg-3 order-lg-2 mb-7 mb-lg-0">
+          <h5>Company</h5>
+
+          <!-- Nav Link -->
+          <ul class="nav nav-sm nav-x-0 flex-column">
+            <li class="nav-item"><a class="nav-link" href="../pages/about-agency.html">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="../pages/services-agency.html">Services</a></li>
+            <li class="nav-item"><a class="nav-link" href="../pages/careers.html">Careers</a></li>
+            <li class="nav-item"><a class="nav-link" href="../blog/newsroom.html">Blog</a></li>
+          </ul>
+          <!-- End Nav Link -->
+        </div>
+
+        <div class="col-6 col-lg-3 order-lg-3 mb-7 mb-lg-0">
+          <h5>Legal</h5>
+
+          <!-- Nav Link -->
+          <ul class="nav nav-sm nav-x-0 flex-column">
+            <li class="nav-item"><a class="nav-link" href="../pages/faq.html">Help</a></li>
+            <li class="nav-item"><a class="nav-link" href="../pages/terms.html">Terms &amp; Conditions</a></li>
+            <li class="nav-item"><a class="nav-link" href="../pages/privacy.html">Privacy &amp; Policy</a></li>
+          </ul>
+          <!-- End Nav Link -->
+        </div>
+
+        <div class="col-sm-6 col-lg-3 order-lg-1 mb-3 mb-lg-0">
+          <!-- Logo -->
+          <a class="d-inline-flex align-items-center" href="index.html" aria-label="Front">
+            <img class="brand" src="../../assets/svg/logos/logo.svg" alt="Logo">
+          </a>
+          <!-- End Logo -->
+        </div>
+
+        <div class="col-sm-6 col-lg-3 order-lg-4 align-self-center align-self-lg-start">
+          <p class="small">&copy; Front. 2020 Htmlstream</p>
+        </div>
+      </div>
+    </div>
+    <!-- End Content -->
+
+    <!-- SVG Background Shape -->
+    <figure class="w-35 position-absolute top-0 right-0 z-index-n1 mt-n11 mr-n11">
+      <img class="img-fluid" src="../../assets/svg/components/half-circle-1.svg" alt="Image Description">
+    </figure>
+
+    <figure class="w-25 position-absolute bottom-0 left-0 z-index-n1 mb-n11 ml-n11">
+      <img class="img-fluid" src="../../assets/svg/components/half-circle-2.svg" alt="Image Description">
+    </figure>
+    <!-- End SVG Background Shape -->
+  </footer>
+  <!-- ========== END FOOTER ========== -->
+
+  <!-- Go to Top -->
+  <a class="js-go-to go-to position-fixed" href="javascript:;" style="visibility: hidden;"
+     data-hs-go-to-options='{
+       "offsetTop": 700,
+       "position": {
+         "init": {
+           "right": 15
+         },
+         "show": {
+           "bottom": 15
+         },
+         "hide": {
+           "bottom": -15
+         }
+       }
+     }'>
+    <i class="fas fa-angle-up"></i>
+  </a>
+  <!-- End Go to Top -->
+
+  <!-- JS Global Compulsory -->
+  <script src="../../assets/vendor/jquery/dist/jquery.min.js"></script>
+  <script src="../../assets/vendor/jquery-migrate/dist/jquery-migrate.min.js"></script>
+  <script src="../../assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- JS Implementing Plugins -->
+  <script src="../../assets/vendor/hs-header/dist/hs-header.min.js"></script>
+  <script src="../../assets/vendor/hs-go-to/dist/hs-go-to.min.js"></script>
+  <script src="../../assets/vendor/hs-unfold/dist/hs-unfold.min.js"></script>
+  <script src="../../assets/vendor/hs-mega-menu/dist/hs-mega-menu.min.js"></script>
+  <script src="../../assets/vendor/hs-show-animation/dist/hs-show-animation.min.js"></script>
+  <script src="../../assets/vendor/jquery-validation/dist/jquery.validate.min.js"></script>
+  <script src="../../assets/vendor/aos/dist/aos.js"></script>
+
+  <!-- JS Front -->
+  <script src="../../assets/js/hs.core.js"></script>
+  <script src="../../assets/js/hs.validation.js"></script>
+
+  <!-- JS Plugins Init. -->
+  <script>
+    $(document).on('ready', function () {
+      // initialization of header
+      var header = new HSHeader($('#header')).init();
+
+      // initialization of mega menu
+      var megaMenu = new HSMegaMenu($('.js-mega-menu'), {
+        desktop: {
+          position: 'left'
+        }
+      }).init();
+
+      // initialization of unfold
+      var unfold = new HSUnfold('.js-hs-unfold-invoker').init();
+
+      // initialization of unfold
+      $('.js-hs-search-unfold-invoker').each(function() {
+        var searchUnfold = new HSUnfold($(this), {
+          afterOpen: function() {
+            $('#searchSlideDownControl').focus();
+          }
+        }).init();
+      });
+
+      // initialization of form validation
+      $('.js-validate').each(function() {
+        $.HSCore.components.HSValidation.init($(this), {
+          rules: {
+            confirmPassword: {
+              equalTo: '#signupPassword'
+            }
+          }
+        });
+      });
+
+      // initialization of show animations
+      $('.js-animation-link').each(function () {
+        var showAnimation = new HSShowAnimation($(this)).init();
+      });
+
+      // initialization of aos
+      AOS.init({
+        duration: 650,
+        once: true
+      });
+
+      // initialization of go to
+      $('.js-go-to').each(function () {
+        var goTo = new HSGoTo($(this)).init();
+      });
+    });
+  </script>
+
+  <!-- IE Support -->
+  <script>
+    if (/MSIE \d|Trident.*rv:/.test(navigator.userAgent)) document.write('<script src="../../assets/vendor/polifills.js"><\/script>');
+  </script>
+</body>
+</html>

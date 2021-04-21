@@ -1,0 +1,1463 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Title -->
+    <title>Refine - Decentralized Block Lists</title>
+
+    <!-- Required Meta Tags Always Come First -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="favicon.png">
+
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600&display=swap" rel="stylesheet">
+
+    <!-- CSS Implementing Plugins -->
+    <link rel="stylesheet" href="assets/vendor/font-awesome/css/all.min.css">
+    <link rel="stylesheet" href="assets/vendor/hs-mega-menu/dist/hs-mega-menu.min.css">
+
+    <!-- CSS Front Template -->
+    <link rel="stylesheet" href="assets/css/theme.css">
+</head>
+
+<body>
+    <!-- ========== HEADER ========== -->
+    <header id="header" class="header">
+        <div class="js-mega-menu header-section">
+            <!-- Topbar -->
+            <div class="container">
+                <nav class="js-mega-menu navbar navbar-expand-lg z-index-999">
+                    <!-- Responsive Toggle Button -->
+                    <button type="button" class="navbar-toggler btn btn-xs btn-outline-secondary ml-auto" aria-label="Toggle navigation" aria-expanded="false" aria-controls="topBar" data-toggle="collapse" data-target="#topBar">
+                        Topbar
+                        <i class="fa fa-angle-down ml-2"></i>
+                    </button>
+                    <!-- End Responsive Toggle Button -->
+
+                    <div id="topBar" class="collapse navbar-collapse">
+                        <ul class="navbar-nav w-100">
+                            <li class="navbar-nav-item mr-auto">
+                                <a class="nav-link font-size-1 py-2 pl-0" href="../landings/index.html">
+
+
+                                </a>
+                            </li>
+
+
+                            <!-- Docs -->
+                            <li class="hs-has-mega-menu navbar-nav-item" data-hs-mega-menu-item-options='{
+                    "desktop": {
+                      "position": "right",
+                      "maxWidth": "260px"
+                    }
+                  }'>
+                                <a id="docsMegaMenu" class="hs-mega-menu-invoker nav-link nav-link-toggle font-size-1 py-2 pr-0" href="javascript:;" aria-haspopup="true" aria-expanded="false">Resources</a>
+
+                                <!-- Docs - Submenu -->
+                                <div class="hs-mega-menu dropdown-menu" aria-labelledby="docsMegaMenu" style="min-width: 330px;">
+                                    <!-- Promo Item -->
+                                    <div class="navbar-promo-item">
+                                        <a class="navbar-promo-link" href="documentation/index.html">
+                                            <div class="media align-items-center">
+                                                <img class="navbar-promo-icon" src="assets/svg/icons/icon-1.svg" alt="SVG">
+
+                                                <div class="media-body">
+                                                    <span class="navbar-promo-title">
+                            FAQ
+                          <!--  <span class="badge badge-primary badge-pill ml-1">v3.2</span> -->
+                                                    </span>
+                                                    <small class="navbar-promo-text">Help Center</small>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <!-- End Promo Item -->
+
+                                    <!-- Promo Item -->
+                                    <div class="navbar-promo-item">
+                                        <a class="navbar-promo-link" href="snippets/index.html">
+                                            <div class="media align-items-center">
+                                                <img class="navbar-promo-icon" src="assets/svg/icons/icon-2.svg" alt="SVG">
+                                                <div class="media-body">
+                                                    <span class="navbar-promo-title">Blog</span>
+                                                    <small class="navbar-promo-text">Read about Refine</small>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <!-- End Promo Item -->
+
+                                    <!-- Promo Item -->
+                                    <div class="navbar-promo-item">
+                                        <a class="navbar-promo-link" href="snippets/index.html">
+                                            <div class="media align-items-center">
+
+                                                <img class="navbar-promo-icon" src="../assets/svg/icons/icon-29.svg" alt="SVG">
+
+                                                <div class="media-body">
+                                                    <span class="navbar-promo-title">Integrations</span>
+                                                    <small class="navbar-promo-text">Our Partners</small>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <!-- End Promo Item -->
+
+                                    <div class="navbar-promo-footer">
+                                        <!-- List -->
+                                        <div class="row no-gutters">
+                                            <div class="col-6">
+                                                <div class="navbar-promo-footer-item">
+                                                    <span class="navbar-promo-footer-text">Check what's new</span>
+                                                    <a class="navbar-promo-footer-text" href="#">
+                            Changelog
+                          </a>
+                                                </div>
+                                            </div>
+                                            <div class="col-6 navbar-promo-footer-ver-divider">
+                                                <div class="navbar-promo-footer-item">
+                                                    <span class="navbar-promo-footer-text">Have a question?</span>
+                                                    <a class="navbar-promo-footer-text" href="#">
+                            Join our Discord
+                          </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- End List -->
+                                    </div>
+                                </div>
+                                <!-- End Docs - Submenu -->
+                            </li>
+                            <!-- End Docs -->
+
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+            <!-- End Topbar -->
+
+
+            <div id="logoAndNav" class="container mt-lg-n2">
+                <!-- Nav -->
+                <nav class="js-mega-menu navbar navbar-expand-lg">
+                    <div class="navbar-nav-wrap">
+                        <!-- Logo -->
+                        <a class="navbar-brand navbar-nav-wrap-brand" href="index.html" aria-label="Front">
+                            <img src="assets/svg/logos/logo.svg" alt="Logo">
+                        </a>
+                        <!-- End Logo -->
+
+                        <!-- Secondary Content -->
+                        <div class="navbar-nav-wrap-content">
+                            <!-- Search Classic 
+                            <div class="hs-unfold d-lg-none d-inline-block position-static">
+                                <a class="js-hs-unfold-invoker btn btn-xs btn-icon rounded-circle" href="javascript:;" data-hs-unfold-options='{
+                    "target": "#searchClassic",
+                    "type": "css-animation",
+                    "animationIn": "slideInUp"
+                   }'>
+                                    <i class="fas fa-search"></i>
+                                </a>
+
+                                <div id="searchClassic" class="hs-unfold-content dropdown-menu w-100 border-0 rounded-0 px-3 mt-0">
+                                    <form class="input-group input-group-sm input-group-merge">
+                                        <input type="text" class="form-control" placeholder="What do you want to learn?" aria-label="What do you want to learn?">
+                                        <div class="input-group-append">
+                                            <div class="input-group-text">
+                                                <i class="fas fa-search"></i>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                            <!-- End Search Classic -->
+
+                            <!-- Account -->
+                            <div class="ml-3 hs-unfold">
+                                <a class="js-hs-unfold-invoker rounded-circle" href="javascript:;" data-hs-unfold-options='{
+                    "target": "#accountDropdown",
+                    "type": "css-animation",
+                    "event": "hover",
+                    "duration": 50,
+                    "delay": 0,
+                    "hideOnScroll": "true"
+                   }'>
+                                    <span class="avatar avatar-xs avatar-circle">
+                    <img class="avatar-img" src="assets/img/icons/account.png" alt="Image Description">
+                  </span>
+                                </a>
+
+                                <div id="accountDropdown" class="hs-unfold-content dropdown-menu dropdown-menu-sm-right dropdown-menu-no-border-on-mobile p-0" style="min-width: 245px;">
+                                    <div class="card">
+                                        <!-- Header -->
+                                        <div class="card-header p-4">
+                                            <a class="media align-items-center" href="#">
+                                                <div class="avatar mr-3">
+                                                    <img class="avatar-img" src="assets/img/icons/account.png" alt="Image Description">
+                                                </div>
+                                                <div class="media-body">
+                                                    <span class="d-block font-weight-bold">0x9456...49E1 <!--<span class="badge badge-success ml-1">Pro</span> --></span>
+                                                    <span class="d-block small text-muted"><i class="mr-1 far fa-clone"></i>Copy Address</span>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <!-- End Header -->
+
+                                        <!-- Body -->
+                                        <div class="card-body py-3">
+
+
+
+                                            <a class="dropdown-item px-0" href="#">
+                                                <span class="dropdown-item-icon">
+                          <i class="fas fa-user"></i>
+                        </span> Account
+                                            </a>
+                                            <a class="dropdown-item px-0" href="#">
+                                                <span class="dropdown-item-icon">
+                          <i class="fas fa-bars"></i>
+                        </span> My Lists
+                                            </a>
+                                            <a class="dropdown-item px-0" href="#">
+                                                <span class="dropdown-item-icon">
+                          <i class="fas fa-shield-alt"></i>
+                        </span> Subscriptions
+                                            </a>
+                                            <a class="dropdown-item px-0" href="#">
+                                                <span class="dropdown-item-icon">
+                          <i class="fas fa-bell"></i>
+                        </span> Notifications
+                                            </a>
+
+                                            <div class="dropdown-divider"></div>
+
+                                            <a class="dropdown-item px-0" href="#">
+                                                <span class="dropdown-item-icon">
+                          <i class="fas fa-question-circle"></i>
+                        </span> Help
+                                            </a>
+                                            <a class="dropdown-item px-0" href="#">
+                                                <span class="dropdown-item-icon">
+                          <i class="fas fa-power-off"></i>
+                        </span> Sign out
+                                            </a>
+                                        </div>
+                                        <!-- End Body -->
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End Account -->
+                            <!-- Shopping Cart -->
+                            <li class="list-inline-item">
+                                <div class="hs-unfold">
+                                    <a class="js-hs-unfold-invoker btn btn-xs btn-icon btn-ghost-secondary" href="javascript:;" data-hs-unfold-options='{
+                    "target": "#shoppingCartDropdown",
+                    "type": "css-animation",
+                    "event": "hover",
+                    "hideOnScroll": "true"
+                   }'>
+                                        <i class="fas fa-bell"></i>
+                                    </a>
+
+                                    <div id="shoppingCartDropdown" class="hs-unfold-content dropdown-menu dropdown-menu-right text-center p-7" style="min-width: 250px;">
+                                        <figure class="max-w-9rem mx-auto mb-3">
+                                            <img class="img-fluid" src="assets/svg/illustrations/empty-cart.svg" alt="SVG">
+                                        </figure>
+                                        <span class="d-block">No Notifications</span>
+                                    </div>
+                                </div>
+                            </li>
+                            <!-- End Shopping Cart -->
+                        </div>
+                        <!-- End Secondary Content -->
+
+                        <!-- Responsive Toggle Button -->
+                        <button type="button" class="navbar-toggler navbar-nav-wrap-navbar-toggler btn btn-icon btn-sm rounded-circle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="navBar" data-toggle="collapse" data-target="#navBar">
+                            <span class="navbar-toggler-default">
+                <svg width="14" height="14" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg">
+                  <path fill="currentColor" d="M17.4,6.2H0.6C0.3,6.2,0,5.9,0,5.5V4.1c0-0.4,0.3-0.7,0.6-0.7h16.9c0.3,0,0.6,0.3,0.6,0.7v1.4C18,5.9,17.7,6.2,17.4,6.2z M17.4,14.1H0.6c-0.3,0-0.6-0.3-0.6-0.7V12c0-0.4,0.3-0.7,0.6-0.7h16.9c0.3,0,0.6,0.3,0.6,0.7v1.4C18,13.7,17.7,14.1,17.4,14.1z"/>
+                </svg>
+              </span>
+                            <span class="navbar-toggler-toggled">
+                <svg width="14" height="14" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg">
+                  <path fill="currentColor" d="M11.5,9.5l5-5c0.2-0.2,0.2-0.6-0.1-0.9l-1-1c-0.3-0.3-0.7-0.3-0.9-0.1l-5,5l-5-5C4.3,2.3,3.9,2.4,3.6,2.6l-1,1 C2.4,3.9,2.3,4.3,2.5,4.5l5,5l-5,5c-0.2,0.2-0.2,0.6,0.1,0.9l1,1c0.3,0.3,0.7,0.3,0.9,0.1l5-5l5,5c0.2,0.2,0.6,0.2,0.9-0.1l1-1 c0.3-0.3,0.3-0.7,0.1-0.9L11.5,9.5z"/>
+                </svg>
+              </span>
+                        </button>
+                        <!-- End Responsive Toggle Button -->
+
+                        <!-- Navigation -->
+                        <div id="navBar" class="navbar-nav-wrap-navbar collapse navbar-collapse">
+                            <ul class="navbar-nav">
+                                <!-- Pages -->
+
+                                <li class="navbar-nav-item">
+                                    <div class="hs-unfold">
+                                        <a class="nav-link js-hs-unfold-invoker " href="javascript:;" data-hs-unfold-options='{
+                    "target": "#footerLanguageExample2",
+                    "type": "css-animation",
+                    "animationIn": "slideInDown"
+                   }'> <i class="fas fa-atlas mr-1"></i> English</a>
+                                        <!-- Language Modal -->
+                                        <div id="footerLanguageExample2" class="hs-unfold-content dropdown-menu mb-2">
+                                            <a class="dropdown-item active" href="#">English</a>
+                                            <a class="dropdown-item" href="#">Deutsch</a>
+                                            <a class="dropdown-item" href="#">Español</a>
+                                            <a class="dropdown-item" href="#">Français</a>
+                                            <a class="dropdown-item" href="#">Italiano</a>
+                                            <a class="dropdown-item" href="#">日本語</a>
+                                            <a class="dropdown-item" href="#">한국어</a>
+                                            <a class="dropdown-item" href="#">Nederlands</a>
+                                            <a class="dropdown-item" href="#">Português</a>
+                                            <a class="dropdown-item" href="#">Русский</a>
+                                        </div>
+
+                                        <!-- End Language Modal -->
+                                    </div>
+
+                                </li>
+
+                                <li class="navbar-nav-item">
+                                    <a class="nav-link" href="index.html">Explore Lists</a>
+                                </li>
+
+                                <!-- My Courses -->
+                                <li class="hs-has-mega-menu navbar-nav-item d-none d-lg-inline-block" data-hs-mega-menu-item-options='{
+                      "desktop": {
+                        "position": "right",
+                        "maxWidth": "350px"
+                      }
+                    }'>
+                                    <a id="myCoursesMegaMenu" class="hs-mega-menu-invoker nav-link nav-link-toggle" href="javascript:;" aria-haspopup="true" aria-expanded="false">My Drafts</a>
+
+                                    <!-- My Courses - Submenu -->
+                                    <div class="hs-mega-menu dropdown-menu" aria-labelledby="myCoursesMegaMenu">
+                                        <div class="card">
+                                            <div class="card-header py-3">
+                                                <span class="text-dark font-weight-bold">My Drafts</span>
+                                            </div>
+
+                                            <div class="card-body">
+                                                <!-- Course -->
+                                                <a class="media" href="#">
+                                                    <div class="mt-1 mr-3">
+                                                        <div class="avatar">
+                                                            <img class="avatar-img rounded-sm" src="assets/svg/components/graphics-8.svg" alt="Image Description">
+                                                        </div>
+                                                    </div>
+                                                    <div class="media-body">
+                                                        <div class="mb-2">
+                                                            <span class="d-block text-dark text-hover-primary font-size-1 font-weight-bold mb-1">Cryptocurrency Scams</span>
+                                                            <small class="d-block text-body">New</small>
+                                                        </div>
+                                                        <div class="d-flex justify-content-between mb-1">
+                                                            <span class="d-block text-body small text-cap">Completed</span>
+                                                            <small class="text-dark font-weight-bold">25%</small>
+                                                        </div>
+                                                        <div class="progress" style="height: 6px;">
+                                                            <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                                <!-- End Course -->
+
+                                                <!-- Course -->
+                                                <a class="media mt-5" href="#">
+                                                    <div class="mt-1 mr-3">
+                                                        <div class="avatar">
+                                                            <img class="avatar-img rounded-sm" src="assets/svg/components/graphics-7.svg" alt="Image Description">
+                                                        </div>
+                                                    </div>
+                                                    <div class="media-body">
+                                                        <div class="mb-2">
+                                                            <span class="d-block text-dark text-hover-primary font-size-1 font-weight-bold mb-1">Fake News: Serbia and Western Balkans </span>
+                                                            <small class="d-block text-body">Disinformation and Fake News</small>
+                                                        </div>
+                                                        <div class="d-flex justify-content-between mb-1">
+                                                            <span class="d-block text-body small text-cap">Completed</span>
+                                                            <small class="text-dark font-weight-bold">100%</small>
+                                                        </div>
+                                                        <div class="progress" style="height: 6px;">
+                                                            <div class="progress-bar bg-success" role="progressbar" style="width: 100%;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                                <!-- End Course -->
+                                            </div>
+
+                                            <div class="card-footer text-center py-3">
+                                                <a class="font-size-1" href="#">
+                          See all
+                          <i class="fa fa-angle-right ml-1"></i>
+                        </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- End My Drafts - Submenu -->
+                                </li>
+                                <!-- End My Drafts -->
+
+
+                                <!-- End Pages -->
+
+                                <!-- Button -->
+                                <li class="navbar-nav-last-item">
+                                    <a class="btn btn-sm btn-primary transition-3d-hover" href="#" type="button" data-toggle="modal" data-target="#loginModal"> <i class="fas fa-plus mr-1"></i> Submit List
+                                    </a>
+                                </li>
+                                <!-- End Button -->
+                            </ul>
+
+
+                        </div>
+                        <!-- End Navigation -->
+                    </div>
+                </nav>
+                <!-- End Nav -->
+
+
+            </div>
+        </div>
+    </header>
+    <!-- ========== END HEADER ========== -->
+
+    <!-- ========== HEADER2 ========== 
+    <header id="header" class="header">
+        <div class="js-mega-menu header-section">
+
+            <div class="container">
+                <nav class="js-mega-menu navbar navbar-expand-lg z-index-999">
+
+                    <button type="button" class="navbar-toggler btn btn-xs btn-outline-secondary ml-auto" aria-label="Toggle navigation" aria-expanded="false" aria-controls="topBar" data-toggle="collapse" data-target="#topBar">
+                        Topbar
+                        <i class="fa fa-angle-down ml-2"></i>
+                    </button>
+
+
+                    <div id="topBar" class="collapse navbar-collapse">
+                        <ul class="navbar-nav w-100">
+                            <li class="navbar-nav-item mr-auto">
+                                <a class="nav-link font-size-1 py-2 pl-0" href="../landings/index.html">
+
+
+                                </a>
+                            </li>
+
+
+
+                            <li class="hs-has-mega-menu navbar-nav-item" data-hs-mega-menu-item-options='{
+                    "desktop": {
+                      "position": "right",
+                      "maxWidth": "260px"
+                    }
+                  }'>
+                                <a id="docsMegaMenu" class="hs-mega-menu-invoker nav-link nav-link-toggle font-size-1 py-2 pr-0" href="javascript:;" aria-haspopup="true" aria-expanded="false">Resources</a>
+
+
+                                <div class="hs-mega-menu dropdown-menu" aria-labelledby="docsMegaMenu" style="min-width: 330px;">
+
+                                    <div class="navbar-promo-item">
+                                        <a class="navbar-promo-link" href="documentation/index.html">
+                                            <div class="media align-items-center">
+                                                <img class="navbar-promo-icon" src="assets/svg/icons/icon-1.svg" alt="SVG">
+
+                                                <div class="media-body">
+                                                    <span class="navbar-promo-title">
+                            FAQ
+                        <span class="badge badge-primary badge-pill ml-1">v3.2</span>
+                                                    </span>
+                                                    <small class="navbar-promo-text">Help Center</small>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+
+
+
+                                    <div class="navbar-promo-item">
+                                        <a class="navbar-promo-link" href="snippets/index.html">
+                                            <div class="media align-items-center">
+                                                <img class="navbar-promo-icon" src="assets/svg/icons/icon-2.svg" alt="SVG">
+                                                <div class="media-body">
+                                                    <span class="navbar-promo-title">Blog</span>
+                                                    <small class="navbar-promo-text">Read about Refine</small>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+
+
+
+                                    <div class="navbar-promo-item">
+                                        <a class="navbar-promo-link" href="snippets/index.html">
+                                            <div class="media align-items-center">
+
+                                                <img class="navbar-promo-icon" src="../assets/svg/icons/icon-29.svg" alt="SVG">
+
+                                                <div class="media-body">
+                                                    <span class="navbar-promo-title">Integrations</span>
+                                                    <small class="navbar-promo-text">Our Partners</small>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+
+
+                                    <div class="navbar-promo-footer">
+
+                                        <div class="row no-gutters">
+                                            <div class="col-6">
+                                                <div class="navbar-promo-footer-item">
+                                                    <span class="navbar-promo-footer-text">Check what's new</span>
+                                                    <a class="navbar-promo-footer-text" href="documentation/changelog.html">
+                            Changelog
+                          </a>
+                                                </div>
+                                            </div>
+                                            <div class="col-6 navbar-promo-footer-ver-divider">
+                                                <div class="navbar-promo-footer-item">
+                                                    <span class="navbar-promo-footer-text">Have a question?</span>
+                                                    <a class="navbar-promo-footer-text" href="">
+                            Join our Discord
+                          </a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                            </li>
+
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+
+
+
+            <div id="logoAndNav" class="container mt-lg-n2">
+
+                <nav class="js-mega-menu navbar navbar-expand-lg">
+                    <div class="navbar-nav-wrap">
+
+                        <a class="navbar-brand navbar-nav-wrap-brand" href="index.html" aria-label="Front">
+                            <img src="assets/svg/logos/logo.svg" alt="Logo">
+                        </a>
+
+
+
+                        <div class="navbar-nav-wrap-content">
+                       
+
+
+
+                        </div>
+
+
+
+                        <button type="button" class="navbar-toggler navbar-nav-wrap-navbar-toggler btn btn-icon btn-sm rounded-circle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="navBar" data-toggle="collapse" data-target="#navBar">
+                            <span class="navbar-toggler-default">
+                <svg width="14" height="14" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg">
+                  <path fill="currentColor" d="M17.4,6.2H0.6C0.3,6.2,0,5.9,0,5.5V4.1c0-0.4,0.3-0.7,0.6-0.7h16.9c0.3,0,0.6,0.3,0.6,0.7v1.4C18,5.9,17.7,6.2,17.4,6.2z M17.4,14.1H0.6c-0.3,0-0.6-0.3-0.6-0.7V12c0-0.4,0.3-0.7,0.6-0.7h16.9c0.3,0,0.6,0.3,0.6,0.7v1.4C18,13.7,17.7,14.1,17.4,14.1z"/>
+                </svg>
+              </span>
+                            <span class="navbar-toggler-toggled">
+                <svg width="14" height="14" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg">
+                  <path fill="currentColor" d="M11.5,9.5l5-5c0.2-0.2,0.2-0.6-0.1-0.9l-1-1c-0.3-0.3-0.7-0.3-0.9-0.1l-5,5l-5-5C4.3,2.3,3.9,2.4,3.6,2.6l-1,1 C2.4,3.9,2.3,4.3,2.5,4.5l5,5l-5,5c-0.2,0.2-0.2,0.6,0.1,0.9l1,1c0.3,0.3,0.7,0.3,0.9,0.1l5-5l5,5c0.2,0.2,0.6,0.2,0.9-0.1l1-1 c0.3-0.3,0.3-0.7,0.1-0.9L11.5,9.5z"/>
+                </svg>
+              </span>
+                        </button>
+
+
+
+                        <div id="navBar" class="navbar-nav-wrap-navbar collapse navbar-collapse">
+                            <ul class="navbar-nav">
+
+
+                                <li class="navbar-nav-item">
+                                    <div class="hs-unfold">
+                                        <a class="nav-link js-hs-unfold-invoker" href="javascript:;" data-hs-unfold-options='{
+                    "target": "#footerLanguageExample2",
+                    "type": "css-animation",
+                    "animationIn": "slideInDown"
+                   }'> <i class="fas fa-atlas mr-1"></i> English</a>
+
+                                        <div id="footerLanguageExample2" class="hs-unfold-content dropdown-menu mb-2">
+                                            <a class="dropdown-item active" href="#">English</a>
+                                            <a class="dropdown-item" href="#">Deutsch</a>
+                                            <a class="dropdown-item" href="#">Español</a>
+                                            <a class="dropdown-item" href="#">Français</a>
+                                            <a class="dropdown-item" href="#">Italiano</a>
+                                            <a class="dropdown-item" href="#">日本語</a>
+                                            <a class="dropdown-item" href="#">한국어</a>
+                                            <a class="dropdown-item" href="#">Nederlands</a>
+                                            <a class="dropdown-item" href="#">Português</a>
+                                            <a class="dropdown-item" href="#">Русский</a>
+                                        </div>
+
+
+                                    </div>
+
+                                </li>
+
+                                <li class="navbar-nav-item">
+                                    <a class="nav-link" href="index.html">Explore Lists</a>
+                                </li>
+
+
+
+
+
+                                <li class="navbar-nav-last-item">
+                                    <a class="btn btn-sm btn-primary transition-3d-hover" href="#" type="button" data-toggle="modal" data-target="#loginModal">
+            Sign In
+                </a>
+                                </li>
+
+                            </ul>
+
+
+                        </div>
+
+                    </div>
+                </nav>
+
+
+
+            </div>
+        </div>
+    </header>
+    <!-- ========== END HEADER2 ========== -->
+
+    <!-- ========== MAIN CONTENT ========== -->
+    <main id="content" role="main">
+        <!-- Hero Section -->
+        <div class="container space-top-1 space-top-md-2 space-bottom-2">
+            <div class="row align-items-lg-center">
+                <div class="col-lg-5 mb-7 mb-lg-0">
+                    <div class="mb-4">
+                        <h1>Share, moderate, and subscribe to Lists.</h1>
+                        <p>Manage your social content - Refine your online experience.</p>
+                    </div>
+
+                    <!-- Search Form -->
+                    <form class="js-validate d-flex align-items-center">
+                        <label class="sr-only" for="signupSrEmail">Search for lists</label>
+                        <div class="d-inline-block w-75 mr-2">
+                            <input type="email" class="form-control" name="email" id="signupSrEmail" placeholder="Search for lists" aria-label="Search for lists">
+                        </div>
+                        <button type="submit" class="btn btn-primary">
+                            <span class="fas fa-search"></span>
+                        </button>
+                    </form>
+                    <!-- End Search Form -->
+                </div>
+
+                <div class="col-lg-7">
+                    <img class="img-fluid" src="assets/svg/illustrations/we-are-in-office-1.svg" alt="Image Descriptio">
+                </div>
+            </div>
+        </div>
+        <!-- End Hero Section -->
+
+        <!-- Apps Section -->
+        <div class="container space-bottom-2 space-bottom-lg-3">
+            <div class="row">
+                <div class="col-lg-3 mb-5 mb-lg-0">
+                    <div class="mr-lg-3">
+                        <!-- Navbar -->
+                        <div class="navbar-expand-lg navbar-expand-lg-collapse-block navbar-light">
+                            <!-- Responsive Toggle Button -->
+                            <button type="button" class="navbar-toggler btn btn-block border py-3" aria-label="Toggle navigation" aria-expanded="false" aria-controls="sidebarNav" data-toggle="collapse" data-target="#sidebarNav">
+                                <span class="d-flex justify-content-between align-items-center">
+                  <span class="h5 mb-0">View all categories</span>
+                                <span class="navbar-toggler-default">
+                    <svg width="14" height="14" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg">
+                      <path fill="currentColor" d="M17.4,6.2H0.6C0.3,6.2,0,5.9,0,5.5V4.1c0-0.4,0.3-0.7,0.6-0.7h16.9c0.3,0,0.6,0.3,0.6,0.7v1.4C18,5.9,17.7,6.2,17.4,6.2z M17.4,14.1H0.6c-0.3,0-0.6-0.3-0.6-0.7V12c0-0.4,0.3-0.7,0.6-0.7h16.9c0.3,0,0.6,0.3,0.6,0.7v1.4C18,13.7,17.7,14.1,17.4,14.1z"/>
+                    </svg>
+                  </span>
+                                <span class="navbar-toggler-toggled">
+                    <svg width="14" height="14" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg">
+                      <path fill="currentColor" d="M11.5,9.5l5-5c0.2-0.2,0.2-0.6-0.1-0.9l-1-1c-0.3-0.3-0.7-0.3-0.9-0.1l-5,5l-5-5C4.3,2.3,3.9,2.4,3.6,2.6l-1,1 C2.4,3.9,2.3,4.3,2.5,4.5l5,5l-5,5c-0.2,0.2-0.2,0.6,0.1,0.9l1,1c0.3,0.3,0.7,0.3,0.9,0.1l5-5l5,5c0.2,0.2,0.6,0.2,0.9-0.1l1-1 c0.3-0.3,0.3-0.7,0.1-0.9L11.5,9.5z"/>
+                    </svg>
+                  </span>
+                                </span>
+                            </button>
+                            <!-- End Responsive Toggle Button -->
+
+                            <div id="sidebarNav" class="collapse navbar-collapse">
+                                <div class="p-2 p-lg-0">
+                                    <div class="mt-3 mt-lg-0">
+                                        <h2 class="h4">Explore</h2>
+
+                                        <!-- Nav Link -->
+                                        <a class="dropdown-item d-flex justify-content-between align-items-center px-0" href="#">
+                      All
+                      <span class="badge border badge-pill">30+</span>
+                    </a>
+                                        <a class="dropdown-item d-flex justify-content-between align-items-center px-0" href="#">
+                      Top rated
+                    </a>
+                                        <a class="dropdown-item d-flex justify-content-between align-items-center px-0" href="#">
+                      Featured
+                    </a>
+
+                                        <a class="dropdown-item d-flex justify-content-between align-items-center px-0" href="#">
+                      New
+                      <span class="badge border badge-pill">18</span>
+                    </a>
+                                        <a class="dropdown-item d-flex justify-content-between align-items-center px-0" href="#">
+                      Channels
+                    </a>
+                                        <!-- End Nav Link -->
+                                    </div>
+
+                                    <div class="mt-5">
+                                        <h3 class="h4">Categories</h3>
+
+                                        <!-- Nav Link -->
+                                        <a class="dropdown-item d-flex justify-content-between align-items-center px-0" href="#">
+                  Fake News
+                    </a>
+                                        <a class="dropdown-item d-flex justify-content-between align-items-center px-0" href="#">
+                   Scams
+                    </a>
+                                        <a class="dropdown-item d-flex justify-content-between align-items-center px-0" href="#">
+                     Phishing
+                    </a>
+                                        <a class="dropdown-item d-flex justify-content-between align-items-center px-0" href="#">
+                     Fake URL
+                      <span class="badge border badge-pill">4</span>
+                    </a>
+
+                                        <!-- End Nav Link -->
+                                    </div>
+
+                                    <div class="mt-5">
+                                        <h3 class="h4">Filters</h3>
+
+                                        <!-- Nav Link -->
+                                        <a class="dropdown-item d-flex justify-content-between align-items-center px-0" href="#">
+                      Registered
+                      <span class="badge border badge-pill">9+</span>
+                    </a>
+                                        <a class="dropdown-item d-flex justify-content-between align-items-center px-0" href="#">
+                     Pending
+                    </a>
+                                        <!-- End Nav Link -->
+                                    </div>
+
+                                    <div class="mt-5">
+                                        <h3 class="h4">Verification</h3>
+
+                                        <!-- Nav Link -->
+                                        <a class="dropdown-item d-flex justify-content-between align-items-center px-0" href="#">
+                      Verified
+                    </a>
+                                        <a class="dropdown-item d-flex justify-content-between align-items-center px-0" href="#">
+                      Unverified
+                    </a>
+                                        <!-- End Nav Link -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Navbar -->
+                    </div>
+                </div>
+
+                <div class="col-lg-9 column-divider-lg">
+                    <div class="ml-lg-2">
+                        <div class="row mx-n2 mb-7">
+                            <div class="col-sm-6 col-md-4 px-2 mb-3 mb-md-0">
+                                <!-- Card -->
+                                <a class="card card-frame h-100" href="list.html">
+                                    <div class="card-header bg-success text-center rounded-top py-4">
+                                        <div class="avatar avatar-lg d-block bg-white rounded p-2 mx-auto">
+                                            <img class="avatar-img" src="assets/img/160x160/btc.png" alt="Image Description">
+                                        </div>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="d-flex align-items-center mb-1">
+                                            <span class="d-block text-dark font-weight-bold">Crypto Scams</span>
+                                            <img class="ml-2" src="assets/svg/illustrations/top-vendor.svg" alt="Image Description" title="Top Vendor" width="16">
+                                        </div>
+                                        <span class="d-block text-body font-size-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit</span>
+                                    </div>
+                                </a>
+                                <!-- End Card -->
+                            </div>
+
+                            <div class="col-sm-6 col-md-4 px-2 mb-3 mb-md-0">
+                                <!-- Card -->
+                                <a class="card card-frame h-100" href="list.html">
+                                    <div class="card-header bg-danger text-center rounded-top py-4">
+                                        <div class="avatar avatar-lg d-block bg-white rounded p-2 mx-auto">
+                                            <img class="avatar-img" src="assets/img/160x160/fakenews.png" alt="Image Description">
+                                        </div>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="d-flex align-items-center mb-1">
+                                            <span class="d-block text-dark font-weight-bold">Fake News</span>
+                                            <img class="ml-2" src="assets/svg/illustrations/top-vendor.svg" alt="Image Description" title="Top Vendor" width="16">
+                                        </div>
+                                        <span class="d-block text-body font-size-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit</span>
+                                    </div>
+                                </a>
+                                <!-- End Card -->
+                            </div>
+
+                            <div class="col-sm-6 col-md-4 px-2">
+                                <!-- Card -->
+                                <a class="card card-frame h-100" href="list.html">
+                                    <div class="card-header bg-warning text-center rounded-top py-4">
+                                        <div class="avatar avatar-lg d-block bg-white rounded p-2 mx-auto">
+                                            <img class="avatar-img" src="assets/img/160x160/link.png" alt="Image Description">
+                                        </div>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="d-flex align-items-center mb-1">
+                                            <span class="d-block text-dark font-weight-bold">Hidden URLS</span>
+                                            <img class="ml-2" src="assets/svg/illustrations/top-vendor.svg" alt="Image Description" title="Top Vendor" width="16">
+                                        </div>
+                                        <span class="d-block text-body font-size-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit</span>
+                                    </div>
+                                </a>
+                                <!-- End Card -->
+                            </div>
+                        </div>
+
+                        <!-- Title -->
+                        <div class="d-flex justify-content-between align-items-center mb-3">
+                            <h3 class="mb-0">Featured</h3>
+                            <a class="font-size-1 font-weight-bold" href="#">View All <i class='fas fa-angle-right fa-sm ml-1'></i></a>
+                        </div>
+                        <!-- End Title -->
+
+                        <div class="row mx-n2 mb-7">
+                            <!-- Card -->
+                            <div class="col-sm-6 col-md-4 px-2 mb-3">
+                                <div class="card card-frame h-100">
+                                    <a class="card-body" href="list.html">
+                                        <div class="media">
+                                            <div class="avatar avatar-xs mt-1 mr-3">
+                                                <img class="avatar-img" src="assets/img/160x160/img5.jpg" alt="Image Description">
+                                            </div>
+                                            <div class="media-body">
+                                                <div class="d-flex align-items-center">
+                                                    <span class="d-block text-dark font-weight-bold">Spotify</span>
+                                                    <img class="ml-2" src="assets/svg/illustrations/top-vendor.svg" alt="Image Description" title="Top Vendor" width="16">
+                                                </div>
+                                                <small class="d-block text-body">Lorem Ipsum</small>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- End Card -->
+
+                            <!-- Card -->
+                            <div class="col-sm-6 col-md-4 px-2 mb-3">
+                                <div class="card card-frame h-100">
+                                    <a class="card-body" href="list.html">
+                                        <div class="media">
+                                            <div class="avatar avatar-xs mt-1 mr-3">
+                                                <img class="avatar-img" src="assets/img/160x160/img3.jpg" alt="Image Description">
+                                            </div>
+                                            <div class="media-body">
+                                                <div class="d-flex align-items-center">
+                                                    <span class="d-block text-dark font-weight-bold">Slack</span>
+                                                </div>
+                                                <small class="d-block text-body">Lorem Ipsum</small>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- End Card -->
+
+                            <!-- Card -->
+                            <div class="col-sm-6 col-md-4 px-2 mb-3">
+                                <div class="card card-frame h-100">
+                                    <a class="card-body" href="list.html">
+                                        <div class="media">
+                                            <div class="avatar avatar-xs mt-1 mr-3">
+                                                <img class="avatar-img" src="assets/img/160x160/img23.png" alt="Image Description">
+                                            </div>
+                                            <div class="media-body">
+                                                <div class="d-flex align-items-center">
+                                                    <span class="d-block text-dark font-weight-bold">Google Drive</span>
+                                                    <img class="ml-2" src="assets/svg/illustrations/top-vendor.svg" alt="Image Description" title="Top Vendor" width="16">
+                                                </div>
+                                                <small class="d-block text-body">Lorem Ipsum</small>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- End Card -->
+
+                            <!-- Card -->
+                            <div class="col-sm-6 col-md-4 px-2 mb-3 mb-md-0">
+                                <div class="card card-frame h-100">
+                                    <a class="card-body" href="list.html">
+                                        <div class="media">
+                                            <div class="avatar avatar-xs mt-1 mr-3">
+                                                <img class="avatar-img" src="assets/img/160x160/img12.png" alt="Image Description">
+                                            </div>
+                                            <div class="media-body">
+                                                <div class="d-flex align-items-center">
+                                                    <span class="d-block text-dark font-weight-bold">Atlassian</span>
+                                                </div>
+                                                <small class="d-block text-body">Lorem Ipsum</small>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- End Card -->
+
+                            <!-- Card -->
+                            <div class="col-sm-6 col-md-4 px-2 mb-3 mb-sm-0">
+                                <div class="card card-frame h-100">
+                                    <a class="card-body" href="list.html">
+                                        <div class="media">
+                                            <div class="avatar avatar-xs mt-1 mr-3">
+                                                <img class="avatar-img" src="assets/img/160x160/img18.png" alt="Image Description">
+                                            </div>
+                                            <div class="media-body">
+                                                <div class="d-flex align-items-center">
+                                                    <span class="d-block text-dark font-weight-bold">Behance</span>
+                                                    <img class="ml-2" src="assets/svg/illustrations/top-vendor.svg" alt="Image Description" title="Top Vendor" width="16">
+                                                </div>
+                                                <small class="d-block text-body">Lorem Ipsum</small>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- End Card -->
+
+                            <!-- Card -->
+                            <div class="col-sm-6 col-md-4 px-2">
+                                <div class="card card-frame h-100">
+                                    <a class="card-body" href="list.html">
+                                        <div class="media">
+                                            <div class="avatar avatar-xs mt-1 mr-3">
+                                                <img class="avatar-img" src="assets/img/160x160/img11.jpg" alt="Image Description">
+                                            </div>
+                                            <div class="media-body">
+                                                <div class="d-flex align-items-center">
+                                                    <span class="d-block text-dark font-weight-bold">InVision</span>
+                                                </div>
+                                                <small class="d-block text-body">Lorem Ipsum</small>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- End Card -->
+                        </div>
+
+                        <!-- Title -->
+                        <div class="d-flex justify-content-between align-items-center mb-3">
+                            <h3 class="mb-0">Scams and Phishing</h3>
+                            <a class="font-size-1 font-weight-bold" href="#">View All <i class='fas fa-angle-right fa-sm ml-1'></i></a>
+                        </div>
+                        <!-- End Title -->
+
+                        <div class="row mx-n2 mb-7">
+                            <!-- Card -->
+                            <div class="col-sm-6 col-md-4 px-2 mb-3">
+                                <div class="card card-frame h-100">
+                                    <a class="card-body" href="list.html">
+                                        <div class="media">
+                                            <div class="avatar avatar-xs mt-1 mr-3">
+                                                <img class="avatar-img" src="assets/img/160x160/img5.jpg" alt="Image Description">
+                                            </div>
+                                            <div class="media-body">
+                                                <div class="d-flex align-items-center">
+                                                    <span class="d-block text-dark font-weight-bold">Spotify</span>
+                                                    <img class="ml-2" src="assets/svg/illustrations/top-vendor.svg" alt="Image Description" title="Top Vendor" width="16">
+                                                </div>
+                                                <small class="d-block text-body">Lorem Ipsum</small>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- End Card -->
+
+                            <!-- Card -->
+                            <div class="col-sm-6 col-md-4 px-2 mb-3">
+                                <div class="card card-frame h-100">
+                                    <a class="card-body" href="list.html">
+                                        <div class="media">
+                                            <div class="avatar avatar-xs mt-1 mr-3">
+                                                <img class="avatar-img" src="assets/img/160x160/img3.jpg" alt="Image Description">
+                                            </div>
+                                            <div class="media-body">
+                                                <div class="d-flex align-items-center">
+                                                    <span class="d-block text-dark font-weight-bold">Slack</span>
+                                                </div>
+                                                <small class="d-block text-body">Lorem Ipsum</small>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- End Card -->
+
+                            <!-- Card -->
+                            <div class="col-sm-6 col-md-4 px-2 mb-3">
+                                <div class="card card-frame h-100">
+                                    <a class="card-body" href="list.html">
+                                        <div class="media">
+                                            <div class="avatar avatar-xs mt-1 mr-3">
+                                                <img class="avatar-img" src="assets/img/160x160/img23.png" alt="Image Description">
+                                            </div>
+                                            <div class="media-body">
+                                                <div class="d-flex align-items-center">
+                                                    <span class="d-block text-dark font-weight-bold">Google Drive</span>
+                                                    <img class="ml-2" src="assets/svg/illustrations/top-vendor.svg" alt="Image Description" title="Top Vendor" width="16">
+                                                </div>
+                                                <small class="d-block text-body">Lorem Ipsum</small>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- End Card -->
+
+                            <!-- Card -->
+                            <div class="col-sm-6 col-md-4 px-2 mb-3 mb-md-0">
+                                <div class="card card-frame h-100">
+                                    <a class="card-body" href="list.html">
+                                        <div class="media">
+                                            <div class="avatar avatar-xs mt-1 mr-3">
+                                                <img class="avatar-img" src="assets/img/160x160/img12.png" alt="Image Description">
+                                            </div>
+                                            <div class="media-body">
+                                                <div class="d-flex align-items-center">
+                                                    <span class="d-block text-dark font-weight-bold">Atlassian</span>
+                                                </div>
+                                                <small class="d-block text-body">Lorem Ipsum</small>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- End Card -->
+
+                            <!-- Card -->
+                            <div class="col-sm-6 col-md-4 px-2 mb-3 mb-sm-0">
+                                <div class="card card-frame h-100">
+                                    <a class="card-body" href="list.html">
+                                        <div class="media">
+                                            <div class="avatar avatar-xs mt-1 mr-3">
+                                                <img class="avatar-img" src="assets/img/160x160/img18.png" alt="Image Description">
+                                            </div>
+                                            <div class="media-body">
+                                                <div class="d-flex align-items-center">
+                                                    <span class="d-block text-dark font-weight-bold">Behance</span>
+                                                    <img class="ml-2" src="assets/svg/illustrations/top-vendor.svg" alt="Image Description" title="Top Vendor" width="16">
+                                                </div>
+                                                <small class="d-block text-body">Lorem Ipsum</small>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- End Card -->
+
+                            <!-- Card -->
+                            <div class="col-sm-6 col-md-4 px-2">
+                                <div class="card card-frame h-100">
+                                    <a class="card-body" href="list.html">
+                                        <div class="media">
+                                            <div class="avatar avatar-xs mt-1 mr-3">
+                                                <img class="avatar-img" src="assets/img/160x160/img11.jpg" alt="Image Description">
+                                            </div>
+                                            <div class="media-body">
+                                                <div class="d-flex align-items-center">
+                                                    <span class="d-block text-dark font-weight-bold">InVision</span>
+                                                </div>
+                                                <small class="d-block text-body">Lorem Ipsum</small>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- End Card -->
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        <!-- End Apps Section -->
+    </main>
+    <!-- ========== END MAIN CONTENT ========== -->
+    <!-- ========== SECONDARY CONTENT ========== -->
+
+    <!-- Login Modal -->
+    <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-sm" role="document">
+            <div class="modal-content">
+                <button type="button" class="close position-absolute top-0 right-0 z-index-2 mt-3 mr-3" data-dismiss="modal" aria-label="Close">
+                    <svg aria-hidden="true" class="mb-0" width="14" height="14" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg">
+                        <path fill="currentColor" d="M11.5,9.5l5-5c0.2-0.2,0.2-0.6-0.1-0.9l-1-1c-0.3-0.3-0.7-0.3-0.9-0.1l-5,5l-5-5C4.3,2.3,3.9,2.4,3.6,2.6l-1,1 C2.4,3.9,2.3,4.3,2.5,4.5l5,5l-5,5c-0.2,0.2-0.2,0.6,0.1,0.9l1,1c0.3,0.3,0.7,0.3,0.9,0.1l5-5l5,5c0.2,0.2,0.6,0.2,0.9-0.1l1-1 c0.3-0.3,0.3-0.7,0.1-0.9L11.5,9.5z" />
+                    </svg>
+                </button>
+
+                <!-- Body -->
+                <div class="modal-body">
+                    <form class="js-validate">
+                        <!-- Login -->
+                        <div id="login">
+                            <!-- Title -->
+                            <div class="text-center mb-7">
+                                <h3 class="mb-0">Connect to Ethereum</h3>
+                                <p>Sign in with a provider to manage lists.</p>
+                            </div>
+                            <!-- End Title -->
+
+                            <!-- MetaMask -->
+                            <a class="card card-frame h-100" href="#">
+                                <div class="card-body">
+                                    <div class="media">
+                                        <figure class="w-100 max-w-6rem mr-3">
+                                            <img class="img-fluid" src="https://app.uniswap.org/static/media/metamask.023762b6.png" alt="SVG">
+                                        </figure>
+                                        <div class="media-body mt-1 ">
+                                            <h3>MetaMask</h3>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            <!-- End MetaMask -->
+                            <!-- WalletConnect -->
+                            <a class="card card-frame h-100 mt-2" href="#">
+                                <div class="card-body">
+                                    <div class="media">
+                                        <figure class="w-100 max-w-6rem mr-3">
+                                            <img class="img-fluid" src="assets/img/icons/walletconnect.svg" alt="SVG">
+                                        </figure>
+                                        <div class="media-body">
+                                            <h3>WalletConnect</h3>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            <!-- End WalletConnect -->
+                            <!-- Fortmatic -->
+                            <a class="card card-frame h-100 mt-2" href="#">
+                                <div class="card-body">
+                                    <div class="media">
+                                        <figure class="w-100 max-w-6rem mr-3">
+                                            <img class="img-fluid" src="assets/img/icons/fortmatic.png" alt="SVG">
+                                        </figure>
+                                        <div class="media-body">
+                                            <h3>Fortmatic</h3>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            <!-- End Fortmatic -->
+                            <!-- Trust -->
+                            <a class="card card-frame h-100 mt-2" href="#">
+                                <div class="card-body">
+                                    <div class="media">
+                                        <figure class="w-100 max-w-6rem mr-3">
+                                            <img class="img-fluid" src="assets/img/icons/trust.png" alt="SVG">
+                                        </figure>
+                                        <div class="media-body">
+                                            <h3>Trust Wallet</h3>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            <!-- End Trust -->
+
+                            <!--       <div class="text-center mb-3">
+                                <span class="divider divider-xs divider-text">OR</span>
+                            </div>
+
+                            <a class="btn btn-sm btn-ghost-secondary btn-block mb-2" href="#">
+                                <span class="d-flex justify-content-center align-items-center">
+                  <img class="mr-2" src="assets/img/160x160/img17.png" alt="Image Description" width="14" height="14">
+                  Sign In with Google
+                </span>
+                            </a> -->
+
+                            <div class="text-center mt-4">
+                                <span class="small text-muted">New to Ethereum?</span>
+                                <a href="https://ethereum.org/en/dapps/#3-what-is-a-wallet-and-which-one-should-i-use" target="_blank" class="js-animation-link small font-weight-bold" href="javascript:;" data-hs-show-animation-options='{
+                     "targetSelector": "#signup",
+                     "groupName": "idForm"
+                   }'>Learn More
+                </a>
+                            </div>
+                        </div>
+
+                        <!-- Signup -->
+                        <div id="signup" style="display: none; opacity: 0;">
+                            <!-- Title -->
+                            <div class="text-center mb-7">
+                                <h3 class="mb-0">Create your account</h3>
+                                <p>Fill out the form to get started.</p>
+                            </div>
+                            <!-- End Title -->
+
+                            <!-- Input Group -->
+                            <div class="js-form-message mb-4">
+                                <label class="input-label">Email</label>
+                                <div class="input-group input-group-sm mb-2">
+                                    <input type="email" class="form-control" name="email" id="signupEmail" placeholder="Email" aria-label="Email" required data-msg="Please enter a valid email address.">
+                                </div>
+                            </div>
+                            <!-- End Input Group -->
+
+                            <!-- Input Group -->
+                            <div class="js-form-message mb-4">
+                                <label class="input-label">Password</label>
+                                <div class="input-group input-group-sm mb-2">
+                                    <input type="password" class="form-control" name="password" id="signupPassword" placeholder="Password" aria-label="Password" required data-msg="Your password is invalid. Please try again.">
+                                </div>
+                            </div>
+                            <!-- End Input Group -->
+
+                            <!-- Input Group -->
+                            <div class="js-form-message mb-4">
+                                <label class="input-label">Confirm Password</label>
+                                <div class="input-group input-group-sm mb-2">
+                                    <input type="password" class="form-control" name="confirmPassword" id="signupConfirmPassword" placeholder="Confirm Password" aria-label="Confirm Password" required data-msg="Password does not match the confirm password.">
+                                </div>
+                            </div>
+                            <!-- End Input Group -->
+
+                            <div class="mb-3">
+                                <button type="submit" class="btn btn-sm btn-primary btn-block">Sign Up</button>
+                            </div>
+
+                            <div class="text-center mb-3">
+                                <span class="divider divider-xs divider-text">OR</span>
+                            </div>
+
+                            <a class="btn btn-sm btn-ghost-secondary btn-block mb-2" href="#">
+                                <span class="d-flex justify-content-center align-items-center">
+                  <img class="mr-2" src="assets/img/160x160/img17.png" alt="Image Description" width="14" height="14">
+                  Sign Up with Google
+                </span>
+                            </a>
+
+                            <div class="text-center">
+                                <span class="small text-muted">Already have an account?</span>
+                                <a class="js-animation-link small font-weight-bold" href="javascript:;" data-hs-show-animation-options='{
+                     "targetSelector": "#login",
+                     "groupName": "idForm"
+                   }'>Sign In
+                </a>
+                            </div>
+                        </div>
+                        <!-- End Signup -->
+
+                        <!-- Forgot Password -->
+                        <div id="forgotPassword" style="display: none; opacity: 0;">
+                            <!-- Title -->
+                            <div class="text-center mb-7">
+                                <h3 class="mb-0">Recover password</h3>
+                                <p>Instructions will be sent to you.</p>
+                            </div>
+                            <!-- End Title -->
+
+                            <!-- Input Group -->
+                            <div class="js-form-message">
+                                <label class="sr-only" for="recoverEmail">Your email</label>
+                                <div class="input-group input-group-sm mb-2">
+                                    <input type="email" class="form-control" name="email" id="recoverEmail" placeholder="Your email" aria-label="Your email" required data-msg="Please enter a valid email address.">
+                                </div>
+                            </div>
+                            <!-- End Input Group -->
+
+                            <div class="mb-3">
+                                <button type="submit" class="btn btn-sm btn-primary btn-block">Recover Password</button>
+                            </div>
+
+                            <div class="text-center mb-4">
+                                <span class="small text-muted">Remember your password?</span>
+                                <a class="js-animation-link small font-weight-bold" href="javascript:;" data-hs-show-animation-options='{
+                     "targetSelector": "#login",
+                     "groupName": "idForm"
+                   }'>Login
+                </a>
+                            </div>
+                        </div>
+                        <!-- End Forgot Password -->
+                    </form>
+                </div>
+                <!-- End Body -->
+            </div>
+        </div>
+    </div>
+    <!-- End Login Modal -->
+
+
+
+    <!-- ========== END SECONDARY CONTENT ========== -->
+    <!-- ========== FOOTER ========== -->
+    <footer class="bg-light">
+        <!-- Info -->
+        <div class="container space-2">
+            <div class="row align-items-md-center text-center text-md-left">
+                <div class="col-md-6 mb-3 mb-md-0">
+                    <h2>Share your Block List on Refine.</h2>
+                    <p class="mb-0">Take control of your own social media - collectively.</p>
+                </div>
+                <div class="col-md-6 text-md-right">
+                    <a class="btn btn-primary transition-3d-hover" type="button" data-toggle="modal" data-target="#loginModal" href="#">Submit your List</a>
+                </div>
+            </div>
+        </div>
+        <!-- End Info -->
+
+        <!-- Lists -->
+        <div class="container">
+            <div class="border-top space-2">
+                <div class="row justify-content-md-between">
+                    <div class="col-lg-4 mb-4 mb-lg-0">
+                        <a class="d-inline-flex mb-4" href="index.html" aria-label="Front">
+                            <img class="brand" src="assets/svg/logos/logo.svg" alt="Logo">
+                        </a>
+                        <p>Refine your online experiences.</p>
+                        <a class="btn btn-outline-pnk py-1" href="https://kleros.io/" target="_blank">Secured by <span   class="font-size-1 ml-1 mr-1 mb-5"><i class="icon-kleros_mark"></i></span>Kleros </a>
+
+                    </div>
+
+                    <div class="col-6 col-sm-4 col-lg-2 mb-4 mb-lg-0">
+                        <h5>Refine</h5>
+
+                        <!-- Nav Link -->
+                        <ul class="nav nav-sm nav-x-0 flex-column">
+                            <li class="nav-item"><a class="nav-link" href="">About</a></li>
+                            <li class="nav-item"><a class="nav-link" href="">Blog</a></li>
+                            <li class="nav-item"><a class="nav-link" href="">Integrations</a></li>
+                        </ul>
+                        <!-- End Nav Link -->
+                    </div>
+
+                    <div class="col-6 col-sm-4 col-lg-2 mb-4 mb-lg-0">
+                        <h5>Resources</h5>
+
+                        <!-- Nav Link -->
+                        <ul class="nav nav-sm nav-x-0 flex-column">
+                            <li class="nav-item"><a class="nav-link" href="#">FAQ</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Terms</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Privacy</a></li>
+                        </ul>
+                        <!-- End Nav Link -->
+                    </div>
+
+                    <div class="col-6 col-sm-4 col-lg-2">
+                        <h5>Resources</h5>
+
+                        <!-- Nav Link -->
+                        <ul class="nav nav-sm nav-x-0 flex-column">
+                            <li class="nav-item">
+
+
+                                <a class="btn btn-icon btn-m btn-ghost-secondary rounded-circle" href="#">
+                                    <i class="fab fa-discord"></i>
+                                </a>
+
+
+                                <a class="btn btn-icon btn-m btn-ghost-secondary rounded-circle" href="#">
+                                    <i class="fab fa-medium"></i>
+                                </a>
+
+
+                                <a class="btn btn-icon btn-m btn-ghost-secondary rounded-circle" href="#">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+
+
+                            </li>
+
+                        </ul>
+                        <!-- End Nav Link -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Lists -->
+    </footer>
+    <!-- ========== END FOOTER ========== -->
+
+    <!-- Go to Top -->
+    <a class="js-go-to go-to position-fixed" href="javascript:;" style="visibility: hidden;" data-hs-go-to-options='{
+       "offsetTop": 700,
+       "position": {
+         "init": {
+           "right": 15
+         },
+         "show": {
+           "bottom": 15
+         },
+         "hide": {
+           "bottom": -15
+         }
+       }
+     }'>
+        <i class="fas fa-angle-up"></i>
+    </a>
+    <!-- End Go to Top -->
+
+    <!-- JS Global Compulsory -->
+    <script src="assets/vendor/jquery/dist/jquery.min.js"></script>
+    <script src="assets/vendor/jquery-migrate/dist/jquery-migrate.min.js"></script>
+    <script src="assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- JS Implementing Plugins -->
+    <script src="assets/vendor/hs-header/dist/hs-header.min.js"></script>
+    <script src="assets/vendor/hs-go-to/dist/hs-go-to.min.js"></script>
+    <script src="assets/vendor/hs-mega-menu/dist/hs-mega-menu.min.js"></script>
+    <script src="assets/vendor/hs-unfold/dist/hs-unfold.min.js"></script>
+
+    <!-- JS Front -->
+    <script src="assets/js/hs.core.js"></script>
+
+    <!-- JS Plugins Init. -->
+    <script>
+        $(document).on('ready', function () {
+            // initialization of header
+            var header = new HSHeader($('#header')).init();
+
+            // initialization of mega menu
+            var megaMenu = new HSMegaMenu($('.js-mega-menu')).init();
+
+            // initialization of unfold
+            var unfold = new HSUnfold('.js-hs-unfold-invoker').init();
+
+            // initialization of go to
+            $('.js-go-to').each(function () {
+                var goTo = new HSGoTo($(this)).init();
+            });
+        });
+    </script>
+
+    <!-- IE Support -->
+    <script>
+        if (/MSIE \d|Trident.*rv:/.test(navigator.userAgent)) document.write('<script src="assets/vendor/polifills.js"><\/script>');
+    </script>
+</body>
+
+</html>

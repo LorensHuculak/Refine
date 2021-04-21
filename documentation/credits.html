@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Title -->
+  <title>Credits - Front Documentation | Front - Responsive Website Template</title>
+
+  <!-- Required Meta Tags Always Come First -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="../favicon.ico">
+
+  <!-- Font -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap" rel="stylesheet">
+
+  <!-- CSS Implementing Plugins -->
+  <link rel="stylesheet" href="../assets/vendor/font-awesome/css/all.min.css">
+  <link rel="stylesheet" href="../documentation/assets/vendor/jquery-ui/themes/base/jquery-ui.min.css">
+  <link rel="stylesheet" href="../documentation/assets/vendor/prism/prism.css">
+
+  <!-- CSS Front Template -->
+  <link rel="stylesheet" href="../assets/css/theme.css">
+
+  <!-- CSS Front Doc -->
+  <link rel="stylesheet" href="../documentation/assets/css/docs.css">
+</head>
+<body>
+  <!-- ========== HEADER ========== -->
+  <header id="header" class="header header-sticky-top header-docs header-box-shadow">
+    <div class="header-section">
+      <div id="logoAndNav" class="container-fluid px-xl-7">
+        <nav class="navbar d-block d-md-flex justify-content-start">
+          <div class="d-flex align-items-center">
+            <a class="navbar-brand" href="index.html" aria-label="Front">
+              <img src="../assets/svg/logos/logo.svg" alt="Logo">
+            </a>
+            <a href="changelog.html">
+              <span class="badge badge-soft-primary ml-2">v3.2</span>
+            </a>
+          </div>
+
+          <!-- Nav Links -->
+          <ul class="nav nav-classic nav-sm border-0 nav-docs-space">
+            <li class="nav-item">
+              <a class="nav-link d-flex align-items-center px-2 px-sm-3 active" href="index.html">
+                <svg class="d-none d-sm-block mr-2 mb-0" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" d="M1 2.5A1.5 1.5 0 012.5 1h3A1.5 1.5 0 017 2.5v3A1.5 1.5 0 015.5 7h-3A1.5 1.5 0 011 5.5v-3zM2.5 2a.5.5 0 00-.5.5v3a.5.5 0 00.5.5h3a.5.5 0 00.5-.5v-3a.5.5 0 00-.5-.5h-3zm6.5.5A1.5 1.5 0 0110.5 1h3A1.5 1.5 0 0115 2.5v3A1.5 1.5 0 0113.5 7h-3A1.5 1.5 0 019 5.5v-3zm1.5-.5a.5.5 0 00-.5.5v3a.5.5 0 00.5.5h3a.5.5 0 00.5-.5v-3a.5.5 0 00-.5-.5h-3zM1 10.5A1.5 1.5 0 012.5 9h3A1.5 1.5 0 017 10.5v3A1.5 1.5 0 015.5 15h-3A1.5 1.5 0 011 13.5v-3zm1.5-.5a.5.5 0 00-.5.5v3a.5.5 0 00.5.5h3a.5.5 0 00.5-.5v-3a.5.5 0 00-.5-.5h-3zm6.5.5A1.5 1.5 0 0110.5 9h3a1.5 1.5 0 011.5 1.5v3a1.5 1.5 0 01-1.5 1.5h-3A1.5 1.5 0 019 13.5v-3zm1.5-.5a.5.5 0 00-.5.5v3a.5.5 0 00.5.5h3a.5.5 0 00.5-.5v-3a.5.5 0 00-.5-.5h-3z" clip-rule="evenodd"/>
+                </svg>
+                <span class="d-none d-sm-block">Documentation</span>
+                <span class="d-sm-none">Docs</span>
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link d-flex align-items-center px-2 px-sm-3" href="../snippets/index.html">
+                <svg class="d-none d-sm-block mr-2 mb-0" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" d="M14.5 13.5h-13A.5.5 0 011 13V6a.5.5 0 01.5-.5h13a.5.5 0 01.5.5v7a.5.5 0 01-.5.5zm-13 1A1.5 1.5 0 010 13V6a1.5 1.5 0 011.5-1.5h13A1.5 1.5 0 0116 6v7a1.5 1.5 0 01-1.5 1.5h-13zM2 3a.5.5 0 00.5.5h11a.5.5 0 000-1h-11A.5.5 0 002 3zm2-2a.5.5 0 00.5.5h7a.5.5 0 000-1h-7A.5.5 0 004 1z" clip-rule="evenodd"/>
+                </svg>
+                Snippets
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link d-flex align-items-center px-2 px-sm-3" target="_blank" href="../html/landings/index.html">
+                Main Demo
+                <svg class="d-block ml-2 mb-0" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" d="M1.5 13A1.5 1.5 0 003 14.5h8a1.5 1.5 0 001.5-1.5V9a.5.5 0 00-1 0v4a.5.5 0 01-.5.5H3a.5.5 0 01-.5-.5V5a.5.5 0 01.5-.5h4a.5.5 0 000-1H3A1.5 1.5 0 001.5 5v8zm7-11a.5.5 0 01.5-.5h5a.5.5 0 01.5.5v5a.5.5 0 01-1 0V2.5H9a.5.5 0 01-.5-.5z" clip-rule="evenodd"/>
+                  <path fill-rule="evenodd" d="M14.354 1.646a.5.5 0 010 .708l-8 8a.5.5 0 01-.708-.708l8-8a.5.5 0 01.708 0z" clip-rule="evenodd"/>
+                </svg>
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link d-none d-xl-flex align-items-center px-2 px-sm-3" target="_blank" href="https://htmlstream.com/contact-us">
+                Get Support
+                <svg class="d-none d-sm-block ml-2 mb-0" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" d="M1.5 13A1.5 1.5 0 003 14.5h8a1.5 1.5 0 001.5-1.5V9a.5.5 0 00-1 0v4a.5.5 0 01-.5.5H3a.5.5 0 01-.5-.5V5a.5.5 0 01.5-.5h4a.5.5 0 000-1H3A1.5 1.5 0 001.5 5v8zm7-11a.5.5 0 01.5-.5h5a.5.5 0 01.5.5v5a.5.5 0 01-1 0V2.5H9a.5.5 0 01-.5-.5z" clip-rule="evenodd"/>
+                  <path fill-rule="evenodd" d="M14.354 1.646a.5.5 0 010 .708l-8 8a.5.5 0 01-.708-.708l8-8a.5.5 0 01.708 0z" clip-rule="evenodd"/>
+                </svg>
+              </a>
+            </li>
+          </ul>
+          <!-- End Nav Links -->
+
+          <!-- Header Search -->
+          <form class="form-inline input-group input-group-sm input-group-merge input-group-flush d-none d-lg-flex ml-auto" style="max-width: 300px;">
+            <input class="js-hs-docs-search form-control" type="text" placeholder="Search docs..." aria-label="Search docs..." aria-describedby="docsSearch" data-url="assets/ajax/autocomplete-data-for-documentation-search.json">
+            <div class="input-group-append">
+              <span class="input-group-text" id="docsSearch">
+                <i class="fas fa-search"></i>
+              </span>
+            </div>
+          </form>
+          <!-- End Header Search -->
+        </nav>
+      </div>
+    </div>
+  </header>
+  <!-- ========== END HEADER ========== -->
+
+  <!-- ========== MAIN CONTENT ========== -->
+  <main class="container-fluid space-top-3 space-top-md-2 pl-lg-7 pr-xl-7">
+    <div class="row justify-content-lg-end">
+      <!-- Sidebar -->
+      <nav class="col-lg-3 col-xl-2 hs-sidebar navbar-expand-lg px-0 ml-xl-7">
+        <div class="d-flex d-lg-none justify-content-between mb-3">
+          <!-- Sidebar Search -->
+          <form class="col form-inline input-group-sm">
+            <input class="js-hs-docs-search form-control form-control-sm w-100" type="text" placeholder="Search..." data-url="assets/ajax/autocomplete-data-for-documentation-search.json">
+          </form>
+          <!-- End Sidebar Search -->
+
+          <!-- Responsive Toggle Button -->
+          <button class="btn btn-link pl-0" type="button" data-toggle="collapse" data-target="#sidebar-nav" aria-controls="sidebar-nav" aria-expanded="false" aria-label="Toggle navigation">
+            <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 30 30" width="30" height="30" focusable="false">
+              <path stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M4 7h22M4 15h22M4 23h22"/>
+            </svg>
+          </button>
+          <!-- End Responsive Toggle Button -->
+        </div>
+
+        <!-- Sidebar Nav -->
+        <div class="collapse navbar-collapse" id="sidebar-nav">
+          <div id="sidebarNav" class="hs-sidebar-scrollbar hs-sidebar-sticky pl-2 pl-md-0 pr-2">
+            <span class="hs-sidebar-heading">Getting started</span>
+            <ul class="hs-sidebar-nav">
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="index.html">Introduction</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="gulp.html">Gulp</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="customization.html">Customization</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link active" href="credits.html">Credits</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="changelog.html">Changelog</a></li>
+            </ul>
+
+            <span class="hs-sidebar-heading">Content</span>
+            <ul class="hs-sidebar-nav">
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="typography.html">Typography</a></li>
+              <li class="hs-sidebar-item">
+                <span class="hs-sidebar-link">Icons:</span>
+                <ul class="hs-sidebar-nav ml-2">
+                  <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="exclusive-svg.html">Exclusive SVG set</a></li>
+                  <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="font-awesome.html">Font Awesome</a></li>
+                </ul>
+              </li>
+            </ul>
+
+            <span class="hs-sidebar-heading">Components</span>
+            <ul class="hs-sidebar-nav">
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="alerts.html">Alerts</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="avatars.html">Avatars</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="badge.html">Badge</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="breadcrumb.html">Breadcrumb</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="buttons.html">Buttons</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="cards.html">Cards</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="collapse.html">Collapse</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="devices.html">Devices</a></li>
+              <li class="hs-sidebar-item">
+                <span class="hs-sidebar-link">Dividers:</span>
+                <ul class="hs-sidebar-nav ml-2 mb-0">
+                  <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="css-divider.html">CSS divider</a></li>
+                  <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="svg-divider.html">SVG divider</a></li>
+                </ul>
+              </li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="forms.html">Forms</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="legend-indicator.html">Legend indicator</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="list-group.html">List group</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="modal.html">Modal</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="navbar.html">Navbar</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="navs.html">Navs</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="pagination.html">Pagination</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="popovers.html">Popovers</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="progress.html">Progress</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="spinners.html">Spinners</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="step.html">Step</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="sticky-footer.html">Sticky footer</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="tabs.html">Tabs</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="tables.html">Tables</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="text-highlight.html">Text Highlight</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="tooltips.html">Tooltips</a></li>
+            </ul>
+
+            <span class="hs-sidebar-heading">Utilities</span>
+            <ul class="hs-sidebar-nav">
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="borders.html">Borders</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="colors.html">Colors</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="content-alignments.html">Content alignments (with position)</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="links.html">Links</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="positions.html">Positions</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="shadows.html">Shadows</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="sizing.html">Sizing</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="spacings.html">Spacings</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="text.html">Text</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="transforms.html">Transforms</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="transitions.html">Transitions</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="others.html">Others</a></li>
+            </ul>
+
+            <span class="hs-sidebar-heading">HS Libraries</span>
+            <ul class="hs-sidebar-nav">
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="add-field.html">Add field</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="unfold.html">Unfold (Dropdown and others)</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="headers.html">Headers</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="header-mega-menu.html">Header mega menu</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="header-fullscreen.html">Header fullscreen</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="header-searches.html">Header searches</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="counters.html">Counters</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="file-attach.html">File attach</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="go-to.html">Go-to</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="page-preloader.html">Page preloader</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="progress-animation.html">Progress animation</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="quantity-counter.html">Quantity counter</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="scroll-nav.html">Scroll nav</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="show-animation.html">Show animation</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="step-form.html">Step form (Wizards)</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="sticky-block.html">Sticky block</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="toggle-state.html">Toggle state</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="toggle-switch.html">Toggle switch</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="switch.html">Switch</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="video-bg.html">Video background</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="video-player.html">Video player</a></li>
+            </ul>
+
+            <span class="hs-sidebar-heading">Other Libraries</span>
+            <ul class="hs-sidebar-nav">
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="aos.html">Aos (Animate on scroll)</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="chartjs.html">Chartjs</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="circles.html">Circles (Pie chart)</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="clipboard.html">Clipboard</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="countdown.html">Countdown</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="cubeportfolio.html">Cubeportfolio</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="dropzone.html">Dropzone (Drag n' drop file uploader)</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="fancybox.html">Fancybox</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="range-slider.html">Range slider</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="quill.html">Quill</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="select2.html">Select2</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="input-mask.html">Input mask</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="leaflet.html">Leaflet (Map)</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="parallax.html">Parallax</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="slick-carousel.html">Slick carousel</a></li>
+              <li class="hs-sidebar-item">
+                <span class="hs-sidebar-link">Social APIs:</span>
+                <ul class="hs-sidebar-nav ml-2 mb-0">
+                  <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="social-api-facebook.html">Facebook</a></li>
+                  <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="social-api-twitter.html">Twitter</a></li>
+                </ul>
+              </li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="typedjs.html">Typed.js</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="validation.html">Validation</a></li>
+            </ul>
+          </div>
+        </div>
+        <!-- End Sidebar Nav -->
+      </nav>
+      <!-- End Sidebar -->
+
+      <div class="col-lg-10 space-top-1 space-bottom-2">
+        <div class="pl-lg-9 pl-xl-8">
+          <div class="hs-docs-content-divider">
+            <h1>Credits</h1>
+            <p class="lead">First, let us take this opportunity to thank all the creative minds for their great products and plugins</p>
+          </div>
+
+          <div class="mb-5">
+            <p>All third-party plugins (libraries) are located in the <code class="highlighter-rouge">assets/vendor/..</code> folder, while image sources in the <code class="highlighter-rouge">assets/img/..</code> folder and SVG files are in the <code class="highlighter-rouge">assets/svg/..</code> folder.</p>
+          </div>
+
+          <div id="free-plugins" class="hs-docs-content-divider">
+            <h2 class="hs-docs-heading">Free plugins (libraries) <a class="anchorjs-link" href="#free-plugins" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
+
+            <table class="table table-bordered table-striped">
+              <thead>
+                <tr>
+                  <th style="width: 25%;">Plugin name</th>
+                  <th>Description</th>
+                  <th>URL</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="text-dark font-weight-bold">Appear.js</td>
+                  <td>Track the visibility of dom elements and fire user defined callbacks as they appear and disappear.</td>
+                  <td><a href="http://creativelive.github.io/appear/" target="_blank">http://creativelive.github.io/appear/ <i class="fas fa-external-link-alt fa-xs"></i></a></td>
+                </tr>
+                <tr>
+                  <td class="text-dark font-weight-bold">Bootstrap</td>
+                  <td>Bootstrap is the most popular HTML, CSS, and JS framework for developing responsive, mobile first projects on the web.</td>
+                  <td><a href="https://getbootstrap.com/" target="_blank">https://getbootstrap.com/ <i class="fas fa-external-link-alt fa-xs"></i></a></td>
+                </tr>
+                <tr>
+                  <td class="text-dark font-weight-bold">Select2</td>
+                  <td>The jQuery replacement for select boxes</td>
+                  <td><a href="https://select2.org/" target="_blank">https://select2.org/ <i class="fas fa-external-link-alt fa-xs"></i></a></td>
+                </tr>
+                <tr>
+                  <td class="text-dark font-weight-bold">Chart.js</td>
+                  <td>Simple yet flexible JavaScript charting for designers &amp; developers.</td>
+                  <td><a href="https://www.chartjs.org/" target="_blank">https://www.chartjs.org/ <i class="fas fa-external-link-alt fa-xs"></i></a></td>
+                </tr>
+                <tr>
+                  <td class="text-dark font-weight-bold">Circles</td>
+                  <td>A lightweight JavaScript library that generates circular graphs in SVG.</td>
+                  <td><a href="https://www.lugolabs.com/circles" target="_blank">https://www.lugolabs.com/circles <i class="fas fa-external-link-alt fa-xs"></i></a></td>
+                </tr>
+                <tr>
+                  <td class="text-dark font-weight-bold">Clipboard</td>
+                  <td>A modern approach to copy text to clipboard</td>
+                  <td><a href="https://clipboardjs.com/" target="_blank">https://clipboardjs.com/ <i class="fas fa-external-link-alt fa-xs"></i></a></td>
+                </tr>
+                <tr>
+                  <td class="text-dark font-weight-bold">Datatables</td>
+                  <td>DataTables is a plug-in for the jQuery Javascript library. It is a highly flexible tool, build upon the foundations of progressive enhancement, that adds all of these advanced features to any HTML table.</td>
+                  <td><a href="https://datatables.net/" target="_blank">https://datatables.net/ <i class="fas fa-external-link-alt fa-xs"></i></a></td>
+                </tr>
+                <tr>
+                  <td class="text-dark font-weight-bold">Dropzone</td>
+                  <td>Drag'n'drop file-attach uploads with image previews.</td>
+                  <td><a href="https://dropzonejs.com" target="_blank">https://dropzonejs.com <i class="fas fa-external-link-alt fa-xs"></i></a></td>
+                </tr>
+                <tr>
+                  <td class="text-dark font-weight-bold">Flag Icon CSS</td>
+                  <td>A collection of all country flags in SVG — plus the CSS for easier integration</td>
+                  <td><a href="https://github.com/lipis/flag-icon-css" target="_blank">https://github.com/lipis/flag-icon-css <i class="fas fa-external-link-alt fa-xs"></i></a></td>
+                </tr>
+                <tr>
+                  <td class="text-dark font-weight-bold">Flatpickr</td>
+                  <td>Flatpickr is a lightweight and powerful datetime picker. Lean, UX-driven, and extensible, yet it doesn't depend on any libraries.</td>
+                  <td><a href="https://flatpickr.js.org/" target="_blank">https://flatpickr.js.org/ <i class="fas fa-external-link-alt fa-xs"></i></a></td>
+                </tr>
+                <tr>
+                  <td class="text-dark font-weight-bold">FontAwesome</td>
+                  <td>Get vector icons and social logos on your website with Font Awesome, the web's most popular icon set and toolkit.</td>
+                  <td><a href="https://fontawesome.com/" target="_blank">https://fontawesome.com/ <i class="fas fa-external-link-alt fa-xs"></i></a></td>
+                </tr>
+                <tr>
+                  <td class="text-dark font-weight-bold">Ion RangeSlider.js</td>
+                  <td>Easy, flexible and responsive range slider.</td>
+                  <td><a href="http://ionden.com/a/plugins/ion.rangeSlider/en.html" target="_blank">http://ionden.com/a/plugins/ion.rangeSlider/en.html <i class="fas fa-external-link-alt fa-xs"></i></a></td>
+                </tr>
+                <tr>
+                  <td class="text-dark font-weight-bold">jQuery</td>
+                  <td>jQuery is a fast, small, and feature-rich JavaScript library. It makes things like HTML document traversal and manipulation, event handling, animation, and Ajax much simpler with an easy-to-use API that works across a multitude of browsers.</td>
+                  <td><a href="https://jquery.com/" target="_blank">https://jquery.com/ <i class="fas fa-external-link-alt fa-xs"></i></a></td>
+                </tr>
+                <tr>
+                  <td class="text-dark font-weight-bold">jQuery Countdown</td>
+                  <td>A simple and html agnostic date countdown plugin for jQuery</td>
+                  <td><a href="http://hilios.github.io/jQuery.countdown/" target="_blank">http://hilios.github.io/jQuery.countdown/ <i class="fas fa-external-link-alt fa-xs"></i></a></td>
+                </tr>
+                <tr>
+                  <td class="text-dark font-weight-bold">jQuery Migrate</td>
+                  <td>Migrate older jQuery code to jQuery 1.9+</td>
+                  <td><a href="https://plugins.jquery.com/migrate/" target="_blank">https://plugins.jquery.com/migrate/ <i class="fas fa-external-link-alt fa-xs"></i></a></td>
+                </tr>
+                <tr>
+                  <td class="text-dark font-weight-bold">jQuery UI</td>
+                  <td>Query UI is a curated set of user interface interactions, effects, widgets, and themes built on top of the jQuery JavaScript Library. Whether you're building highly interactive web applications or you just need to add a date picker to a form control, jQuery UI is the perfect choice.</td>
+                  <td><a href="http://jqueryui.com" target="_blank">http://jqueryui.com <i class="fas fa-external-link-alt fa-xs"></i></a></td>
+                </tr>
+                <tr>
+                  <td class="text-dark font-weight-bold">jQuery Validation Plugin</td>
+                  <td>This jQuery plugin makes simple clientside form validation easy, whilst still offering plenty of customization options.</td>
+                  <td><a href="http://jqueryvalidation.org/" target="_blank">http://jqueryvalidation.org/ <i class="fas fa-external-link-alt fa-xs"></i></a></td>
+                </tr>
+                <tr>
+                  <td class="text-dark font-weight-bold">Leaflet</td>
+                  <td>An open-source JavaScript library for mobile-friendly interactive maps</td>
+                  <td><a href="https://leafletjs.com/" target="_blank">https://leafletjs.com/ <i class="fas fa-external-link-alt fa-xs"></i></a></td>
+                </tr>
+                <tr>
+                  <td class="text-dark font-weight-bold">Prism.js</td>
+                  <td>Prism is a lightweight, extensible syntax highlighter, built with modern web standards in mind. It's used in thousands of websites, including some of those you visit daily.</td>
+                  <td><a href="http://prismjs.com/plugins/" target="_blank">http://prismjs.com/plugins/ <i class="fas fa-external-link-alt fa-xs"></i></a></td>
+                </tr>
+                <tr>
+                  <td class="text-dark font-weight-bold">Password Strength</td>
+                  <td>jQuery Password Strength Meter for Twitter Bootstrap</td>
+                  <td><a href="https://github.com/ablanco/jquery.pwstrength.bootstrap" target="_blank">https://github.com/ablanco/jquery.pwstrength.bootstrap <i class="fas fa-external-link-alt fa-xs"></i></a></td>
+                </tr>
+                <tr>
+                  <td class="text-dark font-weight-bold">Slick</td>
+                  <td>jQuery carousel.</td>
+                  <td><a href="http://kenwheeler.github.io/slick/" target="_blank">http://kenwheeler.github.io/slick/ <i class="fas fa-external-link-alt fa-xs"></i></a></td>
+                </tr>
+                <tr>
+                  <td class="text-dark font-weight-bold">Summernote WYSIWYG Editor</td>
+                  <td>Super Simple WYSIWYG Editor on Bootstrap Summernote is a JavaScript library that helps you create WYSIWYG editors online.</td>
+                  <td><a href="https://summernote.org/" target="_blank">https://summernote.org/ <i class="fas fa-external-link-alt fa-xs"></i></a></td>
+                </tr>
+                <tr>
+                  <td class="text-dark font-weight-bold">Typed.js</td>
+                  <td>A JavaScript Typing Animation Library</td>
+                  <td><a href="https://mattboldt.com/demos/typed-js/" target="_blank">https://mattboldt.com/demos/typed-js/ <i class="fas fa-external-link-alt fa-xs"></i></a></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div id="premium-plugins" class="hs-docs-content-divider">
+            <h2 class="hs-docs-heading">Premium plugins (libraries) <a class="anchorjs-link" href="#premium-plugins" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
+
+            <table class="table table-bordered table-striped">
+              <thead>
+                <tr>
+                  <th>Plugin name</th>
+                  <th>Description</th>
+                  <th>URL</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="text-dark font-weight-bold">Cubeportfolio</td>
+                  <td>Cube Portfolio is a jQuery grid plugin that provides powerful portfolio system, beautiful animated filtering, custom captions and it's perfect for portfolio projects, horizontal slider, images gallery, team members, mosaic grids or any other ordered grid content.</td>
+                  <td><a href="https://codecanyon.net/item/cube-portfolio-responsive-jquery-grid-plugin/6372959" target="_blank">https://codecanyon.net/item/cube-portfolio-responsive-jquery-grid-plugin/6372959 <i class="fas fa-external-link-alt fa-xs"></i></a></td>
+                </tr>
+                <tr>
+                  <td class="text-dark font-weight-bold">Dzsparallaxer</td>
+                  <td>DZS Parallaxer is a script that turns any content into a cool parallax effect. It works smooth with any content you throw at it, images and even sliders, video players, basically any html content. It's also the parallax that works flawless because of the algorithm behind.</td>
+                  <td><a href="https://codecanyon.net/item/parallaxer-parallax-effects-on-content/9256004" target="_blank">https://codecanyon.net/item/parallaxer-parallax-effects-on-content/9256004 <i class="fas fa-external-link-alt fa-xs"></i></a></td>
+                </tr>
+                <tr>
+                  <td class="text-dark font-weight-bold">FancyBox 3</td>
+                  <td>FancyBox is a tool that offers a nice and elegant way to add zooming functionality for images, html content and multi-media on your webpages. It is built on the top of the popular JavaScript framework jQuery and is both easy to implement and a snap to customize.</td>
+                  <td><a href="http://fancyapps.com/fancybox" target="_blank">http://fancyapps.com/fancybox <i class="fas fa-external-link-alt fa-xs"></i></a></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div id="free-design-sources" class="hs-docs-content-divider">
+            <h2 class="hs-docs-heading">Free design sources <a class="anchorjs-link" href="#free-design-sources" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
+
+            <table class="table table-bordered table-striped">
+              <thead>
+                <tr>
+                  <th>Source name</th>
+                  <th>Description</th>
+                  <th>URL</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="text-dark font-weight-bold">Drawkit</td>
+                  <td>MIT licensed SVG illustrations for you to use on your next project, in two different styles, for free!</td>
+                  <td><a href="https://gumroad.com/drawkit" target="_blank">https://gumroad.com/drawkit <i class="fas fa-external-link-alt fa-xs"></i></a></td>
+                </tr>
+                <tr>
+                  <td class="text-dark font-weight-bold">Freebie Supply</td>
+                  <td>The freshest design resources for Photoshop, Sketch, Illustrator, Adobe XD (Adobe Experience Design CC) and Figma.</td>
+                  <td><a href="https://freebiesupply.com/" target="_blank">https://freebiesupply.com/ <i class="fas fa-external-link-alt fa-xs"></i></a></td>
+                </tr>
+                <tr>
+                  <td class="text-dark font-weight-bold">Free Designre Sources</td>
+                  <td>High quality design resources for free. Crafted with love from amazing artists and professional designers around the world, ranging from fonts, mockups, graphic, template & more.</td>
+                  <td><a href="https://freedesignresources.net/" target="_blank">https://freedesignresources.net/ <i class="fas fa-external-link-alt fa-xs"></i></a></td>
+                </tr>
+                <tr>
+                  <td class="text-dark font-weight-bold">Google Fonts</td>
+                  <td>Google Fonts is a library of over 800 libre licensed fonts, an interactive web directory for browsing the library, and APIs for conveniently using the fonts via CSS and Android.</td>
+                  <td><a href="https://fonts.google.com/specimen/Poppins" target="_blank">https://fonts.google.com/specimen/Poppins <i class="fas fa-external-link-alt fa-xs"></i></a></td>
+                </tr>
+                <tr>
+                  <td class="text-dark font-weight-bold">GraphicBurger</td>
+                  <td>Tasty design resources made with care for each pixel</td>
+                  <td><a href="http://graphicburger.com/" target="_blank">http://graphicburger.com/ <i class="fas fa-external-link-alt fa-xs"></i></a></td>
+                </tr>
+                <tr>
+                  <td class="text-dark font-weight-bold">Humaaans</td>
+                  <td>Mix-&amp;-match illustrations of people with a design library</td>
+                  <td><a href="https://www.humaaans.com/" target="_blank">https://www.humaaans.com/ <i class="fas fa-external-link-alt fa-xs"></i></a></td>
+                </tr>
+                <tr>
+                  <td class="text-dark font-weight-bold">Mockup Catalog</td>
+                  <td>Mockup Catalog offers exclusive Free high quality graphic design resources for web designers and developers. Free for both personal and commercial use.</td>
+                  <td><a href="https://www.mockupcatalog.com/" target="_blank">https://www.mockupcatalog.com/ <i class="fas fa-external-link-alt fa-xs"></i></a></td>
+                </tr>
+                <tr>
+                  <td class="text-dark font-weight-bold">Mockupworld</td>
+                  <td>Tons of free and legal, fully layered, easily customizable photo realistic PSDs: Ready to use in your projects, app showcases and presentations!</td>
+                  <td><a href="https://www.mockupworld.co/" target="_blank">https://www.mockupworld.co/ <i class="fas fa-external-link-alt fa-xs"></i></a></td>
+                </tr>
+                <tr>
+                  <td class="text-dark font-weight-bold">Undraw</td>
+                  <td>Browse to find the images that fit your needs and click to download. Take advantage of the on-the-fly color image generation to match your brand identity.</td>
+                  <td><a href="https://undraw.co/illustrations" target="_blank">https://undraw.co/illustrations <i class="fas fa-external-link-alt fa-xs"></i></a></td>
+                </tr>
+                <tr>
+                  <td class="text-dark font-weight-bold">Unsplash</td>
+                  <td>Gifted by the world's most generous community of photographers.</td>
+                  <td><a href="https://unsplash.com/" target="_blank">https://unsplash.com/ <i class="fas fa-external-link-alt fa-xs"></i></a></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <!-- ========== END MAIN CONTENT ========== -->
+
+  <!-- Go to Top -->
+  <a class="js-go-to go-to position-fixed" href="javascript:;" style="visibility: hidden;"
+     data-hs-go-to-options='{
+       "offsetTop": 700,
+       "position": {
+         "init": {
+           "right": 15
+         },
+         "show": {
+           "bottom": 15
+         },
+         "hide": {
+           "bottom": -15
+         }
+       }
+     }'>
+    <i class="fas fa-angle-up"></i>
+  </a>
+  <!-- End Go to Top -->
+
+  <!-- JS Global Compulsory -->
+  <script src="../assets/vendor/jquery/dist/jquery.min.js"></script>
+  <script src="../assets/vendor/jquery-migrate/dist/jquery-migrate.min.js"></script>
+  <script src="../assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- JS Implementing Plugins -->
+  <script src="../assets/vendor/hs-header/dist/hs-header.min.js"></script>
+  <script src="../assets/vendor/hs-go-to/dist/hs-go-to.min.js"></script>
+  <script src="../documentation/assets/vendor/jquery-ui/jquery-ui.core.min.js"></script>
+  <script src="../documentation/assets/vendor/jquery-ui/ui/widgets/menu.js"></script>
+  <script src="../documentation/assets/vendor/jquery-ui/ui/widgets/mouse.js"></script>
+  <script src="../documentation/assets/vendor/jquery-ui/ui/widgets/autocomplete.js"></script>
+  <script src="../documentation/assets/vendor/prism/prism.js"></script>
+
+  <!-- JS Front -->
+  <script src="../assets/js/hs.core.js"></script>
+  <script src="../documentation/assets/js/components/hs.autocomplete-local-search.js"></script>
+
+  <!-- JS Plugins Init. -->
+  <script>
+    $(document).on('ready', function () {
+      // initialization of header
+      var header = new HSHeader($('#header')).init();
+
+      // initialization of go to
+      $('.js-go-to').each(function () {
+        var goTo = new HSGoTo($(this)).init();
+      });
+    });
+
+    $(window).on('load', function () {
+      // initialization of autocomplet
+      $.HSCore.components.HSLocalSearchAutocomplete.init('.js-hs-docs-search');
+    });
+  </script>
+</body>
+</html>

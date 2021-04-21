@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!-- Title -->
+		<title>Sticky Block</title>
+		
+		<!-- Required Meta Tags Always Come First -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		
+		<!-- Favicon -->
+		<link rel="shortcut icon" href="../../../favicon.ico">
+		
+		<!-- Google Fonts -->
+		<link href="//fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
+		
+		<!-- CSS Implementing Plugins -->
+		
+		<!-- CSS Front Template -->
+		<link rel="stylesheet" href="../../../assets/css/theme.css">
+	</head>
+	<body>
+		<div style="height: 20vh;"></div>
+		
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-8 mb-9 mb-lg-0">
+					<div style="height: 500vh;"></div>
+				</div>
+				
+				<div class="col-lg-4">
+					<div class="pl-lg-4">
+						<div id="stickyBlockStartPoint">
+							<div class="js-sticky-block bg-primary text-white shadow-primary-lg text-center rounded p-5"
+							     data-hs-sticky-block-options='{
+							       "parentSelector": "#stickyBlockStartPoint",
+							       "breakpoint": "lg",
+							       "startPoint": "#stickyBlockStartPoint",
+							       "endPoint": "#stickyBlockEndPoint",
+							       "stickyOffsetTop": 24,
+							       "stickyOffsetBottom": 0
+							     }'>
+								<h3 class="h5">Get email alerts for similar jobs</h3>
+								<p class="text-white-70 mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin tincidunt leo in leo eleifend, volutpat viverra arcu maximus. Nullam ut odio maximus, pulvinar libero in, ornare mi. Pellentesque hendrerit eros posuere nibh ultrices, id scelerisque libero venenatis. Aenean eget fringilla est. Proin semper mi sem, malesuada dictum tortor hendrerit a. Morbi efficitur ornare sem, at pharetra est accumsan ac. Vestibulum tempus quis ligula vel bibendum.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div id="stickyBlockEndPoint" style="height: 5px; background-color: #000;"></div>
+		</div>
+		
+		<div style="height: 200vh;"></div>
+		
+		<script src="../../../assets/vendor/jquery/dist/jquery.min.js"></script>
+		<script src="../../../assets/vendor/jquery-migrate/dist/jquery-migrate.min.js"></script>
+		<script src="../../../assets/vendor/popper.js/dist/umd/popper.min.js"></script>
+		<script src="../../../assets/vendor/bootstrap/dist/js/bootstrap.min.js"></script>
+		
+		<script src="./dist/hs-sticky-block.min.js"></script>
+		
+		<script>
+			$(document).on('ready', function () {
+				$('.js-sticky-block').each(function () {
+					var stickyBlock = new HSStickyBlock($(this)).init();
+				});
+			});
+		</script>
+	</body>
+</html>

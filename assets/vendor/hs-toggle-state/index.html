@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!-- Title -->
+		<title>Toggle State</title>
+		
+		<!-- Required Meta Tags Always Come First -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		
+		<!-- Favicon -->
+		<link rel="shortcut icon" href="../../../favicon.ico">
+		
+		<!-- Google Fonts -->
+		<link href="//fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
+		
+		<!-- CSS Implementing Plugins -->
+		
+		<!-- CSS Front Template -->
+		<link rel="stylesheet" href="../../../assets/css/theme.css">
+	</head>
+	<body>
+		<div style="height: 20vh;"></div>
+		
+		<div class="container">
+			<!-- Button -->
+			<div class="d-flex justify-content-end mb-3">
+				<a class="js-toggle-state btn btn-sm btn-soft-primary transition-3d-hover" href="javascript:;"
+				   data-hs-toggle-state-options='{
+				     "targetSelector": "#customSwitch1, #customSwitch2, #customSwitch3, #customSwitch4, #customSwitch5, #customSwitch6, #customSwitch7, #customSwitch8, #customSwitch9",
+				     "slaveSelector": "#toggleAll1, #toggleAll2"
+				   }'>
+					<span class="btn__toggle-default">Toggle all</span>
+					<span class="btn__toggle-toggled">Untoggle all</span>
+				</a>
+			</div>
+			<!-- End Button -->
+			
+			<!-- My Network -->
+			<div class="mb-7">
+				<!-- Title -->
+				<div class="row justify-content-between align-items-end">
+					<div class="col-6">
+						<h2 class="h5 mb-0">My network</h2>
+					</div>
+					<div class="col-6 text-right">
+						<a id="toggleAll1" class="js-toggle-state link-muted" href="javascript:;"
+						   data-hs-toggle-state-options='{
+						     "targetSelector": "#customSwitch1, #customSwitch2, #customSwitch3, #customSwitch4"
+						   }'>
+							<span class="link-muted__toggle-default">Toggle all</span>
+							<span class="link-muted__toggle-toggled">Untoggle all</span>
+						</a>
+					</div>
+				</div>
+				<!-- End Title -->
+				
+				<hr class="mt-2 mb-4">
+				
+				<div class="mb-3">
+					<h3 class="small text-muted">Send me:</h3>
+				</div>
+				
+				<!-- Checkbox Switch -->
+				<div class="custom-control custom-switch">
+					<input type="checkbox" class="custom-control-input" id="customSwitch1">
+					<label class="custom-control-label" for="customSwitch1">
+						<span class="d-block">New for you</span>
+						<small class="d-block text-muted">A weekly email featuring shots from designers you follow</small>
+					</label>
+				</div>
+				<!-- End Checkbox Switch -->
+				
+				<hr class="my-3">
+				
+				<!-- Checkbox Switch -->
+				<div class="custom-control custom-switch">
+					<input type="checkbox" class="custom-control-input" id="customSwitch2" checked>
+					<label class="custom-control-label" for="customSwitch2">
+						<span class="d-block">Account activity <span class="badge badge-success ml-1">New</span></span>
+						<small class="d-block text-muted">Get important notifications about you or activity you've missed</small>
+					</label>
+				</div>
+				<!-- End Checkbox Switch -->
+				
+				<hr class="my-3">
+				
+				<!-- Checkbox Switch -->
+				<div class="custom-control custom-switch">
+					<input type="checkbox" class="custom-control-input" id="customSwitch3">
+					<label class="custom-control-label" for="customSwitch3">
+						<span class="d-block">Meetups near you <span class="badge badge-success ml-1">New</span></span>
+						<small class="d-block text-muted">Get an email when a Dribbble Meetup is posted close to my location</small>
+					</label>
+				</div>
+				<!-- End Checkbox Switch -->
+				
+				<hr class="my-3">
+				
+				<!-- Checkbox Switch -->
+				<div class="custom-control custom-switch">
+					<input type="checkbox" class="custom-control-input" id="customSwitch4" checked>
+					<label class="custom-control-label" for="customSwitch4">
+						<span class="d-block">Opportunities</span>
+						<small class="d-block text-muted">Get a daily email when new design jobs are posted in your area</small>
+					</label>
+				</div>
+				<!-- End Checkbox Switch -->
+			</div>
+			<!-- End My Network -->
+			
+			<!-- Account Activity -->
+			<div class="mb-7">
+				<!-- Title -->
+				<div class="row justify-content-between align-items-end">
+					<div class="col-6">
+						<h2 class="h5 mb-0">Account activity</h2>
+					</div>
+					<div class="col-6 text-right">
+						<a id="toggleAll2" class="js-toggle-state link-muted" href="javascript:;"
+						   data-hs-toggle-state-options='{
+						     "targetSelector": "#customSwitch5, #customSwitch6, #customSwitch7, #customSwitch8, #customSwitch9"
+						   }'>
+							<span class="link-muted__toggle-default">Toggle all</span>
+							<span class="link-muted__toggle-toggled">Untoggle all</span>
+						</a>
+					</div>
+				</div>
+				<!-- End Title -->
+				
+				<hr class="mt-2 mb-4">
+				
+				<div class="mb-3">
+					<h3 class="small text-muted">Email me when:</h3>
+				</div>
+				
+				<!-- Checkbox Switch -->
+				<div class="custom-control custom-switch mb-3">
+					<input type="checkbox" class="custom-control-input" id="customSwitch5" checked>
+					<label class="custom-control-label" for="customSwitch5">
+						<span class="d-block">Someone mentions me</span>
+					</label>
+				</div>
+				<!-- End Checkbox Switch -->
+				
+				<!-- Checkbox Switch -->
+				<div class="custom-control custom-switch mb-3">
+					<input type="checkbox" class="custom-control-input" id="customSwitch6" checked>
+					<label class="custom-control-label" for="customSwitch6">
+						<span class="d-block">Anyone follows me</span>
+					</label>
+				</div>
+				<!-- End Checkbox Switch -->
+				
+				<!-- Checkbox Switch -->
+				<div class="custom-control custom-switch mb-3">
+					<input type="checkbox" class="custom-control-input" id="customSwitch7">
+					<label class="custom-control-label" for="customSwitch7">
+						<span class="d-block">A member follows me</span>
+					</label>
+				</div>
+				<!-- End Checkbox Switch -->
+				
+				<!-- Checkbox Switch -->
+				<div class="custom-control custom-switch mb-3">
+					<input type="checkbox" class="custom-control-input" id="customSwitch8" checked>
+					<label class="custom-control-label" for="customSwitch8">
+						<span class="d-block">Someone comments on one of my projects</span>
+					</label>
+				</div>
+				<!-- End Checkbox Switch -->
+				
+				<!-- Checkbox Switch -->
+				<div class="custom-control custom-switch mb-3">
+					<input type="checkbox" class="custom-control-input" id="customSwitch9">
+					<label class="custom-control-label" for="customSwitch9">
+						<span class="d-block">Someone comments on one of my tasks</span>
+					</label>
+				</div>
+				<!-- End Checkbox Switch -->
+			</div>
+			<!-- End Account Activity -->
+		</div>
+		
+		<div style="height: 20vh;"></div>
+		
+		<script src="../../../assets/vendor/jquery/dist/jquery.min.js"></script>
+		<script src="../../../assets/vendor/jquery-migrate/dist/jquery-migrate.min.js"></script>
+		<script src="../../../assets/vendor/popper.js/dist/umd/popper.min.js"></script>
+		<script src="../../../assets/vendor/bootstrap/dist/js/bootstrap.min.js"></script>
+		
+		<script src="./dist/hs-toggle-state.min.js"></script>
+		
+		<script>
+			$(document).on('ready', function () {
+				$('.js-toggle-state').each(function () {
+					var toggleState = new HSToggleState($(this)).init();
+				});
+			});
+		</script>
+	</body>
+</html>

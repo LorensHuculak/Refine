@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Title -->
+  <title>FAQ - Snippets | Front - Responsive Website Template</title>
+
+  <!-- Required Meta Tags Always Come First -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="../favicon.ico">
+
+  <!-- Font -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600&display=swap" rel="stylesheet">
+
+  <!-- CSS Implementing Plugins -->
+  <link rel="stylesheet" href="../assets/vendor/font-awesome/css/all.min.css">
+  <link rel="stylesheet" href="../assets/vendor/hs-mega-menu/dist/hs-mega-menu.min.css">
+  <link rel="stylesheet" href="../documentation/assets/vendor/jquery-ui/themes/base/jquery-ui.min.css">
+  <link rel="stylesheet" href="../documentation/assets/vendor/prism/prism.css">
+
+  <!-- CSS Front Template -->
+  <link rel="stylesheet" href="../assets/css/theme.css">
+
+  <!-- CSS Front Doc -->
+  <link rel="stylesheet" href="../documentation/assets/css/snippets.css">
+</head>
+<body>
+  <!-- ========== HEADER ========== -->
+  <header id="header" class="header header-sticky-top header-docs header-box-shadow">
+    <div class="header-section">
+      <div id="logoAndNav" class="container-fluid px-xl-7">
+        <nav class="navbar d-block d-md-flex justify-content-start">
+          <div class="d-flex align-items-center">
+            <a class="navbar-brand" href="index.html" aria-label="Front">
+              <img src="../assets/svg/logos/logo.svg" alt="Logo">
+            </a>
+            <a href="../documentation/changelog.html">
+              <span class="badge badge-soft-primary ml-2">v3.2</span>
+            </a>
+          </div>
+
+          <!-- Nav Links -->
+          <ul class="nav nav-classic nav-sm border-0 nav-docs-space">
+            <li class="nav-item">
+              <a class="nav-link d-flex align-items-center px-2 px-sm-3" href="../documentation/index.html">
+                <svg class="d-none d-sm-block mr-2 mb-0" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" d="M1 2.5A1.5 1.5 0 012.5 1h3A1.5 1.5 0 017 2.5v3A1.5 1.5 0 015.5 7h-3A1.5 1.5 0 011 5.5v-3zM2.5 2a.5.5 0 00-.5.5v3a.5.5 0 00.5.5h3a.5.5 0 00.5-.5v-3a.5.5 0 00-.5-.5h-3zm6.5.5A1.5 1.5 0 0110.5 1h3A1.5 1.5 0 0115 2.5v3A1.5 1.5 0 0113.5 7h-3A1.5 1.5 0 019 5.5v-3zm1.5-.5a.5.5 0 00-.5.5v3a.5.5 0 00.5.5h3a.5.5 0 00.5-.5v-3a.5.5 0 00-.5-.5h-3zM1 10.5A1.5 1.5 0 012.5 9h3A1.5 1.5 0 017 10.5v3A1.5 1.5 0 015.5 15h-3A1.5 1.5 0 011 13.5v-3zm1.5-.5a.5.5 0 00-.5.5v3a.5.5 0 00.5.5h3a.5.5 0 00.5-.5v-3a.5.5 0 00-.5-.5h-3zm6.5.5A1.5 1.5 0 0110.5 9h3a1.5 1.5 0 011.5 1.5v3a1.5 1.5 0 01-1.5 1.5h-3A1.5 1.5 0 019 13.5v-3zm1.5-.5a.5.5 0 00-.5.5v3a.5.5 0 00.5.5h3a.5.5 0 00.5-.5v-3a.5.5 0 00-.5-.5h-3z" clip-rule="evenodd"/>
+                </svg>
+                <span class="d-none d-sm-block">Documentation</span>
+                <span class="d-sm-none">Docs</span>
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link d-flex align-items-center px-2 px-sm-3 active" href="index.html">
+                <svg class="d-none d-sm-block mr-2 mb-0" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" d="M14.5 13.5h-13A.5.5 0 011 13V6a.5.5 0 01.5-.5h13a.5.5 0 01.5.5v7a.5.5 0 01-.5.5zm-13 1A1.5 1.5 0 010 13V6a1.5 1.5 0 011.5-1.5h13A1.5 1.5 0 0116 6v7a1.5 1.5 0 01-1.5 1.5h-13zM2 3a.5.5 0 00.5.5h11a.5.5 0 000-1h-11A.5.5 0 002 3zm2-2a.5.5 0 00.5.5h7a.5.5 0 000-1h-7A.5.5 0 004 1z" clip-rule="evenodd"/>
+                </svg>
+                Snippets
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link d-flex align-items-center px-2 px-sm-3" target="_blank" href="../html/landings/index.html">
+                Main Demo
+                <svg class="d-block ml-2 mb-0" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" d="M1.5 13A1.5 1.5 0 003 14.5h8a1.5 1.5 0 001.5-1.5V9a.5.5 0 00-1 0v4a.5.5 0 01-.5.5H3a.5.5 0 01-.5-.5V5a.5.5 0 01.5-.5h4a.5.5 0 000-1H3A1.5 1.5 0 001.5 5v8zm7-11a.5.5 0 01.5-.5h5a.5.5 0 01.5.5v5a.5.5 0 01-1 0V2.5H9a.5.5 0 01-.5-.5z" clip-rule="evenodd"/>
+                  <path fill-rule="evenodd" d="M14.354 1.646a.5.5 0 010 .708l-8 8a.5.5 0 01-.708-.708l8-8a.5.5 0 01.708 0z" clip-rule="evenodd"/>
+                </svg>
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link d-none d-xl-flex align-items-center px-2 px-sm-3" target="_blank" href="https://htmlstream.com/contact-us">
+                Get Support
+                <svg class="d-none d-sm-block ml-2 mb-0" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" d="M1.5 13A1.5 1.5 0 003 14.5h8a1.5 1.5 0 001.5-1.5V9a.5.5 0 00-1 0v4a.5.5 0 01-.5.5H3a.5.5 0 01-.5-.5V5a.5.5 0 01.5-.5h4a.5.5 0 000-1H3A1.5 1.5 0 001.5 5v8zm7-11a.5.5 0 01.5-.5h5a.5.5 0 01.5.5v5a.5.5 0 01-1 0V2.5H9a.5.5 0 01-.5-.5z" clip-rule="evenodd"/>
+                  <path fill-rule="evenodd" d="M14.354 1.646a.5.5 0 010 .708l-8 8a.5.5 0 01-.708-.708l8-8a.5.5 0 01.708 0z" clip-rule="evenodd"/>
+                </svg>
+              </a>
+            </li>
+          </ul>
+          <!-- End Nav Links -->
+
+          <!-- Header Search -->
+          <form class="form-inline input-group input-group-sm input-group-merge input-group-flush d-none d-lg-flex ml-auto" style="max-width: 300px;">
+            <input class="js-hs-docs-search form-control" type="text" placeholder="Search snippets..." aria-label="Search snippets..." aria-describedby="docsSearch" data-url="../documentation/assets/ajax/autocomplete-data-for-snippets-search.json">
+            <div class="input-group-append">
+              <span class="input-group-text" id="docsSearch">
+                <i class="fas fa-search"></i>
+              </span>
+            </div>
+          </form>
+          <!-- End Header Search -->
+        </nav>
+      </div>
+    </div>
+  </header>
+  <!-- ========== END HEADER ========== -->
+
+  <!-- ========== MAIN CONTENT ========== -->
+  <main class="container-fluid space-top-3 space-md-2 pl-lg-7 pr-xl-7">
+    <div class="row justify-content-lg-end">
+      <!-- Sidebar -->
+      <nav class="col-lg-3 col-xl-2 hs-sidebar navbar-expand-lg px-0 ml-xl-7">
+        <div class="d-flex d-lg-none justify-content-between mb-3">
+          <!-- Sidebar Search -->
+          <form class="col form-inline input-group-sm">
+            <input class="js-hs-docs-search form-control form-control-sm w-100" type="text" placeholder="Search..." data-url="../documentation/assets/ajax/autocomplete-data-for-starter-search.json">
+          </form>
+          <!-- End Sidebar Search -->
+
+          <!-- Responsive Toggle Button -->
+          <button class="btn btn-link pl-0" type="button" data-toggle="collapse" data-target="#sidebar-nav" aria-controls="sidebar-nav" aria-expanded="false" aria-label="Toggle navigation">
+            <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 30 30" width="30" height="30" focusable="false">
+              <path stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M4 7h22M4 15h22M4 23h22"/>
+            </svg>
+          </button>
+          <!-- End Responsive Toggle Button -->
+        </div>
+
+        <!-- Sidebar Nav -->
+        <div class="collapse navbar-collapse" id="sidebar-nav">
+          
+          <div class="hs-sidebar-scrollbar hs-sidebar-sticky pl-2 pl-md-0 pr-2">
+            <ul id="snippetsSidebarNav" class="hs-sidebar-nav">
+              <li class="hs-sidebar-item "><a class="hs-sidebar-link " href="index.html">Intro</a></li>
+
+              <!-- Header -->
+              <li class="hs-sidebar-item">
+                <span class="hs-sidebar-heading hs-sidebar-heading-first">Header</span>
+              </li>
+
+              <li class="hs-sidebar-item "><a class="hs-sidebar-link " href="headers.html">Headers <span class="small">(Navbar)</span></a></li>
+              <li class="hs-sidebar-item "><a class="hs-sidebar-link " href="hero.html">Hero</a></li>
+              <!-- End Header -->
+
+              <!-- Content -->
+              <li class="hs-sidebar-item">
+                <span class="hs-sidebar-heading">Content</span>
+              </li>
+
+              <li class="hs-sidebar-item ">
+                <a class="hs-sidebar-link dropdown-toggle dropdown-toggle-collapse" href="javascript:;" role="button" data-toggle="collapse" aria-expanded="false" aria-controls="snippetsSidebarNavFeaturesCollapse" data-target="#snippetsSidebarNavFeaturesCollapse">Features</a>
+
+                <ul id="snippetsSidebarNavFeaturesCollapse" class="hs-sidebar-collapse list-unstyled collapse " data-parent="#snippetsSidebarNav">
+                  <li><a class="hs-sidebar-link " href="features-general.html">General</a></li>
+                  <li><a class="hs-sidebar-link " href="features-stats.html">Stats</a></li>
+                  <li><a class="hs-sidebar-link " href="features-step.html">Step</a></li>
+                  <li><a class="hs-sidebar-link " href="features-navs.html">Navs (Tabs)</a></li>
+                </ul>
+              </li>
+
+              <li class="hs-sidebar-item "><a class="hs-sidebar-link " href="icon-blocks.html">Icon Blocks</a></li>
+
+              <li class="hs-sidebar-item ">
+                <a class="hs-sidebar-link dropdown-toggle dropdown-toggle-collapse" href="javascript:;" role="button" data-toggle="collapse" aria-expanded="false" aria-controls="snippetsSidebarNav6Collapse" data-target="#snippetsSidebarNav6Collapse">Cards</a>
+
+                <ul id="snippetsSidebarNav6Collapse" class="hs-sidebar-collapse list-unstyled collapse " data-parent="#snippetsSidebarNav">
+                  <li><a class="hs-sidebar-link " href="card-grid.html">Grid</a></li>
+                  <li><a class="hs-sidebar-link " href="card-list.html">List</a></li>
+                </ul>
+              </li>
+
+              <li class="hs-sidebar-item "><a class="hs-sidebar-link " href="testimonials.html">Testimonials</a></li>
+
+              <li class="hs-sidebar-item ">
+                <a class="hs-sidebar-link dropdown-toggle dropdown-toggle-collapse" href="javascript:;" role="button" data-toggle="collapse" aria-expanded="false" aria-controls="snippetsSidebarNav2Collapse" data-target="#snippetsSidebarNav2Collapse">Blogs</a>
+
+                <ul id="snippetsSidebarNav2Collapse" class="hs-sidebar-collapse list-unstyled collapse " data-parent="#snippetsSidebarNav">
+                  <li><a class="hs-sidebar-link " href="blog-grid.html">Grid</a></li>
+                  <li><a class="hs-sidebar-link " href="blog-list.html">List</a></li>
+                </ul>
+              </li>
+
+              <li class="hs-sidebar-item "><a class="hs-sidebar-link " href="tables.html">Tables</a></li>
+              <li class="hs-sidebar-item "><a class="hs-sidebar-link " href="ecommerce.html">E-commerce</a></li>
+
+              <li class="hs-sidebar-item "><a class="hs-sidebar-link " href="pricing.html">Pricing</a></li>
+              <li class="hs-sidebar-item "><a class="hs-sidebar-link " href="team.html">Team</a></li>
+
+              <li class="hs-sidebar-item "><a class="hs-sidebar-link " href="breadcrumb.html">Breadcrumb</a></li>
+              <li class="hs-sidebar-item "><a class="hs-sidebar-link " href="cta.html">Call To Actions <span class="small">(CTA)</span></a></li>
+
+              <li class="hs-sidebar-item "><a class="hs-sidebar-link " href="modals.html">Modals</a></li>
+              <li class="hs-sidebar-item "><a class="hs-sidebar-link " href="portfolio.html">Portfolio</a></li>
+
+              <li class="hs-sidebar-item "><a class="hs-sidebar-link " href="gallery.html">Gallery</a></li>
+
+              <li class="hs-sidebar-item "><a class="hs-sidebar-link " href="clients.html">Clients</a></li>
+              <li class="hs-sidebar-item "><a class="hs-sidebar-link " href="countdown.html">Countdown</a></li>
+              <li class="hs-sidebar-item active"><a class="hs-sidebar-link active" href="faq.html">FAQ</a></li>
+              <li class="hs-sidebar-item "><a class="hs-sidebar-link " href="collapse.html">Collapse / Accordion</a></li>
+              <li class="hs-sidebar-item "><a class="hs-sidebar-link " href="comments.html">Comments</a></li>
+              <li class="hs-sidebar-item "><a class="hs-sidebar-link " href="feedback-and-reviews.html">Feedback &amp; Reviews</a></li>
+              <li class="hs-sidebar-item "><a class="hs-sidebar-link " href="user-profile.html">User Profiles</a></li>
+              <li class="hs-sidebar-item "><a class="hs-sidebar-link " href="sidebar-examples.html">Sidebar examples</a></li>
+
+              <li class="hs-sidebar-item ">
+                <a class="hs-sidebar-link dropdown-toggle dropdown-toggle-collapse" href="javascript:;" role="button" data-toggle="collapse" aria-expanded="false" aria-controls="snippetsSidebarNav3Collapse" data-target="#snippetsSidebarNav3Collapse">Form Layouts</a>
+
+                <ul id="snippetsSidebarNav3Collapse" class="hs-sidebar-collapse list-unstyled collapse " data-parent="#snippetsSidebarNav">
+                  <li><a class="hs-sidebar-link " href="form-layouts-authentication.html">Authentication</a></li>
+                  <li><a class="hs-sidebar-link " href="form-layouts-feedback.html">Feedback</a></li>
+                  <li><a class="hs-sidebar-link " href="form-layouts-filters.html">Filters</a></li>
+                  <li><a class="hs-sidebar-link " href="form-layouts-search.html">Search</a></li>
+                  <li><a class="hs-sidebar-link " href="form-layouts-subscribe.html">Subscribe</a></li>
+                  <li><a class="hs-sidebar-link " href="form-layouts-account.html">Account</a></li>
+                  <li><a class="hs-sidebar-link " href="form-layouts-ecommerce.html">Ecommerce</a></li>
+                </ul>
+              </li>
+
+              <li class="hs-sidebar-item "><a class="hs-sidebar-link " href="calendar.html">Calendar View</a></li>
+
+              <li class="hs-sidebar-item "><a class="hs-sidebar-link " href="notification.html">Notification</a></li>
+              <!-- End Content -->
+
+              <!-- Contact / Footer -->
+              <li class="hs-sidebar-item">
+                <span class="hs-sidebar-heading">Contact / Footer</span>
+              </li>
+
+              <li class="hs-sidebar-item "><a class="hs-sidebar-link " href="contacts.html">Contacts</a></li>
+              <li class="hs-sidebar-item "><a class="hs-sidebar-link " href="footers.html">Footers</a></li>
+              <!-- End Footer / CTA -->
+            </ul>
+          </div>
+        </div>
+        <!-- End Sidebar Nav -->
+      </nav>
+      <!-- End Sidebar -->
+
+      <div class="col-lg-10 space-1">
+        <div class="pl-lg-9 pl-xl-8">
+          <div class="hs-docs-content-divider">
+            <h1 class="mb-0">FAQ</h1>
+          </div>
+
+          <!-- Component Block -->
+          <div id="component-1" class="hs-docs-content-divider">
+            <h2 class="hs-docs-heading">Component #1 <a class="anchorjs-link" href="#component-1" data-anchorjs-icon="#"></a></h2>
+
+            <!-- Tab Wrapper -->
+            <div class="tab-wrapper">
+              <!-- Nav Classic -->
+              <ul class="nav nav-classic" id="pills-tab-1" role="tablist">
+                <li class="nav-item">
+                  <a class="nav-link active" id="pills-result-tab-1" data-toggle="pill" href="#pills-result-1" role="tab" aria-controls="pills-result-1" aria-selected="true">Preview</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="pills-html-tab-1" data-toggle="pill" href="#pills-html-1" role="tab" aria-controls="pills-html-1" aria-selected="false">HTML</a>
+                </li>
+              </ul>
+              <!-- End Nav Classic -->
+
+              <!-- Tab Content -->
+              <div class="tab-content" id="pills-tabContent-1">
+                <div class="tab-pane fade p-4 show active" id="pills-result-1" role="tabpanel" aria-labelledby="pills-result-tab-1">
+                  <!-- Collapse Section -->
+                  <div class="container space-2">
+                    <h2>Basics</h2>
+
+                    <!-- Basics Accordion -->
+                    <div id="basicsAccordion">
+                      <!-- Card -->
+                      <div class="card shadow-none mb-3">
+                        <div class="card-header card-collapse" id="basicsHeadingOne">
+                          <a class="btn btn-link btn-block d-flex justify-content-between card-btn collapsed bg-white px-0" href="javascript:;" role="button" data-toggle="collapse" data-target="#basicsCollapseOne" aria-expanded="false" aria-controls="basicsCollapseOne">
+                            Do you have any built-in caching?
+
+                            <span class="card-btn-toggle">
+                              <span class="card-btn-toggle-default">&plus;</span>
+                              <span class="card-btn-toggle-active">&minus;</span>
+                            </span>
+                          </a>
+                        </div>
+                        <div id="basicsCollapseOne" class="collapse" aria-labelledby="basicsHeadingOne" data-parent="#basicsAccordion">
+                          <div class="card-body px-0">
+                            <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.</p>
+                            <p>Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.</p>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- End Card -->
+
+                      <!-- Card -->
+                      <div class="card shadow-none mb-3">
+                        <div class="card-header card-collapse" id="basicsHeadingTwo">
+                          <a class="btn btn-link btn-block d-flex justify-content-between card-btn collapsed bg-white px-0" href="javascript:;" role="button" data-toggle="collapse" data-target="#basicsCollapseTwo" aria-expanded="false" aria-controls="basicsCollapseTwo">
+                            Can I add/upgrade my plan at any time?
+
+                            <span class="card-btn-toggle">
+                              <span class="card-btn-toggle-default">&plus;</span>
+                              <span class="card-btn-toggle-active">&minus;</span>
+                            </span>
+                          </a>
+                        </div>
+                        <div id="basicsCollapseTwo" class="collapse" aria-labelledby="basicsHeadingTwo" data-parent="#basicsAccordion">
+                          <div class="card-body px-0">
+                            <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.</p>
+                            <p>Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.</p>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- End Card -->
+
+                      <!-- Card -->
+                      <div class="card shadow-none mb-3">
+                        <div class="card-header card-collapse" id="basicsHeadingThree">
+                          <a class="btn btn-link btn-block d-flex justify-content-between card-btn collapsed bg-white px-0" href="javascript:;" role="button" data-toggle="collapse" data-target="#basicsCollapseThree" aria-expanded="false" aria-controls="basicsCollapseThree">
+                            What access comes with my hosting plan?
+
+                            <span class="card-btn-toggle">
+                              <span class="card-btn-toggle-default">&plus;</span>
+                              <span class="card-btn-toggle-active">&minus;</span>
+                            </span>
+                          </a>
+                        </div>
+                        <div id="basicsCollapseThree" class="collapse" aria-labelledby="basicsHeadingThree" data-parent="#basicsAccordion">
+                          <div class="card-body px-0">
+                            <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.</p>
+                            <p>Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.</p>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- End Card -->
+
+                      <!-- Card -->
+                      <div class="card shadow-none mb-3">
+                        <div class="card-header card-collapse" id="basicsHeadingFour">
+                          <a class="btn btn-link btn-block d-flex justify-content-between card-btn collapsed bg-white px-0" href="javascript:;" role="button" data-toggle="collapse" data-target="#basicsCollapseFour" aria-expanded="false" aria-controls="basicsCollapseFour">
+                            How do I change my password?
+
+                            <span class="card-btn-toggle">
+                              <span class="card-btn-toggle-default">&plus;</span>
+                              <span class="card-btn-toggle-active">&minus;</span>
+                            </span>
+                          </a>
+                        </div>
+                        <div id="basicsCollapseFour" class="collapse" aria-labelledby="basicsHeadingFour" data-parent="#basicsAccordion">
+                          <div class="card-body px-0">
+                            <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.</p>
+                            <p>Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.</p>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- End Card -->
+                    </div>
+                    <!-- End Basics Accordion -->
+                  </div>
+                  <!-- End Collapse Section -->
+                </div>
+                <div class="tab-pane fade" id="pills-html-1" role="tabpanel" aria-labelledby="pills-html-tab-1">
+                  <pre>
+                    <code class="language-html" data-lang="html">
+                      &lt;!-- Collapse Section --&gt;
+                      &lt;div class="container space-2"&gt;
+                        &lt;h2&gt;Basics&lt;/h2&gt;
+
+                        &lt;!-- Basics Accordion --&gt;
+                        &lt;div id="basicsAccordion"&gt;
+                          &lt;!-- Card --&gt;
+                          &lt;div class="card shadow-none mb-3"&gt;
+                            &lt;div class="card-header card-collapse" id="basicsHeadingOne"&gt;
+                              &lt;a class="btn btn-link btn-block d-flex justify-content-between card-btn collapsed bg-white px-0" href="javascript:;" role="button" data-toggle="collapse" data-target="#basicsCollapseOne" aria-expanded="false" aria-controls="basicsCollapseOne"&gt;
+                                Do you have any built-in caching?
+
+                                &lt;span class="card-btn-toggle"&gt;
+                                  &lt;span class="card-btn-toggle-default"&gt;&plus;&lt;/span&gt;
+                                  &lt;span class="card-btn-toggle-active"&gt;&minus;&lt;/span&gt;
+                                &lt;/span&gt;
+                              &lt;/a&gt;
+                            &lt;/div&gt;
+                            &lt;div id="basicsCollapseOne" class="collapse" aria-labelledby="basicsHeadingOne" data-parent="#basicsAccordion"&gt;
+                              &lt;div class="card-body px-0"&gt;
+                                &lt;p&gt;Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.&lt;/p&gt;
+                                &lt;p&gt;Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.&lt;/p&gt;
+                              &lt;/div&gt;
+                            &lt;/div&gt;
+                          &lt;/div&gt;
+                          &lt;!-- End Card --&gt;
+
+                          &lt;!-- Card --&gt;
+                          &lt;div class="card shadow-none mb-3"&gt;
+                            &lt;div class="card-header card-collapse" id="basicsHeadingTwo"&gt;
+                              &lt;a class="btn btn-link btn-block d-flex justify-content-between card-btn collapsed bg-white px-0" href="javascript:;" role="button" data-toggle="collapse" data-target="#basicsCollapseTwo" aria-expanded="false" aria-controls="basicsCollapseTwo"&gt;
+                                Can I add/upgrade my plan at any time?
+
+                                &lt;span class="card-btn-toggle"&gt;
+                                  &lt;span class="card-btn-toggle-default"&gt;&plus;&lt;/span&gt;
+                                  &lt;span class="card-btn-toggle-active"&gt;&minus;&lt;/span&gt;
+                                &lt;/span&gt;
+                              &lt;/a&gt;
+                            &lt;/div&gt;
+                            &lt;div id="basicsCollapseTwo" class="collapse" aria-labelledby="basicsHeadingTwo" data-parent="#basicsAccordion"&gt;
+                              &lt;div class="card-body px-0"&gt;
+                                &lt;p&gt;Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.&lt;/p&gt;
+                                &lt;p&gt;Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.&lt;/p&gt;
+                              &lt;/div&gt;
+                            &lt;/div&gt;
+                          &lt;/div&gt;
+                          &lt;!-- End Card --&gt;
+
+                          &lt;!-- Card --&gt;
+                          &lt;div class="card shadow-none mb-3"&gt;
+                            &lt;div class="card-header card-collapse" id="basicsHeadingThree"&gt;
+                              &lt;a class="btn btn-link btn-block d-flex justify-content-between card-btn collapsed bg-white px-0" href="javascript:;" role="button" data-toggle="collapse" data-target="#basicsCollapseThree" aria-expanded="false" aria-controls="basicsCollapseThree"&gt;
+                                What access comes with my hosting plan?
+
+                                &lt;span class="card-btn-toggle"&gt;
+                                  &lt;span class="card-btn-toggle-default"&gt;&plus;&lt;/span&gt;
+                                  &lt;span class="card-btn-toggle-active"&gt;&minus;&lt;/span&gt;
+                                &lt;/span&gt;
+                              &lt;/a&gt;
+                            &lt;/div&gt;
+                            &lt;div id="basicsCollapseThree" class="collapse" aria-labelledby="basicsHeadingThree" data-parent="#basicsAccordion"&gt;
+                              &lt;div class="card-body px-0"&gt;
+                                &lt;p&gt;Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.&lt;/p&gt;
+                                &lt;p&gt;Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.&lt;/p&gt;
+                              &lt;/div&gt;
+                            &lt;/div&gt;
+                          &lt;/div&gt;
+                          &lt;!-- End Card --&gt;
+
+                          &lt;!-- Card --&gt;
+                          &lt;div class="card shadow-none mb-3"&gt;
+                            &lt;div class="card-header card-collapse" id="basicsHeadingFour"&gt;
+                              &lt;a class="btn btn-link btn-block d-flex justify-content-between card-btn collapsed bg-white px-0" href="javascript:;" role="button" data-toggle="collapse" data-target="#basicsCollapseFour" aria-expanded="false" aria-controls="basicsCollapseFour"&gt;
+                                How do I change my password?
+
+                                &lt;span class="card-btn-toggle"&gt;
+                                  &lt;span class="card-btn-toggle-default"&gt;&plus;&lt;/span&gt;
+                                  &lt;span class="card-btn-toggle-active"&gt;&minus;&lt;/span&gt;
+                                &lt;/span&gt;
+                              &lt;/a&gt;
+                            &lt;/div&gt;
+                            &lt;div id="basicsCollapseFour" class="collapse" aria-labelledby="basicsHeadingFour" data-parent="#basicsAccordion"&gt;
+                              &lt;div class="card-body px-0"&gt;
+                                &lt;p&gt;Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.&lt;/p&gt;
+                                &lt;p&gt;Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.&lt;/p&gt;
+                              &lt;/div&gt;
+                            &lt;/div&gt;
+                          &lt;/div&gt;
+                          &lt;!-- End Card --&gt;
+                        &lt;/div&gt;
+                        &lt;!-- End Basics Accordion --&gt;
+                      &lt;/div&gt;
+                      &lt;!-- End Collapse Section --&gt;
+                    </code>
+                  </pre>
+                </div>
+              </div>
+              <!-- End Tab Content -->
+            </div>
+            <!-- End Tab Wrapper -->
+          </div>
+          <!-- End Component Block -->
+
+          <!-- Component Block -->
+          <div id="component-2" class="hs-docs-content-divider">
+            <h2 class="hs-docs-heading">Component #2 <a class="anchorjs-link" href="#component-2" data-anchorjs-icon="#"></a></h2>
+
+            <!-- Tab Wrapper -->
+            <div class="tab-wrapper">
+              <!-- Nav Classic -->
+              <ul class="nav nav-classic" id="pills-tab-2" role="tablist">
+                <li class="nav-item">
+                  <a class="nav-link active" id="pills-result-tab-2" data-toggle="pill" href="#pills-result-2" role="tab" aria-controls="pills-result-2" aria-selected="true">Preview</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="pills-html-tab-2" data-toggle="pill" href="#pills-html-2" role="tab" aria-controls="pills-html-2" aria-selected="false">HTML</a>
+                </li>
+              </ul>
+              <!-- End Nav Classic -->
+
+              <!-- Tab Content -->
+              <div class="tab-content" id="pills-tabContent-2">
+                <div class="tab-pane fade p-4 show active" id="pills-result-2" role="tabpanel" aria-labelledby="pills-result-tab-2">
+                  <!-- FAQ Section -->
+                  <div class="container space-2">
+                    <div class="w-lg-85 mx-lg-auto">
+                      <div class="row">
+                        <div class="col-md-6 mb-3 mb-md-5">
+                          <div class="pr-md-4">
+                            <h4>Can I cancel at anytime?</h4>
+                            <p>Yes, you can cancel anytime no questions are asked while you cancel but we would highly appreciate if you will give us some feedback.</p>
+                          </div>
+                        </div>
+
+                        <div class="col-md-6 mb-3 mb-md-5">
+                          <div class="pl-md-4">
+                            <h4>My team has credits. How do we use them?</h4>
+                            <p>Once your team signs up for a subscription plan. This is where we sit down, grab a cup of coffee and dial in the details.</p>
+                          </div>
+                        </div>
+
+                        <div class="w-100"></div>
+
+                        <div class="col-md-6 mb-3 mb-md-5">
+                          <div class="pr-md-4">
+                            <h4>How does Front's pricing work?</h4>
+                            <p>Our subscriptions are tiered. Understanding the task at hand and ironing out the wrinkles is key.</p>
+                          </div>
+                        </div>
+
+                        <div class="col-md-6 mb-3 mb-md-5">
+                          <div class="pl-md-4">
+                            <h4>How secure is Front?</h4>
+                            <p>Protecting the data you trust to Front is our first priority. This part is really crucial in keeping the project in line to completion.</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- End FAQ Section -->
+                </div>
+                <div class="tab-pane fade" id="pills-html-2" role="tabpanel" aria-labelledby="pills-html-tab-2">
+                  <pre>
+                    <code class="language-html" data-lang="html">
+                      &lt;!-- FAQ Section --&gt;
+                      &lt;div class="container space-2"&gt;
+                        &lt;div class="w-lg-85 mx-lg-auto"&gt;
+                          &lt;div class="row"&gt;
+                            &lt;div class="col-md-6 mb-3 mb-md-5"&gt;
+                              &lt;div class="pr-md-4"&gt;
+                                &lt;h4&gt;Can I cancel at anytime?&lt;/h4&gt;
+                                &lt;p&gt;Yes, you can cancel anytime no questions are asked while you cancel but we would highly appreciate if you will give us some feedback.&lt;/p&gt;
+                              &lt;/div&gt;
+                            &lt;/div&gt;
+
+                            &lt;div class="col-md-6 mb-3 mb-md-5"&gt;
+                              &lt;div class="pl-md-4"&gt;
+                                &lt;h4&gt;My team has credits. How do we use them?&lt;/h4&gt;
+                                &lt;p&gt;Once your team signs up for a subscription plan. This is where we sit down, grab a cup of coffee and dial in the details.&lt;/p&gt;
+                              &lt;/div&gt;
+                            &lt;/div&gt;
+
+                            &lt;div class="w-100"&gt;&lt;/div&gt;
+
+                            &lt;div class="col-md-6 mb-3 mb-md-5"&gt;
+                              &lt;div class="pr-md-4"&gt;
+                                &lt;h4&gt;How does Front's pricing work?&lt;/h4&gt;
+                                &lt;p&gt;Our subscriptions are tiered. Understanding the task at hand and ironing out the wrinkles is key.&lt;/p&gt;
+                              &lt;/div&gt;
+                            &lt;/div&gt;
+
+                            &lt;div class="col-md-6 mb-3 mb-md-5"&gt;
+                              &lt;div class="pl-md-4"&gt;
+                                &lt;h4&gt;How secure is Front?&lt;/h4&gt;
+                                &lt;p&gt;Protecting the data you trust to Front is our first priority. This part is really crucial in keeping the project in line to completion.&lt;/p&gt;
+                              &lt;/div&gt;
+                            &lt;/div&gt;
+                          &lt;/div&gt;
+                        &lt;/div&gt;
+                      &lt;/div&gt;
+                      &lt;!-- End FAQ Section --&gt;
+                    </code>
+                  </pre>
+                </div>
+              </div>
+              <!-- End Tab Content -->
+            </div>
+            <!-- End Tab Wrapper -->
+          </div>
+          <!-- End Component Block -->
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- JS Global Compulsory -->
+  <script src="../assets/vendor/jquery/dist/jquery.min.js"></script>
+  <script src="../assets/vendor/jquery-migrate/dist/jquery-migrate.min.js"></script>
+  <script src="../assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- JS Implementing Plugins -->
+  <script src="../assets/vendor/hs-header/dist/hs-header.min.js"></script>
+  <script src="../assets/vendor/hs-mega-menu/dist/hs-mega-menu.min.js"></script>
+  <script src="../assets/vendor/hs-scroll-to-in-overflowed-container/dist/hs-scroll-to-in-overflowed-container.min.js"></script>
+  <script src="../documentation/assets/vendor/jquery-ui/jquery-ui.core.min.js"></script>
+  <script src="../documentation/assets/vendor/jquery-ui/ui/widgets/menu.js"></script>
+  <script src="../documentation/assets/vendor/jquery-ui/ui/widgets/mouse.js"></script>
+  <script src="../documentation/assets/vendor/jquery-ui/ui/widgets/autocomplete.js"></script>
+  <script src="../documentation/assets/vendor/prism/prism.js"></script>
+
+  <!-- JS Front -->
+  <script src="../assets/js/hs.core.js"></script>
+  <script src="../documentation/assets/js/components/hs.autocomplete-local-search.js"></script>
+
+  <!-- JS Plugins Init. -->
+  <script>
+    $(document).on('ready', function () {
+      // initialization of header
+      var header = new HSHeader($('#header')).init();
+
+      // initialization scroll to in overflowed container
+      var scrollToInOverflowedContainerNav = new HSScrollToInOverflowedContainer($('.hs-sidebar-sticky'), {
+        targetEl: "#snippetsSidebarNav .hs-sidebar-item.active"
+      }).init();
+    });
+
+    $(window).on('load', function () {
+      // initialization of autocomplet
+      $.HSCore.components.HSLocalSearchAutocomplete.init('.js-hs-docs-search');
+    });
+  </script>
+</body>
+</html>

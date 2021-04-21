@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!-- Title -->
+		<title>Step Form</title>
+
+		<!-- Required Meta Tags Always Come First -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+		<!-- Favicon -->
+		<link rel="shortcut icon" href="../../../favicon.ico">
+
+		<!-- Google Fonts -->
+		<link href="//fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
+
+		<!-- CSS Implementing Plugins -->
+
+		<!-- CSS Front Template -->
+		<link rel="stylesheet" href="../../../assets/css/theme.css">
+	</head>
+	<body>
+		<div style="height: 20vh;"></div>
+
+		<div class="container">
+			<form class="js-step-form mb-5"
+			      data-hs-step-form-options='{
+			        "progressSelector": "#progressStepForm",
+			        "stepsSelector": "#contentStepForm"
+			      }'
+			      novalidate="novalidate">
+				<div class="card">
+					<div class="card-header p-5">
+						<nav id="progressStepForm" class="js-step-progress nav nav-icon nav-justified text-center">
+							<a href="javascript:;" class="nav-item">
+                <span class="nav-icon-action">
+                  <i class="las la-user-circle nav-icon-action-inner"></i>
+                </span>
+								Select One
+							</a>
+							<a href="javascript:;" class="nav-item">
+	              <span class="nav-icon-action">
+	                <i class="las la-file-invoice-dollar nav-icon-action-inner"></i>
+	              </span>
+								Select Two
+							</a>
+							<a href="javascript:;" class="nav-item">
+                <span class="nav-icon-action">
+                  <i class="las la-paperclip nav-icon-action-inner"></i>
+                </span>
+								Select Three
+							</a>
+						</nav>
+					</div>
+
+					<!-- Content Step Form -->
+					<div id="contentStepForm" class="card-body p-5">
+						<div id="selectStepOne" class="active">
+							Select One content goes here
+
+							<div class="d-flex justify-content-end">
+								<button type="button" class="btn btn-sm btn-primary transition-3d-hover mr-1"
+								        data-hs-step-form-next-options='{
+								          "targetSelector": "#selectStepTwo"
+								        }'>Next</button>
+							</div>
+						</div>
+
+						<div id="selectStepTwo" style="display: none;">
+							Select Two content goes here
+
+							<div class="d-flex justify-content-end">
+								<a class="btn btn-sm btn-soft-secondary transition-3d-hover mr-1" href="javascript:;"
+								   data-hs-step-form-prev-options='{
+								     "targetSelector": "#selectStepOne"
+								   }'>Back</a>
+								<button type="button" class="btn btn-sm btn-primary transition-3d-hover"
+								        data-hs-step-form-next-options='{
+								          "targetSelector": "#selectStepThree"
+								        }'>Next</button>
+							</div>
+						</div>
+
+						<div id="selectStepThree" style="display: none;">
+							Select Three content goes here
+
+							<div class="d-flex justify-content-end">
+								<a class="btn btn-sm btn-soft-secondary transition-3d-hover mr-1" href="javascript:;"
+								   data-hs-step-form-prev-options='{
+								     "targetSelector": "#selectStepTwo"
+								   }'>Back</a>
+								<button type="button" class="btn btn-sm btn-primary transition-3d-hover">Done</button>
+							</div>
+						</div>
+					</div>
+					<!-- End Content Step Form -->
+				</div>
+			</form>
+
+			<form class="js-step-form js-validate"
+			      data-hs-step-form-options='{
+			        "progressSelector": "#progressStepFormWithValidation",
+			        "stepsSelector": "#contentStepFormWithValidation",
+			        "isValidate": true
+			      }'
+			      novalidate="novalidate">
+				<div class="card">
+					<div class="card-header p-5">
+						<nav id="progressStepFormWithValidation" class="js-step-progress nav nav-icon nav-justified text-center">
+							<a href="javascript:;" class="nav-item">
+                <span class="nav-icon-action">
+                  <i class="las la-user-circle nav-icon-action-inner"></i>
+                </span>
+								Select One
+							</a>
+							<a href="javascript:;" class="nav-item">
+	              <span class="nav-icon-action">
+	                <i class="las la-file-invoice-dollar nav-icon-action-inner"></i>
+	              </span>
+								Select Two
+							</a>
+							<a href="javascript:;" class="nav-item">
+                <span class="nav-icon-action">
+                  <i class="las la-paperclip nav-icon-action-inner"></i>
+                </span>
+								Select Three
+							</a>
+						</nav>
+					</div>
+
+					<!-- Content Step Form -->
+					<div id="contentStepFormWithValidation" class="card-body p-5">
+						<div id="selectStepOneWithValidation" class="active">
+							<div class="js-form-message mb-5">
+								<div class="input-group input-group-sm">
+									<input type="text" class="form-control" name="stepOneField1" placeholder="Placeholder 1" aria-label="Placeholder 1" required
+									       data-msg="Please enter a valid value."
+									       data-error-class="has-error"
+									       data-success-class="has-success">
+								</div>
+							</div>
+
+							<div class="d-flex justify-content-end">
+								<button type="button" class="btn btn-sm btn-primary transition-3d-hover mr-1"
+								        data-hs-step-form-next-options='{
+								          "targetSelector": "#selectStepTwoWithValidation"
+								        }'>Next</button>
+							</div>
+						</div>
+
+						<div id="selectStepTwoWithValidation" style="display: none;">
+							<div class="js-form-message mb-5">
+								<div class="input-group input-group-sm">
+									<input type="text" class="form-control" name="stepTwoField1" placeholder="Placeholder 2" aria-label="Placeholder 2" required
+									       data-msg="Please enter a valid value."
+									       data-error-class="has-error"
+									       data-success-class="has-success">
+								</div>
+							</div>
+
+							<div class="d-flex justify-content-end">
+								<a class="btn btn-sm btn-soft-secondary transition-3d-hover mr-1" href="javascript:;"
+								   data-hs-step-form-prev-options='{
+								     "targetSelector": "#selectStepOneWithValidation"
+								   }'>Back</a>
+								<button type="button" class="btn btn-sm btn-primary transition-3d-hover"
+								        data-hs-step-form-next-options='{
+								          "targetSelector": "#selectStepThreeWithValidation"
+								        }'>Next</button>
+							</div>
+						</div>
+
+						<div id="selectStepThreeWithValidation" style="display: none;">
+							<div class="js-form-message mb-5">
+								<div class="input-group input-group-sm">
+									<input type="text" class="form-control" name="stepThreeField1" placeholder="Placeholder 3" aria-label="Placeholder 3" required
+									       data-msg="Please enter a valid value."
+									       data-error-class="has-error"
+									       data-success-class="has-success">
+								</div>
+							</div>
+
+							<div class="d-flex justify-content-end">
+								<a class="btn btn-sm btn-soft-secondary transition-3d-hover mr-1" href="javascript:;"
+								   data-hs-step-form-prev-options='{
+								     "targetSelector": "#selectStepTwoWithValidation"
+								   }'>Back</a>
+								<button type="submit" class="btn btn-sm btn-primary transition-3d-hover">Done</button>
+							</div>
+						</div>
+					</div>
+					<!-- End Content Step Form -->
+				</div>
+			</form>
+		</div>
+
+		<div style="height: 20vh;"></div>
+
+		<script src="../../../assets/vendor/jquery/dist/jquery.min.js"></script>
+		<script src="../../../assets/vendor/jquery-migrate/dist/jquery-migrate.min.js"></script>
+		<script src="../../../assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+		<script src="../../../assets/vendor/jquery-validation/dist/jquery.validate.min.js"></script>
+		<script src="./dist/hs-step-form.min.js"></script>
+
+		<script src="../../assets/js/wrappers/hs.core.js"></script>
+		<script src="../../assets/js/wrappers/hs.validation.js"></script>
+
+		<script>
+			$(document).on('ready', function () {
+				// initialization of form validation
+				$('.js-validate').each(function () {
+					var validation = $.HSCore.components.HSValidation.init($(this));
+				});
+
+				// initialization of step form
+				$('.js-step-form').each(function () {
+					var stepForm = new HSStepForm($(this)).init();
+				});
+			});
+		</script>
+	</body>
+</html>

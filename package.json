@@ -1,0 +1,46 @@
+{
+  "name": "Front",
+  "version": "3.2.0",
+  "description": "Front - Responsive Website Template",
+  "main": "gulpfile.js",
+  "author": "htmlstream",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.26.7",
+    "del": "^5.1.0",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-cache": "^1.1.3",
+    "gulp-cached": "^1.1.1",
+    "gulp-changed": "^4.0.2",
+    "gulp-clean-css": "^4.2.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-rename": "^1.4.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-uglify-es": "^2.0.0"
+  },
+  "dependencies": {
+    "@yaireo/tagify": "^3.6.2",
+    "aos": "^2.3.4",
+    "bootstrap": "^4.4.1",
+    "bootstrap-select": "^1.13.12",
+    "chart.js": "^2.9.3",
+    "clipboard": "^2.0.4",
+    "datatables": "^1.10.18",
+    "dropzone": "^5.7.0",
+    "flag-icon-css": "^3.4.5",
+    "flatpickr": "^4.6.3",
+    "ion-rangeslider": "^2.3.0",
+    "jquery": "^3.4.1",
+    "jquery-countdown": "^2.2.0",
+    "jquery-migrate": "^3.1.0",
+    "jquery-validation": "^1.19.1",
+    "leaflet": "^1.6.0",
+    "pwstrength-bootstrap": "^3.0.5",
+    "quill": "^1.3.7",
+    "summernote": "^0.8.12",
+    "typed.js": "^2.0.11"
+  }
+}

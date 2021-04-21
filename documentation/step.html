@@ -1,0 +1,2078 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Title -->
+  <title>Step - Front Documentation | Front - Responsive Website Template</title>
+
+  <!-- Required Meta Tags Always Come First -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="../favicon.ico">
+
+  <!-- Font -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap" rel="stylesheet">
+
+  <!-- CSS Implementing Plugins -->
+  <link rel="stylesheet" href="../assets/vendor/font-awesome/css/all.min.css">
+  <link rel="stylesheet" href="assets/vendor/jquery-ui/themes/base/jquery-ui.min.css">
+  <link rel="stylesheet" href="assets/vendor/prism/prism.css">
+
+  <!-- CSS Front Template -->
+  <link rel="stylesheet" href="../assets/css/theme.css">
+
+  <!-- CSS Front Doc -->
+  <link rel="stylesheet" href="assets/css/docs.css">
+</head>
+<body>
+  <!-- ========== HEADER ========== -->
+  <header id="header" class="header header-sticky-top header-docs header-box-shadow">
+    <div class="header-section">
+      <div id="logoAndNav" class="container-fluid px-xl-7">
+        <nav class="navbar d-block d-md-flex justify-content-start">
+          <div class="d-flex align-items-center">
+            <a class="navbar-brand" href="index.html" aria-label="Front">
+              <img src="../assets/svg/logos/logo.svg" alt="Logo">
+            </a>
+            <a href="changelog.html">
+              <span class="badge badge-soft-primary ml-2">v3.2</span>
+            </a>
+          </div>
+
+          <!-- Nav Links -->
+          <ul class="nav nav-classic nav-sm border-0 nav-docs-space">
+            <li class="nav-item">
+              <a class="nav-link d-flex align-items-center px-2 px-sm-3 active" href="index.html">
+                <svg class="d-none d-sm-block mr-2 mb-0" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" d="M1 2.5A1.5 1.5 0 012.5 1h3A1.5 1.5 0 017 2.5v3A1.5 1.5 0 015.5 7h-3A1.5 1.5 0 011 5.5v-3zM2.5 2a.5.5 0 00-.5.5v3a.5.5 0 00.5.5h3a.5.5 0 00.5-.5v-3a.5.5 0 00-.5-.5h-3zm6.5.5A1.5 1.5 0 0110.5 1h3A1.5 1.5 0 0115 2.5v3A1.5 1.5 0 0113.5 7h-3A1.5 1.5 0 019 5.5v-3zm1.5-.5a.5.5 0 00-.5.5v3a.5.5 0 00.5.5h3a.5.5 0 00.5-.5v-3a.5.5 0 00-.5-.5h-3zM1 10.5A1.5 1.5 0 012.5 9h3A1.5 1.5 0 017 10.5v3A1.5 1.5 0 015.5 15h-3A1.5 1.5 0 011 13.5v-3zm1.5-.5a.5.5 0 00-.5.5v3a.5.5 0 00.5.5h3a.5.5 0 00.5-.5v-3a.5.5 0 00-.5-.5h-3zm6.5.5A1.5 1.5 0 0110.5 9h3a1.5 1.5 0 011.5 1.5v3a1.5 1.5 0 01-1.5 1.5h-3A1.5 1.5 0 019 13.5v-3zm1.5-.5a.5.5 0 00-.5.5v3a.5.5 0 00.5.5h3a.5.5 0 00.5-.5v-3a.5.5 0 00-.5-.5h-3z" clip-rule="evenodd"/>
+                </svg>
+                <span class="d-none d-sm-block">Documentation</span>
+                <span class="d-sm-none">Docs</span>
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link d-flex align-items-center px-2 px-sm-3" href="../snippets/index.html">
+                <svg class="d-none d-sm-block mr-2 mb-0" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" d="M14.5 13.5h-13A.5.5 0 011 13V6a.5.5 0 01.5-.5h13a.5.5 0 01.5.5v7a.5.5 0 01-.5.5zm-13 1A1.5 1.5 0 010 13V6a1.5 1.5 0 011.5-1.5h13A1.5 1.5 0 0116 6v7a1.5 1.5 0 01-1.5 1.5h-13zM2 3a.5.5 0 00.5.5h11a.5.5 0 000-1h-11A.5.5 0 002 3zm2-2a.5.5 0 00.5.5h7a.5.5 0 000-1h-7A.5.5 0 004 1z" clip-rule="evenodd"/>
+                </svg>
+                Snippets
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link d-flex align-items-center px-2 px-sm-3" target="_blank" href="../html/landings/index.html">
+                Main Demo
+                <svg class="d-block ml-2 mb-0" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" d="M1.5 13A1.5 1.5 0 003 14.5h8a1.5 1.5 0 001.5-1.5V9a.5.5 0 00-1 0v4a.5.5 0 01-.5.5H3a.5.5 0 01-.5-.5V5a.5.5 0 01.5-.5h4a.5.5 0 000-1H3A1.5 1.5 0 001.5 5v8zm7-11a.5.5 0 01.5-.5h5a.5.5 0 01.5.5v5a.5.5 0 01-1 0V2.5H9a.5.5 0 01-.5-.5z" clip-rule="evenodd"/>
+                  <path fill-rule="evenodd" d="M14.354 1.646a.5.5 0 010 .708l-8 8a.5.5 0 01-.708-.708l8-8a.5.5 0 01.708 0z" clip-rule="evenodd"/>
+                </svg>
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link d-none d-xl-flex align-items-center px-2 px-sm-3" target="_blank" href="https://htmlstream.com/contact-us">
+                Get Support
+                <svg class="d-none d-sm-block ml-2 mb-0" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" d="M1.5 13A1.5 1.5 0 003 14.5h8a1.5 1.5 0 001.5-1.5V9a.5.5 0 00-1 0v4a.5.5 0 01-.5.5H3a.5.5 0 01-.5-.5V5a.5.5 0 01.5-.5h4a.5.5 0 000-1H3A1.5 1.5 0 001.5 5v8zm7-11a.5.5 0 01.5-.5h5a.5.5 0 01.5.5v5a.5.5 0 01-1 0V2.5H9a.5.5 0 01-.5-.5z" clip-rule="evenodd"/>
+                  <path fill-rule="evenodd" d="M14.354 1.646a.5.5 0 010 .708l-8 8a.5.5 0 01-.708-.708l8-8a.5.5 0 01.708 0z" clip-rule="evenodd"/>
+                </svg>
+              </a>
+            </li>
+          </ul>
+          <!-- End Nav Links -->
+
+          <!-- Header Search -->
+          <form class="form-inline input-group input-group-sm input-group-merge input-group-flush d-none d-lg-flex ml-auto" style="max-width: 300px;">
+            <input class="js-hs-docs-search form-control" type="text" placeholder="Search docs..." aria-label="Search docs..." aria-describedby="docsSearch" data-url="assets/ajax/autocomplete-data-for-documentation-search.json">
+            <div class="input-group-append">
+              <span class="input-group-text" id="docsSearch">
+                <i class="fas fa-search"></i>
+              </span>
+            </div>
+          </form>
+          <!-- End Header Search -->
+        </nav>
+      </div>
+    </div>
+  </header>
+  <!-- ========== END HEADER ========== -->
+
+  <!-- ========== MAIN CONTENT ========== -->
+  <main class="container-fluid space-top-3 space-top-md-2 pl-lg-7 pr-xl-7">
+    <div class="row justify-content-lg-end">
+      <!-- Sidebar -->
+      <nav class="col-lg-3 col-xl-2 hs-sidebar navbar-expand-lg px-0 ml-xl-7">
+        <div class="d-flex d-lg-none justify-content-between mb-3">
+          <!-- Sidebar Search -->
+          <form class="col form-inline input-group-sm">
+            <input class="js-hs-docs-search form-control form-control-sm w-100" type="text" placeholder="Search..." data-url="assets/ajax/autocomplete-data-for-documentation-search.json">
+          </form>
+          <!-- End Sidebar Search -->
+
+          <!-- Responsive Toggle Button -->
+          <button class="btn btn-link pl-0" type="button" data-toggle="collapse" data-target="#sidebar-nav" aria-controls="sidebar-nav" aria-expanded="false" aria-label="Toggle navigation">
+            <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 30 30" width="30" height="30" focusable="false">
+              <path stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M4 7h22M4 15h22M4 23h22"/>
+            </svg>
+          </button>
+          <!-- End Responsive Toggle Button -->
+        </div>
+
+        <!-- Sidebar Nav -->
+        <div class="collapse navbar-collapse" id="sidebar-nav">
+          <div id="sidebarNav" class="hs-sidebar-scrollbar hs-sidebar-sticky pl-2 pl-md-0 pr-2">
+            <span class="hs-sidebar-heading">Getting started</span>
+            <ul class="hs-sidebar-nav">
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="index.html">Introduction</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="gulp.html">Gulp</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="customization.html">Customization</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="credits.html">Credits</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="changelog.html">Changelog</a></li>
+            </ul>
+
+            <span class="hs-sidebar-heading">Content</span>
+            <ul class="hs-sidebar-nav">
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="typography.html">Typography</a></li>
+              <li class="hs-sidebar-item">
+                <span class="hs-sidebar-link">Icons:</span>
+                <ul class="hs-sidebar-nav ml-2">
+                  <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="exclusive-svg.html">Exclusive SVG set</a></li>
+                  <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="font-awesome.html">Font Awesome</a></li>
+                </ul>
+              </li>
+            </ul>
+
+            <span class="hs-sidebar-heading">Components</span>
+            <ul class="hs-sidebar-nav">
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="alerts.html">Alerts</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="avatars.html">Avatars</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="badge.html">Badge</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="breadcrumb.html">Breadcrumb</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="buttons.html">Buttons</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="cards.html">Cards</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="collapse.html">Collapse</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="devices.html">Devices</a></li>
+              <li class="hs-sidebar-item">
+                <span class="hs-sidebar-link">Dividers:</span>
+                <ul class="hs-sidebar-nav ml-2 mb-0">
+                  <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="css-divider.html">CSS divider</a></li>
+                  <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="svg-divider.html">SVG divider</a></li>
+                </ul>
+              </li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="forms.html">Forms</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="legend-indicator.html">Legend indicator</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="list-group.html">List group</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="modal.html">Modal</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="navbar.html">Navbar</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="navs.html">Navs</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="pagination.html">Pagination</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="popovers.html">Popovers</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="progress.html">Progress</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="spinners.html">Spinners</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link active" href="step.html">Step</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="sticky-footer.html">Sticky footer</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="tabs.html">Tabs</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="tables.html">Tables</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="text-highlight.html">Text Highlight</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="tooltips.html">Tooltips</a></li>
+            </ul>
+
+            <span class="hs-sidebar-heading">Utilities</span>
+            <ul class="hs-sidebar-nav">
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="borders.html">Borders</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="colors.html">Colors</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="content-alignments.html">Content alignments (with position)</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="links.html">Links</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="positions.html">Positions</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="shadows.html">Shadows</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="sizing.html">Sizing</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="spacings.html">Spacings</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="text.html">Text</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="transforms.html">Transforms</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="transitions.html">Transitions</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="others.html">Others</a></li>
+            </ul>
+
+            <span class="hs-sidebar-heading">HS Libraries</span>
+            <ul class="hs-sidebar-nav">
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="add-field.html">Add field</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="unfold.html">Unfold (Dropdown and others)</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="headers.html">Headers</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="header-mega-menu.html">Header mega menu</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="header-fullscreen.html">Header fullscreen</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="header-searches.html">Header searches</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="counters.html">Counters</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="file-attach.html">File attach</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="go-to.html">Go-to</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="page-preloader.html">Page preloader</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="progress-animation.html">Progress animation</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="quantity-counter.html">Quantity counter</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="scroll-nav.html">Scroll nav</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="show-animation.html">Show animation</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="step-form.html">Step form (Wizards)</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="sticky-block.html">Sticky block</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="toggle-state.html">Toggle state</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="toggle-switch.html">Toggle switch</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="switch.html">Switch</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="video-bg.html">Video background</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="video-player.html">Video player</a></li>
+            </ul>
+
+            <span class="hs-sidebar-heading">Other Libraries</span>
+            <ul class="hs-sidebar-nav">
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="aos.html">Aos (Animate on scroll)</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="chartjs.html">Chartjs</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="circles.html">Circles (Pie chart)</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="clipboard.html">Clipboard</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="countdown.html">Countdown</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="cubeportfolio.html">Cubeportfolio</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="dropzone.html">Dropzone (Drag n' drop file uploader)</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="fancybox.html">Fancybox</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="range-slider.html">Range slider</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="quill.html">Quill</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="select2.html">Select2</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="input-mask.html">Input mask</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="leaflet.html">Leaflet (Map)</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="parallax.html">Parallax</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="slick-carousel.html">Slick carousel</a></li>
+              <li class="hs-sidebar-item">
+                <span class="hs-sidebar-link">Social APIs:</span>
+                <ul class="hs-sidebar-nav ml-2 mb-0">
+                  <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="social-api-facebook.html">Facebook</a></li>
+                  <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="social-api-twitter.html">Twitter</a></li>
+                </ul>
+              </li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="typedjs.html">Typed.js</a></li>
+              <li class="hs-sidebar-item"><a class="hs-sidebar-link " href="validation.html">Validation</a></li>
+            </ul>
+          </div>
+        </div>
+        <!-- End Sidebar Nav -->
+      </nav>
+      <!-- End Sidebar -->
+
+      <div class="col-lg-10 space-top-1 space-bottom-2">
+        <div class="pl-lg-9 pl-xl-8">
+          <div class="hs-docs-content-divider">
+            <h1>Step</h1>
+            <p class="lead">A component that displays content as a process with defined by user milestones.</p>
+          </div>
+
+          <div id="horizontal-example" class="hs-docs-content-divider">
+            <h2 class="hs-docs-heading">Horizontal example <a class="anchorjs-link" href="#horizontal-example" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
+            <p>You can utilize <code class="highlight-rouge">.step{-sm|-md|-lg|-xl}</code> classes to change when they are horizontally aligned. By default <code class="highlight-rouge">.step</code> is vertically aligned.</p>
+            <p>This example is horizontally aligned above <code class="highlight-rouge">-md</code> resolution and vertically below. Resize the window to see it in action.</p>
+
+            <div class="tab-wrapper">
+              <!-- Nav Classic -->
+              <ul class="nav nav-classic" id="pills-tab-1" role="tablist">
+                <li class="nav-item">
+                  <a class="nav-link active" id="pills-result-tab-1" data-toggle="pill" href="#pills-result-1" role="tab" aria-controls="pills-result-1" aria-selected="true">Preview</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="pills-html-tab-1" data-toggle="pill" href="#pills-html-1" role="tab" aria-controls="pills-html-1" aria-selected="false">HTML</a>
+                </li>
+              </ul>
+              <!-- End Nav Classic -->
+
+              <!-- Tab Content -->
+              <div class="tab-content" id="pills-tabContent-1">
+                <div class="tab-pane fade p-4 show active" id="pills-result-1" role="tabpanel" aria-labelledby="pills-result-tab-1" style="min-height: 250px;">
+                  <!-- Step -->
+                  <ul class="step step-md">
+                    <li class="step-item">
+                      <div class="step-content-wrapper">
+                        <span class="step-icon step-icon-soft-primary">1</span>
+                        <div class="step-content">
+                          <h4>First step</h4>
+                          <p class="text-body">Achieve virtually any design and layout from within the one template.</p>
+                        </div>
+                      </div>
+                    </li>
+
+                    <li class="step-item">
+                      <div class="step-content-wrapper">
+                        <span class="step-icon step-icon-soft-primary">2</span>
+                        <div class="step-content">
+                          <h4>Second step</h4>
+                          <p class="text-body">We strive to figure out ways to help your business grow through all platforms.</p>
+                        </div>
+                      </div>
+                    </li>
+
+                    <li class="step-item">
+                      <div class="step-content-wrapper">
+                        <span class="step-icon step-icon-soft-primary">3</span>
+                        <div class="step-content">
+                          <h4>Third step</h4>
+                          <p class="text-body">Find what you need in one template and combine features at will.</p>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                  <!-- End Step -->
+                </div>
+                <div class="tab-pane fade" id="pills-html-1" role="tabpanel" aria-labelledby="pills-html-tab-1">
+                  <pre class="rounded">
+                    <code class="language-markup" data-lang="html">
+                      &lt;!-- Step --&gt;
+                      &lt;ul class="step step-md"&gt;
+                        &lt;li class="step-item"&gt;
+                          &lt;div class="step-content-wrapper"&gt;
+                            &lt;span class="step-icon step-icon-soft-primary"&gt;1&lt;/span&gt;
+                            &lt;div class="step-content"&gt;
+                              &lt;h4&gt;First step&lt;/h4&gt;
+                              &lt;p class="text-body"&gt;Achieve virtually any design and layout from within the one template.&lt;/p&gt;
+                            &lt;/div&gt;
+                          &lt;/div&gt;
+                        &lt;/li&gt;
+
+                        &lt;li class="step-item"&gt;
+                          &lt;div class="step-content-wrapper"&gt;
+                            &lt;span class="step-icon step-icon-soft-primary"&gt;2&lt;/span&gt;
+                            &lt;div class="step-content"&gt;
+                              &lt;h4&gt;Second step&lt;/h4&gt;
+                              &lt;p class="text-body"&gt;We strive to figure out ways to help your business grow through all platforms.&lt;/p&gt;
+                            &lt;/div&gt;
+                          &lt;/div&gt;
+                        &lt;/li&gt;
+
+                        &lt;li class="step-item"&gt;
+                          &lt;div class="step-content-wrapper"&gt;
+                            &lt;span class="step-icon step-icon-soft-primary"&gt;3&lt;/span&gt;
+                            &lt;div class="step-content"&gt;
+                              &lt;h4&gt;Third step&lt;/h4&gt;
+                              &lt;p class="text-body"&gt;Find what you need in one template and combine features at will.&lt;/p&gt;
+                            &lt;/div&gt;
+                          &lt;/div&gt;
+                        &lt;/li&gt;
+                      &lt;/ul&gt;
+                      &lt;!-- End Step --&gt;
+                    </code>
+                  </pre>
+                </div>
+              </div>
+              <!-- End Tab Content -->
+            </div>
+          </div>
+
+          <div id="horizontally-center-aligned" class="hs-docs-content-divider">
+            <h2 class="hs-docs-heading">Horizontally center aligned <a class="anchorjs-link" href="#horizontally-center-aligned" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
+            <p>The <code class="highlight-rouge">.step-centered</code> class helps achieve a center alignment.</p>
+
+            <div class="tab-wrapper">
+              <!-- Nav Classic -->
+              <ul class="nav nav-classic" id="pills-tab-2" role="tablist">
+                <li class="nav-item">
+                  <a class="nav-link active" id="pills-result-tab-2" data-toggle="pill" href="#pills-result-2" role="tab" aria-controls="pills-result-2" aria-selected="true">Preview</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="pills-html-tab-2" data-toggle="pill" href="#pills-html-2" role="tab" aria-controls="pills-html-2" aria-selected="false">HTML</a>
+                </li>
+              </ul>
+              <!-- End Nav Classic -->
+
+              <!-- Tab Content -->
+              <div class="tab-content" id="pills-tabContent-2">
+                <div class="tab-pane fade p-4 show active" id="pills-result-2" role="tabpanel" aria-labelledby="pills-result-tab-2" style="min-height: 250px;">
+                  <!-- Step -->
+                  <ul class="step step-md step-centered">
+                    <li class="step-item">
+                      <div class="step-content-wrapper">
+                        <span class="step-icon step-icon-soft-primary">1</span>
+                        <div class="step-content">
+                          <h4>First step</h4>
+                          <p class="text-body">Achieve virtually any design and layout from within the one template.</p>
+                        </div>
+                      </div>
+                    </li>
+
+                    <li class="step-item">
+                      <div class="step-content-wrapper">
+                        <span class="step-icon step-icon-soft-primary">2</span>
+                        <div class="step-content">
+                          <h4>Second step</h4>
+                          <p class="text-body">We strive to figure out ways to help your business grow through all platforms.</p>
+                        </div>
+                      </div>
+                    </li>
+
+                    <li class="step-item">
+                      <div class="step-content-wrapper">
+                        <span class="step-icon step-icon-soft-primary">3</span>
+                        <div class="step-content">
+                          <h4>Third step</h4>
+                          <p class="text-body">Find what you need in one template and combine features at will.</p>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                  <!-- End Step -->
+                </div>
+                <div class="tab-pane fade" id="pills-html-2" role="tabpanel" aria-labelledby="pills-html-tab-2">
+                  <pre class="rounded">
+                    <code class="language-markup" data-lang="html">
+                      &lt;!-- Step --&gt;
+                      &lt;ul class="step step-md step-centered"&gt;
+                        &lt;li class="step-item"&gt;
+                          &lt;div class="step-content-wrapper"&gt;
+                            &lt;span class="step-icon step-icon-soft-primary"&gt;1&lt;/span&gt;
+                            &lt;div class="step-content"&gt;
+                              &lt;h4&gt;First step&lt;/h4&gt;
+                              &lt;p class="text-body"&gt;Achieve virtually any design and layout from within the one template.&lt;/p&gt;
+                            &lt;/div&gt;
+                          &lt;/div&gt;
+                        &lt;/li&gt;
+
+                        &lt;li class="step-item"&gt;
+                          &lt;div class="step-content-wrapper"&gt;
+                            &lt;span class="step-icon step-icon-soft-primary"&gt;2&lt;/span&gt;
+                            &lt;div class="step-content"&gt;
+                              &lt;h4&gt;Second step&lt;/h4&gt;
+                              &lt;p class="text-body"&gt;We strive to figure out ways to help your business grow through all platforms.&lt;/p&gt;
+                            &lt;/div&gt;
+                          &lt;/div&gt;
+                        &lt;/li&gt;
+
+                        &lt;li class="step-item"&gt;
+                          &lt;div class="step-content-wrapper"&gt;
+                            &lt;span class="step-icon step-icon-soft-primary"&gt;3&lt;/span&gt;
+                            &lt;div class="step-content"&gt;
+                              &lt;h4&gt;Third step&lt;/h4&gt;
+                              &lt;p class="text-body"&gt;Find what you need in one template and combine features at will.&lt;/p&gt;
+                            &lt;/div&gt;
+                          &lt;/div&gt;
+                        &lt;/li&gt;
+                      &lt;/ul&gt;
+                      &lt;!-- End Step --&gt;
+                    </code>
+                  </pre>
+                </div>
+              </div>
+              <!-- End Tab Content -->
+            </div>
+          </div>
+
+          <div id="inline-steps" class="hs-docs-content-divider">
+            <h2 class="hs-docs-heading">Inline steps <a class="anchorjs-link" href="#inline-steps" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
+            <p>You can turn your horizontal step in to inline style and borders in the center with the help of the <code class="highlight-rouge">.step-inline</code> class.</p>
+
+            <div class="tab-wrapper">
+              <!-- Nav Classic -->
+              <ul class="nav nav-classic" id="pills-tab-4" role="tablist">
+                <li class="nav-item">
+                  <a class="nav-link active" id="pills-result-tab-4" data-toggle="pill" href="#pills-result-4" role="tab" aria-controls="pills-result-4" aria-selected="true">Preview</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="pills-html-tab-4" data-toggle="pill" href="#pills-html-4" role="tab" aria-controls="pills-html-4" aria-selected="false">HTML</a>
+                </li>
+              </ul>
+              <!-- End Nav Classic -->
+
+              <!-- Tab Content -->
+              <div class="tab-content" id="pills-tabContent-4">
+                <div class="tab-pane fade p-4 show active" id="pills-result-4" role="tabpanel" aria-labelledby="pills-result-tab-4" style="min-height: 250px;">
+                  <!-- Step -->
+                  <ul class="step step-xl step-inline">
+                    <li class="step-item">
+                      <div class="step-content-wrapper">
+                        <span class="step-icon step-icon-soft-primary">1</span>
+                        <div class="step-content">
+                          <span class="step-inline-title">General info</span>
+                        </div>
+                      </div>
+                    </li>
+
+                    <li class="step-item">
+                      <div class="step-content-wrapper">
+                        <span class="step-icon step-icon-soft-primary">2</span>
+                        <div class="step-content">
+                          <span class="step-inline-title">Billing address</span>
+                        </div>
+                      </div>
+                    </li>
+
+                    <li class="step-item">
+                      <div class="step-content-wrapper">
+                        <span class="step-icon step-icon-soft-primary">3</span>
+                        <div class="step-content">
+                          <span class="step-inline-title">Payment</span>
+                        </div>
+                      </div>
+                    </li>
+
+                    <li class="step-item">
+                      <div class="step-content-wrapper">
+                        <span class="step-icon step-icon-soft-primary">4</span>
+                        <div class="step-content">
+                          <span class="step-inline-title">Confirmation</span>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                  <!-- End Step -->
+                </div>
+                <div class="tab-pane fade" id="pills-html-4" role="tabpanel" aria-labelledby="pills-html-tab-4">
+                  <pre class="rounded">
+                    <code class="language-markup" data-lang="html">
+                      &lt;!-- Step --&gt;
+                      &lt;ul class="step step-xl step-inline"&gt;
+                        &lt;li class="step-item"&gt;
+                          &lt;div class="step-content-wrapper"&gt;
+                            &lt;span class="step-icon step-icon-soft-primary"&gt;1&lt;/span&gt;
+                            &lt;div class="step-content"&gt;
+                              &lt;span class="step-inline-title"&gt;General info&lt;/span&gt;
+                            &lt;/div&gt;
+                          &lt;/div&gt;
+                        &lt;/li&gt;
+
+                        &lt;li class="step-item"&gt;
+                          &lt;div class="step-content-wrapper"&gt;
+                            &lt;span class="step-icon step-icon-soft-primary"&gt;2&lt;/span&gt;
+                            &lt;div class="step-content"&gt;
+                              &lt;span class="step-inline-title"&gt;Billing address&lt;/span&gt;
+                            &lt;/div&gt;
+                          &lt;/div&gt;
+                        &lt;/li&gt;
+
+                        &lt;li class="step-item"&gt;
+                          &lt;div class="step-content-wrapper"&gt;
+                            &lt;span class="step-icon step-icon-soft-primary"&gt;3&lt;/span&gt;
+                            &lt;div class="step-content"&gt;
+                              &lt;span class="step-inline-title"&gt;Payment&lt;/span&gt;
+                            &lt;/div&gt;
+                          &lt;/div&gt;
+                        &lt;/li&gt;
+
+                        &lt;li class="step-item"&gt;
+                          &lt;div class="step-content-wrapper"&gt;
+                            &lt;span class="step-icon step-icon-soft-primary"&gt;4&lt;/span&gt;
+                            &lt;div class="step-content"&gt;
+                              &lt;span class="step-inline-title"&gt;Confirmation&lt;/span&gt;
+                            &lt;/div&gt;
+                          &lt;/div&gt;
+                        &lt;/li&gt;
+                      &lt;/ul&gt;
+                      &lt;!-- End Step --&gt;
+                    </code>
+                  </pre>
+                </div>
+              </div>
+              <!-- End Tab Content -->
+            </div>
+          </div>
+
+          <div id="vertical-example" class="hs-docs-content-divider">
+            <h2 class="hs-docs-heading">Vertical example <a class="anchorjs-link" href="#vertical-example" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
+
+            <div class="tab-wrapper">
+              <!-- Nav Classic -->
+              <ul class="nav nav-classic" id="pills-tab-5" role="tablist">
+                <li class="nav-item">
+                  <a class="nav-link active" id="pills-result-tab-5" data-toggle="pill" href="#pills-result-5" role="tab" aria-controls="pills-result-5" aria-selected="true">Preview</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="pills-html-tab-5" data-toggle="pill" href="#pills-html-5" role="tab" aria-controls="pills-html-5" aria-selected="false">HTML</a>
+                </li>
+              </ul>
+              <!-- End Nav Classic -->
+
+              <!-- Tab Content -->
+              <div class="tab-content" id="pills-tabContent-5">
+                <div class="tab-pane fade p-4 show active" id="pills-result-5" role="tabpanel" aria-labelledby="pills-result-tab-5" style="min-height: 250px;">
+                  <!-- Step -->
+                  <ul class="step">
+                    <li class="step-item">
+                      <div class="step-content-wrapper">
+                        <span class="step-icon step-icon-soft-primary">1</span>
+                        <div class="step-content">
+                          <h4>First step</h4>
+                          <p class="text-body">Achieve virtually any design and layout from within the one template.</p>
+                        </div>
+                      </div>
+                    </li>
+
+                    <li class="step-item">
+                      <div class="step-content-wrapper">
+                        <span class="step-icon step-icon-soft-primary">2</span>
+                        <div class="step-content">
+                          <h4>Second step</h4>
+                          <p class="text-body">We strive to figure out ways to help your business grow through all platforms.</p>
+                        </div>
+                      </div>
+                    </li>
+
+                    <li class="step-item">
+                      <div class="step-content-wrapper">
+                        <span class="step-icon step-icon-soft-primary">3</span>
+                        <div class="step-content">
+                          <h4>Third step</h4>
+                          <p class="text-body">Find what you need in one template and combine features at will.</p>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                  <!-- End Step -->
+                </div>
+                <div class="tab-pane fade" id="pills-html-5" role="tabpanel" aria-labelledby="pills-html-tab-5">
+                  <pre class="rounded">
+                    <code class="language-markup" data-lang="html">
+                      &lt;!-- Step --&gt;
+                      &lt;ul class="step"&gt;
+                        &lt;li class="step-item"&gt;
+                          &lt;div class="step-content-wrapper"&gt;
+                            &lt;span class="step-icon step-icon-soft-primary"&gt;1&lt;/span&gt;
+                            &lt;div class="step-content"&gt;
+                              &lt;h4&gt;First step&lt;/h4&gt;
+                              &lt;p class="text-body"&gt;Achieve virtually any design and layout from within the one template.&lt;/p&gt;
+                            &lt;/div&gt;
+                          &lt;/div&gt;
+                        &lt;/li&gt;
+
+                        &lt;li class="step-item"&gt;
+                          &lt;div class="step-content-wrapper"&gt;
+                            &lt;span class="step-icon step-icon-soft-primary"&gt;2&lt;/span&gt;
+                            &lt;div class="step-content"&gt;
+                              &lt;h4&gt;Second step&lt;/h4&gt;
+                              &lt;p class="text-body"&gt;We strive to figure out ways to help your business grow through all platforms.&lt;/p&gt;
+                            &lt;/div&gt;
+                          &lt;/div&gt;
+                        &lt;/li&gt;
+
+                        &lt;li class="step-item"&gt;
+                          &lt;div class="step-content-wrapper"&gt;
+                            &lt;span class="step-icon step-icon-soft-primary"&gt;3&lt;/span&gt;
+                            &lt;div class="step-content"&gt;
+                              &lt;h4&gt;Third step&lt;/h4&gt;
+                              &lt;p class="text-body"&gt;Find what you need in one template and combine features at will.&lt;/p&gt;
+                            &lt;/div&gt;
+                          &lt;/div&gt;
+                        &lt;/li&gt;
+                      &lt;/ul&gt;
+                      &lt;!-- End Step --&gt;
+                    </code>
+                  </pre>
+                </div>
+              </div>
+              <!-- End Tab Content -->
+            </div>
+          </div>
+
+          <div id="timeline" class="hs-docs-content-divider">
+            <h2 class="hs-docs-heading">Timeline <a class="anchorjs-link" href="#timeline" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
+            <p>Create a vertical oriented timeline with the <code class="highlight-rouge">.step-timeline{-sm|-md|-lg|-xl}</code> classes.</p>
+
+            <div class="tab-wrapper">
+              <!-- Nav Classic -->
+              <ul class="nav nav-classic" id="pills-tab-6" role="tablist">
+                <li class="nav-item">
+                  <a class="nav-link active" id="pills-result-tab-6" data-toggle="pill" href="#pills-result-6" role="tab" aria-controls="pills-result-6" aria-selected="true">Preview</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="pills-html-tab-6" data-toggle="pill" href="#pills-html-6" role="tab" aria-controls="pills-html-6" aria-selected="false">HTML</a>
+                </li>
+              </ul>
+              <!-- End Nav Classic -->
+
+              <!-- Tab Content -->
+              <div class="tab-content" id="pills-tabContent-6">
+                <div class="tab-pane fade p-4 show active" id="pills-result-6" role="tabpanel" aria-labelledby="pills-result-tab-6" style="min-height: 250px;">
+                  <!-- Step -->
+                  <ul class="step step-timeline-md">
+                    <li class="step-item">
+                      <div class="step-content-wrapper">
+                        <span class="step-icon step-icon-soft-primary">1</span>
+                        <div class="step-content">
+                          <h4>First step</h4>
+                          <p class="text-body">Achieve virtually any design and layout from within the one template.</p>
+                        </div>
+                      </div>
+                    </li>
+
+                    <li class="step-item">
+                      <div class="step-content-wrapper">
+                        <span class="step-icon step-icon-soft-primary">2</span>
+                        <div class="step-content">
+                          <h4>Second step</h4>
+                          <p class="text-body">We strive to figure out ways to help your business grow through all platforms.</p>
+                        </div>
+                      </div>
+                    </li>
+
+                    <li class="step-item">
+                      <div class="step-content-wrapper">
+                        <span class="step-icon step-icon-soft-primary">3</span>
+                        <div class="step-content">
+                          <h4>Third step</h4>
+                          <p class="text-body">Find what you need in one template and combine features at will.</p>
+                        </div>
+                      </div>
+                    </li>
+
+                    <li class="step-item">
+                      <div class="step-content-wrapper">
+                        <span class="step-icon step-icon-soft-primary">4</span>
+                        <div class="step-content">
+                          <h4>Fourth step</h4>
+                          <p class="text-body">Find what you need in one template and combine features at will.</p>
+                        </div>
+                      </div>
+                    </li>
+
+                    <li class="step-item">
+                      <div class="step-content-wrapper">
+                        <span class="step-icon step-icon-soft-primary">5</span>
+                        <div class="step-content">
+                          <h4>Fifth step</h4>
+                          <p class="text-body">Find what you need in one template and combine features at will.</p>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                  <!-- End Step -->
+                </div>
+                <div class="tab-pane fade" id="pills-html-6" role="tabpanel" aria-labelledby="pills-html-tab-6">
+                  <pre class="rounded">
+                    <code class="language-markup" data-lang="html">
+                      &lt;!-- Step --&gt;
+                      &lt;ul class="step"&gt;
+                        &lt;li class="step-item"&gt;
+                          &lt;div class="step-content-wrapper"&gt;
+                            &lt;span class="step-icon step-icon-soft-primary"&gt;1&lt;/span&gt;
+                            &lt;div class="step-content"&gt;
+                              &lt;h4&gt;First step&lt;/h4&gt;
+                              &lt;p class="text-body"&gt;Achieve virtually any design and layout from within the one template.&lt;/p&gt;
+                            &lt;/div&gt;
+                          &lt;/div&gt;
+                        &lt;/li&gt;
+
+                        &lt;li class="step-item"&gt;
+                          &lt;div class="step-content-wrapper"&gt;
+                            &lt;span class="step-icon step-icon-soft-primary"&gt;2&lt;/span&gt;
+                            &lt;div class="step-content"&gt;
+                              &lt;h4&gt;Second step&lt;/h4&gt;
+                              &lt;p class="text-body"&gt;We strive to figure out ways to help your business grow through all platforms.&lt;/p&gt;
+                            &lt;/div&gt;
+                          &lt;/div&gt;
+                        &lt;/li&gt;
+
+                        &lt;li class="step-item"&gt;
+                          &lt;div class="step-content-wrapper"&gt;
+                            &lt;span class="step-icon step-icon-soft-primary"&gt;3&lt;/span&gt;
+                            &lt;div class="step-content"&gt;
+                              &lt;h4&gt;Third step&lt;/h4&gt;
+                              &lt;p class="text-body"&gt;Find what you need in one template and combine features at will.&lt;/p&gt;
+                            &lt;/div&gt;
+                          &lt;/div&gt;
+                        &lt;/li&gt;
+                      &lt;/ul&gt;
+                      &lt;!-- End Step --&gt;
+                    </code>
+                  </pre>
+                </div>
+              </div>
+              <!-- End Tab Content -->
+            </div>
+          </div>
+
+          <div id="color-variations" class="hs-docs-content-divider">
+            <h2 class="hs-docs-heading">Color variations <a class="anchorjs-link" href="#color-variations" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
+            <p>All theme color available for colors.</p>
+
+            <div class="tab-wrapper">
+              <!-- Nav Classic -->
+              <ul class="nav nav-classic" id="pills-tab-7" role="tablist">
+                <li class="nav-item">
+                  <a class="nav-link active" id="pills-result-tab-7" data-toggle="pill" href="#pills-result-7" role="tab" aria-controls="pills-result-7" aria-selected="true">Preview</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="pills-html-tab-7" data-toggle="pill" href="#pills-html-7" role="tab" aria-controls="pills-html-7" aria-selected="false">HTML</a>
+                </li>
+              </ul>
+              <!-- End Nav Classic -->
+
+              <!-- Tab Content -->
+              <div class="tab-content" id="pills-tabContent-7">
+                <div class="tab-pane fade p-4 show active" id="pills-result-7" role="tabpanel" aria-labelledby="pills-result-tab-7" style="min-height: 250px;">
+                  <!-- Step -->
+                  <ul class="step">
+                    <li class="step-item">
+                      <div class="step-content-wrapper">
+                        <span class="step-icon step-icon-primary step-icon-pseudo"></span>
+                        <div class="step-content">
+                          <h4>Primary</h4>
+                          <p class="text-body">Achieve virtually any design and layout from within the one template.</p>
+                        </div>
+                      </div>
+                    </li>
+
+                    <li class="step-item">
+                      <div class="step-content-wrapper">
+                        <span class="step-icon step-icon-secondary step-icon-pseudo"></span>
+                        <div class="step-content">
+                          <h4>Secondary</h4>
+                          <p class="text-body">We strive to figure out ways to help your business grow through all platforms.</p>
+                        </div>
+                      </div>
+                    </li>
+
+                    <li class="step-item">
+                      <div class="step-content-wrapper">
+                        <span class="step-icon step-icon-success step-icon-pseudo"></span>
+                        <div class="step-content">
+                          <h4>Success</h4>
+                          <p class="text-body">Find what you need in one template and combine features at will.</p>
+                        </div>
+                      </div>
+                    </li>
+
+                    <li class="step-item">
+                      <div class="step-content-wrapper">
+                        <span class="step-icon step-icon-danger step-icon-pseudo"></span>
+                        <div class="step-content">
+                          <h4>Danger</h4>
+                          <p class="text-body">Find what you need in one template and combine features at will.</p>
+                        </div>
+                      </div>
+                    </li>
+
+                    <li class="step-item">
+                      <div class="step-content-wrapper">
+                        <span class="step-icon step-icon-warning step-icon-pseudo"></span>
+                        <div class="step-content">
+                          <h4>Warning</h4>
+                          <p class="text-body">Find what you need in one template and combine features at will.</p>
+                        </div>
+                      </div>
+                    </li>
+
+                    <li class="step-item">
+                      <div class="step-content-wrapper">
+                        <span class="step-icon step-icon-info step-icon-pseudo"></span>
+                        <div class="step-content">
+                          <h4>Info</h4>
+                          <p class="text-body">Find what you need in one template and combine features at will.</p>
+                        </div>
+                      </div>
+                    </li>
+
+                    <li class="step-item">
+                      <div class="step-content-wrapper">
+                        <span class="step-icon step-icon-dark step-icon-pseudo"></span>
+                        <div class="step-content">
+                          <h4>Dark</h4>
+                          <p class="text-body">Find what you need in one template and combine features at will.</p>
+                        </div>
+                      </div>
+                    </li>
+
+                    <li class="step-item">
+                      <div class="step-content-wrapper">
+                        <span class="step-icon step-icon-navy step-icon-pseudo"></span>
+                        <div class="step-content">
+                          <h4>Navy</h4>
+                          <p class="text-body">Find what you need in one template and combine features at will.</p>
+                        </div>
+                      </div>
+                    </li>
+
+                    <li class="step-item">
+                      <div class="step-content-wrapper">
+                        <span class="step-icon step-icon-light step-icon-pseudo"></span>
+                        <div class="step-content">
+                          <h4>Light</h4>
+                          <p class="text-body">Find what you need in one template and combine features at will.</p>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                  <!-- End Step -->
+                </div>
+                <div class="tab-pane fade" id="pills-html-7" role="tabpanel" aria-labelledby="pills-html-tab-7">
+                  <pre class="rounded">
+                    <code class="language-markup" data-lang="html">
+                      &lt;!-- Step --&gt;
+                      &lt;ul class="step"&gt;
+                        &lt;li class="step-item"&gt;
+                          &lt;div class="step-content-wrapper"&gt;
+                            &lt;span class="step-icon step-icon-soft-primary step-icon-pseudo"&gt;&lt;/span&gt;
+                            &lt;div class="step-content"&gt;
+                              &lt;h4&gt;Primary&lt;/h4&gt;
+                              &lt;p class="text-body"&gt;Achieve virtually any design and layout from within the one template.&lt;/p&gt;
+                            &lt;/div&gt;
+                          &lt;/div&gt;
+                        &lt;/li&gt;
+
+                        &lt;li class="step-item"&gt;
+                          &lt;div class="step-content-wrapper"&gt;
+                            &lt;span class="step-icon step-icon-secondary step-icon-pseudo"&gt;&lt;/span&gt;
+                            &lt;div class="step-content"&gt;
+                              &lt;h4&gt;Secondary&lt;/h4&gt;
+                              &lt;p class="text-body"&gt;We strive to figure out ways to help your business grow through all platforms.&lt;/p&gt;
+                            &lt;/div&gt;
+                          &lt;/div&gt;
+                        &lt;/li&gt;
+
+                        &lt;li class="step-item"&gt;
+                          &lt;div class="step-content-wrapper"&gt;
+                            &lt;span class="step-icon step-icon-success step-icon-pseudo"&gt;&lt;/span&gt;
+                            &lt;div class="step-content"&gt;
+                              &lt;h4&gt;Success&lt;/h4&gt;
+                              &lt;p class="text-body"&gt;Find what you need in one template and combine features at will.&lt;/p&gt;
+                            &lt;/div&gt;
+                          &lt;/div&gt;
+                        &lt;/li&gt;
+
+                        &lt;li class="step-item"&gt;
+                          &lt;div class="step-content-wrapper"&gt;
+                            &lt;span class="step-icon step-icon-danger step-icon-pseudo"&gt;&lt;/span&gt;
+                            &lt;div class="step-content"&gt;
+                              &lt;h4&gt;Danger&lt;/h4&gt;
+                              &lt;p class="text-body"&gt;Find what you need in one template and combine features at will.&lt;/p&gt;
+                            &lt;/div&gt;
+                          &lt;/div&gt;
+                        &lt;/li&gt;
+
+                        &lt;li class="step-item"&gt;
+                          &lt;div class="step-content-wrapper"&gt;
+                            &lt;span class="step-icon step-icon-warning step-icon-pseudo"&gt;&lt;/span&gt;
+                            &lt;div class="step-content"&gt;
+                              &lt;h4&gt;Warning&lt;/h4&gt;
+                              &lt;p class="text-body"&gt;Find what you need in one template and combine features at will.&lt;/p&gt;
+                            &lt;/div&gt;
+                          &lt;/div&gt;
+                        &lt;/li&gt;
+
+                        &lt;li class="step-item"&gt;
+                          &lt;div class="step-content-wrapper"&gt;
+                            &lt;span class="step-icon step-icon-info step-icon-pseudo"&gt;&lt;/span&gt;
+                            &lt;div class="step-content"&gt;
+                              &lt;h4&gt;Info&lt;/h4&gt;
+                              &lt;p class="text-body"&gt;Find what you need in one template and combine features at will.&lt;/p&gt;
+                            &lt;/div&gt;
+                          &lt;/div&gt;
+                        &lt;/li&gt;
+
+                        &lt;li class="step-item"&gt;
+                          &lt;div class="step-content-wrapper"&gt;
+                            &lt;span class="step-icon step-icon-dark step-icon-pseudo"&gt;&lt;/span&gt;
+                            &lt;div class="step-content"&gt;
+                              &lt;h4&gt;Dark&lt;/h4&gt;
+                              &lt;p class="text-body"&gt;Find what you need in one template and combine features at will.&lt;/p&gt;
+                            &lt;/div&gt;
+                          &lt;/div&gt;
+                        &lt;/li&gt;
+
+                        &lt;li class="step-item"&gt;
+                          &lt;div class="step-content-wrapper"&gt;
+                            &lt;span class="step-icon step-icon-navy step-icon-pseudo"&gt;&lt;/span&gt;
+                            &lt;div class="step-content"&gt;
+                              &lt;h4&gt;Navy&lt;/h4&gt;
+                              &lt;p class="text-body"&gt;Find what you need in one template and combine features at will.&lt;/p&gt;
+                            &lt;/div&gt;
+                          &lt;/div&gt;
+                        &lt;/li&gt;
+
+                        &lt;li class="step-item"&gt;
+                          &lt;div class="step-content-wrapper"&gt;
+                            &lt;span class="step-icon step-icon-light step-icon-pseudo"&gt;&lt;/span&gt;
+                            &lt;div class="step-content"&gt;
+                              &lt;h4&gt;Light&lt;/h4&gt;
+                              &lt;p class="text-body"&gt;Find what you need in one template and combine features at will.&lt;/p&gt;
+                            &lt;/div&gt;
+                          &lt;/div&gt;
+                        &lt;/li&gt;
+                      &lt;/ul&gt;
+                      &lt;!-- End Step --&gt;
+                    </code>
+                  </pre>
+                </div>
+              </div>
+              <!-- End Tab Content -->
+            </div>
+
+            <p>Including soft color styles.</p>
+
+            <div class="tab-wrapper">
+              <!-- Nav Classic -->
+              <ul class="nav nav-classic" id="pills-tab-8" role="tablist">
+                <li class="nav-item">
+                  <a class="nav-link active" id="pills-result-tab-8" data-toggle="pill" href="#pills-result-8" role="tab" aria-controls="pills-result-8" aria-selected="true">Preview</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="pills-html-tab-8" data-toggle="pill" href="#pills-html-8" role="tab" aria-controls="pills-html-8" aria-selected="false">HTML</a>
+                </li>
+              </ul>
+              <!-- End Nav Classic -->
+
+              <!-- Tab Content -->
+              <div class="tab-content" id="pills-tabContent-8">
+                <div class="tab-pane fade p-4 show active" id="pills-result-8" role="tabpanel" aria-labelledby="pills-result-tab-8" style="min-height: 250px;">
+                  <!-- Step -->
+                  <ul class="step">
+                    <li class="step-item">
+                      <div class="step-content-wrapper">
+                        <span class="step-icon step-icon-soft-primary step-icon-pseudo"></span>
+                        <div class="step-content">
+                          <h4>Primary</h4>
+                          <p class="text-body">Achieve virtually any design and layout from within the one template.</p>
+                        </div>
+                      </div>
+                    </li>
+
+                    <li class="step-item">
+                      <div class="step-content-wrapper">
+                        <span class="step-icon step-icon-soft-secondary step-icon-pseudo"></span>
+                        <div class="step-content">
+                          <h4>Secondary</h4>
+                          <p class="text-body">We strive to figure out ways to help your business grow through all platforms.</p>
+                        </div>
+                      </div>
+                    </li>
+
+                    <li class="step-item">
+                      <div class="step-content-wrapper">
+                        <span class="step-icon step-icon-soft-success step-icon-pseudo"></span>
+                        <div class="step-content">
+                          <h4>Success</h4>
+                          <p class="text-body">Find what you need in one template and combine features at will.</p>
+                        </div>
+                      </div>
+                    </li>
+
+                    <li class="step-item">
+                      <div class="step-content-wrapper">
+                        <span class="step-icon step-icon-soft-danger step-icon-pseudo"></span>
+                        <div class="step-content">
+                          <h4>Danger</h4>
+                          <p class="text-body">Find what you need in one template and combine features at will.</p>
+                        </div>
+                      </div>
+                    </li>
+
+                    <li class="step-item">
+                      <div class="step-content-wrapper">
+                        <span class="step-icon step-icon-soft-warning step-icon-pseudo"></span>
+                        <div class="step-content">
+                          <h4>Warning</h4>
+                          <p class="text-body">Find what you need in one template and combine features at will.</p>
+                        </div>
+                      </div>
+                    </li>
+
+                    <li class="step-item">
+                      <div class="step-content-wrapper">
+                        <span class="step-icon step-icon-soft-info step-icon-pseudo"></span>
+                        <div class="step-content">
+                          <h4>Info</h4>
+                          <p class="text-body">Find what you need in one template and combine features at will.</p>
+                        </div>
+                      </div>
+                    </li>
+
+                    <li class="step-item">
+                      <div class="step-content-wrapper">
+                        <span class="step-icon step-icon-soft-dark step-icon-pseudo"></span>
+                        <div class="step-content">
+                          <h4>Dark</h4>
+                          <p class="text-body">Find what you need in one template and combine features at will.</p>
+                        </div>
+                      </div>
+                    </li>
+
+                    <li class="step-item">
+                      <div class="step-content-wrapper">
+                        <span class="step-icon step-icon-soft-navy step-icon-pseudo"></span>
+                        <div class="step-content">
+                          <h4>Navy</h4>
+                          <p class="text-body">Find what you need in one template and combine features at will.</p>
+                        </div>
+                      </div>
+                    </li>
+
+                    <li class="step-item">
+                      <div class="step-content-wrapper">
+                        <span class="step-icon step-icon-soft-light step-icon-pseudo"></span>
+                        <div class="step-content">
+                          <h4>Light</h4>
+                          <p class="text-body">Find what you need in one template and combine features at will.</p>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                  <!-- End Step -->
+                </div>
+                <div class="tab-pane fade" id="pills-html-8" role="tabpanel" aria-labelledby="pills-html-tab-8">
+                  <pre class="rounded">
+                    <code class="language-markup" data-lang="html">
+                      &lt;!-- Step --&gt;
+                      &lt;ul class="step"&gt;
+                        &lt;li class="step-item"&gt;
+                          &lt;div class="step-content-wrapper"&gt;
+                            &lt;span class="step-icon step-icon-soft-primary step-icon-pseudo"&gt;&lt;/span&gt;
+                            &lt;div class="step-content"&gt;
+                              &lt;h4&gt;Primary&lt;/h4&gt;
+                              &lt;p class="text-body"&gt;Achieve virtually any design and layout from within the one template.&lt;/p&gt;
+                            &lt;/div&gt;
+                          &lt;/div&gt;
+                        &lt;/li&gt;
+
+                        &lt;li class="step-item"&gt;
+                          &lt;div class="step-content-wrapper"&gt;
+                            &lt;span class="step-icon step-icon-soft-secondary step-icon-pseudo"&gt;&lt;/span&gt;
+                            &lt;div class="step-content"&gt;
+                              &lt;h4&gt;Secondary&lt;/h4&gt;
+                              &lt;p class="text-body"&gt;We strive to figure out ways to help your business grow through all platforms.&lt;/p&gt;
+                            &lt;/div&gt;
+                          &lt;/div&gt;
+                        &lt;/li&gt;
+
+                        &lt;li class="step-item"&gt;
+                          &lt;div class="step-content-wrapper"&gt;
+                            &lt;span class="step-icon step-icon-soft-success step-icon-pseudo"&gt;&lt;/span&gt;
+                            &lt;div class="step-content"&gt;
+                              &lt;h4&gt;Success&lt;/h4&gt;
+                              &lt;p class="text-body"&gt;Find what you need in one template and combine features at will.&lt;/p&gt;
+                            &lt;/div&gt;
+                          &lt;/div&gt;
+                        &lt;/li&gt;
+
+                        &lt;li class="step-item"&gt;
+                          &lt;div class="step-content-wrapper"&gt;
+                            &lt;span class="step-icon step-icon-soft-danger step-icon-pseudo"&gt;&lt;/span&gt;
+                            &lt;div class="step-content"&gt;
+                              &lt;h4&gt;Danger&lt;/h4&gt;
+                              &lt;p class="text-body"&gt;Find what you need in one template and combine features at will.&lt;/p&gt;
+                            &lt;/div&gt;
+                          &lt;/div&gt;
+                        &lt;/li&gt;
+
+                        &lt;li class="step-item"&gt;
+                          &lt;div class="step-content-wrapper"&gt;
+                            &lt;span class="step-icon step-icon-soft-warning step-icon-pseudo"&gt;&lt;/span&gt;
+                            &lt;div class="step-content"&gt;
+                              &lt;h4&gt;Warning&lt;/h4&gt;
+                              &lt;p class="text-body"&gt;Find what you need in one template and combine features at will.&lt;/p&gt;
+                            &lt;/div&gt;
+                          &lt;/div&gt;
+                        &lt;/li&gt;
+
+                        &lt;li class="step-item"&gt;
+                          &lt;div class="step-content-wrapper"&gt;
+                            &lt;span class="step-icon step-icon-soft-info step-icon-pseudo"&gt;&lt;/span&gt;
+                            &lt;div class="step-content"&gt;
+                              &lt;h4&gt;Info&lt;/h4&gt;
+                              &lt;p class="text-body"&gt;Find what you need in one template and combine features at will.&lt;/p&gt;
+                            &lt;/div&gt;
+                          &lt;/div&gt;
+                        &lt;/li&gt;
+
+                        &lt;li class="step-item"&gt;
+                          &lt;div class="step-content-wrapper"&gt;
+                            &lt;span class="step-icon step-icon-soft-dark step-icon-pseudo"&gt;&lt;/span&gt;
+                            &lt;div class="step-content"&gt;
+                              &lt;h4&gt;Dark&lt;/h4&gt;
+                              &lt;p class="text-body"&gt;Find what you need in one template and combine features at will.&lt;/p&gt;
+                            &lt;/div&gt;
+                          &lt;/div&gt;
+                        &lt;/li&gt;
+
+                        &lt;li class="step-item"&gt;
+                          &lt;div class="step-content-wrapper"&gt;
+                            &lt;span class="step-icon step-icon-soft-navy step-icon-pseudo"&gt;&lt;/span&gt;
+                            &lt;div class="step-content"&gt;
+                              &lt;h4&gt;Navy&lt;/h4&gt;
+                              &lt;p class="text-body"&gt;Find what you need in one template and combine features at will.&lt;/p&gt;
+                            &lt;/div&gt;
+                          &lt;/div&gt;
+                        &lt;/li&gt;
+
+                        &lt;li class="step-item"&gt;
+                          &lt;div class="step-content-wrapper"&gt;
+                            &lt;span class="step-icon step-icon-soft-light step-icon-pseudo"&gt;&lt;/span&gt;
+                            &lt;div class="step-content"&gt;
+                              &lt;h4&gt;Light&lt;/h4&gt;
+                              &lt;p class="text-body"&gt;Find what you need in one template and combine features at will.&lt;/p&gt;
+                            &lt;/div&gt;
+                          &lt;/div&gt;
+                        &lt;/li&gt;
+                      &lt;/ul&gt;
+                      &lt;!-- End Step --&gt;
+                    </code>
+                  </pre>
+                </div>
+              </div>
+              <!-- End Tab Content -->
+            </div>
+          </div>
+
+          <div id="avatars" class="hs-docs-content-divider">
+            <h2 class="hs-docs-heading">Avatars <a class="anchorjs-link" href="#avatars" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
+            <p>Available in all <code class="highlight-rouge">.step-icon-lg</code>, <code class="highlight-rouge">.step-icon-sm</code> or <code class="highlight-rouge">.step-icon-xs</code> sizes.</p>
+
+            <div class="tab-wrapper">
+              <!-- Nav Classic -->
+              <ul class="nav nav-classic" id="pills-tab-14" role="tablist">
+                <li class="nav-item">
+                  <a class="nav-link active" id="pills-result-tab-14" data-toggle="pill" href="#pills-result-14" role="tab" aria-controls="pills-result-14" aria-selected="true">Preview</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="pills-html-tab-14" data-toggle="pill" href="#pills-html-14" role="tab" aria-controls="pills-html-14" aria-selected="false">HTML</a>
+                </li>
+              </ul>
+              <!-- End Nav Classic -->
+
+              <!-- Tab Content -->
+              <div class="tab-content" id="pills-tabContent-14">
+                <div class="tab-pane fade p-4 show active" id="pills-result-14" role="tabpanel" aria-labelledby="pills-result-tab-14" style="min-height: 250px;">
+                  <!-- Step -->
+                  <ul class="step">
+                    <li class="step-item">
+                      <div class="step-content-wrapper">
+                        <div class="step-avatar">
+                          <img class="step-avatar-img" src="../assets/img/100x100/img3.jpg" alt="Image Description">
+                        </div>
+                        <div class="step-content">
+                          <h4>Avatar</h4>
+                          <p class="text-body">Achieve virtually any design and layout from within the one template.</p>
+                        </div>
+                      </div>
+                    </li>
+
+                    <li class="step-item">
+                      <div class="step-content-wrapper">
+                        <div class="step-avatar">
+                          <img class="step-avatar-img" src="../assets/img/100x100/img2.jpg" alt="Image Description">
+                        </div>
+                        <div class="step-content">
+                          <h4>Avatar</h4>
+                          <p class="text-body">We strive to figure out ways to help your business grow through all platforms.</p>
+                        </div>
+                      </div>
+                    </li>
+
+                    <li class="step-item">
+                      <div class="step-content-wrapper">
+                        <div class="step-avatar">
+                          <img class="step-avatar-img" src="../assets/img/100x100/img1.jpg" alt="Image Description">
+                        </div>
+                        <div class="step-content">
+                          <h4>Avatar</h4>
+                          <p class="text-body">Find what you need in one template and combine features at will.</p>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                  <!-- End Step -->
+                </div>
+                <div class="tab-pane fade" id="pills-html-14" role="tabpanel" aria-labelledby="pills-html-tab-14">
+                  <pre class="rounded">
+                    <code class="language-markup" data-lang="html">
+                      &lt;!-- Step --&gt;
+                      &lt;ul class="step"&gt;
+                        &lt;li class="step-item"&gt;
+                          &lt;div class="step-content-wrapper"&gt;
+                            &lt;div class="step-avatar"&gt;
+                              &lt;img class="step-avatar-img" src="../../assets/img/100x100/img3.jpg" alt="Image Description"&gt;
+                            &lt;/div&gt;
+                            &lt;div class="step-content"&gt;
+                              &lt;h4&gt;Avatar&lt;/h4&gt;
+                              &lt;p class="text-body"&gt;Achieve virtually any design and layout from within the one template.&lt;/p&gt;
+                            &lt;/div&gt;
+                          &lt;/div&gt;
+                        &lt;/li&gt;
+
+                        &lt;li class="step-item"&gt;
+                          &lt;div class="step-content-wrapper"&gt;
+                            &lt;div class="step-avatar"&gt;
+                              &lt;img class="step-avatar-img" src="../../assets/img/100x100/img2.jpg" alt="Image Description"&gt;
+                            &lt;/div&gt;
+                            &lt;div class="step-content"&gt;
+                              &lt;h4&gt;Avatar&lt;/h4&gt;
+                              &lt;p class="text-body"&gt;We strive to figure out ways to help your business grow through all platforms.&lt;/p&gt;
+                            &lt;/div&gt;
+                          &lt;/div&gt;
+                        &lt;/li&gt;
+
+                        &lt;li class="step-item"&gt;
+                          &lt;div class="step-content-wrapper"&gt;
+                            &lt;div class="step-avatar"&gt;
+                              &lt;img class="step-avatar-img" src="../../assets/img/100x100/img1.jpg" alt="Image Description"&gt;
+                            &lt;/div&gt;
+                            &lt;div class="step-content"&gt;
+                              &lt;h4&gt;Avatar&lt;/h4&gt;
+                              &lt;p class="text-body"&gt;Find what you need in one template and combine features at will.&lt;/p&gt;
+                            &lt;/div&gt;
+                          &lt;/div&gt;
+                        &lt;/li&gt;
+                      &lt;/ul&gt;
+                      &lt;!-- End Step --&gt;
+                    </code>
+                  </pre>
+                </div>
+              </div>
+              <!-- End Tab Content -->
+            </div>
+          </div>
+
+          <div id="last-item-borderless" class="hs-docs-content-divider">
+            <h2 class="hs-docs-heading">Last item borderless <a class="anchorjs-link" href="#last-item-borderless" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
+            <p>If you need to remove border from the last element, use the <code class="highlight-rouge">.step-border-last-0</code> class.</p>
+
+            <div class="tab-wrapper">
+              <!-- Nav Classic -->
+              <ul class="nav nav-classic" id="pills-tab-15" role="tablist">
+                <li class="nav-item">
+                  <a class="nav-link active" id="pills-result-tab-15" data-toggle="pill" href="#pills-result-15" role="tab" aria-controls="pills-result-15" aria-selected="true">Preview</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="pills-html-tab-15" data-toggle="pill" href="#pills-html-15" role="tab" aria-controls="pills-html-15" aria-selected="false">HTML</a>
+                </li>
+              </ul>
+              <!-- End Nav Classic -->
+
+              <!-- Tab Content -->
+              <div class="tab-content" id="pills-tabContent-15">
+                <div class="tab-pane fade p-4 show active" id="pills-result-15" role="tabpanel" aria-labelledby="pills-result-tab-15" style="min-height: 250px;">
+                  <!-- Step -->
+                  <ul class="step step-md step-border-last-0">
+                    <li class="step-item">
+                      <div class="step-content-wrapper">
+                        <span class="step-icon step-icon-soft-primary">1</span>
+                        <div class="step-content">
+                          <h4>First step</h4>
+                          <p class="text-body">Achieve virtually any design and layout from within the one template.</p>
+                        </div>
+                      </div>
+                    </li>
+
+                    <li class="step-item">
+                      <div class="step-content-wrapper">
+                        <span class="step-icon step-icon-soft-primary">2</span>
+                        <div class="step-content">
+                          <h4>Second step</h4>
+                          <p class="text-body">We strive to figure out ways to help your business grow through all platforms.</p>
+                        </div>
+                      </div>
+                    </li>
+
+                    <li class="step-item">
+                      <div class="step-content-wrapper">
+                        <span class="step-icon step-icon-soft-primary">3</span>
+                        <div class="step-content">
+                          <h4>Third step</h4>
+                          <p class="text-body">Find what you need in one template and combine features at will.</p>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                  <!-- End Step -->
+                </div>
+                <div class="tab-pane fade" id="pills-html-15" role="tabpanel" aria-labelledby="pills-html-tab-15">
+                  <pre class="rounded">
+                    <code class="language-markup" data-lang="html">
+                      &lt;!-- Step --&gt;
+                      &lt;ul class="step step-md step-border-last-0"&gt;
+                        &lt;li class="step-item"&gt;
+                          &lt;div class="step-content-wrapper"&gt;
+                            &lt;span class="step-icon step-icon-soft-primary"&gt;1&lt;/span&gt;
+                            &lt;div class="step-content"&gt;
+                              &lt;h4&gt;First step&lt;/h4&gt;
+                              &lt;p class="text-body"&gt;Achieve virtually any design and layout from within the one template.&lt;/p&gt;
+                            &lt;/div&gt;
+                          &lt;/div&gt;
+                        &lt;/li&gt;
+
+                        &lt;li class="step-item"&gt;
+                          &lt;div class="step-content-wrapper"&gt;
+                            &lt;span class="step-icon step-icon-soft-primary"&gt;2&lt;/span&gt;
+                            &lt;div class="step-content"&gt;
+                              &lt;h4&gt;Second step&lt;/h4&gt;
+                              &lt;p class="text-body"&gt;We strive to figure out ways to help your business grow through all platforms.&lt;/p&gt;
+                            &lt;/div&gt;
+                          &lt;/div&gt;
+                        &lt;/li&gt;
+
+                        &lt;li class="step-item"&gt;
+                          &lt;div class="step-content-wrapper"&gt;
+                            &lt;span class="step-icon step-icon-soft-primary"&gt;3&lt;/span&gt;
+                            &lt;div class="step-content"&gt;
+                              &lt;h4&gt;Third step&lt;/h4&gt;
+                              &lt;p class="text-body"&gt;Find what you need in one template and combine features at will.&lt;/p&gt;
+                            &lt;/div&gt;
+                          &lt;/div&gt;
+                        &lt;/li&gt;
+                      &lt;/ul&gt;
+                      &lt;!-- End Step --&gt;
+                    </code>
+                  </pre>
+                </div>
+              </div>
+              <!-- End Tab Content -->
+            </div>
+          </div>
+
+          <div id="dashed-style" class="hs-docs-content-divider">
+            <h2 class="hs-docs-heading">Dashed style <a class="anchorjs-link" href="#dashed-style" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
+            <p>Utilize the dashed style with the <code class="highlight-rouge">.step-dashed</code> class.</p>
+
+            <div class="tab-wrapper">
+              <!-- Nav Classic -->
+              <ul class="nav nav-classic" id="pills-tab-16" role="tablist">
+                <li class="nav-item">
+                  <a class="nav-link active" id="pills-result-tab-16" data-toggle="pill" href="#pills-result-16" role="tab" aria-controls="pills-result-16" aria-selected="true">Preview</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="pills-html-tab-16" data-toggle="pill" href="#pills-html-16" role="tab" aria-controls="pills-html-16" aria-selected="false">HTML</a>
+                </li>
+              </ul>
+              <!-- End Nav Classic -->
+
+              <!-- Tab Content -->
+              <div class="tab-content" id="pills-tabContent-16">
+                <div class="tab-pane fade p-4 show active" id="pills-result-16" role="tabpanel" aria-labelledby="pills-result-tab-16" style="min-height: 250px;">
+                  <!-- Step -->
+                  <ul class="step step-md step-dashed">
+                    <li class="step-item">
+                      <div class="step-content-wrapper">
+                        <span class="step-icon step-icon-soft-primary">1</span>
+                        <div class="step-content">
+                          <h4>First step</h4>
+                          <p class="text-body">Achieve virtually any design and layout from within the one template.</p>
+                        </div>
+                      </div>
+                    </li>
+
+                    <li class="step-item">
+                      <div class="step-content-wrapper">
+                        <span class="step-icon step-icon-soft-primary">2</span>
+                        <div class="step-content">
+                          <h4>Second step</h4>
+                          <p class="text-body">We strive to figure out ways to help your business grow through all platforms.</p>
+                        </div>
+                      </div>
+                    </li>
+
+                    <li class="step-item">
+                      <div class="step-content-wrapper">
+                        <span class="step-icon step-icon-soft-primary">3</span>
+                        <div class="step-content">
+                          <h4>Third step</h4>
+                          <p class="text-body">Find what you need in one template and combine features at will.</p>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                  <!-- End Step -->
+                </div>
+                <div class="tab-pane fade" id="pills-html-16" role="tabpanel" aria-labelledby="pills-html-tab-16">
+                  <pre class="rounded">
+                    <code class="language-markup" data-lang="html">
+                      &lt;!-- Step --&gt;
+                      &lt;ul class="step step-md step-dashed"&gt;
+                        &lt;li class="step-item"&gt;
+                          &lt;div class="step-content-wrapper"&gt;
+                            &lt;span class="step-icon step-icon-soft-primary"&gt;1&lt;/span&gt;
+                            &lt;div class="step-content"&gt;
+                              &lt;h4&gt;First step&lt;/h4&gt;
+                              &lt;p class="text-body"&gt;Achieve virtually any design and layout from within the one template.&lt;/p&gt;
+                            &lt;/div&gt;
+                          &lt;/div&gt;
+                        &lt;/li&gt;
+
+                        &lt;li class="step-item"&gt;
+                          &lt;div class="step-content-wrapper"&gt;
+                            &lt;span class="step-icon step-icon-soft-primary"&gt;2&lt;/span&gt;
+                            &lt;div class="step-content"&gt;
+                              &lt;h4&gt;Second step&lt;/h4&gt;
+                              &lt;p class="text-body"&gt;We strive to figure out ways to help your business grow through all platforms.&lt;/p&gt;
+                            &lt;/div&gt;
+                          &lt;/div&gt;
+                        &lt;/li&gt;
+
+                        &lt;li class="step-item"&gt;
+                          &lt;div class="step-content-wrapper"&gt;
+                            &lt;span class="step-icon step-icon-soft-primary"&gt;3&lt;/span&gt;
+                            &lt;div class="step-content"&gt;
+                              &lt;h4&gt;Third step&lt;/h4&gt;
+                              &lt;p class="text-body"&gt;Find what you need in one template and combine features at will.&lt;/p&gt;
+                            &lt;/div&gt;
+                          &lt;/div&gt;
+                        &lt;/li&gt;
+                      &lt;/ul&gt;
+                      &lt;!-- End Step --&gt;
+                    </code>
+                  </pre>
+                </div>
+              </div>
+              <!-- End Tab Content -->
+            </div>
+          </div>
+
+          <div id="icon-sizes" class="hs-docs-content-divider">
+            <h2 class="hs-docs-heading">Icon sizes <a class="anchorjs-link" href="#icon-sizes" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
+            <p>Fancy larger, smaller or extra small icon sizes? Add <code class="highlight-rouge">.step-icon-lg</code>, <code class="highlight-rouge">.step-icon-sm</code> or <code class="highlight-rouge">.step-icon-xs</code> for additional sizes.</p>
+
+            <div class="tab-wrapper">
+              <!-- Nav Classic -->
+              <ul class="nav nav-classic" id="pills-tab-9" role="tablist">
+                <li class="nav-item">
+                  <a class="nav-link active" id="pills-result-tab-9" data-toggle="pill" href="#pills-result-9" role="tab" aria-controls="pills-result-9" aria-selected="true">Preview</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="pills-html-tab-9" data-toggle="pill" href="#pills-html-9" role="tab" aria-controls="pills-html-9" aria-selected="false">HTML</a>
+                </li>
+              </ul>
+              <!-- End Nav Classic -->
+
+              <!-- Tab Content -->
+              <div class="tab-content" id="pills-tabContent-9">
+                <div class="tab-pane fade p-4 show active" id="pills-result-9" role="tabpanel" aria-labelledby="pills-result-tab-9" style="min-height: 250px;">
+                  <!-- Step -->
+                  <ul class="step step-md step-dashed">
+                    <li class="step-item">
+                      <div class="step-content-wrapper">
+                        <span class="step-icon step-icon-lg step-icon-soft-primary">1</span>
+                        <div class="step-content">
+                          <h4>First step</h4>
+                          <p class="text-body">Achieve virtually any design and layout from within the one template.</p>
+                        </div>
+                      </div>
+                    </li>
+
+                    <li class="step-item">
+                      <div class="step-content-wrapper">
+                        <span class="step-icon step-icon-lg step-icon-soft-primary">2</span>
+                        <div class="step-content">
+                          <h4>Second step</h4>
+                          <p class="text-body">We strive to figure out ways to help your business grow through all platforms.</p>
+                        </div>
+                      </div>
+                    </li>
+
+                    <li class="step-item">
+                      <div class="step-content-wrapper">
+                        <span class="step-icon step-icon-lg step-icon-soft-primary">3</span>
+                        <div class="step-content">
+                          <h4>Third step</h4>
+                          <p class="text-body">Find what you need in one template and combine features at will.</p>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                  <!-- End Step -->
+                </div>
+                <div class="tab-pane fade" id="pills-html-9" role="tabpanel" aria-labelledby="pills-html-tab-9">
+                  <pre class="rounded">
+                    <code class="language-markup" data-lang="html">
+                      &lt;!-- Step --&gt;
+                      &lt;ul class="step step-md step-dashed"&gt;
+                        &lt;li class="step-item"&gt;
+                          &lt;div class="step-content-wrapper"&gt;
+                            &lt;span class="step-icon step-icon-lg step-icon-primary"&gt;1&lt;/span&gt;
+                            &lt;div class="step-content"&gt;
+                              &lt;h4&gt;First step&lt;/h4&gt;
+                              &lt;p class="text-body"&gt;Achieve virtually any design and layout from within the one template.&lt;/p&gt;
+                            &lt;/div&gt;
+                          &lt;/div&gt;
+                        &lt;/li&gt;
+
+                        &lt;li class="step-item"&gt;
+                          &lt;div class="step-content-wrapper"&gt;
+                            &lt;span class="step-icon step-icon-lg step-icon-primary"&gt;2&lt;/span&gt;
+                            &lt;div class="step-content"&gt;
+                              &lt;h4&gt;Second step&lt;/h4&gt;
+                              &lt;p class="text-body"&gt;We strive to figure out ways to help your business grow through all platforms.&lt;/p&gt;
+                            &lt;/div&gt;
+                          &lt;/div&gt;
+                        &lt;/li&gt;
+
+                        &lt;li class="step-item"&gt;
+                          &lt;div class="step-content-wrapper"&gt;
+                            &lt;span class="step-icon step-icon-lg step-icon-primary"&gt;3&lt;/span&gt;
+                            &lt;div class="step-content"&gt;
+                              &lt;h4&gt;Third step&lt;/h4&gt;
+                              &lt;p class="text-body"&gt;Find what you need in one template and combine features at will.&lt;/p&gt;
+                            &lt;/div&gt;
+                          &lt;/div&gt;
+                        &lt;/li&gt;
+                      &lt;/ul&gt;
+                      &lt;!-- End Step --&gt;
+                    </code>
+                  </pre>
+                </div>
+              </div>
+              <!-- End Tab Content -->
+            </div>
+
+            <div class="tab-wrapper">
+              <!-- Nav Classic -->
+              <ul class="nav nav-classic" id="pills-tab-10" role="tablist">
+                <li class="nav-item">
+                  <a class="nav-link active" id="pills-result-tab-10" data-toggle="pill" href="#pills-result-10" role="tab" aria-controls="pills-result-10" aria-selected="true">Preview</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="pills-html-tab-10" data-toggle="pill" href="#pills-html-10" role="tab" aria-controls="pills-html-10" aria-selected="false">HTML</a>
+                </li>
+              </ul>
+              <!-- End Nav Classic -->
+
+              <!-- Tab Content -->
+              <div class="tab-content" id="pills-tabContent-10">
+                <div class="tab-pane fade p-4 show active" id="pills-result-10" role="tabpanel" aria-labelledby="pills-result-tab-10" style="min-height: 250px;">
+                  <!-- Step -->
+                  <ul class="step step-md step-dashed">
+                    <li class="step-item">
+                      <div class="step-content-wrapper">
+                        <span class="step-icon step-icon-sm step-icon-soft-primary">1</span>
+                        <div class="step-content">
+                          <h4>First step</h4>
+                          <p class="text-body">Achieve virtually any design and layout from within the one template.</p>
+                        </div>
+                      </div>
+                    </li>
+
+                    <li class="step-item">
+                      <div class="step-content-wrapper">
+                        <span class="step-icon step-icon-sm step-icon-soft-primary">2</span>
+                        <div class="step-content">
+                          <h4>Second step</h4>
+                          <p class="text-body">We strive to figure out ways to help your business grow through all platforms.</p>
+                        </div>
+                      </div>
+                    </li>
+
+                    <li class="step-item">
+                      <div class="step-content-wrapper">
+                        <span class="step-icon step-icon-sm step-icon-soft-primary">3</span>
+                        <div class="step-content">
+                          <h4>Third step</h4>
+                          <p class="text-body">Find what you need in one template and combine features at will.</p>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                  <!-- End Step -->
+                </div>
+                <div class="tab-pane fade" id="pills-html-10" role="tabpanel" aria-labelledby="pills-html-tab-10">
+                  <pre class="rounded">
+                    <code class="language-markup" data-lang="html">
+                      &lt;!-- Step --&gt;
+                      &lt;ul class="step step-md step-dashed"&gt;
+                        &lt;li class="step-item"&gt;
+                          &lt;div class="step-content-wrapper"&gt;
+                            &lt;span class="step-icon step-icon-sm step-icon-primary"&gt;1&lt;/span&gt;
+                            &lt;div class="step-content"&gt;
+                              &lt;h4&gt;First step&lt;/h4&gt;
+                              &lt;p class="text-body"&gt;Achieve virtually any design and layout from within the one template.&lt;/p&gt;
+                            &lt;/div&gt;
+                          &lt;/div&gt;
+                        &lt;/li&gt;
+
+                        &lt;li class="step-item"&gt;
+                          &lt;div class="step-content-wrapper"&gt;
+                            &lt;span class="step-icon step-icon-sm step-icon-primary"&gt;2&lt;/span&gt;
+                            &lt;div class="step-content"&gt;
+                              &lt;h4&gt;Second step&lt;/h4&gt;
+                              &lt;p class="text-body"&gt;We strive to figure out ways to help your business grow through all platforms.&lt;/p&gt;
+                            &lt;/div&gt;
+                          &lt;/div&gt;
+                        &lt;/li&gt;
+
+                        &lt;li class="step-item"&gt;
+                          &lt;div class="step-content-wrapper"&gt;
+                            &lt;span class="step-icon step-icon-sm step-icon-primary"&gt;3&lt;/span&gt;
+                            &lt;div class="step-content"&gt;
+                              &lt;h4&gt;Third step&lt;/h4&gt;
+                              &lt;p class="text-body"&gt;Find what you need in one template and combine features at will.&lt;/p&gt;
+                            &lt;/div&gt;
+                          &lt;/div&gt;
+                        &lt;/li&gt;
+                      &lt;/ul&gt;
+                      &lt;!-- End Step --&gt;
+                    </code>
+                  </pre>
+                </div>
+              </div>
+              <!-- End Tab Content -->
+            </div>
+
+            <div class="tab-wrapper">
+              <!-- Nav Classic -->
+              <ul class="nav nav-classic" id="pills-tab-11" role="tablist">
+                <li class="nav-item">
+                  <a class="nav-link active" id="pills-result-tab-11" data-toggle="pill" href="#pills-result-11" role="tab" aria-controls="pills-result-11" aria-selected="true">Preview</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="pills-html-tab-11" data-toggle="pill" href="#pills-html-11" role="tab" aria-controls="pills-html-11" aria-selected="false">HTML</a>
+                </li>
+              </ul>
+              <!-- End Nav Classic -->
+
+              <!-- Tab Content -->
+              <div class="tab-content" id="pills-tabContent-11">
+                <div class="tab-pane fade p-4 show active" id="pills-result-11" role="tabpanel" aria-labelledby="pills-result-tab-11" style="min-height: 250px;">
+                  <!-- Step -->
+                  <ul class="step step-md step-dashed">
+                    <li class="step-item">
+                      <div class="step-content-wrapper">
+                        <span class="step-icon step-icon-xs step-icon-soft-primary">1</span>
+                        <div class="step-content">
+                          <h4>First step</h4>
+                          <p class="text-body">Achieve virtually any design and layout from within the one template.</p>
+                        </div>
+                      </div>
+                    </li>
+
+                    <li class="step-item">
+                      <div class="step-content-wrapper">
+                        <span class="step-icon step-icon-xs step-icon-soft-primary">2</span>
+                        <div class="step-content">
+                          <h4>Second step</h4>
+                          <p class="text-body">We strive to figure out ways to help your business grow through all platforms.</p>
+                        </div>
+                      </div>
+                    </li>
+
+                    <li class="step-item">
+                      <div class="step-content-wrapper">
+                        <span class="step-icon step-icon-xs step-icon-soft-primary">3</span>
+                        <div class="step-content">
+                          <h4>Third step</h4>
+                          <p class="text-body">Find what you need in one template and combine features at will.</p>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                  <!-- End Step -->
+                </div>
+                <div class="tab-pane fade" id="pills-html-11" role="tabpanel" aria-labelledby="pills-html-tab-11">
+                  <pre class="rounded">
+                    <code class="language-markup" data-lang="html">
+                      &lt;!-- Step --&gt;
+                      &lt;ul class="step step-md step-dashed"&gt;
+                        &lt;li class="step-item"&gt;
+                          &lt;div class="step-content-wrapper"&gt;
+                            &lt;span class="step-icon step-icon-xs step-icon-primary"&gt;1&lt;/span&gt;
+                            &lt;div class="step-content"&gt;
+                              &lt;h4&gt;First step&lt;/h4&gt;
+                              &lt;p class="text-body"&gt;Achieve virtually any design and layout from within the one template.&lt;/p&gt;
+                            &lt;/div&gt;
+                          &lt;/div&gt;
+                        &lt;/li&gt;
+
+                        &lt;li class="step-item"&gt;
+                          &lt;div class="step-content-wrapper"&gt;
+                            &lt;span class="step-icon step-icon-xs step-icon-primary"&gt;2&lt;/span&gt;
+                            &lt;div class="step-content"&gt;
+                              &lt;h4&gt;Second step&lt;/h4&gt;
+                              &lt;p class="text-body"&gt;We strive to figure out ways to help your business grow through all platforms.&lt;/p&gt;
+                            &lt;/div&gt;
+                          &lt;/div&gt;
+                        &lt;/li&gt;
+
+                        &lt;li class="step-item"&gt;
+                          &lt;div class="step-content-wrapper"&gt;
+                            &lt;span class="step-icon step-icon-xs step-icon-primary"&gt;3&lt;/span&gt;
+                            &lt;div class="step-content"&gt;
+                              &lt;h4&gt;Third step&lt;/h4&gt;
+                              &lt;p class="text-body"&gt;Find what you need in one template and combine features at will.&lt;/p&gt;
+                            &lt;/div&gt;
+                          &lt;/div&gt;
+                        &lt;/li&gt;
+                      &lt;/ul&gt;
+                      &lt;!-- End Step --&gt;
+                    </code>
+                  </pre>
+                </div>
+              </div>
+              <!-- End Tab Content -->
+            </div>
+          </div>
+
+          <div id="icon-styles" class="hs-docs-content-divider">
+            <h2 class="hs-docs-heading">Icon styles <a class="anchorjs-link" href="#icon-styles" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
+            <p>Make icons look different by adding <code class="highlight-rouge">.step-icon-pseudo</code> next to the <code class="highlight-rouge">.step-icon</code> class.</p>
+
+            <div class="tab-wrapper">
+              <!-- Nav Classic -->
+              <ul class="nav nav-classic" id="pills-tab-12" role="tablist">
+                <li class="nav-item">
+                  <a class="nav-link active" id="pills-result-tab-12" data-toggle="pill" href="#pills-result-12" role="tab" aria-controls="pills-result-12" aria-selected="true">Preview</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="pills-html-tab-12" data-toggle="pill" href="#pills-html-12" role="tab" aria-controls="pills-html-12" aria-selected="false">HTML</a>
+                </li>
+              </ul>
+              <!-- End Nav Classic -->
+
+              <!-- Tab Content -->
+              <div class="tab-content" id="pills-tabContent-12">
+                <div class="tab-pane fade p-4 show active" id="pills-result-12" role="tabpanel" aria-labelledby="pills-result-tab-12" style="min-height: 250px;">
+                  <!-- Step -->
+                  <ul class="step step-md">
+                    <li class="step-item">
+                      <div class="step-content-wrapper">
+                        <span class="step-icon step-icon-soft-primary step-icon-pseudo"></span>
+                        <div class="step-content">
+                          <h4>First step</h4>
+                          <p class="text-body">Achieve virtually any design and layout from within the one template.</p>
+                        </div>
+                      </div>
+                    </li>
+
+                    <li class="step-item">
+                      <div class="step-content-wrapper">
+                        <span class="step-icon step-icon-soft-primary step-icon-pseudo"></span>
+                        <div class="step-content">
+                          <h4>Second step</h4>
+                          <p class="text-body">We strive to figure out ways to help your business grow through all platforms.</p>
+                        </div>
+                      </div>
+                    </li>
+
+                    <li class="step-item">
+                      <div class="step-content-wrapper">
+                        <span class="step-icon step-icon-soft-primary step-icon-pseudo"></span>
+                        <div class="step-content">
+                          <h4>Third step</h4>
+                          <p class="text-body">Find what you need in one template and combine features at will.</p>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                  <!-- End Step -->
+                </div>
+                <div class="tab-pane fade" id="pills-html-12" role="tabpanel" aria-labelledby="pills-html-tab-12">
+                  <pre class="rounded">
+                    <code class="language-markup" data-lang="html">
+                      &lt;!-- Step --&gt;
+                      &lt;ul class="step step-md step-dashed"&gt;
+                        &lt;li class="step-item"&gt;
+                          &lt;div class="step-content-wrapper"&gt;
+                            &lt;span class="step-icon step-icon-soft-primary step-icon-pseudo"&gt;&lt;/span&gt;
+                            &lt;div class="step-content"&gt;
+                              &lt;h4&gt;First step&lt;/h4&gt;
+                              &lt;p class="text-body"&gt;Achieve virtually any design and layout from within the one template.&lt;/p&gt;
+                            &lt;/div&gt;
+                          &lt;/div&gt;
+                        &lt;/li&gt;
+
+                        &lt;li class="step-item"&gt;
+                          &lt;div class="step-content-wrapper"&gt;
+                            &lt;span class="step-icon step-icon-soft-primary step-icon-pseudo"&gt;&lt;/span&gt;
+                            &lt;div class="step-content"&gt;
+                              &lt;h4&gt;Second step&lt;/h4&gt;
+                              &lt;p class="text-body"&gt;We strive to figure out ways to help your business grow through all platforms.&lt;/p&gt;
+                            &lt;/div&gt;
+                          &lt;/div&gt;
+                        &lt;/li&gt;
+
+                        &lt;li class="step-item"&gt;
+                          &lt;div class="step-content-wrapper"&gt;
+                            &lt;span class="step-icon step-icon-soft-primary step-icon-pseudo"&gt;&lt;/span&gt;
+                            &lt;div class="step-content"&gt;
+                              &lt;h4&gt;Third step&lt;/h4&gt;
+                              &lt;p class="text-body"&gt;Find what you need in one template and combine features at will.&lt;/p&gt;
+                            &lt;/div&gt;
+                          &lt;/div&gt;
+                        &lt;/li&gt;
+                      &lt;/ul&gt;
+                      &lt;!-- End Step --&gt;
+                    </code>
+                  </pre>
+                </div>
+              </div>
+              <!-- End Tab Content -->
+            </div>
+
+            <p>Or go with simple icons.</p>
+
+            <div class="tab-wrapper">
+              <!-- Nav Classic -->
+              <ul class="nav nav-classic" id="pills-tab-13" role="tablist">
+                <li class="nav-item">
+                  <a class="nav-link active" id="pills-result-tab-13" data-toggle="pill" href="#pills-result-13" role="tab" aria-controls="pills-result-13" aria-selected="true">Preview</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="pills-html-tab-13" data-toggle="pill" href="#pills-html-13" role="tab" aria-controls="pills-html-13" aria-selected="false">HTML</a>
+                </li>
+              </ul>
+              <!-- End Nav Classic -->
+
+              <!-- Tab Content -->
+              <div class="tab-content" id="pills-tabContent-13">
+                <div class="tab-pane fade p-4 show active" id="pills-result-13" role="tabpanel" aria-labelledby="pills-result-tab-13" style="min-height: 250px;">
+                  <!-- Step -->
+                  <ul class="step step-md">
+                    <li class="step-item">
+                      <div class="step-content-wrapper">
+                        <span class="step-icon step-icon-soft-primary">
+                          <i class="fas fa-angle-right"></i>
+                        </span>
+                        <div class="step-content">
+                          <h4>First step</h4>
+                          <p class="text-body">Achieve virtually any design and layout from within the one template.</p>
+                        </div>
+                      </div>
+                    </li>
+
+                    <li class="step-item">
+                      <div class="step-content-wrapper">
+                        <span class="step-icon step-icon-soft-primary">
+                          <i class="fas fa-angle-right"></i>
+                        </span>
+                        <div class="step-content">
+                          <h4>Second step</h4>
+                          <p class="text-body">We strive to figure out ways to help your business grow through all platforms.</p>
+                        </div>
+                      </div>
+                    </li>
+
+                    <li class="step-item">
+                      <div class="step-content-wrapper">
+                        <span class="step-icon step-icon-soft-primary">
+                          <i class="fas fa-angle-right"></i>
+                        </span>
+                        <div class="step-content">
+                          <h4>Third step</h4>
+                          <p class="text-body">Find what you need in one template and combine features at will.</p>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                  <!-- End Step -->
+                </div>
+                <div class="tab-pane fade" id="pills-html-13" role="tabpanel" aria-labelledby="pills-html-tab-13">
+                  <pre class="rounded">
+                    <code class="language-markup" data-lang="html">
+                      &lt;!-- Step --&gt;
+                      &lt;ul class="step step-md step-dashed"&gt;
+                        &lt;li class="step-item"&gt;
+                          &lt;div class="step-content-wrapper"&gt;
+                            &lt;span class="step-icon step-icon-soft-primary"&gt;
+                              &lt;i class="fas fa-angle-right"&gt;&lt;/i&gt;
+                            &lt;/span&gt;
+                            &lt;div class="step-content"&gt;
+                              &lt;h4&gt;First step&lt;/h4&gt;
+                              &lt;p class="text-body"&gt;Achieve virtually any design and layout from within the one template.&lt;/p&gt;
+                            &lt;/div&gt;
+                          &lt;/div&gt;
+                        &lt;/li&gt;
+
+                        &lt;li class="step-item"&gt;
+                          &lt;div class="step-content-wrapper"&gt;
+                            &lt;span class="step-icon step-icon-soft-primary"&gt;
+                              &lt;i class="fas fa-angle-right"&gt;&lt;/i&gt;
+                            &lt;/span&gt;
+                            &lt;div class="step-content"&gt;
+                              &lt;h4&gt;Second step&lt;/h4&gt;
+                              &lt;p class="text-body"&gt;We strive to figure out ways to help your business grow through all platforms.&lt;/p&gt;
+                            &lt;/div&gt;
+                          &lt;/div&gt;
+                        &lt;/li&gt;
+
+                        &lt;li class="step-item"&gt;
+                          &lt;div class="step-content-wrapper"&gt;
+                            &lt;span class="step-icon step-icon-soft-primary"&gt;
+                              &lt;i class="fas fa-angle-right"&gt;&lt;/i&gt;
+                            &lt;/span&gt;
+                            &lt;div class="step-content"&gt;
+                              &lt;h4&gt;Third step&lt;/h4&gt;
+                              &lt;p class="text-body"&gt;Find what you need in one template and combine features at will.&lt;/p&gt;
+                            &lt;/div&gt;
+                          &lt;/div&gt;
+                        &lt;/li&gt;
+                      &lt;/ul&gt;
+                      &lt;!-- End Step --&gt;
+                    </code>
+                  </pre>
+                </div>
+              </div>
+              <!-- End Tab Content -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <!-- ========== END MAIN CONTENT ========== -->
+
+  <!-- Go to Top -->
+  <a class="js-go-to go-to position-fixed" href="javascript:;" style="visibility: hidden;"
+     data-hs-go-to-options='{
+       "offsetTop": 700,
+       "position": {
+         "init": {
+           "right": 15
+         },
+         "show": {
+           "bottom": 15
+         },
+         "hide": {
+           "bottom": -15
+         }
+       }
+     }'>
+    <i class="fas fa-angle-up"></i>
+  </a>
+  <!-- End Go to Top -->
+
+  <!-- JS Global Compulsory -->
+  <script src="../assets/vendor/jquery/dist/jquery.min.js"></script>
+  <script src="../assets/vendor/jquery-migrate/dist/jquery-migrate.min.js"></script>
+  <script src="../assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- JS Implementing Plugins -->
+  <script src="../assets/vendor/hs-header/dist/hs-header.min.js"></script>
+  <script src="../assets/vendor/hs-go-to/dist/hs-go-to.min.js"></script>
+  <script src="../assets/vendor/hs-scroll-to-in-overflowed-container/dist/hs-scroll-to-in-overflowed-container.min.js"></script>
+  <script src="../assets/vendor/hs-step-form/dist/hs-step-form.min.js"></script>
+  <script src="../assets/vendor/jquery-validation/dist/jquery.validate.min.js"></script>
+  <script src="assets/vendor/jquery-ui/jquery-ui.core.min.js"></script>
+  <script src="assets/vendor/jquery-ui/ui/widgets/menu.js"></script>
+  <script src="assets/vendor/jquery-ui/ui/widgets/mouse.js"></script>
+  <script src="assets/vendor/jquery-ui/ui/widgets/autocomplete.js"></script>
+  <script src="assets/vendor/prism/prism.js"></script>
+
+  <!-- JS Front -->
+  <script src="../assets/js/hs.core.js"></script>
+  <script src="../assets/js/hs.validation.js"></script>
+  <script src="../documentation/assets/js/components/hs.autocomplete-local-search.js"></script>
+
+  <!-- JS Plugins Init. -->
+  <script>
+    $(document).on('ready', function () {
+      // initialization of header
+      var header = new HSHeader($('#header')).init();
+
+      // initialization of go to
+      $('.js-go-to').each(function () {
+        var goTo = new HSGoTo($(this)).init();
+      });
+
+      // initialization of form validation
+      $('.js-validate').each(function() {
+        $.HSCore.components.HSValidation.init($(this));
+      });
+
+      // initialization of step form
+      $('.js-step-form').each(function () {
+        var stepForm = new HSStepForm($(this)).init();
+      });
+
+      // initialization scroll to in overflowed container
+      var scrollToInOverflowedContainerNav = new HSScrollToInOverflowedContainer($('#sidebarNav'), {
+        targetEl: "#sidebarNav .hs-sidebar-link.active"
+      }).init();
+    });
+
+    $(window).on('load', function () {
+      // initialization of autocomplet
+      $.HSCore.components.HSLocalSearchAutocomplete.init('.js-hs-docs-search');
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!-- Title -->
+		<title>Counter</title>
+
+		<!-- Required Meta Tags Always Come First -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+		<!-- Favicon -->
+		<link rel="shortcut icon" href="../../../favicon.ico">
+
+		<!-- Google Fonts -->
+		<link href="//fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
+
+		<!-- CSS Implementing Plugins -->
+
+		<!-- CSS Front Template -->
+		<link rel="stylesheet" href="../../../assets/css/theme.css">
+	</head>
+	<body>
+
+		<div style="height: 20vh;"></div>
+
+		<div class="container">
+			<div class="mb-5">
+				<h4>Simple</h4>
+				<div class="row text-center">
+					<div class="col-lg-3 col-sm-6 mb-5 mb-lg-0">
+						<div class="js-counter h3">52147</div>
+						<h4 class="h6">Code Lines</h4>
+					</div>
+
+					<div class="col-lg-3 col-sm-6 mb-5 mb-lg-0">
+						<div class="js-counter h3">24583</div>
+						<h4 class="h6">Projects</h4>
+					</div>
+
+					<div class="col-lg-3 col-sm-6 mb-5 mb-lg-0">
+						<div class="js-counter h3">7348</div>
+						<h4 class="h6">Working Hours</h4>
+					</div>
+
+					<div class="col-lg-3 col-sm-6 mb-5 mb-lg-0">
+						<div class="js-counter h3">87904</div>
+						<h4 class="h6">Job Offers</h4>
+					</div>
+				</div>
+			</div>
+
+			<div class="mb-5">
+				<h4>Comma Separated</h4>
+				<div class="row text-center">
+					<div class="col-lg-3 col-sm-6 mb-5 mb-lg-0">
+						<div class="js-counter h3"
+						     data-hs-counter-options='{
+						       "isCommaSeparated": true
+						     }'>52147</div>
+						<h4 class="h6">Code Lines</h4>
+					</div>
+
+					<div class="col-lg-3 col-sm-6 mb-5 mb-lg-0">
+						<div class="js-counter h3"
+						     data-hs-counter-options='{
+						       "isCommaSeparated": true
+						     }'>24583</div>
+						<h4 class="h6">Projects</h4>
+					</div>
+
+					<div class="col-lg-3 col-sm-6 mb-5 mb-lg-0">
+						<div class="js-counter h3"
+						     data-hs-counter-options='{
+						       "isCommaSeparated": true
+						     }'>7348</div>
+						<h4 class="h6">Working Hours</h4>
+					</div>
+
+					<div class="col-lg-3 col-sm-6 mb-5 mb-lg-0">
+						<div class="js-counter h3"
+						     data-hs-counter-options='{
+						       "isCommaSeparated": true
+						     }'>87904</div>
+						<h4 class="h6">Job Offers</h4>
+					</div>
+				</div>
+			</div>
+
+			<div>
+				<h4>Reduced to Thousand</h4>
+				<div class="row text-center">
+					<div class="col-lg-3 col-sm-6 mb-5 mb-lg-0">
+						<div class="js-counter h3"
+						     data-hs-counter-options='{
+						       "isReduceThousandsTo": true
+						     }'>52147</div>
+						<h4 class="h6">Code Lines</h4>
+					</div>
+
+					<div class="col-lg-3 col-sm-6 mb-5 mb-lg-0">
+						<div class="js-counter h3"
+						     data-hs-counter-options='{
+						       "isReduceThousandsTo": true
+						     }'>24583</div>
+						<h4 class="h6">Projects</h4>
+					</div>
+
+					<div class="col-lg-3 col-sm-6 mb-5 mb-lg-0">
+						<div class="js-counter h3"
+						     data-hs-counter-options='{
+						       "isReduceThousandsTo": true
+						     }'>7348</div>
+						<h4 class="h6">Working Hours</h4>
+					</div>
+
+					<div class="col-lg-3 col-sm-6 mb-5 mb-lg-0">
+						<div class="js-counter h3"
+						     data-hs-counter-options='{
+						       "isReduceThousandsTo": true
+						     }'>87904</div>
+						<h4 class="h6">Job Offers</h4>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div style="height: 20vh;"></div>
+
+		<script src="../../../assets/vendor/jquery/dist/jquery.min.js"></script>
+		<script src="../../../assets/vendor/jquery-migrate/dist/jquery-migrate.min.js"></script>
+		<script src="../../../assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+		<script src="../../../assets/vendor/appear.js"></script>
+		<script src="./dist/hs-counter.min.js"></script>
+
+		<script>
+			$(document).on('ready', function () {
+				$('.js-counter').each(function() {
+					var counter = new HSCounter($(this)).init();
+				});
+			});
+		</script>
+	</body>
+</html>
