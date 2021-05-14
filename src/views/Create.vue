@@ -22,7 +22,7 @@
                     <div v-if="nameWarning" class="text-danger">
                         The name of the list must be between 4 and 32 characters
                     </div>
-                    <tippy class="float-right" placement="left">
+                    <tippy class="float-right" theme="shown" placement="left">
                         <span class="material-icons info-icon"> info </span>
 
                         <template #content> The title of the list, 32 characters maximum </template>
@@ -46,7 +46,7 @@
                     <div v-if="descriptionWarning" class="text-danger">
                         The description must be between 32 and 200 characters
                     </div>
-                    <tippy class="float-right" placement="left">
+                    <tippy class="float-right" theme="shown" placement="left">
                         <span class="material-icons info-icon"> info </span>
 
                         <template #content> A short description of the list</template>
@@ -67,7 +67,7 @@
 
             <div class="form-group">
                 <label for="list-title">Acceptance Criteria</label>
-                <tippy class="float-right" placement="left">
+                <tippy class="float-right" theme="shown" placement="left">
                     <span class="material-icons info-icon"> info </span>
 
                     <template #content>
@@ -80,7 +80,7 @@
 
             <div class="form-group">
                 <label for="list-title">List Image</label>
-                <tippy class="float-right" placement="left">
+                <tippy class="float-right" theme="shown" placement="left">
                     <span class="material-icons info-icon"> info </span>
 
                     <template #content>

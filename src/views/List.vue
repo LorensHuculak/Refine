@@ -147,7 +147,7 @@
       </div>
     </div>
     <div
-      class="alert alert-soft-warning text-center"
+      class="alert alert-warning text-center"
       role="alert"
       v-if="items.length == 0"
     >

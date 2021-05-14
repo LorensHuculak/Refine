@@ -90,6 +90,12 @@ export default {
                 this.setProvider(false);
             }
         })();
+        let savedLanguage = localStorage.getItem("language")
+        if (savedLanguage != null){
+            this.$store.dispatch("setLanguage",savedLanguage)
+        }
+        console.log("savedLanguage",savedLanguage)
+
 
         let authentication = JSON.parse(localStorage.getItem("authentication"));
 
