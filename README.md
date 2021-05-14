@@ -2,8 +2,8 @@
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/479fc5f5-cd31-4eae-8997-84398f7fabfe/deploy-status)](https://app.netlify.com/sites/refine-twitter/deploys)
 
- ![Image of Refine Home](https://github.com/LorensHuculak/Refine/tree/master/src/assets/img/Refine_mock1.png?raw=true)
-  ![dApp Connect with Refine]( https://github.com/LorensHuculak/Refine/tree/master/src/assets/img/Refine_mock2.png?raw=true)
+ ![Image of Refine Home](https://raw.githubusercontent.com/LorensHuculak/Refine/master/src/assets/img/Refine_mock1.png)
+  ![dApp Connect with Refine]( https://raw.githubusercontent.com/LorensHuculak/Refine/master/src/assets/img/Refine_mock2.png)
 
   # User Goals
  1. Users can create Block Lists
