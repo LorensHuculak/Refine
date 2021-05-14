@@ -20,6 +20,10 @@
     height: 60px;
     position: absolute;
 }
+.icon {
+    position: absolute;
+    font-size: 2rem;
+}
 </style>
 
 <template>
@@ -30,8 +34,10 @@
             <div v-if="uploadURI && type == 'pdf'" :src="fileUrl" alt="">
                 <a @click.stop :href="fileUrl" target="_blank">{{ fileName }}</a>
             </div>
-            <i v-if="!isUploading" class="material-icons"> file_upload </i>
-
+            <i v-if="!isUploading && !error && !uploadURI" class="material-icons icon"> file_upload </i>
+            <div v-if="error" class="alert alert-soft-danger mb-0">
+                {{ error }}
+            </div>
             <div v-if="isUploading">Uploading...</div>
             <LoadingSpinner v-if="isUploading"></LoadingSpinner>
         </div>
@@ -41,7 +47,7 @@
 import LoadingSpinner from "@/components/ui/LoadingSpinner";
 import transactions from "@/mixins/transactions";
 export default {
-    props: ["type"], //image or pfd
+    props: ["type"], //image or pdf
     emits: ["uploaded"],
     mixins: [transactions],
     components: {
@@ -52,6 +58,7 @@ export default {
             isUploading: false,
             uploadURI: null,
             fileName: null,
+            error: null,
         };
     },
     methods: {
@@ -61,21 +68,25 @@ export default {
 
         async uploadFile(files) {
             this.isUploading = true;
-
+            this.uploadURI = null;
+            this.error = null;
             let file = files.target.files[0];
-
-            try {
-                const data = await new Response(new Blob([file])).arrayBuffer();
-
-                const ipfsFileObj = await this.ipfsPublish(this.sanitize(file.name), data);
-
-                const fileURI = `/ipfs/${ipfsFileObj[1].hash}${ipfsFileObj[0].path}`;
-
-                this.uploadURI = fileURI;
-                this.fileName = file.name;
-                this.$emit("uploaded", fileURI);
-            } catch (err) {
-                console.log(err);
+            console.log(file.size, 4000000);
+            if (file.size < 4000000) {
+                // smaller than 4mb
+                try {
+                    const data = await new Response(new Blob([file])).arrayBuffer();
+                    console.log(data);
+                    const ipfsFileObj = await this.ipfsPublish(this.sanitize(file.name), data);
+                    const fileURI = `/ipfs/${ipfsFileObj[1].hash}${ipfsFileObj[0].path}`;
+                    this.uploadURI = fileURI;
+                    this.fileName = file.name;
+                    this.$emit("uploaded", fileURI);
+                } catch (err) {
+                    console.log(err);
+                }
+            } else {
+                this.error = "File is too big, 4mb maximum size";
             }
             this.isUploading = false;
         },
