@@ -125,6 +125,7 @@ export default {
         },
 
         async createList() {
+            this.isUploading = true;
             const factoryContract = new window.web3.eth.Contract(GTCRabi, process.env.VUE_APP_GTCR_FACTORY_ADDRESS);
 
             const enc = new TextEncoder();
@@ -154,7 +155,7 @@ export default {
                 300,
                 [10000, 10000, 20000],
             ];
-
+            this.isUploading = false;
             const sender = await window.web3.eth.getAccounts();
 
             factoryContract.methods
