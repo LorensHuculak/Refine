@@ -5,6 +5,7 @@
  ![Image of Refine Home](https://raw.githubusercontent.com/LorensHuculak/Refine/master/src/assets/img/Refine_mock1.png)
   ![dApp Connect with Refine]( https://raw.githubusercontent.com/LorensHuculak/Refine/master/src/assets/img/Refine_mock2.png)
 
+
   # User Goals
  1. Users can create Block Lists
  2. Users can contribute malicious accounts to these open lists
