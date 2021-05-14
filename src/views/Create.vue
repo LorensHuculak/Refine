@@ -34,7 +34,10 @@
                 <tippy class="float-right" placement="left">
                     <span class="material-icons info-icon"> info </span>
 
-                    <template #content> A .pdf format document with clear and explicit inclusion criteria </template>
+                    <template #content>
+                        A .pdf format document with clear and explicit inclusion criteria. 4mb maximum
+                        filesize</template
+                    >
                 </tippy>
                 <UploadInput type="pdf" @uploaded="updateAcceptanceURI"></UploadInput>
             </div>
@@ -43,7 +46,9 @@
                 <tippy class="float-right" placement="left">
                     <span class="material-icons info-icon"> info </span>
 
-                    <template #content> A list image </template>
+                    <template #content>
+                        A list image in .png format with a 1:1 aspect ratio. 4mb maximum filesize
+                    </template>
                 </tippy>
                 <UploadInput type="image" @uploaded="updateImageURI"></UploadInput>
             </div>
