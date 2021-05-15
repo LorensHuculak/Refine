@@ -56,7 +56,7 @@
                 </div>
 
                 <div v-if="user.status == 1">
-                    {{isConnected}}
+                    {{ isConnected }}
                     <button class="btn btn-warning" v-if="isConnected" @click="openRemoveModal">
                         Raise Dispute
                     </button>
@@ -71,7 +71,7 @@
                 </div>
                 <!-- Challenge pending request (can be add or removal) -->
                 <div v-if="!challengeOver && user.disputed == false">
-                    {{isConnected}}
+                    {{ isConnected }}
                     <button class="btn btn-warning" v-if="isConnected" @click="openChallengeModal">
                         Challenge {{ status[user.status].split(" ")[0] }}
                     </button>
@@ -98,7 +98,7 @@
     </li>
 </template>
 <script>
-import transactions from "@/mixins/transactions"
+import transactions from "@/mixins/transactions";
 import "tippy.js/themes/translucent.css";
 
 export default {
@@ -121,7 +121,6 @@ export default {
         toggleOpen() {
             this.open = !this.open;
         },
-     
 
         openChallengeModal() {
             this.$emit("clickedUser", this.user.ID);
@@ -162,7 +161,6 @@ export default {
                 minute: "2-digit",
             };
             return Intl.DateTimeFormat("en-GB", options).format(date);
-           
         },
     },
     computed: {
