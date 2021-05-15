@@ -148,39 +148,31 @@
                             :class="{ show: navOpen }"
                         >
                             <ul class="navbar-nav">
-                                <!-- Pages -->
-
                                 <li class="navbar-nav-item">
-                                    <div class="hs-unfold">
-                                        <tippy :interactive="true" :appendTo="body">
-                                            <a class="nav-link js-hs-unfold-invoker">
-                                                <i class="fas fa-atlas mr-1"></i> English</a
-                                            >
-                                            <template #content>
-                                                <div class="hs-unfold-content dropdown-menu mb-2">
-                                                    <div
-                                                        class="dropdown-item"
-                                                        :class="language == activeLanguage ? 'active' : ''"
-                                                        v-for="language in languages"
-                                                        :key="language"
-                                                        @click="setLanguage(language)"
-                                                    >
-                                                        {{ language }}
-                                                    </div>
+                                    <tippy :interactive="true" :appendTo="body">
+                                        <div class="nav-link">
+                                            <i class="fas fa-atlas mr-1"></i> {{ activeLanguage }}
+                                        </div>
+                                        <template #content>
+                                            <div class="hs-unfold-content dropdown-menu mb-2">
+                                                <div
+                                                    class="dropdown-item cursor-pointer"
+                                                    :class="language == activeLanguage ? 'active' : ''"
+                                                    v-for="language in languages"
+                                                    :key="language"
+                                                    @click="setLanguage(language)"
+                                                >
+                                                    {{ language }}
                                                 </div>
-                                            </template>
-                                        </tippy>
-                                        <!-- Language Modal -->
-
-                                        <!-- End Language Modal -->
-                                    </div>
+                                            </div>
+                                        </template>
+                                    </tippy>
                                 </li>
 
                                 <li class="navbar-nav-item">
-                                    <a class="nav-link" href="index.html">Explore Lists</a>
+                                    <router-link to="/" class="nav-link">Explore Lists</router-link>
                                 </li>
 
-                                <!-- My Courses -->
                                 <li class="navbar-nav-item d-none d-lg-inline-block">
                                     <tippy :interactive="true" :appendTo="body">
                                         <a class="nav-link nav-link-toggle" aria-haspopup="true" aria-expanded="false"
@@ -189,15 +181,9 @@
                                         <template #content>
                                             <NavbarDrafts></NavbarDrafts>
                                         </template>
-                                        <!-- My Courses - Submenu -->
-                                        <!-- End My Drafts - Submenu -->
                                     </tippy>
                                 </li>
-                                <!-- End My Drafts -->
 
-                                <!-- End Pages -->
-
-                                <!-- Button -->
                                 <li class="navbar-nav-last-item">
                                     <router-link
                                         class="btn btn-sm btn-primary transition-3d-hover"
@@ -242,7 +228,6 @@ export default {
             topbarShown: false,
             navOpen: false,
             body: null,
-            activeLanguage: "English",
             languages: [
                 "English",
                 "Deutsch",
@@ -282,11 +267,15 @@ export default {
         showTopbar() {
             this.topbarShown = !this.topbarShown;
         },
-        setLanguage(e) {
-            this.activeLanguage = e;
+        setLanguage(selectedLanguage) {
+            this.$store.dispatch("setLanguage", selectedLanguage);
+            localStorage.setItem("language", selectedLanguage);
         },
     },
     computed: {
+        activeLanguage() {
+            return this.$store.getters.getLanguage;
+        },
         walletModalOpen() {
             return this.$store.getters.getModalOpen("wallet");
         },
@@ -299,4 +288,8 @@ export default {
     },
 };
 </script>
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+.cursor-pointer {
+    cursor: pointer;
+}
+</style>

@@ -5,6 +5,7 @@ import lists from "./modules/lists";
 import uistate from "./modules/uistate";
 
 interface state {
+    language: string;
     provider: string | null;
     connected: boolean;
     currentChain: string;
@@ -16,6 +17,7 @@ interface state {
 
 export default createStore({
     state: {
+        language: "english",
         provider: null,
         connected: false,
         currentChain: null,
@@ -30,6 +32,9 @@ export default createStore({
         },
     },
     getters: {
+        getLanguage(state: state) {
+            return state.language;
+        },
         isProvider(state: state) {
             return state.provider;
         },
@@ -44,6 +49,9 @@ export default createStore({
         },
     },
     actions: {
+        setLanguage({ commit }: { commit: Function }, newLanguage: string) {
+            commit("setLanguage", newLanguage);
+        },
         setProvider({ commit }: { commit: Function }, providerInjected: string) {
             commit("setProvider", providerInjected);
         },
@@ -58,6 +66,9 @@ export default createStore({
         },
     },
     mutations: {
+        setLanguage(state: state, newLanguage: string) {
+            state.language = newLanguage;
+        },
         setProvider(state: state, providerInjected: string) {
             state.provider = providerInjected;
         },

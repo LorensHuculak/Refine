@@ -56,6 +56,7 @@
                 </div>
 
                 <div v-if="user.status == 1">
+                    {{isConnected}}
                     <button class="btn btn-warning" v-if="isConnected" @click="openRemoveModal">
                         Raise Dispute
                     </button>
@@ -70,6 +71,7 @@
                 </div>
                 <!-- Challenge pending request (can be add or removal) -->
                 <div v-if="!challengeOver && user.disputed == false">
+                    {{isConnected}}
                     <button class="btn btn-warning" v-if="isConnected" @click="openChallengeModal">
                         Challenge {{ status[user.status].split(" ")[0] }}
                     </button>
@@ -160,12 +162,12 @@ export default {
                 minute: "2-digit",
             };
             return Intl.DateTimeFormat("en-GB", options).format(date);
-            // return date.getDate() + "/" + (date.getMonth() + 1) + "/" + date.getFullYear();
+           
         },
     },
     computed: {
         isConnected() {
-            return this.$store.getters.isConnected;
+            return this.$store.getters.currentAccount;
         },
         currentAccount() {
             return this.$store.getters.currentAccount;
