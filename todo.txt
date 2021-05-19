@@ -1,6 +1,0 @@
-
-
-use TCR list for main page:
-    requires users to create list then submit to that TCR list 
-    allows moderation of displayed lists on main page
-
