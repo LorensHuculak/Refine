@@ -27,13 +27,7 @@
                                 <img class="img-fluid" :src="logoURL" width="130" alt="Image Description" />
                             </div>
 
-                            <a
-                                @click="openAuth"
-                                class="btn btn-sm btn-block btn-primary transition-3d-hover"
-                                href="javascript:;"
-                                data-toggle="modal"
-                                data-target="#invoiceReceiptModal"
-                            >
+                            <a @click="openAuth" class="btn btn-sm btn-block btn-primary transition-3d-hover">
                                 <i class="fas fa-shield-alt mr-2"></i> Subscribe</a
                             >
                         </div>

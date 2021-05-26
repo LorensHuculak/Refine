@@ -16,10 +16,12 @@
     "core-js": "^3.6.5",
     "cors": "^2.8.5",
     "dotenv": "^9.0.2",
+  
     "express": "^4.17.1",
     "got": "^11.8.2",
     "jazzicon": "^1.5.0",
     "material-icons": "^0.6.2",
+    "myetherwallet-blockies": "^0.1.1",
     "node-sass": "^4.14.1",
     "oauth-1.0a": "^2.2.6",
     "twitter-api-client": "^1.3.8",
