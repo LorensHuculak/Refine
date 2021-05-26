@@ -1,5 +1,4 @@
 <style lang="scss" scoped>
-
 .list-item {
     display: inline-block;
     margin-right: 10px;
@@ -91,7 +90,6 @@
                             <a class="d-inline-block text-body" href="#">
                                 <div class="media align-items-center">
                                     <div class="avatar avatar-xs mr-3">
-
                                         <AccountIcon :address="status?.requester"></AccountIcon>
                                     </div>
                                     <div class="media-body">
@@ -105,7 +103,6 @@
                                 </div>
                             </a>
                         </div>
-
 
                         <div class="d-flex">
                             <i v-if="status?.status == 0" class="fas fa-times-circle text-danger mt-1 mr-2"></i>
@@ -121,7 +118,6 @@
 
                 <div class="col-md-8 col-lg-9 column-divider-md">
                     <div class="ml-lg-2">
-
                         <div class="mb-5 row">
                             <div class="col-8">
                                 <h2>
@@ -158,9 +154,7 @@
                             </li>
                         </ul>
 
-
                         <div class="tab-content" id="pills-tabContent">
-
                             <keep-alive>
                                 <component :is="currentTabComponent" v-bind="currentProps"></component>
                             </keep-alive>
@@ -168,7 +162,6 @@
                     </div>
                 </div>
             </div>
-
         </div>
     </main>
 
@@ -239,21 +232,6 @@ export default {
             ],
         };
     },
-    computed: {
-        currentProps() {
-            if (this.currentTabComponent == "ListInfoTab") {
-                return { list: this.list, items: this.items,challengePeriod: this.list.challengePeriod };
-            } else {
-                return null;
-            }
-        },
-        logoURL() {
-            return process.env.VUE_APP_IPFS_GATEWAY + this.list.metadata.logoURI;
-        },
-        chain() {
-            return this.$store.getters.currentChain;
-        },
-
 
     computed: {
         evidenceURI() {
@@ -324,7 +302,6 @@ export default {
             return e == this.currentTabComponent;
         },
         setTab(e) {
-
             this.currentTabComponent = e;
         },
         updateUser(e) {
@@ -336,7 +313,6 @@ export default {
                 open: true,
             });
         },
-
 
         openSubmit() {
             this.$store.dispatch("setModal", {
