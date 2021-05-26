@@ -1,9 +1,11 @@
 <template>
     <div class=" pt-6">
+
         <div class="d-sm-flex justify-content-sm-between align-items-sm-center border-bottom pb-3 mb-4">
             <div class="d-flex align-items-center mb-2 mb-sm-0">
                 <h4 class="mb-0">Reviews <small class="text-muted ml-1">(156)</small></h4>
             </div>
+
 
             <select class="form-select" >
                 <option selected>Newest first</option>
@@ -28,6 +30,7 @@
                 <a class="small mr-2" href="javascript:;">Yes</a>
                 <a class="small" href="javascript:;">No</a>
 
+
                 <div class="card bg-light shadow-none p-3 mt-4">
                     <div class="media">
                         <div class="avatar mr-3">
@@ -41,6 +44,7 @@
                         </div>
                     </div>
                 </div>
+
             </div>
         </div>
 
@@ -60,6 +64,7 @@
                 <a class="small mr-2" href="javascript:;">Yes</a>
                 <a class="small" href="javascript:;">No</a>
 
+
                 <div class="card bg-light shadow-none p-3 mt-4">
                     <div class="media">
                         <div class="avatar mr-3">
@@ -71,6 +76,7 @@
                         </div>
                     </div>
                 </div>
+
             </div>
         </div>
 
@@ -89,6 +95,8 @@
                 <a class="small mr-2" href="javascript:;">Yes</a>
                 <a class="small" href="javascript:;">No</a>
 
+
+
                 <div class="card bg-light shadow-none p-3 mt-4">
                     <div class="media">
                         <div class="avatar mr-3">
@@ -100,6 +108,7 @@
                         </div>
                     </div>
                 </div>
+
             </div>
         </div>
 

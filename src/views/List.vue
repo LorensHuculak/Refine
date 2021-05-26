@@ -1,4 +1,5 @@
 <style lang="scss" scoped>
+
 .list-item {
     display: inline-block;
     margin-right: 10px;
@@ -16,6 +17,7 @@
 
 <template>
     <LoadingSpinner v-if="isLoading" class="mt-5 mb-5"></LoadingSpinner>
+
     <main id="content" role="main" v-show="!isLoading">
         <div class="container space-top-2 space-bottom-lg-2">
             <div class="row">
@@ -89,6 +91,7 @@
                             <a class="d-inline-block text-body" href="#">
                                 <div class="media align-items-center">
                                     <div class="avatar avatar-xs mr-3">
+
                                         <AccountIcon :address="status?.requester"></AccountIcon>
                                     </div>
                                     <div class="media-body">
@@ -102,6 +105,7 @@
                                 </div>
                             </a>
                         </div>
+
 
                         <div class="d-flex">
                             <i v-if="status?.status == 0" class="fas fa-times-circle text-danger mt-1 mr-2"></i>
@@ -117,6 +121,7 @@
 
                 <div class="col-md-8 col-lg-9 column-divider-md">
                     <div class="ml-lg-2">
+
                         <div class="mb-5 row">
                             <div class="col-8">
                                 <h2>
@@ -153,7 +158,9 @@
                             </li>
                         </ul>
 
-                        <div class="tab-content " id="pills-tabContent">
+
+                        <div class="tab-content" id="pills-tabContent">
+
                             <keep-alive>
                                 <component :is="currentTabComponent" v-bind="currentProps"></component>
                             </keep-alive>
@@ -161,6 +168,7 @@
                     </div>
                 </div>
             </div>
+
         </div>
     </main>
 
@@ -188,7 +196,9 @@ import AuthModal from "@/components/modals/AuthModal";
 import ListInfoTab from "@/components/list/ListInfoTab";
 import ReviewsTab from "@/components/list/ReviewsTab";
 import DetailsTab from "@/components/list/DetailsTab";
+
 import AccountIcon from "@/components/ui/AccountIcon";
+
 export default {
     components: {
         LoadingSpinner,
@@ -199,6 +209,7 @@ export default {
         EvidenceModal,
         NewUserModal,
         AuthModal,
+
         AccountIcon,
         ListInfoTab,
         ReviewsTab,
@@ -218,6 +229,7 @@ export default {
             isBlocking: false,
             clickedUser: null,
             currentTabComponent: "ListInfoTab",
+
             status: null,
             body: null,
             tabs: [
@@ -227,6 +239,21 @@ export default {
             ],
         };
     },
+    computed: {
+        currentProps() {
+            if (this.currentTabComponent == "ListInfoTab") {
+                return { list: this.list, items: this.items,challengePeriod: this.list.challengePeriod };
+            } else {
+                return null;
+            }
+        },
+        logoURL() {
+            return process.env.VUE_APP_IPFS_GATEWAY + this.list.metadata.logoURI;
+        },
+        chain() {
+            return this.$store.getters.currentChain;
+        },
+
 
     computed: {
         evidenceURI() {
@@ -297,6 +324,7 @@ export default {
             return e == this.currentTabComponent;
         },
         setTab(e) {
+
             this.currentTabComponent = e;
         },
         updateUser(e) {
@@ -308,6 +336,7 @@ export default {
                 open: true,
             });
         },
+
 
         openSubmit() {
             this.$store.dispatch("setModal", {
@@ -337,6 +366,7 @@ export default {
                 process.env.VUE_APP_GTCR_VIEW_ADDRESS,
                 process.env.VUE_APP_IPFS_GATEWAY
             );
+
             let challengePeriod = await gtcr.gtcrInstance.challengePeriodDuration();
             let evidence = await gtcr.getLatestMetaEvidence();
             this.list = {
@@ -348,6 +378,7 @@ export default {
             };
             console.log(this.list);
             this.items = await gtcr.getItems();
+
             this.isLoading = false;
             this.status = addressItems.find((x) => x.decodedData[0] == address);
         })();
