@@ -17,6 +17,7 @@ export default {
             challenge: false,
             evidence: false,
             remove: false,
+            auth: false,
         },
     },
     getters: {
