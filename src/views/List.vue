@@ -89,9 +89,7 @@
                             <a class="d-inline-block text-body" href="#">
                                 <div class="media align-items-center">
                                     <div class="avatar avatar-xs mr-3">
-                                        <span class="avatar avatar-xs avatar-circle" ref="jazzicon">
-                                            <!-- jazzicon inserted -->
-                                        </span>
+                                        <AccountIcon :address="status?.requester"></AccountIcon>
                                     </div>
                                     <div class="media-body">
                                         <a
@@ -174,8 +172,6 @@
 </template>
 
 <script>
-import Jazzicon from "jazzicon";
-
 import { GeneralizedTCR } from "@kleros/gtcr-sdk";
 import transactions from "@/mixins/transactions";
 import authentication from "@/mixins/authentication";
@@ -192,7 +188,7 @@ import AuthModal from "@/components/modals/AuthModal";
 import ListInfoTab from "@/components/list/ListInfoTab";
 import ReviewsTab from "@/components/list/ReviewsTab";
 import DetailsTab from "@/components/list/DetailsTab";
-
+import AccountIcon from "@/components/ui/AccountIcon";
 export default {
     components: {
         LoadingSpinner,
@@ -203,7 +199,7 @@ export default {
         EvidenceModal,
         NewUserModal,
         AuthModal,
-
+        AccountIcon,
         ListInfoTab,
         ReviewsTab,
         DetailsTab,
@@ -231,12 +227,7 @@ export default {
             ],
         };
     },
-    watch: {
-        shortenedContributor() {
-            this.$refs.jazzicon.innerHTML = ""; //clear the previous jazzicon in case we disconnect and connect multiple times per session
-            this.$refs.jazzicon.appendChild(Jazzicon(32, parseInt(this.status.requester.slice(2, 10), 16)));
-        },
-    },
+
     computed: {
         evidenceURI() {
             console.log(process.env.VUE_APP_IPFS_GATEWAY + this?.list?.submissionEvidence.fileURI);
