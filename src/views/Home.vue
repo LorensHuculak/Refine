@@ -260,7 +260,7 @@
 </template>
 
 <script>
-import { GTCRFactory, GeneralizedTCR } from "@kleros/gtcr-sdk";
+import { GeneralizedTCR } from "@kleros/gtcr-sdk";
 import authentication from "@/mixins/authentication";
 import LoadingSpinner from "@/components/ui/LoadingSpinner";
 import HomeCard from "@/components/cards/HomeCard";
@@ -290,15 +290,22 @@ export default {
         },
         async loadLists() {
             this.isLoading = true;
+            const gtcr = new GeneralizedTCR(
+                window.ethereum,
+                process.env.VUE_APP_META_LIST,
+                process.env.VUE_APP_GTCR_VIEW_ADDRESS,
+                process.env.VUE_APP_IPFS_GATEWAY
+            );
+            console.log(gtcr);
+
+            let addressItems = await gtcr.getItems();
+            console.log("ITEMS", addressItems);
+  
+     
+            let tcrAddresses = addressItems.map((x) => x.decodedData[0]);
             console.log("loading");
 
-            const gtcrFactory = new GTCRFactory(
-                window.ethereum,
-                process.env.VUE_APP_GTCR_FACTORY_ADDRESS //factory address on rinkeby
-            );
-
-            let tcrAddresses = await gtcrFactory.getTCRAddresses();
-
+            console.log(tcrAddresses);
             let tcrList = tcrAddresses.map(
                 (x) =>
                     new GeneralizedTCR(
@@ -315,8 +322,11 @@ export default {
                         let evidence = await generalizedTCR.getLatestMetaEvidence();
                         let items = await generalizedTCR.getItems();
                         console.log("evidence", evidence);
+                        
                         console.log("items", items);
+                        let info = addressItems.find(x => x.decodedData[0] == generalizedTCR.gtcrInstance.address)
                         return {
+                            info: info,
                             address: generalizedTCR.gtcrInstance.address,
                             submissionEvidence: evidence[0],
                             disputeEvidence: evidence[1],
@@ -329,7 +339,7 @@ export default {
                     }
                 })
             );
-            console.log(tcrDetailsList);
+            console.log("tcrDetails",tcrDetailsList);
 
             this.$store.dispatch(
                 "setLists",

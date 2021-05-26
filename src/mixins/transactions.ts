@@ -132,10 +132,12 @@ export default {
             const metaEvidenceFiles = [this.registrationMetaEvidence, this.clearingMetaEvidence].map((metaEvidence) =>
                 enc.encode(JSON.stringify(metaEvidence))
             );
+            console.log(metaEvidenceFiles);
             const files = [...metaEvidenceFiles].map((file) => ({
                 data: file,
                 multihash: Archon.utils.multihashFile(file, 0x1b),
             }));
+            console.log(files);
             const ipfsMetaEvidenceObjects = (
                 await Promise.all(files.map((file) => this.ipfsPublish(file.multihash, file.data)))
             ).map(
@@ -155,13 +157,108 @@ export default {
                 300,
                 [10000, 10000, 20000],
             ];
+            console.log("TCRArgs", TCRArgs);
             this.isUploading = false;
             const sender = await window.web3.eth.getAccounts();
 
             factoryContract.methods
                 .deploy(...TCRArgs)
                 .send({ from: sender[0] })
+                .then((e) => {
+                    console.log(e);
+                    console.log(e.events.NewGTCR.returnValues._address)
+                    this.addToMetaList(e.events.NewGTCR.returnValues._address);
+                });
+        },
+        async addToMetaList(addressToAdd) {
+            const address = process.env.VUE_APP_META_LIST;
+            const myContract = new window.web3.eth.Contract(TCRabi, address);
+
+            const columns = [
+                {
+                    description: "The lists address",
+                    label: "Address",
+                    type: "text",
+                    isIdentifier: true,
+                },
+            ];
+
+            const values = {
+                Address: addressToAdd,
+            };
+
+            const encodedParams = gtcrEncode({ columns, values });
+
+            const sender = await window.web3.eth.getAccounts();
+            myContract.methods
+                .addItem(encodedParams)
+                .send({ from: sender[0], value: 51000000000000000 })
                 .then((e) => console.log(e));
         },
     },
+
+    // computed: {
+    //     metaEvidence() {
+    //         return {
+    //             question: "Does the twitter user fit the required criteria?",
+    //             fileURI: this.listcriteria,
+    //             evidenceDisplayInterfaceURI: "",
+    //             evidenceDisplayInterfaceHash: "",
+    //             category: "Curated list of twitter users",
+    //             metadata: {
+    //                 tcrTitle: this.listname,
+    //                 tcrDescription: this.listdescription,
+    //                 columns: [
+    //                     {
+    //                         description: "The twitter accounts username",
+    //                         label: "Username",
+    //                         type: "text",
+    //                         isIdentifier: true,
+    //                     },
+    //                     {
+    //                         description: "A summary of why they should be included",
+    //                         label: "Justification",
+    //                         type: "text",
+    //                         isIdentifier: false,
+    //                     },
+    //                 ],
+    //                 itemName: "Name",
+    //                 itemNamePlural: "Names",
+    //                 requireRemovalEvidence: true,
+    //                 isTCRofTCRs: false,
+    //                 relTcrDisabled: true,
+    //                 logoURI: this.listImage,
+    //             },
+    //         };
+    //     },
+
+    //     listMetaEvidence() {
+    //         return {
+    //             ...this.metaEvidence,
+    //             title: `Add an item to ${this.listname}`,
+    //             description: `Someone requested to add an item from ${this.listname}`,
+    //             rulingOptions: {
+    //                 titles: ["Yes, add them", "No, don't add them"],
+    //                 descriptions: [
+    //                     "Select this if you think the twitter user fits the criteria and should be added",
+    //                     "Select this if you think the twitter user does not fit the required criteria and should not be added",
+    //                 ],
+    //             },
+    //         };
+    //     },
+    //     listClearingMetaEvidence() {
+    //         return {
+    //             ...this.metaEvidence,
+    //             title: `Remove an item to ${this.listname}`,
+    //             description: `Someone requested to remove an item from ${this.listname}`,
+    //             rulingOptions: {
+    //                 titles: ["No, remove them", "Yes, don't remove them"],
+    //                 descriptions: [
+    //                     "Select this if you think the twitter user does not fit the criteria and should be removed",
+    //                     "Select this if you think the twitter user does fit the criteria and should not be removed",
+    //                 ],
+    //             },
+    //         };
+    //     },
+    // },
 };

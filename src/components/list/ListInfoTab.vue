@@ -1,7 +1,7 @@
 <template>
     <div class=" pt-6 " id="pills-one-example1" role="tabpanel" aria-labelledby="pills-one-example1-tab">
+        
         <p>{{ list?.metadata?.tcrDescription || "Description" }}</p>
-
         <!-- Read More - Collapse -->
 
         <!-- End Read More - Collapse -->

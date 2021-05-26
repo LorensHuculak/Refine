@@ -93,7 +93,7 @@
 
 <template>
     <LoadingSpinner v-if="isLoading" class="mt-5 mb-5"></LoadingSpinner>
-    <main id="content" role="main" v-else>
+    <main id="content" role="main" v-show="!isLoading">
         <div class="container space-top-2 space-bottom-lg-2">
             <div class="row">
                 <div class="col-md-4 col-lg-3 mb-9 mb-md-0">
@@ -172,20 +172,37 @@
                             <a class="d-inline-block text-body" href="#">
                                 <div class="media align-items-center">
                                     <div class="avatar avatar-xs mr-3">
-                                        <img
+                                        <span class="avatar avatar-xs avatar-circle" ref="jazzicon">
+                                            <!-- jazzicon inserted -->
+                                        </span>
+                                        <!-- <img
                                             class="avatar-img"
                                             src="~@/assets/img/icons/account.png"
                                             alt="Image Description"
-                                        />
+                                        /> -->
                                     </div>
                                     <div class="media-body">
-                                        Lorens Huculak
+                                        <a
+                                            :href="'https://rinkeby.etherscan.io/address/' + status?.requester"
+                                            target="_blank"
+                                        >
+                                            {{ shortenedContributor }}
+                                        </a>
                                     </div>
                                 </div>
                             </a>
                         </div>
 
                         <div class="d-none d-md-block">
+                            <div>
+                                <i v-if="status?.status == 0" class="fas fa-times-circle text-danger mt-1 mr-2"></i>
+                                <i v-if="status?.status == 1" class="fas fa-check-circle text-success mt-1 mr-2"></i>
+                                <i
+                                    v-if="status?.status == 2 || status?.status == 3"
+                                    class="fas fa-question-circle text-warning mt-1 mr-2"
+                                ></i>
+                                <span>{{ status?.disputed ? "Disputed" : "" }}</span>
+                            </div>
                             <a class="small text-body" href="#"><i class="far fa-flag mr-1"></i> Challenge this list</a>
                         </div>
                     </div>
@@ -194,17 +211,22 @@
 
                 <div class="col-md-8 col-lg-9 column-divider-md">
                     <div class="ml-lg-2">
-                        <div class="mb-5">
-                            <h2>
-                                {{ list?.metadata?.tcrTitle || "Title" }}
-                                <img
-                                    class="ml-1"
-                                    src="~@/assets/svg/illustrations/top-vendor.svg"
-                                    alt="Image Description"
-                                    title="Top Vendor"
-                                    width="20"
-                                />
-                            </h2>
+                        <div class="mb-5 row">
+                            <div class="col-8">
+                                <h2>
+                                    {{ list?.metadata?.tcrTitle || "Title" }}
+                                    <img
+                                        class="ml-1"
+                                        src="~@/assets/svg/illustrations/top-vendor.svg"
+                                        alt="Image Description"
+                                        title="Top Vendor"
+                                        width="20"
+                                    />
+                                </h2>
+                            </div>
+                            <div class="col-4">
+                                <button class="btn btn-primary float-right" @click="openSubmit">Add User</button>
+                            </div>
                         </div>
 
                         <!-- Nav Classic -->
@@ -233,180 +255,8 @@
                     </div>
                 </div>
             </div>
-            <!-- End Content -->
         </div>
-        <!-- End List Description Section -->
-
-        <!-- Related Items Section -->
-        <!-- <div class="container space-2 space-bottom-lg-3">
-          
-            <div class="d-flex justify-content-between align-items-center mb-3">
-                <h3 class="mb-0">Related Lists</h3>
-                <a class="font-size-1 font-weight-bold" href="#"
-                    >View All <i class="fas fa-angle-right fa-sm ml-1"></i
-                ></a>
-            </div>
-         
-
-            <div class="row mx-n2">
-             
-                <div class="col-sm-6 col-md-4 px-2 mb-3">
-                    <div class="card card-frame h-100">
-                        <a class="card-body" href="list.html">
-                            <div class="media">
-                                <div class="avatar avatar-xs mt-1 mr-3">
-                                    <img
-                                        class="avatar-img"
-                                        src="~@/assets/img/160x160/img5.jpg"
-                                        alt="Image Description"
-                                    />
-                                </div>
-                                <div class="media-body">
-                                    <div class="d-flex align-items-center">
-                                        <span class="d-block text-dark font-weight-bold">Spotify</span>
-                                        <img
-                                            class="ml-2"
-                                            src="~@/assets/svg/illustrations/top-vendor.svg"
-                                            alt="Image Description"
-                                            title="Top Vendor"
-                                            width="16"
-                                        />
-                                    </div>
-                                    <small class="d-block text-body">Lorem Ipsum</small>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-             
-                <div class="col-sm-6 col-md-4 px-2 mb-3">
-                    <div class="card card-frame h-100">
-                        <a class="card-body" href="list.html">
-                            <div class="media">
-                                <div class="avatar avatar-xs mt-1 mr-3">
-                                    <img
-                                        class="avatar-img"
-                                        src="~@/assets/img/160x160/img3.jpg"
-                                        alt="Image Description"
-                                    />
-                                </div>
-                                <div class="media-body">
-                                    <div class="d-flex align-items-center">
-                                        <span class="d-block text-dark font-weight-bold">Slack</span>
-                                    </div>
-                                    <small class="d-block text-body">Lorem Ipsum</small>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-              
-                <div class="col-sm-6 col-md-4 px-2 mb-3">
-                    <div class="card card-frame h-100">
-                        <a class="card-body" href="list.html">
-                            <div class="media">
-                                <div class="avatar avatar-xs mt-1 mr-3">
-                                    <img
-                                        class="avatar-img"
-                                        src="~@/assets/img/icons/account.png"
-                                        alt="Image Description"
-                                    />
-                                </div>
-                                <div class="media-body">
-                                    <div class="d-flex align-items-center">
-                                        <span class="d-block text-dark font-weight-bold">Crypto Scams</span>
-                                        <img
-                                            class="ml-2"
-                                            src="~@/assets/svg/illustrations/top-vendor.svg"
-                                            alt="Image Description"
-                                            title="Top Vendor"
-                                            width="16"
-                                        />
-                                    </div>
-                                    <small class="d-block text-body">Lorem Ipsum</small>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-          
-                <div class="col-sm-6 col-md-4 px-2 mb-3 mb-md-0">
-                    <div class="card card-frame h-100">
-                        <a class="card-body" href="list.html">
-                            <div class="media">
-                                <div class="avatar avatar-xs mt-1 mr-3">
-                                    <img
-                                        class="avatar-img"
-                                        src="~@/assets/img/160x160/img12.png"
-                                        alt="Image Description"
-                                    />
-                                </div>
-                                <div class="media-body">
-                                    <div class="d-flex align-items-center">
-                                        <span class="d-block text-dark font-weight-bold">Atlassian</span>
-                                    </div>
-                                    <small class="d-block text-body">Lorem Ipsum</small>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-            
-                <div class="col-sm-6 col-md-4 px-2 mb-3 mb-sm-0">
-                    <div class="card card-frame h-100">
-                        <a class="card-body" href="list.html">
-                            <div class="media">
-                                <div class="avatar avatar-xs mt-1 mr-3">
-                                    <img
-                                        class="avatar-img"
-                                        src="~@/assets/img/160x160/img18.png"
-                                        alt="Image Description"
-                                    />
-                                </div>
-                                <div class="media-body">
-                                    <div class="d-flex align-items-center">
-                                        <span class="d-block text-dark font-weight-bold">Behance</span>
-                                        <img
-                                            class="ml-2"
-                                            src="~@/assets/svg/illustrations/top-vendor.svg"
-                                            alt="Image Description"
-                                            title="Top Vendor"
-                                            width="16"
-                                        />
-                                    </div>
-                                    <small class="d-block text-body">Lorem Ipsum</small>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-               
-                <div class="col-sm-6 col-md-4 px-2">
-                    <div class="card card-frame h-100">
-                        <a class="card-body" href="list.html">
-                            <div class="media">
-                                <div class="avatar avatar-xs mt-1 mr-3">
-                                    <img
-                                        class="avatar-img"
-                                        src="~@/assets/img/160x160/img11.jpg"
-                                        alt="Image Description"
-                                    />
-                                </div>
-                                <div class="media-body">
-                                    <div class="d-flex align-items-center">
-                                        <span class="d-block text-dark font-weight-bold">InVision</span>
-                                    </div>
-                                    <small class="d-block text-body">Lorem Ipsum</small>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-         
-            </div>
-        </div> -->
     </main>
-
 
     <RemoveModal :user="clickedUser" v-if="removeModalOpen"></RemoveModal>
     <ChallengeModal :user="clickedUser" v-if="challengeModalOpen"></ChallengeModal>
@@ -416,6 +266,8 @@
 </template>
 
 <script>
+import Jazzicon from "jazzicon";
+
 import { GeneralizedTCR } from "@kleros/gtcr-sdk";
 import transactions from "@/mixins/transactions";
 import authentication from "@/mixins/authentication";
@@ -462,6 +314,8 @@ export default {
             isBlocking: false,
             clickedUser: null,
             currentTabComponent: "ListInfoTab",
+            status: null,
+            body: null,
             tabs: [
                 { component: "ListInfoTab", name: "List Info", icon: require("@/assets/svg/icons/icon-24.svg") },
                 { component: "ReviewsTab", name: "Reviews", icon: require("@/assets/svg/icons/icon-7.svg") },
@@ -469,16 +323,36 @@ export default {
             ],
         };
     },
+    watch: {
+        shortenedContributor() {
+            console.log("updating");
+
+            console.log("refs", this.$refs);
+            this.$refs.jazzicon.innerHTML = ""; //clear the previous jazzicon in case we disconnect and connect multiple times per session
+            this.$refs.jazzicon.appendChild(Jazzicon(32, parseInt(this.status.requester.slice(2, 10), 16)));
+        },
+    },
     computed: {
+        shortenedContributor() {
+            // console.log(this.user.requester.slice(0, 6) + "..." + this.user.requester.slice(-4));
+            if (this.status) {
+                return this.status.requester.slice(0, 6) + "..." + this.status.requester.slice(-4);
+            }
+            return "";
+        },
         currentProps() {
             if (this.currentTabComponent == "ListInfoTab") {
-                return { list: this.list, items: this.items,challengePeriod: this.list.challengePeriod };
+                return { list: this.list, items: this.items, challengePeriod: this.list?.challengePeriod };
             } else {
                 return null;
             }
         },
         logoURL() {
-            return process.env.VUE_APP_IPFS_GATEWAY + this.list.metadata.logoURI;
+            if (this.list?.metadata) {
+                return process.env.VUE_APP_IPFS_GATEWAY + this.list?.metadata?.logoURI;
+            } else {
+                return "";
+            }
         },
         chain() {
             return this.$store.getters.currentChain;
@@ -542,11 +416,20 @@ export default {
         },
     },
     created() {
+        this.body = document.body;
         let address = this.$route.params.address;
 
         this.isLoading = true;
 
         (async () => {
+            const metaList = new GeneralizedTCR(
+                window.ethereum,
+                process.env.VUE_APP_META_LIST,
+                process.env.VUE_APP_GTCR_VIEW_ADDRESS,
+                process.env.VUE_APP_IPFS_GATEWAY
+            );
+            let addressItems = await metaList.getItems();
+
             const gtcr = new GeneralizedTCR(
                 window.ethereum,
                 address,
@@ -567,6 +450,8 @@ export default {
             this.items = await gtcr.getItems();
             console.log(this.items);
             this.isLoading = false;
+            this.status = addressItems.find((x) => x.decodedData[0] == address);
+            console.log("Status", this.status);
         })();
     },
 };

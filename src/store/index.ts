@@ -17,7 +17,7 @@ interface state {
 
 export default createStore({
     state: {
-        language: "english",
+        language: "English",
         provider: null,
         connected: false,
         currentChain: null,

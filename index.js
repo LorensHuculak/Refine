@@ -43,6 +43,7 @@ async function requestToken() {
             method: "POST",
         })
     );
+    console.log(process.env.NODE_ENV_CALLBACK_URL);
     const req = await got.post(requestTokenURL, {
         headers: {
             Authorization: authHeader["Authorization"],
