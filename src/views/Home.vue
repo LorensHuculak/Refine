@@ -296,16 +296,11 @@ export default {
                 process.env.VUE_APP_GTCR_VIEW_ADDRESS,
                 process.env.VUE_APP_IPFS_GATEWAY
             );
-            console.log(gtcr);
 
             let addressItems = await gtcr.getItems();
-            console.log("ITEMS", addressItems);
-  
-     
-            let tcrAddresses = addressItems.map((x) => x.decodedData[0]);
-            console.log("loading");
 
-            console.log(tcrAddresses);
+            let tcrAddresses = addressItems.map((x) => x.decodedData[0]);
+
             let tcrList = tcrAddresses.map(
                 (x) =>
                     new GeneralizedTCR(
@@ -315,16 +310,13 @@ export default {
                         process.env.VUE_APP_IPFS_GATEWAY
                     ) || null
             );
-            console.log("tcrLists", tcrList);
             let tcrDetailsList = await Promise.all(
                 tcrList.map(async (generalizedTCR) => {
                     try {
                         let evidence = await generalizedTCR.getLatestMetaEvidence();
                         let items = await generalizedTCR.getItems();
-                        console.log("evidence", evidence);
-                        
-                        console.log("items", items);
-                        let info = addressItems.find(x => x.decodedData[0] == generalizedTCR.gtcrInstance.address)
+
+                        let info = addressItems.find((x) => x.decodedData[0] == generalizedTCR.gtcrInstance.address);
                         return {
                             info: info,
                             address: generalizedTCR.gtcrInstance.address,
@@ -339,7 +331,7 @@ export default {
                     }
                 })
             );
-            console.log("tcrDetails",tcrDetailsList);
+            console.log("tcrDetails", tcrDetailsList);
 
             this.$store.dispatch(
                 "setLists",

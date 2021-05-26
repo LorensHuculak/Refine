@@ -1,17 +1,7 @@
 <template>
     <div class=" pt-6 " id="pills-one-example1" role="tabpanel" aria-labelledby="pills-one-example1-tab">
-        
         <p>{{ list?.metadata?.tcrDescription || "Description" }}</p>
-        <!-- Read More - Collapse -->
-
-        <!-- End Read More - Collapse -->
-
-        <!-- Link -->
-
-        <!-- End Link -->
-
-        <!-- Collapse -->
-
+        
         <div class="border-top pt-7 mt-7">
             <div class="row mb-4">
                 <div class="col-8">
@@ -29,7 +19,12 @@
                 </div>
             </div>
             <transition-group name="list" tag="div">
-                <ListItem v-for="user in shownLists" :key="user" :user="user" :challengePeriod="challengePeriod"></ListItem>
+                <ListItem
+                    v-for="user in shownLists"
+                    :key="user"
+                    :user="user"
+                    :challengePeriod="challengePeriod"
+                ></ListItem>
             </transition-group>
         </div>
     </div>
@@ -37,7 +32,7 @@
 <script>
 import ListItem from "@/components/ListItem";
 export default {
-    props: ["list", "items","challengePeriod"],
+    props: ["list", "items", "challengePeriod"],
     components: {
         ListItem,
     },

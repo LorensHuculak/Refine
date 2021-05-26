@@ -1,30 +1,17 @@
 <template>
     <div class=" pt-6">
-        <!-- Review Header -->
         <div class="d-sm-flex justify-content-sm-between align-items-sm-center border-bottom pb-3 mb-4">
             <div class="d-flex align-items-center mb-2 mb-sm-0">
                 <h4 class="mb-0">Reviews <small class="text-muted ml-1">(156)</small></h4>
             </div>
 
-            <!-- Select -->
-            <select
-                class="js-custom-select"
-                data-hs-select2-options='{
-                          "minimumResultsForSearch": "Infinity",
-                          "customClass": "btn btn-sm btn-white dropdown-toggle",
-                          "dropdownAutoWidth": true,
-                          "width": "auto"
-                        }'
-            >
-                <option value="showCategoryByFilterSelect1" selected>Newest first</option>
-                <option value="showCategoryByFilterSelect2">Highest rated</option>
-                <option value="showCategoryByFilterSelect3">Lowest rated</option>
+            <select class="form-select" >
+                <option selected>Newest first</option>
+                <option>Highest rated</option>
+                <option>Lowest rated</option>
             </select>
-            <!-- End Select -->
         </div>
-        <!-- End Review Header -->
 
-        <!-- Review -->
         <div class="media">
             <div class="avatar avatar-circle mr-3">
                 <img class="avatar-img" src="~@/assets/img/100x100/img1.jpg" alt="Image Description" />
@@ -41,7 +28,6 @@
                 <a class="small mr-2" href="javascript:;">Yes</a>
                 <a class="small" href="javascript:;">No</a>
 
-                <!-- Reply -->
                 <div class="card bg-light shadow-none p-3 mt-4">
                     <div class="media">
                         <div class="avatar mr-3">
@@ -55,12 +41,9 @@
                         </div>
                     </div>
                 </div>
-                <!-- End Reply -->
             </div>
         </div>
-        <!-- End Review -->
 
-        <!-- Review -->
         <div class="media">
             <div class="avatar avatar-circle mr-3">
                 <img class="avatar-img" src="~@/assets/img/100x100/img3.jpg" alt="Image Description" />
@@ -77,7 +60,6 @@
                 <a class="small mr-2" href="javascript:;">Yes</a>
                 <a class="small" href="javascript:;">No</a>
 
-                <!-- Reply -->
                 <div class="card bg-light shadow-none p-3 mt-4">
                     <div class="media">
                         <div class="avatar mr-3">
@@ -89,12 +71,9 @@
                         </div>
                     </div>
                 </div>
-                <!-- End Reply -->
             </div>
         </div>
-        <!-- End Review -->
 
-        <!-- Review -->
         <div class="media">
             <div class="avatar avatar-circle mr-3">
                 <img class="avatar-img" src="~@/assets/img/100x100/img11.jpg" alt="Image Description" />
@@ -110,7 +89,6 @@
                 <a class="small mr-2" href="javascript:;">Yes</a>
                 <a class="small" href="javascript:;">No</a>
 
-                <!-- Reply -->
                 <div class="card bg-light shadow-none p-3 mt-4">
                     <div class="media">
                         <div class="avatar mr-3">
@@ -122,10 +100,8 @@
                         </div>
                     </div>
                 </div>
-                <!-- End Reply -->
             </div>
         </div>
-        <!-- End Review -->
 
         <div class="text-center">
             <a class="font-weight-bold" href="#">Read More Reviews <i class="fas fa-angle-right ml-1"></i></a>

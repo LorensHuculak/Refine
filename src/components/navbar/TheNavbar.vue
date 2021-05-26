@@ -288,8 +288,3 @@ export default {
     },
 };
 </script>
-<style lang="scss" scoped>
-.cursor-pointer {
-    cursor: pointer;
-}
-</style>

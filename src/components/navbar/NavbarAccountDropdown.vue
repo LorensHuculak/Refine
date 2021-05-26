@@ -74,7 +74,6 @@ export default {
         async copyAddress() {
             try {
                 await navigator.clipboard.writeText(this.address);
-                console.log(this);
                 this.$refs.TIPPY.show();
                 setTimeout(() => this.$refs.TIPPY.hide(), 500);
             } catch (error) {

@@ -236,7 +236,9 @@ body {
     font-family: "Source Sans Pro", sans-serif;
     background-color: $Grey9;
 }
-
+.cursor-pointer {
+    cursor: pointer;
+}
 .tippy-box {
     background-color: transparent !important;
 }

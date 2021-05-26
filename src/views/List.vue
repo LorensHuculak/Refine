@@ -1,81 +1,4 @@
 <style lang="scss" scoped>
-.twitter-login {
-    background-color: rgb(62, 139, 165);
-    padding: 1rem;
-    color: $Grey10;
-    display: inline-block;
-    cursor: pointer;
-}
-
-.list-title {
-    font-size: 2.5rem;
-    margin-bottom: 0.5rem;
-}
-.list-header {
-    display: flex;
-    padding: 1rem;
-    font-size: 1rem;
-    justify-content: space-between;
-    width: 100%;
-    @include medium {
-        font-size: 1.5rem;
-    }
-}
-.header {
-    margin-top: 1rem;
-    padding: 1rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.username {
-    width: 30%;
-}
-.itemstatus {
-    width: 40%;
-}
-.remainingtime {
-    width: 20%;
-    text-align: center;
-}
-.add-user {
-    padding: 0.5rem 1rem;
-    background-color: $BluePrimary;
-    color: $Grey10;
-    font-size: 1.2rem;
-    border: 1px solid $Grey6;
-    cursor: pointer;
-    margin-left: 2rem;
-    display: inline-block;
-}
-
-.disabled {
-    background-color: $Grey6;
-    color: black;
-}
-.button-bar {
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    @include small {
-        flex-direction: row;
-    }
-}
-.buttons {
-    display: flex;
-    justify-content: space-between;
-}
-.list-search {
-    margin-bottom: 1rem;
-    @include small {
-        width: 30%;
-        margin-bottom: 0rem;
-    }
-    padding: 0.2rem;
-    padding-left: 1rem;
-}
 .list-item {
     display: inline-block;
     margin-right: 10px;
@@ -114,22 +37,13 @@
                             >
                         </div>
 
-                        <!-- Rating -->
                         <p class="small text-center"></p>
                         <div class="d-flex align-items-center flex-wrap mb-6">
                             <ul class="list-inline mt-n1 mb-0 mr-2">
-                                <li class="list-inline-item mx-0">
+                                <li class="list-inline-item mx-0" v-for="x in 4" :key="x">
                                     <img src="~@/assets/svg/illustrations/star.svg" alt="Review rating" width="16" />
                                 </li>
-                                <li class="list-inline-item mx-0">
-                                    <img src="~@/assets/svg/illustrations/star.svg" alt="Review rating" width="16" />
-                                </li>
-                                <li class="list-inline-item mx-0">
-                                    <img src="~@/assets/svg/illustrations/star.svg" alt="Review rating" width="16" />
-                                </li>
-                                <li class="list-inline-item mx-0">
-                                    <img src="~@/assets/svg/illustrations/star.svg" alt="Review rating" width="16" />
-                                </li>
+
                                 <li class="list-inline-item mx-0">
                                     <img
                                         src="~@/assets/svg/illustrations/star-half.svg"
@@ -144,8 +58,11 @@
                                 <span class="text-muted font-size-1">(1.5k+ reviews)</span>
                             </span>
                         </div>
-                        <!-- End Rating -->
-
+                        <div class="mb-6">
+                            <a :href="evidenceURI">
+                                List Requirements
+                            </a>
+                        </div>
                         <div class="mb-md-7">
                             <h1 class="h4">Categories</h1>
 
@@ -175,11 +92,6 @@
                                         <span class="avatar avatar-xs avatar-circle" ref="jazzicon">
                                             <!-- jazzicon inserted -->
                                         </span>
-                                        <!-- <img
-                                            class="avatar-img"
-                                            src="~@/assets/img/icons/account.png"
-                                            alt="Image Description"
-                                        /> -->
                                     </div>
                                     <div class="media-body">
                                         <a
@@ -193,20 +105,16 @@
                             </a>
                         </div>
 
-                        <div class="d-none d-md-block">
-                            <div>
-                                <i v-if="status?.status == 0" class="fas fa-times-circle text-danger mt-1 mr-2"></i>
-                                <i v-if="status?.status == 1" class="fas fa-check-circle text-success mt-1 mr-2"></i>
-                                <i
-                                    v-if="status?.status == 2 || status?.status == 3"
-                                    class="fas fa-question-circle text-warning mt-1 mr-2"
-                                ></i>
-                                <span>{{ status?.disputed ? "Disputed" : "" }}</span>
-                            </div>
-                            <a class="small text-body" href="#"><i class="far fa-flag mr-1"></i> Challenge this list</a>
+                        <div class="d-flex">
+                            <i v-if="status?.status == 0" class="fas fa-times-circle text-danger mt-1 mr-2"></i>
+                            <i v-if="status?.status == 1" class="fas fa-check-circle text-success mt-1 mr-2"></i>
+                            <i
+                                v-if="status?.status == 2 || status?.status == 3"
+                                class="fas fa-question-circle text-warning mt-1 mr-2"
+                            ></i>
+                            <span class="small text-body cursor-pointer" href="#">Challenge this list</span>
                         </div>
                     </div>
-                    <!-- End List Info -->
                 </div>
 
                 <div class="col-md-8 col-lg-9 column-divider-md">
@@ -230,7 +138,7 @@
                         </div>
 
                         <!-- Nav Classic -->
-                        <ul class="nav nav-classic nav-rounded nav-justified border" id="pills-tab" role="tablist">
+                        <ul class="nav nav-classic nav-rounded nav-justified border cursor-pointer" role="tablist">
                             <li v-for="tab in tabs" :key="tab" class="nav-item" @click="setTab(tab.component)">
                                 <a
                                     class="nav-link font-weight-bold "
@@ -247,7 +155,7 @@
                             </li>
                         </ul>
 
-                        <div class="tab-content" id="pills-tabContent">
+                        <div class="tab-content " id="pills-tabContent">
                             <keep-alive>
                                 <component :is="currentTabComponent" v-bind="currentProps"></component>
                             </keep-alive>
@@ -325,16 +233,16 @@ export default {
     },
     watch: {
         shortenedContributor() {
-            console.log("updating");
-
-            console.log("refs", this.$refs);
             this.$refs.jazzicon.innerHTML = ""; //clear the previous jazzicon in case we disconnect and connect multiple times per session
             this.$refs.jazzicon.appendChild(Jazzicon(32, parseInt(this.status.requester.slice(2, 10), 16)));
         },
     },
     computed: {
+        evidenceURI() {
+            console.log(process.env.VUE_APP_IPFS_GATEWAY + this?.list?.submissionEvidence.fileURI);
+            return process.env.VUE_APP_IPFS_GATEWAY + this?.list?.submissionEvidence.fileURI;
+        },
         shortenedContributor() {
-            // console.log(this.user.requester.slice(0, 6) + "..." + this.user.requester.slice(-4));
             if (this.status) {
                 return this.status.requester.slice(0, 6) + "..." + this.status.requester.slice(-4);
             }
@@ -343,6 +251,9 @@ export default {
         currentProps() {
             if (this.currentTabComponent == "ListInfoTab") {
                 return { list: this.list, items: this.items, challengePeriod: this.list?.challengePeriod };
+            }
+            if (this.currentTabComponent == "DetailsTab") {
+                return { status: this.status };
             } else {
                 return null;
             }
@@ -395,7 +306,6 @@ export default {
             return e == this.currentTabComponent;
         },
         setTab(e) {
-            console.log(e);
             this.currentTabComponent = e;
         },
         updateUser(e) {
@@ -436,7 +346,6 @@ export default {
                 process.env.VUE_APP_GTCR_VIEW_ADDRESS,
                 process.env.VUE_APP_IPFS_GATEWAY
             );
-            console.log(gtcr);
             let challengePeriod = await gtcr.gtcrInstance.challengePeriodDuration();
             let evidence = await gtcr.getLatestMetaEvidence();
             this.list = {
@@ -448,10 +357,8 @@ export default {
             };
             console.log(this.list);
             this.items = await gtcr.getItems();
-            console.log(this.items);
             this.isLoading = false;
             this.status = addressItems.find((x) => x.decodedData[0] == address);
-            console.log("Status", this.status);
         })();
     },
 };

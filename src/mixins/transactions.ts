@@ -132,12 +132,10 @@ export default {
             const metaEvidenceFiles = [this.registrationMetaEvidence, this.clearingMetaEvidence].map((metaEvidence) =>
                 enc.encode(JSON.stringify(metaEvidence))
             );
-            console.log(metaEvidenceFiles);
             const files = [...metaEvidenceFiles].map((file) => ({
                 data: file,
                 multihash: Archon.utils.multihashFile(file, 0x1b),
             }));
-            console.log(files);
             const ipfsMetaEvidenceObjects = (
                 await Promise.all(files.map((file) => this.ipfsPublish(file.multihash, file.data)))
             ).map(
@@ -157,7 +155,6 @@ export default {
                 300,
                 [10000, 10000, 20000],
             ];
-            console.log("TCRArgs", TCRArgs);
             this.isUploading = false;
             const sender = await window.web3.eth.getAccounts();
 
@@ -165,8 +162,7 @@ export default {
                 .deploy(...TCRArgs)
                 .send({ from: sender[0] })
                 .then((e) => {
-                    console.log(e);
-                    console.log(e.events.NewGTCR.returnValues._address)
+
                     this.addToMetaList(e.events.NewGTCR.returnValues._address);
                 });
         },

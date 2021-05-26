@@ -71,12 +71,10 @@ export default {
             this.uploadURI = null;
             this.error = null;
             let file = files.target.files[0];
-            console.log(file.size, 4000000);
             if (file.size < 4000000) {
                 // smaller than 4mb
                 try {
                     const data = await new Response(new Blob([file])).arrayBuffer();
-                    console.log(data);
                     const ipfsFileObj = await this.ipfsPublish(this.sanitize(file.name), data);
                     const fileURI = `/ipfs/${ipfsFileObj[1].hash}${ipfsFileObj[0].path}`;
                     this.uploadURI = fileURI;
