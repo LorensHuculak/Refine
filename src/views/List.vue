@@ -1,81 +1,5 @@
 <style lang="scss" scoped>
-.twitter-login {
-    background-color: rgb(62, 139, 165);
-    padding: 1rem;
-    color: $Grey10;
-    display: inline-block;
-    cursor: pointer;
-}
 
-.list-title {
-    font-size: 2.5rem;
-    margin-bottom: 0.5rem;
-}
-.list-header {
-    display: flex;
-    padding: 1rem;
-    font-size: 1rem;
-    justify-content: space-between;
-    width: 100%;
-    @include medium {
-        font-size: 1.5rem;
-    }
-}
-.header {
-    margin-top: 1rem;
-    padding: 1rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.username {
-    width: 30%;
-}
-.itemstatus {
-    width: 40%;
-}
-.remainingtime {
-    width: 20%;
-    text-align: center;
-}
-.add-user {
-    padding: 0.5rem 1rem;
-    background-color: $BluePrimary;
-    color: $Grey10;
-    font-size: 1.2rem;
-    border: 1px solid $Grey6;
-    cursor: pointer;
-    margin-left: 2rem;
-    display: inline-block;
-}
-
-.disabled {
-    background-color: $Grey6;
-    color: black;
-}
-.button-bar {
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    @include small {
-        flex-direction: row;
-    }
-}
-.buttons {
-    display: flex;
-    justify-content: space-between;
-}
-.list-search {
-    margin-bottom: 1rem;
-    @include small {
-        width: 30%;
-        margin-bottom: 0rem;
-    }
-    padding: 0.2rem;
-    padding-left: 1rem;
-}
 .list-item {
     display: inline-block;
     margin-right: 10px;
@@ -93,7 +17,8 @@
 
 <template>
     <LoadingSpinner v-if="isLoading" class="mt-5 mb-5"></LoadingSpinner>
-    <main id="content" role="main" v-else>
+
+    <main id="content" role="main" v-show="!isLoading">
         <div class="container space-top-2 space-bottom-lg-2">
             <div class="row">
                 <div class="col-md-4 col-lg-3 mb-9 mb-md-0">
@@ -114,22 +39,13 @@
                             >
                         </div>
 
-                        <!-- Rating -->
                         <p class="small text-center"></p>
                         <div class="d-flex align-items-center flex-wrap mb-6">
                             <ul class="list-inline mt-n1 mb-0 mr-2">
-                                <li class="list-inline-item mx-0">
+                                <li class="list-inline-item mx-0" v-for="x in 4" :key="x">
                                     <img src="~@/assets/svg/illustrations/star.svg" alt="Review rating" width="16" />
                                 </li>
-                                <li class="list-inline-item mx-0">
-                                    <img src="~@/assets/svg/illustrations/star.svg" alt="Review rating" width="16" />
-                                </li>
-                                <li class="list-inline-item mx-0">
-                                    <img src="~@/assets/svg/illustrations/star.svg" alt="Review rating" width="16" />
-                                </li>
-                                <li class="list-inline-item mx-0">
-                                    <img src="~@/assets/svg/illustrations/star.svg" alt="Review rating" width="16" />
-                                </li>
+
                                 <li class="list-inline-item mx-0">
                                     <img
                                         src="~@/assets/svg/illustrations/star-half.svg"
@@ -144,8 +60,11 @@
                                 <span class="text-muted font-size-1">(1.5k+ reviews)</span>
                             </span>
                         </div>
-                        <!-- End Rating -->
-
+                        <div class="mb-6">
+                            <a :href="evidenceURI">
+                                List Requirements
+                            </a>
+                        </div>
                         <div class="mb-md-7">
                             <h1 class="h4">Categories</h1>
 
@@ -172,43 +91,57 @@
                             <a class="d-inline-block text-body" href="#">
                                 <div class="media align-items-center">
                                     <div class="avatar avatar-xs mr-3">
-                                        <img
-                                            class="avatar-img"
-                                            src="~@/assets/img/icons/account.png"
-                                            alt="Image Description"
-                                        />
+
+                                        <AccountIcon :address="status?.requester"></AccountIcon>
                                     </div>
                                     <div class="media-body">
-                                        Lorens Huculak
+                                        <a
+                                            :href="'https://rinkeby.etherscan.io/address/' + status?.requester"
+                                            target="_blank"
+                                        >
+                                            {{ shortenedContributor }}
+                                        </a>
                                     </div>
                                 </div>
                             </a>
                         </div>
 
-                        <div class="d-none d-md-block">
-                            <a class="small text-body" href="#"><i class="far fa-flag mr-1"></i> Challenge this list</a>
+
+                        <div class="d-flex">
+                            <i v-if="status?.status == 0" class="fas fa-times-circle text-danger mt-1 mr-2"></i>
+                            <i v-if="status?.status == 1" class="fas fa-check-circle text-success mt-1 mr-2"></i>
+                            <i
+                                v-if="status?.status == 2 || status?.status == 3"
+                                class="fas fa-question-circle text-warning mt-1 mr-2"
+                            ></i>
+                            <span class="small text-body cursor-pointer" href="#">Challenge this list</span>
                         </div>
                     </div>
-                    <!-- End List Info -->
                 </div>
 
                 <div class="col-md-8 col-lg-9 column-divider-md">
                     <div class="ml-lg-2">
-                        <div class="mb-5">
-                            <h2>
-                                {{ list?.metadata?.tcrTitle || "Title" }}
-                                <img
-                                    class="ml-1"
-                                    src="~@/assets/svg/illustrations/top-vendor.svg"
-                                    alt="Image Description"
-                                    title="Top Vendor"
-                                    width="20"
-                                />
-                            </h2>
+
+                        <div class="mb-5 row">
+                            <div class="col-8">
+                                <h2>
+                                    {{ list?.metadata?.tcrTitle || "Title" }}
+                                    <img
+                                        class="ml-1"
+                                        src="~@/assets/svg/illustrations/top-vendor.svg"
+                                        alt="Image Description"
+                                        title="Top Vendor"
+                                        width="20"
+                                    />
+                                </h2>
+                            </div>
+                            <div class="col-4">
+                                <button class="btn btn-primary float-right" @click="openSubmit">Add User</button>
+                            </div>
                         </div>
 
                         <!-- Nav Classic -->
-                        <ul class="nav nav-classic nav-rounded nav-justified border" id="pills-tab" role="tablist">
+                        <ul class="nav nav-classic nav-rounded nav-justified border cursor-pointer" role="tablist">
                             <li v-for="tab in tabs" :key="tab" class="nav-item" @click="setTab(tab.component)">
                                 <a
                                     class="nav-link font-weight-bold "
@@ -225,7 +158,9 @@
                             </li>
                         </ul>
 
+
                         <div class="tab-content" id="pills-tabContent">
+
                             <keep-alive>
                                 <component :is="currentTabComponent" v-bind="currentProps"></component>
                             </keep-alive>
@@ -233,180 +168,9 @@
                     </div>
                 </div>
             </div>
-            <!-- End Content -->
+
         </div>
-        <!-- End List Description Section -->
-
-        <!-- Related Items Section -->
-        <!-- <div class="container space-2 space-bottom-lg-3">
-          
-            <div class="d-flex justify-content-between align-items-center mb-3">
-                <h3 class="mb-0">Related Lists</h3>
-                <a class="font-size-1 font-weight-bold" href="#"
-                    >View All <i class="fas fa-angle-right fa-sm ml-1"></i
-                ></a>
-            </div>
-         
-
-            <div class="row mx-n2">
-             
-                <div class="col-sm-6 col-md-4 px-2 mb-3">
-                    <div class="card card-frame h-100">
-                        <a class="card-body" href="list.html">
-                            <div class="media">
-                                <div class="avatar avatar-xs mt-1 mr-3">
-                                    <img
-                                        class="avatar-img"
-                                        src="~@/assets/img/160x160/img5.jpg"
-                                        alt="Image Description"
-                                    />
-                                </div>
-                                <div class="media-body">
-                                    <div class="d-flex align-items-center">
-                                        <span class="d-block text-dark font-weight-bold">Spotify</span>
-                                        <img
-                                            class="ml-2"
-                                            src="~@/assets/svg/illustrations/top-vendor.svg"
-                                            alt="Image Description"
-                                            title="Top Vendor"
-                                            width="16"
-                                        />
-                                    </div>
-                                    <small class="d-block text-body">Lorem Ipsum</small>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-             
-                <div class="col-sm-6 col-md-4 px-2 mb-3">
-                    <div class="card card-frame h-100">
-                        <a class="card-body" href="list.html">
-                            <div class="media">
-                                <div class="avatar avatar-xs mt-1 mr-3">
-                                    <img
-                                        class="avatar-img"
-                                        src="~@/assets/img/160x160/img3.jpg"
-                                        alt="Image Description"
-                                    />
-                                </div>
-                                <div class="media-body">
-                                    <div class="d-flex align-items-center">
-                                        <span class="d-block text-dark font-weight-bold">Slack</span>
-                                    </div>
-                                    <small class="d-block text-body">Lorem Ipsum</small>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-              
-                <div class="col-sm-6 col-md-4 px-2 mb-3">
-                    <div class="card card-frame h-100">
-                        <a class="card-body" href="list.html">
-                            <div class="media">
-                                <div class="avatar avatar-xs mt-1 mr-3">
-                                    <img
-                                        class="avatar-img"
-                                        src="~@/assets/img/icons/account.png"
-                                        alt="Image Description"
-                                    />
-                                </div>
-                                <div class="media-body">
-                                    <div class="d-flex align-items-center">
-                                        <span class="d-block text-dark font-weight-bold">Crypto Scams</span>
-                                        <img
-                                            class="ml-2"
-                                            src="~@/assets/svg/illustrations/top-vendor.svg"
-                                            alt="Image Description"
-                                            title="Top Vendor"
-                                            width="16"
-                                        />
-                                    </div>
-                                    <small class="d-block text-body">Lorem Ipsum</small>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-          
-                <div class="col-sm-6 col-md-4 px-2 mb-3 mb-md-0">
-                    <div class="card card-frame h-100">
-                        <a class="card-body" href="list.html">
-                            <div class="media">
-                                <div class="avatar avatar-xs mt-1 mr-3">
-                                    <img
-                                        class="avatar-img"
-                                        src="~@/assets/img/160x160/img12.png"
-                                        alt="Image Description"
-                                    />
-                                </div>
-                                <div class="media-body">
-                                    <div class="d-flex align-items-center">
-                                        <span class="d-block text-dark font-weight-bold">Atlassian</span>
-                                    </div>
-                                    <small class="d-block text-body">Lorem Ipsum</small>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-            
-                <div class="col-sm-6 col-md-4 px-2 mb-3 mb-sm-0">
-                    <div class="card card-frame h-100">
-                        <a class="card-body" href="list.html">
-                            <div class="media">
-                                <div class="avatar avatar-xs mt-1 mr-3">
-                                    <img
-                                        class="avatar-img"
-                                        src="~@/assets/img/160x160/img18.png"
-                                        alt="Image Description"
-                                    />
-                                </div>
-                                <div class="media-body">
-                                    <div class="d-flex align-items-center">
-                                        <span class="d-block text-dark font-weight-bold">Behance</span>
-                                        <img
-                                            class="ml-2"
-                                            src="~@/assets/svg/illustrations/top-vendor.svg"
-                                            alt="Image Description"
-                                            title="Top Vendor"
-                                            width="16"
-                                        />
-                                    </div>
-                                    <small class="d-block text-body">Lorem Ipsum</small>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-               
-                <div class="col-sm-6 col-md-4 px-2">
-                    <div class="card card-frame h-100">
-                        <a class="card-body" href="list.html">
-                            <div class="media">
-                                <div class="avatar avatar-xs mt-1 mr-3">
-                                    <img
-                                        class="avatar-img"
-                                        src="~@/assets/img/160x160/img11.jpg"
-                                        alt="Image Description"
-                                    />
-                                </div>
-                                <div class="media-body">
-                                    <div class="d-flex align-items-center">
-                                        <span class="d-block text-dark font-weight-bold">InVision</span>
-                                    </div>
-                                    <small class="d-block text-body">Lorem Ipsum</small>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-         
-            </div>
-        </div> -->
     </main>
-
 
     <RemoveModal :user="clickedUser" v-if="removeModalOpen"></RemoveModal>
     <ChallengeModal :user="clickedUser" v-if="challengeModalOpen"></ChallengeModal>
@@ -433,6 +197,8 @@ import ListInfoTab from "@/components/list/ListInfoTab";
 import ReviewsTab from "@/components/list/ReviewsTab";
 import DetailsTab from "@/components/list/DetailsTab";
 
+import AccountIcon from "@/components/ui/AccountIcon";
+
 export default {
     components: {
         LoadingSpinner,
@@ -444,6 +210,7 @@ export default {
         NewUserModal,
         AuthModal,
 
+        AccountIcon,
         ListInfoTab,
         ReviewsTab,
         DetailsTab,
@@ -462,6 +229,9 @@ export default {
             isBlocking: false,
             clickedUser: null,
             currentTabComponent: "ListInfoTab",
+
+            status: null,
+            body: null,
             tabs: [
                 { component: "ListInfoTab", name: "List Info", icon: require("@/assets/svg/icons/icon-24.svg") },
                 { component: "ReviewsTab", name: "Reviews", icon: require("@/assets/svg/icons/icon-7.svg") },
@@ -479,6 +249,39 @@ export default {
         },
         logoURL() {
             return process.env.VUE_APP_IPFS_GATEWAY + this.list.metadata.logoURI;
+        },
+        chain() {
+            return this.$store.getters.currentChain;
+        },
+
+
+    computed: {
+        evidenceURI() {
+            console.log(process.env.VUE_APP_IPFS_GATEWAY + this?.list?.submissionEvidence.fileURI);
+            return process.env.VUE_APP_IPFS_GATEWAY + this?.list?.submissionEvidence.fileURI;
+        },
+        shortenedContributor() {
+            if (this.status) {
+                return this.status.requester.slice(0, 6) + "..." + this.status.requester.slice(-4);
+            }
+            return "";
+        },
+        currentProps() {
+            if (this.currentTabComponent == "ListInfoTab") {
+                return { list: this.list, items: this.items, challengePeriod: this.list?.challengePeriod };
+            }
+            if (this.currentTabComponent == "DetailsTab") {
+                return { status: this.status };
+            } else {
+                return null;
+            }
+        },
+        logoURL() {
+            if (this.list?.metadata) {
+                return process.env.VUE_APP_IPFS_GATEWAY + this.list?.metadata?.logoURI;
+            } else {
+                return "";
+            }
         },
         chain() {
             return this.$store.getters.currentChain;
@@ -521,7 +324,7 @@ export default {
             return e == this.currentTabComponent;
         },
         setTab(e) {
-            console.log(e);
+
             this.currentTabComponent = e;
         },
         updateUser(e) {
@@ -534,6 +337,7 @@ export default {
             });
         },
 
+
         openSubmit() {
             this.$store.dispatch("setModal", {
                 modalName: "newUser",
@@ -542,18 +346,27 @@ export default {
         },
     },
     created() {
+        this.body = document.body;
         let address = this.$route.params.address;
 
         this.isLoading = true;
 
         (async () => {
+            const metaList = new GeneralizedTCR(
+                window.ethereum,
+                process.env.VUE_APP_META_LIST,
+                process.env.VUE_APP_GTCR_VIEW_ADDRESS,
+                process.env.VUE_APP_IPFS_GATEWAY
+            );
+            let addressItems = await metaList.getItems();
+
             const gtcr = new GeneralizedTCR(
                 window.ethereum,
                 address,
                 process.env.VUE_APP_GTCR_VIEW_ADDRESS,
                 process.env.VUE_APP_IPFS_GATEWAY
             );
-            console.log(gtcr);
+
             let challengePeriod = await gtcr.gtcrInstance.challengePeriodDuration();
             let evidence = await gtcr.getLatestMetaEvidence();
             this.list = {
@@ -565,8 +378,9 @@ export default {
             };
             console.log(this.list);
             this.items = await gtcr.getItems();
-            console.log(this.items);
+
             this.isLoading = false;
+            this.status = addressItems.find((x) => x.decodedData[0] == address);
         })();
     },
 };

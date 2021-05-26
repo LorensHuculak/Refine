@@ -11,7 +11,17 @@
                     <span class="d-block text-dark font-weight-bold">
                         {{ list?.metadata?.tcrTitle }}
                     </span>
-                    <span class="badge badge-pill badge-primary"> {{ list.items.length }}</span>
+                    <div>
+                        <span>
+                            <i v-if="list.info.status == 0" class="fas fa-times-circle text-danger mt-1 mr-2"></i>
+                            <i v-if="list.info.status == 1" class="fas fa-check-circle text-success mt-1 mr-2"></i>
+                            <i
+                                v-if="list.info.status == 2 || list.info.status == 3"
+                                class="fas fa-question-circle text-warning mt-1 mr-2"
+                            ></i>
+                        </span>
+                        <span class="badge badge-pill badge-primary"> {{ list.items.length }}</span>
+                    </div>
                 </div>
                 <span class="d-block text-body font-size-1">{{ list.metadata.tcrDescription }}</span>
             </div>

@@ -14,14 +14,7 @@
     width: 48px;
     margin-right: 1rem;
 }
-.dropdown {
-    display: flex;
-    background-color: #1da1f2;
-    align-items: center;
-    justify-content: center;
-    padding: 0.4rem 1rem;
-    cursor: pointer;
-}
+
 </style>
 
 <template>

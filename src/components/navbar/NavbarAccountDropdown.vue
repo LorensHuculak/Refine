@@ -3,9 +3,7 @@
         <div class="card">
             <div class="card-header p-4">
                 <a class="media align-items-center" href="#">
-                    <div class="avatar mr-3" ref="jazzicon">
-                        <!-- jazzicon inserted -->
-                    </div>
+                    <AccountIcon :address="address"></AccountIcon>
                     <div class="media-body">
                         <span class="d-block font-weight-bold">
                             {{ addressFormat }}
@@ -68,13 +66,15 @@
     </div>
 </template>
 <script>
-import Jazzicon from "jazzicon";
+import AccountIcon from "@/components/ui/AccountIcon";
 export default {
+    components: {
+        AccountIcon,
+    },
     methods: {
         async copyAddress() {
             try {
                 await navigator.clipboard.writeText(this.address);
-                console.log(this);
                 this.$refs.TIPPY.show();
                 setTimeout(() => this.$refs.TIPPY.hide(), 500);
             } catch (error) {
@@ -82,14 +82,7 @@ export default {
             }
         },
     },
-    watch: {
-        address() {
-            if (this.address) {
-                this.$refs.jazzicon.innerHTML = ""; //clear the previous jazzicon in case we disconnect and connect multiple times per session
-                this.$refs.jazzicon.appendChild(Jazzicon(54, parseInt(this.address.slice(2, 10), 16)));
-            }
-        },
-    },
+
     computed: {
         address() {
             return this.$store.getters.currentAccount;

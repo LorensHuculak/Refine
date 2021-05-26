@@ -165,6 +165,7 @@ export default {
         validDescription() {
             return this.listdescription?.length > 20 && this.listdescription?.length <= 200;
         },
+
         metaEvidence() {
             return {
                 question: "Does the twitter user fit the required criteria?",

@@ -67,9 +67,7 @@
                                 </button>
                                 <tippy v-show="address" :interactive="true" :appendTo="body">
                                     <a class="js-hs-unfold-invoker rounded-circle">
-                                        <span class="avatar avatar-xs avatar-circle" ref="jazzicon">
-                                            <!-- jazzicon inserted -->
-                                        </span>
+                                        <AccountIcon :address="address"></AccountIcon>
                                     </a>
                                     <template #content>
                                         <NavbarAccountDropdown></NavbarAccountDropdown>
@@ -207,13 +205,13 @@
     <ConnectWalletModal v-if="walletModalOpen"></ConnectWalletModal>
 </template>
 <script>
-import Jazzicon from "jazzicon";
 import NavbarAccountDropdown from "@/components/navbar/NavbarAccountDropdown";
 import NavbarDrafts from "@/components/navbar/NavbarDrafts";
 import NavbarResources from "@/components/navbar/NavbarResources";
 import TwitterLoginButton from "@/components/navbar/TwitterLoginButton";
 import TwitterProfile from "@/components/navbar/TwitterProfile";
 import ConnectWalletModal from "@/components/modals/ConnectWalletModal";
+import AccountIcon from "@/components/ui/AccountIcon";
 export default {
     components: {
         NavbarAccountDropdown,
@@ -222,6 +220,7 @@ export default {
         TwitterProfile,
         TwitterLoginButton,
         ConnectWalletModal,
+        AccountIcon,
     },
     data() {
         return {
@@ -241,14 +240,6 @@ export default {
                 "Русский",
             ],
         };
-    },
-    watch: {
-        address() {
-            if (this.address) {
-                this.$refs.jazzicon.innerHTML = ""; //clear the previous jazzicon in case we disconnect and connect multiple times per session
-                this.$refs.jazzicon.appendChild(Jazzicon(32, parseInt(this.address.slice(2, 10), 16)));
-            }
-        },
     },
 
     created() {
@@ -288,8 +279,3 @@ export default {
     },
 };
 </script>
-<style lang="scss" scoped>
-.cursor-pointer {
-    cursor: pointer;
-}
-</style>
