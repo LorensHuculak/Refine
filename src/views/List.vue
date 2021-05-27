@@ -229,7 +229,6 @@ export default {
 
     computed: {
         evidenceURI() {
-            console.log(process.env.VUE_APP_IPFS_GATEWAY + this?.list?.submissionEvidence.fileURI);
             return process.env.VUE_APP_IPFS_GATEWAY + this?.list?.submissionEvidence.fileURI;
         },
         shortenedContributor() {
@@ -346,7 +345,6 @@ export default {
                 disputeEvidence: evidence[1],
                 metadata: evidence[0].metadata,
             };
-            console.log(this.list);
             this.items = await gtcr.getItems();
 
             this.isLoading = false;

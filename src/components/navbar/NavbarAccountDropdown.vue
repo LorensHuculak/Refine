@@ -100,7 +100,6 @@ export default {
                 return this.$store.getters.getBlockiesIcon;
             },
             set() {
-                console.log("setting Blockies", !this.useBlockiesIcon);
                 this.$store.dispatch("setBlockiesIcon", !this.useBlockiesIcon);
             },
         },

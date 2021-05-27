@@ -104,6 +104,9 @@
                 Create List
                 <LoadingSpinner v-if="isUploading"></LoadingSpinner>
             </button>
+            <div v-if="warn" class="alert alert-warning mt-2 text-center">
+                After the first transaction is confirmed a second will be created, please accept both.
+            </div>
         </div>
     </div>
 </template>
@@ -127,9 +130,13 @@ export default {
             nameWarning: false,
             descriptionWarning: false,
             isUploading: false,
+            warn: false,
         };
     },
     methods: {
+        toggleWarn() {
+            this.warn = !this.warn;
+        },
         updateAcceptanceURI(e) {
             this.listcriteria = e;
         },

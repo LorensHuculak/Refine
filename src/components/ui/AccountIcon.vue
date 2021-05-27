@@ -26,7 +26,6 @@ export default {
             return `${this.address}${this.useBlockies}${this.size}`;
         },
         useBlockies() {
-            console.log(this.$store.getters.getBlockiesIcon);
             return this.$store.getters.getBlockiesIcon;
         },
     },

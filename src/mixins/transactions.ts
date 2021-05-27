@@ -47,13 +47,7 @@ export default {
 
             return ipfsEvidencePath;
         },
-        /// addItem
-        ///removeItem
-        /// challengeRequest
-        /// fundAppeal
-        ///withdrawFeesAndRewards
-        //executeRequest
-        // submitEvidence
+  
 
         async addUser() {
             const address = this.$route.params.address;
@@ -101,13 +95,13 @@ export default {
                 .send({ from: sender[0], value: 500000000000000000 })
                 .then((e) => console.log(e));
         },
-        async executeRequest() {
+        async executeRequest(item) {
             const address = this.$route.params.address;
             const myContract = new window.web3.eth.Contract(TCRabi, address);
             const sender = await window.web3.eth.getAccounts();
 
             myContract.methods
-                .executeRequest(this.user.ID)
+                .executeRequest(item.ID)
                 .send({ from: sender[0] })
                 .then((e) => console.log(e));
         },
@@ -126,6 +120,7 @@ export default {
 
         async createList() {
             this.isUploading = true;
+            this.warn = true;
             const factoryContract = new window.web3.eth.Contract(GTCRabi, process.env.VUE_APP_GTCR_FACTORY_ADDRESS);
 
             const enc = new TextEncoder();
@@ -162,7 +157,6 @@ export default {
                 .deploy(...TCRArgs)
                 .send({ from: sender[0] })
                 .then((e) => {
-
                     this.addToMetaList(e.events.NewGTCR.returnValues._address);
                 });
         },
@@ -192,69 +186,4 @@ export default {
                 .then((e) => console.log(e));
         },
     },
-
-    // computed: {
-    //     metaEvidence() {
-    //         return {
-    //             question: "Does the twitter user fit the required criteria?",
-    //             fileURI: this.listcriteria,
-    //             evidenceDisplayInterfaceURI: "",
-    //             evidenceDisplayInterfaceHash: "",
-    //             category: "Curated list of twitter users",
-    //             metadata: {
-    //                 tcrTitle: this.listname,
-    //                 tcrDescription: this.listdescription,
-    //                 columns: [
-    //                     {
-    //                         description: "The twitter accounts username",
-    //                         label: "Username",
-    //                         type: "text",
-    //                         isIdentifier: true,
-    //                     },
-    //                     {
-    //                         description: "A summary of why they should be included",
-    //                         label: "Justification",
-    //                         type: "text",
-    //                         isIdentifier: false,
-    //                     },
-    //                 ],
-    //                 itemName: "Name",
-    //                 itemNamePlural: "Names",
-    //                 requireRemovalEvidence: true,
-    //                 isTCRofTCRs: false,
-    //                 relTcrDisabled: true,
-    //                 logoURI: this.listImage,
-    //             },
-    //         };
-    //     },
-
-    //     listMetaEvidence() {
-    //         return {
-    //             ...this.metaEvidence,
-    //             title: `Add an item to ${this.listname}`,
-    //             description: `Someone requested to add an item from ${this.listname}`,
-    //             rulingOptions: {
-    //                 titles: ["Yes, add them", "No, don't add them"],
-    //                 descriptions: [
-    //                     "Select this if you think the twitter user fits the criteria and should be added",
-    //                     "Select this if you think the twitter user does not fit the required criteria and should not be added",
-    //                 ],
-    //             },
-    //         };
-    //     },
-    //     listClearingMetaEvidence() {
-    //         return {
-    //             ...this.metaEvidence,
-    //             title: `Remove an item to ${this.listname}`,
-    //             description: `Someone requested to remove an item from ${this.listname}`,
-    //             rulingOptions: {
-    //                 titles: ["No, remove them", "Yes, don't remove them"],
-    //                 descriptions: [
-    //                     "Select this if you think the twitter user does not fit the criteria and should be removed",
-    //                     "Select this if you think the twitter user does fit the criteria and should not be removed",
-    //                 ],
-    //             },
-    //         };
-    //     },
-    // },
 };
