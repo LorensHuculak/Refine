@@ -67,7 +67,7 @@
                                 </button>
                                 <tippy v-show="address" :interactive="true" :appendTo="body">
                                     <a class="js-hs-unfold-invoker rounded-circle">
-                                        <AccountIcon :address="address"></AccountIcon>
+                                        <AccountIcon :address="address" :size="32"></AccountIcon>
                                     </a>
                                     <template #content>
                                         <NavbarAccountDropdown></NavbarAccountDropdown>

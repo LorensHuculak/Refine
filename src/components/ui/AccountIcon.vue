@@ -1,23 +1,35 @@
 <template>
-    <span class="avatar avatar-xs avatar-circle" ref="jazzicon">
-        <!-- jazzicon inserted -->
+    <span ref="avatarIcon">
+        <!-- avatar inserted -->
     </span>
 </template>
 <script>
 import Jazzicon from "jazzicon";
 import { toDataUrl } from "myetherwallet-blockies";
+
 export default {
-    props: ["address"],
+    props: ["address", "size"],
     watch: {
-        address() {
-            console.log("address", this.address);
-            // this.$refs.Jazzicon
-            this.$refs.jazzicon.innerHTML = ""; //clear the previous jazzicon in case we disconnect and connect multiple times per session
-            const img = new Image();
-            img.src = toDataUrl(this.address);
-            this.$refs.jazzicon.appendChild(img);
-            this.$refs.jazzicon.appendChild(Jazzicon(32, parseInt(this.address.slice(2, 10), 16)));
+        watchBoth() {
+            this.$refs.avatarIcon.innerHTML = ""; //clear the previous jazzicon in case we disconnect and connect multiple times per session
+            if (this.useBlockies) {
+                const img = new Image(this.size, this.size);
+                img.src = toDataUrl(this.address);
+                this.$refs.avatarIcon.appendChild(img);
+            } else {
+                this.$refs.avatarIcon.appendChild(Jazzicon(this.size, parseInt(this.address.slice(2, 10), 16)));
+            }
+        },
+    },
+    computed: {
+        watchBoth() {
+            return `${this.address}${this.useBlockies}${this.size}`;
+        },
+        useBlockies() {
+            console.log(this.$store.getters.getBlockiesIcon);
+            return this.$store.getters.getBlockiesIcon;
         },
     },
 };
 </script>
+<style scoped></style>

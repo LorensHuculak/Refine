@@ -84,7 +84,7 @@
                             <a class="d-inline-block text-body" href="#">
                                 <div class="media align-items-center">
                                     <div class="avatar avatar-xs mr-3">
-                                        <AccountIcon :address="status?.requester"></AccountIcon>
+                                        <AccountIcon :address="status?.requester" :size="32"></AccountIcon>
                                     </div>
                                     <div class="media-body">
                                         <a

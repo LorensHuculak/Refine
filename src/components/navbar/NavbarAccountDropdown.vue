@@ -1,9 +1,12 @@
 <template>
     <div class="hs-unfold-content dropdown-menu dropdown-menu-sm-right dropdown-menu-no-border-on-mobile p-0">
         <div class="card">
-            <div class="card-header p-4">
-                <a class="media align-items-center" href="#">
-                    <AccountIcon :address="address"></AccountIcon>
+            <div class="card-header p-3">
+                <div class="media align-items-center" href="#">
+                    <div class="mr-2">
+
+                    <AccountIcon :address="address" :size="32"></AccountIcon>
+                    </div>
                     <div class="media-body">
                         <span class="d-block font-weight-bold">
                             {{ addressFormat }}
@@ -18,49 +21,56 @@
                             </template>
                         </tippy>
                     </div>
-                </a>
+                </div>
             </div>
 
             <div class="card-body py-3">
-                <a class="dropdown-item px-0" href="#">
+                <div class="dropdown-item px-0">
                     <span class="dropdown-item-icon">
                         <i class="fas fa-user"></i>
                     </span>
                     Account
-                </a>
-                <a class="dropdown-item px-0" href="#">
+                </div>
+                <div class="dropdown-item px-0">
                     <span class="dropdown-item-icon">
                         <i class="fas fa-bars"></i>
                     </span>
                     My Lists
-                </a>
-                <a class="dropdown-item px-0" href="#">
+                </div>
+                <div class="dropdown-item px-0">
                     <span class="dropdown-item-icon">
                         <i class="fas fa-shield-alt"></i>
                     </span>
                     Subscriptions
-                </a>
-                <a class="dropdown-item px-0" href="#">
+                </div>
+                <div class="dropdown-item px-0">
                     <span class="dropdown-item-icon">
                         <i class="fas fa-bell"></i>
                     </span>
                     Notifications
-                </a>
+                </div>
+                <div class="dropdown-item px-0 pl-4">
+                    <input type="checkbox" v-model="useBlockiesIcon" class="form-check-input" id="blockiesToggle" />
+
+                    <label for="blockiesToggle">
+                        Blockies Icon
+                    </label>
+                </div>
 
                 <div class="dropdown-divider"></div>
 
-                <a class="dropdown-item px-0" href="#">
+                <div class="dropdown-item px-0" href="#">
                     <span class="dropdown-item-icon">
                         <i class="fas fa-question-circle"></i>
                     </span>
                     Help
-                </a>
-                <a class="dropdown-item px-0" href="#">
+                </div>
+                <div class="dropdown-item px-0" href="#">
                     <span class="dropdown-item-icon">
                         <i class="fas fa-power-off"></i>
                     </span>
                     Sign out
-                </a>
+                </div>
             </div>
         </div>
     </div>
@@ -71,6 +81,7 @@ export default {
     components: {
         AccountIcon,
     },
+
     methods: {
         async copyAddress() {
             try {
@@ -84,6 +95,15 @@ export default {
     },
 
     computed: {
+        useBlockiesIcon: {
+            get() {
+                return this.$store.getters.getBlockiesIcon;
+            },
+            set() {
+                console.log("setting Blockies", !this.useBlockiesIcon);
+                this.$store.dispatch("setBlockiesIcon", !this.useBlockiesIcon);
+            },
+        },
         address() {
             return this.$store.getters.currentAccount;
         },
