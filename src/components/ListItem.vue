@@ -16,7 +16,7 @@
 
 <template>
   <div class="scale card border mb-1">
-    <div class="card-header card-collapse" >
+    <div class="card-header card-collapse">
       <a
         @click="toggleOpen"
         class="btn btn-link btn-sm btn-block card-btn collapsed p-3"

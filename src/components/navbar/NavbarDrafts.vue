@@ -6,7 +6,6 @@
             </div>
 
             <div class="card-body">
-                <!-- Course -->
                 <a class="media" href="#">
                     <div class="mt-1 mr-3">
                         <div class="avatar">
@@ -40,9 +39,7 @@
                         </div>
                     </div>
                 </a>
-                <!-- End Course -->
-
-                <!-- Course -->
+              
                 <a class="media mt-5" href="#">
                     <div class="mt-1 mr-3">
                         <div class="avatar">
@@ -76,7 +73,7 @@
                         </div>
                     </div>
                 </a>
-                <!-- End Course -->
+              
             </div>
 
             <div class="card-footer text-center py-3">

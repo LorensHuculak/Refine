@@ -23,12 +23,10 @@ export default {
                 }),
             });
             const responseJson = await response.json();
-            console.log("blockResponse", responseJson);
             this.subscribed = "Subscribed"
         },
 
         async getUserInfo() {
-            console.log("env", process.env.VUE_APP_BASE_URL);
             const response = await fetch(`${process.env.VUE_APP_BASE_URL}/userinfo`, {
                 mode: "cors",
                 method: "POST",

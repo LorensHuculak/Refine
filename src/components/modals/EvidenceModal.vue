@@ -23,7 +23,6 @@
 import Modal from "./Modal";
 import transactions from "@/mixins/transactions";
 export default {
-    props: ["user"],
     mixins: [transactions],
     components: {
         Modal,
