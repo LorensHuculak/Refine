@@ -197,14 +197,14 @@
 
                                         <a
                                             class="dropdown-item d-flex justify-content-between align-items-center px-0"
-                                            href="#"
+                                       
                                         >
                                             Registered
                                             <span class="badge border badge-pill">9+</span>
                                         </a>
                                         <a
                                             class="dropdown-item d-flex justify-content-between align-items-center px-0"
-                                            href="#"
+                                       
                                         >
                                             Pending
                                         </a>

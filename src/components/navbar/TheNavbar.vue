@@ -21,7 +21,7 @@
                     <div id="topBar" class="collapse navbar-collapse" :class="{ show: topbarShown }">
                         <ul class="navbar-nav w-100">
                             <li class="navbar-nav-item mr-auto">
-                                <a class="nav-link font-size-1 py-2 pl-0" href="../landings/index.html"> </a>
+                                <a class="nav-link font-size-1 py-2 pl-0"> </a>
                             </li>
 
                             <!-- Docs -->
