@@ -29,11 +29,11 @@
                             <a
                                 @click="openAuth"
                                 v-if="!isLoggedIn"
-                                class="btn btn-sm btn-block btn-primary transition-3d-hover"
+                                class="btn btn-sm btn-block btn-primary text-light transition-3d-hover"
                             >
                                 <i class="fas fa-shield-alt mr-2"></i> Subscribe</a
                             >
-                            <a @click="blockUsers" v-else class="btn btn-sm btn-block btn-primary transition-3d-hover">
+                            <a @click="blockUsers" v-else class="btn btn-sm btn-block btn-success text-light transition-3d-hover">
                                 <i class="fas fa-shield-alt mr-2"></i> {{ subscribed }}</a
                             >
                         </div>
